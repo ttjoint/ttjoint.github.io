@@ -1,0 +1,11 @@
+{
+  "name": "humanmap",
+  "version": "1.0.0",
+  "description": "HumanMap - 人际关系·家族图谱",
+  "scripts": {
+    "import-cbdb": "node scripts/import_cbdb.js"
+  },
+  "dependencies": {
+    "sql.js": "^1.11.0"
+  }
+}

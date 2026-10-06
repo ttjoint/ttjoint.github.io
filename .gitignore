@@ -1,0 +1,19 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 本地数据
+local_data/
+
+# Node.js
+node_modules/
+
+# CBDB 数据库（文件较大，不纳入版本控制）
+cbdb_20260801/cbdb_20260801.sqlite3
+cbdb_20260801/

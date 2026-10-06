@@ -1,0 +1,1750 @@
+[
+  {
+    "id": "赤壁之战",
+    "type": "event",
+    "name": "赤壁之战",
+    "props": {
+      "时间": "208年",
+      "地点": "长江赤壁（今湖北赤壁市西北）",
+      "结果": "孙刘联军胜利，曹操败退北方",
+      "起因": "曹操率大军南下，欲统一天下",
+      "经过": "曹操率二十万大军南下 → 刘备与孙权结盟 → 周瑜黄盖诈降火攻曹营 → 曹操大败北撤",
+      "影响": "奠定三国鼎立基础，曹操丧失短期统一全国的机会",
+      "简介": "赤壁之战是东汉末年三国时期最著名的战役之一，孙刘联军以少胜多，大败曹操，奠定了三国鼎立的局面。"
+    },
+    "aliases": [
+      "赤壁大战",
+      "赤壁鏖兵"
+    ],
+    "tags": [
+      "三国",
+      "战役",
+      "以少胜多",
+      "赤壁"
+    ],
+    "wikiUrl": "https://zh.wikipedia.org/wiki/赤壁之战",
+    "relations": {
+      "参战方": [
+        {
+          "target": "曹魏",
+          "role": "曹操军"
+        },
+        {
+          "target": "东吴",
+          "role": "孙权军"
+        },
+        {
+          "target": "蜀汉",
+          "role": "刘备军（时未称帝）"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "曹操",
+          "role": "主帅"
+        },
+        {
+          "target": "孙权",
+          "role": "联军统帅"
+        },
+        {
+          "target": "诸葛亮",
+          "role": "军师"
+        },
+        {
+          "target": "刘备",
+          "role": "联军将领"
+        }
+      ],
+      "关键地点": [
+        {
+          "target": "东吴",
+          "role": "主战场区域"
+        }
+      ]
+    }
+  },
+  {
+    "id": "官渡之战",
+    "type": "event",
+    "name": "官渡之战",
+    "props": {
+      "时间": "200年",
+      "地点": "官渡（今河南中牟东北）",
+      "结果": "曹操胜利，袁绍大败",
+      "起因": "袁绍率十万大军南下进攻曹操",
+      "经过": "袁绍大军南下 → 曹操坚守官渡 → 曹操奇袭乌巢烧毁袁绍粮草 → 袁绍军溃败",
+      "影响": "曹操统一北方，奠定曹魏基业",
+      "简介": "官渡之战是东汉末年三大战役之一，曹操以少胜多击败袁绍，为统一北方奠定了基础。"
+    },
+    "aliases": [
+      "官渡大战"
+    ],
+    "tags": [
+      "三国",
+      "战役",
+      "以少胜多",
+      "曹操"
+    ],
+    "wikiUrl": "https://zh.wikipedia.org/wiki/官渡之战",
+    "relations": {
+      "参战方": [
+        {
+          "target": "曹魏",
+          "role": "曹操军"
+        },
+        {
+          "target": "东汉",
+          "role": "袁绍军（名义属东汉）"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "曹操",
+          "role": "主帅"
+        }
+      ]
+    }
+  },
+  {
+    "id": "夷陵之战",
+    "type": "event",
+    "name": "夷陵之战",
+    "props": {
+      "时间": "221年 ~ 222年",
+      "地点": "夷陵（今湖北宜昌）",
+      "结果": "东吴陆逊大胜，蜀汉惨败",
+      "起因": "刘备为关羽报仇，亲率大军东征孙权",
+      "经过": "刘备率军东征 → 陆逊避其锋芒退守夷陵 → 刘备连营七百里 → 陆逊火攻连营 → 蜀汉大败",
+      "影响": "蜀汉元气大伤，刘备病逝白帝城，诸葛亮受托孤",
+      "简介": "夷陵之战是三国时期蜀汉与东吴之间的大规模战役，陆逊火烧连营七百里，蜀汉惨败。"
+    },
+    "aliases": [
+      "猇亭之战",
+      "火烧连营"
+    ],
+    "tags": [
+      "三国",
+      "战役",
+      "蜀汉",
+      "东吴"
+    ],
+    "wikiUrl": "https://zh.wikipedia.org/wiki/夷陵之战",
+    "relations": {
+      "参战方": [
+        {
+          "target": "蜀汉",
+          "role": "蜀汉军"
+        },
+        {
+          "target": "东吴",
+          "role": "东吴军"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "刘备",
+          "role": "主帅（蜀汉）"
+        },
+        {
+          "target": "诸葛亮",
+          "role": "留守成都"
+        }
+      ],
+      "前置事件": [
+        "樊城之战"
+      ],
+      "后续事件": []
+    }
+  },
+  {
+    "id": "樊城之战",
+    "type": "event",
+    "name": "樊城之战",
+    "props": {
+      "时间": "219年",
+      "地点": "樊城（今湖北襄阳）",
+      "结果": "关羽先胜后败，被东吴擒杀",
+      "起因": "关羽北伐曹魏，围攻樊城",
+      "经过": "关羽水淹七军擒于禁 → 曹操派徐晃救援 → 东吴吕蒙白衣渡江袭取荆州 → 关羽败走麦城被擒杀",
+      "影响": "蜀汉失去荆州，关羽被杀，引发夷陵之战",
+      "简介": "樊城之战关羽北伐曹魏，先水淹七军威震华夏，后因东吴偷袭荆州而败亡。"
+    },
+    "aliases": [
+      "关羽北伐",
+      "水淹七军"
+    ],
+    "tags": [
+      "三国",
+      "战役",
+      "关羽",
+      "荆州"
+    ],
+    "relations": {
+      "参战方": [
+        {
+          "target": "蜀汉",
+          "role": "关羽军"
+        },
+        {
+          "target": "曹魏",
+          "role": "曹仁守军"
+        },
+        {
+          "target": "东吴",
+          "role": "吕蒙军（后期参战）"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "关羽",
+          "role": "主帅（蜀汉）"
+        },
+        {
+          "target": "曹操",
+          "role": "派兵救援"
+        }
+      ],
+      "后续事件": [
+        "夷陵之战"
+      ]
+    }
+  },
+  {
+    "id": "桃园结义",
+    "type": "event",
+    "name": "桃园结义",
+    "props": {
+      "时间": "184年",
+      "地点": "涿郡（今河北涿州）",
+      "结果": "刘备、关羽、张飞结为异姓兄弟",
+      "起因": "黄巾起义，天下大乱，三人志同道合",
+      "经过": "刘备、关羽、张飞在桃园中焚香结拜，誓同生死",
+      "影响": "奠定了蜀汉核心领导层，三人终身不渝的情谊成为千古佳话",
+      "简介": "桃园结义是《三国演义》开篇的著名故事，刘备、关羽、张飞在桃园中结为异姓兄弟。"
+    },
+    "aliases": [
+      "桃园三结义"
+    ],
+    "tags": [
+      "三国",
+      "结义",
+      "蜀汉",
+      "典故"
+    ],
+    "wikiUrl": "https://zh.wikipedia.org/wiki/桃园结义",
+    "relations": {
+      "参与人物": [
+        {
+          "target": "刘备",
+          "role": "大哥"
+        },
+        {
+          "target": "关羽",
+          "role": "二哥"
+        },
+        {
+          "target": "张飞",
+          "role": "三弟"
+        }
+      ]
+    }
+  },
+  {
+    "id": "城濮之战",
+    "name": "城濮之战",
+    "type": "event",
+    "props": {
+      "时间": "前632年",
+      "地点": "城濮（今山东鄄城）",
+      "简介": "春秋时期晋楚争霸的决定性战役。晋文公率晋军大败楚军，奠定了晋国中原霸主的地位。",
+      "类型": "战役"
+    },
+    "aliases": [],
+    "tags": [
+      "春秋",
+      "晋国",
+      "楚国",
+      "战役"
+    ],
+    "relations": {
+      "参战方": [
+        {
+          "target": "晋",
+          "role": "获胜方"
+        },
+        {
+          "target": "楚",
+          "role": "战败方"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "晋文公",
+          "role": "晋军统帅"
+        }
+      ]
+    },
+    "wikiUrl": "https://zh.wikipedia.org/wiki/城濮之战"
+  },
+  {
+    "id": "长平之战",
+    "name": "长平之战",
+    "type": "event",
+    "props": {
+      "时间": "前260年",
+      "地点": "长平（今山西高平）",
+      "简介": "战国时期规模最大的战役。秦国白起率军大败赵军，坑杀赵降卒四十万，赵国元气大伤。",
+      "类型": "战役"
+    },
+    "aliases": [],
+    "tags": [
+      "战国",
+      "秦国",
+      "赵国",
+      "战役"
+    ],
+    "relations": {
+      "参战方": [
+        {
+          "target": "秦",
+          "role": "获胜方"
+        },
+        {
+          "target": "赵",
+          "role": "战败方"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "白起",
+          "role": "秦军统帅"
+        },
+        {
+          "target": "廉颇",
+          "role": "赵军前统帅"
+        }
+      ]
+    },
+    "wikiUrl": "https://zh.wikipedia.org/wiki/长平之战"
+  },
+  {
+    "id": "焚书坑儒",
+    "name": "焚书坑儒",
+    "type": "event",
+    "props": {
+      "时间": "前213年 ~ 前212年",
+      "地点": "秦朝各地",
+      "简介": "秦始皇采纳李斯建议，焚烧除秦记、医药、卜筮、农书外的百家著作，并坑杀四百六十余名儒生方士。",
+      "类型": "政治事件"
+    },
+    "aliases": [],
+    "tags": [
+      "秦朝",
+      "政治事件"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "秦始皇",
+          "role": "发起者"
+        },
+        {
+          "target": "李斯",
+          "role": "建议者"
+        }
+      ]
+    },
+    "wikiUrl": "https://zh.wikipedia.org/wiki/焚书坑儒"
+  },
+  {
+    "id": "大泽乡起义",
+    "name": "大泽乡起义",
+    "type": "event",
+    "props": {
+      "时间": "前209年",
+      "地点": "大泽乡（今安徽宿州）",
+      "简介": "陈胜、吴广在大泽乡发动起义，是中国历史上第一次大规模的农民起义，揭开了秦末农民战争的序幕。",
+      "类型": "起义"
+    },
+    "aliases": [],
+    "tags": [
+      "秦朝",
+      "农民起义"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "陈胜",
+          "role": "起义领袖"
+        },
+        {
+          "target": "吴广",
+          "role": "起义领袖"
+        }
+      ]
+    },
+    "wikiUrl": "https://zh.wikipedia.org/wiki/大泽乡起义"
+  },
+  {
+    "id": "巨鹿之战",
+    "name": "巨鹿之战",
+    "type": "event",
+    "props": {
+      "时间": "前207年",
+      "地点": "巨鹿（今河北平乡）",
+      "简介": "项羽率楚军破釜沉舟，大败秦军主力，秦将章邯投降。此战奠定了项羽在诸侯中的领袖地位。",
+      "类型": "战役"
+    },
+    "aliases": [],
+    "tags": [
+      "秦末",
+      "战役"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "项羽",
+          "role": "楚军统帅"
+        }
+      ]
+    },
+    "wikiUrl": "https://zh.wikipedia.org/wiki/巨鹿之战"
+  },
+  {
+    "id": "楚汉战争",
+    "name": "楚汉战争",
+    "type": "event",
+    "props": {
+      "时间": "前206年 ~ 前202年",
+      "地点": "中原地区",
+      "简介": "刘邦与项羽为争夺天下而进行的战争。最终刘邦在垓下之战中击败项羽，建立汉朝。",
+      "类型": "战争"
+    },
+    "aliases": [
+      "楚汉相争",
+      "楚汉之争"
+    ],
+    "tags": [
+      "秦末",
+      "西汉",
+      "战争"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "刘邦",
+          "role": "汉王"
+        },
+        {
+          "target": "项羽",
+          "role": "西楚霸王"
+        },
+        {
+          "target": "韩信",
+          "role": "汉军大将"
+        },
+        {
+          "target": "张良",
+          "role": "汉军谋士"
+        },
+        {
+          "target": "萧何",
+          "role": "汉军后方"
+        }
+      ]
+    },
+    "wikiUrl": "https://zh.wikipedia.org/wiki/楚汉战争"
+  },
+  {
+    "id": "七国之乱",
+    "name": "七国之乱",
+    "type": "event",
+    "props": {
+      "时间": "前154年",
+      "地点": "西汉各地",
+      "简介": "汉景帝时期，吴王刘濞联合楚、赵等七国诸侯王，以'诛晁错，清君侧'为名发动叛乱，被周亚夫平定。",
+      "类型": "叛乱"
+    },
+    "aliases": [
+      "吴楚七国之乱"
+    ],
+    "tags": [
+      "西汉",
+      "叛乱"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "晁错",
+          "role": "削藩建议者"
+        },
+        {
+          "target": "刘启",
+          "role": "汉景帝"
+        }
+      ]
+    },
+    "wikiUrl": "https://zh.wikipedia.org/wiki/七国之乱"
+  },
+  {
+    "id": "张骞出使西域",
+    "name": "张骞出使西域",
+    "type": "event",
+    "props": {
+      "时间": "前138年 ~ 前126年（第一次）",
+      "地点": "西域",
+      "简介": "汉武帝派遣张骞出使西域，联络大月氏夹击匈奴。虽未达成军事目的，但开辟了丝绸之路，促进了东西方文化交流。",
+      "类型": "外交事件"
+    },
+    "aliases": [
+      "凿空西域",
+      "丝绸之路开辟"
+    ],
+    "tags": [
+      "西汉",
+      "外交",
+      "丝绸之路"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "张骞",
+          "role": "使者"
+        },
+        {
+          "target": "刘彻",
+          "role": "派遣者"
+        }
+      ]
+    },
+    "wikiUrl": "https://zh.wikipedia.org/wiki/张骞"
+  },
+  {
+    "id": "盘古开天",
+    "name": "盘古开天",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "混沌之中",
+      "结果": "天地开辟，万物化生",
+      "起因": "天地混沌如鸡子，盘古生其中",
+      "经过": "盘古于混沌中孕育万八千年 → 持斧劈开天地 → 天日高一丈，地日厚一丈 → 盘古身死，身化万物",
+      "影响": "盘古开天是中国神话的创世神话，奠定了中国宇宙观的基础",
+      "简介": "盘古开天辟地，是中国神话中宇宙起源的创世神话。盘古劈开混沌，分开天地，死后身化万物，左眼为日，右眼为月，四肢为四极，血液为江河。"
+    },
+    "aliases": [
+      "盘古开天辟地"
+    ],
+    "tags": [
+      "神话时代",
+      "创世神话"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "盘古",
+          "role": "创世神"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-pan-gu-event-1",
+        "name": "盘古开天辟地神话（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的创世神话",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-pan-gu-event-2",
+        "name": "三五历纪",
+        "date": "三国·吴",
+        "transcriber": "【徐整】",
+        "previousSource": "盘古开天辟地神话（口传）",
+        "note": "徐整著《三五历纪》首次记录盘古开天神话",
+        "type": "古籍",
+        "publicationDate": "三国吴（约220~280年）",
+        "author": "徐整"
+      },
+      {
+        "id": "src-pan-gu-event-3",
+        "name": "艺文类聚",
+        "date": "唐·武德七年（624年）",
+        "transcriber": "【欧阳询】",
+        "previousSource": "三五历纪",
+        "note": "欧阳询等编纂《艺文类聚》卷一引《三五历纪》",
+        "type": "古籍",
+        "url": "https://ctext.org/yi-wen-lei-ju",
+        "publicationDate": "624年（唐武德七年）",
+        "author": "欧阳询等"
+      },
+      {
+        "id": "src-pan-gu-event-4",
+        "name": "中国古代神话",
+        "date": "现代",
+        "transcriber": "【袁珂】",
+        "previousSource": "艺文类聚",
+        "note": "袁珂系统整理盘古开天神话",
+        "type": "出版",
+        "publisher": "华东师范大学出版社",
+        "isbn": "978-7-5675-4923-4",
+        "publicationDate": "2016-09（初版1950年商务印书馆）",
+        "author": "袁珂"
+      }
+    ]
+  },
+  {
+    "id": "女娲造人",
+    "name": "女娲造人",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "天地之间",
+      "结果": "人类被创造",
+      "起因": "天地之间尚无人类",
+      "经过": "女娲抟黄土造人 → 因效率低，引绳入泥中，举以为人",
+      "影响": "女娲成为人类的始祖，\"黄土造人\"体现了中华民族对土地的崇拜",
+      "简介": "女娲抟土造人，是中国神话中人类起源的创世神话。女娲用黄土捏塑人类，后引绳入泥中甩洒泥点造人。"
+    },
+    "aliases": [
+      "女娲抟土造人"
+    ],
+    "tags": [
+      "神话时代",
+      "创世神话",
+      "造人"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "女娲",
+          "role": "创世女神"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-nvwa-zaoren-event-1",
+        "name": "女娲造人神话（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的女娲造人传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-nvwa-zaoren-event-2",
+        "name": "风俗通义",
+        "date": "东汉",
+        "transcriber": "【应劭】",
+        "previousSource": "女娲造人神话（口传）",
+        "note": "应劭著《风俗通义》记载女娲抟土造人",
+        "type": "古籍",
+        "url": "https://ctext.org/feng-su-tong-yi",
+        "publicationDate": "约195年",
+        "author": "应劭"
+      },
+      {
+        "id": "src-nvwa-zaoren-event-3",
+        "name": "太平御览",
+        "date": "北宋",
+        "transcriber": "【李昉】",
+        "previousSource": "风俗通义",
+        "note": "李昉等编纂《太平御览》引《风俗通义》",
+        "type": "古籍",
+        "url": "https://ctext.org/taiping-yulan",
+        "publicationDate": "983年（北宋太平兴国八年）",
+        "author": "李昉等"
+      }
+    ]
+  },
+  {
+    "id": "女娲补天",
+    "name": "女娲补天",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "天穹",
+      "结果": "天穹修复，天地重归秩序",
+      "起因": "共工怒触不周山，天柱折，天倾西北，地陷东南",
+      "经过": "女娲炼五色石补天 → 断鳌足以立四极 → 杀黑龙济冀州 → 积芦灰止淫水",
+      "影响": "女娲补天拯救了苍生，体现了人类面对自然灾害的抗争精神",
+      "简介": "女娲炼五色石补天，是中国神话中拯救世界的英雄神话。因共工怒触不周山导致天崩地裂，女娲炼石补天，断鳌足立四极，恢复了天地秩序。"
+    },
+    "aliases": [
+      "炼石补天"
+    ],
+    "tags": [
+      "神话时代",
+      "补天",
+      "英雄神话"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "女娲",
+          "role": "补天者"
+        }
+      ],
+      "前置事件": [
+        "共工怒触不周山"
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-nvwa-butian-event-1",
+        "name": "女娲补天神话（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的女娲补天传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-nvwa-butian-event-2",
+        "name": "淮南子·览冥训",
+        "date": "西汉",
+        "transcriber": "【刘安】",
+        "previousSource": "女娲补天神话（口传）",
+        "note": "《淮南子·览冥训》记载女娲炼五色石补天",
+        "type": "古籍",
+        "url": "https://ctext.org/huainanzi/lan-ming-xun",
+        "publicationDate": "约前139年",
+        "author": "刘安"
+      },
+      {
+        "id": "src-nvwa-butian-event-3",
+        "name": "中国古代神话",
+        "date": "现代",
+        "transcriber": "【袁珂】",
+        "previousSource": "淮南子·览冥训",
+        "note": "袁珂系统整理女娲补天神话",
+        "type": "出版",
+        "publisher": "华东师范大学出版社",
+        "isbn": "978-7-5675-4923-4",
+        "publicationDate": "2016-09（初版1950年商务印书馆）",
+        "author": "袁珂"
+      }
+    ]
+  },
+  {
+    "id": "共工怒触不周山",
+    "name": "共工怒触不周山",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "不周山（天柱）",
+      "结果": "天柱折，天倾西北，地陷东南",
+      "起因": "共工与颛顼争帝失败",
+      "经过": "共工争帝不胜 → 怒触不周山 → 天柱折，地维绝 → 天倾西北，地陷东南",
+      "影响": "引发天崩地裂，导致女娲补天；也解释了中国地势西北高东南低的原因",
+      "简介": "共工怒触不周山，水神共工因争帝失败怒撞天柱不周山，导致天倾地陷，是女娲补天的前因。"
+    },
+    "aliases": [
+      "共工触山"
+    ],
+    "tags": [
+      "神话时代",
+      "水神"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "共工",
+          "role": "水神"
+        },
+        {
+          "target": "颛顼",
+          "role": "争帝对手"
+        }
+      ],
+      "后续事件": [
+        "女娲补天"
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-gonggong-event-1",
+        "name": "共工怒触不周山神话（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的共工触山传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-gonggong-event-2",
+        "name": "淮南子·天文训",
+        "date": "西汉",
+        "transcriber": "【刘安】",
+        "previousSource": "共工怒触不周山神话（口传）",
+        "note": "《淮南子·天文训》记载共工怒触不周山",
+        "type": "古籍",
+        "url": "https://ctext.org/huainanzi/tian-wen-xun",
+        "publicationDate": "约前139年",
+        "author": "刘安"
+      },
+      {
+        "id": "src-gonggong-event-3",
+        "name": "中国古代神话",
+        "date": "现代",
+        "transcriber": "【袁珂】",
+        "previousSource": "淮南子·天文训",
+        "note": "袁珂系统整理共工怒触不周山神话",
+        "type": "出版",
+        "publisher": "华东师范大学出版社",
+        "isbn": "978-7-5675-4923-4",
+        "publicationDate": "2016-09（初版1950年商务印书馆）",
+        "author": "袁珂"
+      }
+    ]
+  },
+  {
+    "id": "涿鹿之战",
+    "name": "涿鹿之战",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "涿鹿（今河北涿鹿）",
+      "结果": "黄帝胜，蚩尤被杀，九黎部落瓦解",
+      "起因": "蚩尤作乱，侵凌诸侯",
+      "经过": "蚩尤与黄帝战于涿鹿 → 蚩尤作大雾 → 黄帝造指南车 → 应龙蓄水 → 蚩尤请风伯雨师 → 黄帝请天女魃止雨 → 蚩尤兵败被杀",
+      "影响": "黄帝统一中原，奠定华夏民族基础；九黎部众部分融入华夏，部分南迁为三苗",
+      "简介": "涿鹿之战是神话时代黄帝与蚩尤的决战。蚩尤作大雾，黄帝造指南车破之，最终蚩尤兵败被杀。此战奠定了黄帝的华夏始祖地位。"
+    },
+    "aliases": [],
+    "tags": [
+      "神话时代",
+      "战争",
+      "涿鹿"
+    ],
+    "relations": {
+      "参战方": [
+        {
+          "target": "有熊氏",
+          "role": "黄帝方"
+        },
+        {
+          "target": "九黎",
+          "role": "蚩尤方"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "黄帝",
+          "role": "统帅"
+        },
+        {
+          "target": "蚩尤",
+          "role": "九黎首领"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-zhuolu-event-1",
+        "name": "涿鹿之战传说（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的涿鹿之战传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-zhuolu-event-2",
+        "name": "大戴礼记·五帝德",
+        "date": "西汉",
+        "transcriber": "",
+        "previousSource": "涿鹿之战传说（口传）",
+        "note": "《大戴礼记·五帝德》记载黄帝与蚩尤之战",
+        "type": "古籍",
+        "url": "https://ctext.org/da-dai-li-ji/wu-di-de",
+        "publicationDate": "战国~西汉"
+      },
+      {
+        "id": "src-zhuolu-event-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "大戴礼记·五帝德",
+        "note": "司马迁著《史记·五帝本纪》记载涿鹿之战",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/wu-di-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-zhuolu-event-4",
+        "name": "中国古代神话",
+        "date": "现代",
+        "transcriber": "【袁珂】",
+        "previousSource": "史记·五帝本纪",
+        "note": "袁珂系统整理涿鹿之战神话",
+        "type": "出版",
+        "publisher": "华东师范大学出版社",
+        "isbn": "978-7-5675-4923-4",
+        "publicationDate": "2016-09（初版1950年商务印书馆）",
+        "author": "袁珂"
+      }
+    ]
+  },
+  {
+    "id": "阪泉之战",
+    "name": "阪泉之战",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "阪泉",
+      "结果": "黄帝胜，炎黄融合",
+      "起因": "炎帝欲侵凌诸侯",
+      "经过": "黄帝与炎帝三战于阪泉 → 黄帝胜 → 炎黄融合",
+      "影响": "炎黄两部落融合，成为华夏民族的源头，\"炎黄子孙\"由此而来",
+      "简介": "阪泉之战是神话时代黄帝与炎帝的战争。黄帝三战而胜，炎黄两部落融合，成为华夏民族的共同始祖。"
+    },
+    "aliases": [],
+    "tags": [
+      "神话时代",
+      "战争",
+      "阪泉"
+    ],
+    "relations": {
+      "参战方": [
+        {
+          "target": "有熊氏",
+          "role": "黄帝方"
+        },
+        {
+          "target": "神农氏",
+          "role": "炎帝方"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "黄帝",
+          "role": "统帅"
+        },
+        {
+          "target": "神农",
+          "role": "炎帝"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-banquan-event-1",
+        "name": "阪泉之战传说（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的阪泉之战传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-banquan-event-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "阪泉之战传说（口传）",
+        "note": "司马迁著《史记·五帝本纪》记载阪泉之战",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/wu-di-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-banquan-event-3",
+        "name": "中国古代神话",
+        "date": "现代",
+        "transcriber": "【袁珂】",
+        "previousSource": "史记·五帝本纪",
+        "note": "袁珂系统整理阪泉之战神话",
+        "type": "出版",
+        "publisher": "华东师范大学出版社",
+        "isbn": "978-7-5675-4923-4",
+        "publicationDate": "2016-09（初版1950年商务印书馆）",
+        "author": "袁珂"
+      }
+    ]
+  },
+  {
+    "id": "夸父逐日",
+    "name": "夸父逐日",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "黄河流域至大泽",
+      "结果": "夸父渴死，手杖化为邓林",
+      "起因": "夸父立志追赶太阳",
+      "经过": "夸父追赶太阳 → 饮河渭之水不足 → 北饮大泽 → 未至而渴死于途 → 手杖化为邓林",
+      "影响": "象征人类征服自然的勇气与不屈精神",
+      "简介": "夸父逐日，巨人夸父立志追赶太阳，饮河渭不足，渴死于途，手杖化为桃林。是象征征服自然勇气的神话。"
+    },
+    "aliases": [
+      "夸父追日"
+    ],
+    "tags": [
+      "神话时代",
+      "逐日"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "夸父",
+          "role": "逐日者"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-kuafu-event-1",
+        "name": "夸父逐日神话（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的夸父逐日传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-kuafu-event-2",
+        "name": "山海经·海外北经",
+        "date": "先秦",
+        "transcriber": "【刘向】",
+        "previousSource": "夸父逐日神话（口传）",
+        "note": "《山海经·海外北经》记载夸父逐日",
+        "type": "古籍",
+        "url": "https://ctext.org/shan-hai-jing/hai-wai-bei-jing",
+        "publicationDate": "先秦至汉初"
+      },
+      {
+        "id": "src-kuafu-event-3",
+        "name": "中国古代神话",
+        "date": "现代",
+        "transcriber": "【袁珂】",
+        "previousSource": "山海经·海外北经",
+        "note": "袁珂系统整理夸父逐日神话",
+        "type": "出版",
+        "publisher": "华东师范大学出版社",
+        "isbn": "978-7-5675-4923-4",
+        "publicationDate": "2016-09（初版1950年商务印书馆）",
+        "author": "袁珂"
+      }
+    ]
+  },
+  {
+    "id": "后羿射日",
+    "name": "后羿射日",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "中原大地",
+      "结果": "九日被射下，苍生得救",
+      "起因": "十日并出，草木枯焦，民无所得食",
+      "经过": "十日并出 → 后羿奉命射日 → 射下九日 → 留一日 → 亦射杀封豨、修蛇等猛兽",
+      "影响": "后羿射日拯救苍生，是中国神话中为民除害的英雄神话",
+      "简介": "后羿射日，十日并出时后羿射下九日，拯救苍生。是神话中为民除害的英雄传说。"
+    },
+    "aliases": [
+      "羿射九日",
+      "大羿射日"
+    ],
+    "tags": [
+      "神话时代",
+      "射日",
+      "英雄"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "后羿",
+          "role": "射日英雄"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-houyi-event-1",
+        "name": "后羿射日神话（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的后羿射日传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-houyi-event-2",
+        "name": "淮南子·本经训",
+        "date": "西汉",
+        "transcriber": "【刘安】",
+        "previousSource": "后羿射日神话（口传）",
+        "note": "《淮南子·本经训》记载后羿射九日",
+        "type": "古籍",
+        "url": "https://ctext.org/huainanzi/ben-jing-xun",
+        "publicationDate": "约前139年",
+        "author": "刘安"
+      },
+      {
+        "id": "src-houyi-event-3",
+        "name": "中国古代神话",
+        "date": "现代",
+        "transcriber": "【袁珂】",
+        "previousSource": "淮南子·本经训",
+        "note": "袁珂系统整理后羿射日神话",
+        "type": "出版",
+        "publisher": "华东师范大学出版社",
+        "isbn": "978-7-5675-4923-4",
+        "publicationDate": "2016-09（初版1950年商务印书馆）",
+        "author": "袁珂"
+      }
+    ]
+  },
+  {
+    "id": "嫦娥奔月",
+    "name": "嫦娥奔月",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "月宫",
+      "结果": "嫦娥飞升月宫",
+      "起因": "嫦娥偷食后羿求得的不死之药",
+      "经过": "后羿从西王母求得不死之药 → 嫦娥偷食 → 飞升月宫",
+      "影响": "嫦娥奔月成为中秋拜月习俗的来源，也是中国浪漫主义神话的代表",
+      "简介": "嫦娥奔月，后羿之妻嫦娥偷食不死之药飞升月宫。是中国最浪漫的神话之一，也是中秋习俗的源头。"
+    },
+    "aliases": [
+      "嫦娥飞天"
+    ],
+    "tags": [
+      "神话时代",
+      "奔月"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "嫦娥",
+          "role": "奔月者"
+        },
+        {
+          "target": "后羿",
+          "role": "嫦娥之夫"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-change-event-1",
+        "name": "嫦娥奔月神话（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的嫦娥奔月传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-change-event-2",
+        "name": "淮南子·览冥训",
+        "date": "西汉",
+        "transcriber": "【刘安】",
+        "previousSource": "嫦娥奔月神话（口传）",
+        "note": "《淮南子·览冥训》记载嫦娥奔月之事",
+        "type": "古籍",
+        "url": "https://ctext.org/huainanzi/lan-ming-xun",
+        "publicationDate": "约前139年",
+        "author": "刘安"
+      },
+      {
+        "id": "src-change-event-3",
+        "name": "搜神记",
+        "date": "东晋",
+        "transcriber": "【干宝】",
+        "previousSource": "淮南子·览冥训",
+        "note": "干宝著《搜神记》记载嫦娥奔月",
+        "type": "古籍",
+        "url": "https://ctext.org/sou-shen-ji",
+        "publicationDate": "约350年",
+        "author": "干宝"
+      }
+    ]
+  },
+  {
+    "id": "精卫填海",
+    "name": "精卫填海",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代）",
+      "地点": "东海",
+      "结果": "精卫衔石填海不止",
+      "起因": "炎帝之女女娃溺亡于东海",
+      "经过": "女娃游东海溺亡 → 化为精卫鸟 → 常衔西山木石填东海",
+      "影响": "精卫填海象征坚韧不拔、矢志复仇的精神",
+      "简介": "精卫填海，炎帝之女溺亡后化为精卫鸟，常衔木石填东海。象征坚韧不拔的精神。"
+    },
+    "aliases": [],
+    "tags": [
+      "神话时代",
+      "填海"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "精卫",
+          "role": "填海神鸟"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-jingwei-event-1",
+        "name": "精卫填海神话（口传）",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的精卫填海传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-jingwei-event-2",
+        "name": "山海经·北山经",
+        "date": "先秦",
+        "transcriber": "【刘向】",
+        "previousSource": "精卫填海神话（口传）",
+        "note": "《山海经·北山经》记载精卫填海",
+        "type": "古籍",
+        "url": "https://ctext.org/shan-hai-jing/bei-shan-jing",
+        "publicationDate": "先秦至汉初"
+      },
+      {
+        "id": "src-jingwei-event-3",
+        "name": "中国古代神话",
+        "date": "现代",
+        "transcriber": "【袁珂】",
+        "previousSource": "山海经·北山经",
+        "note": "袁珂系统整理精卫填海神话",
+        "type": "出版",
+        "publisher": "华东师范大学出版社",
+        "isbn": "978-7-5675-4923-4",
+        "publicationDate": "2016-09（初版1950年商务印书馆）",
+        "author": "袁珂"
+      }
+    ]
+  },
+  {
+    "id": "大禹治水",
+    "name": "大禹治水",
+    "type": "event",
+    "props": {
+      "时间": "远古（神话时代~夏初）",
+      "地点": "九州各地",
+      "结果": "洪水被治服，天下太平",
+      "起因": "洪水滔天，民无所定",
+      "经过": "大禹受命治水 → 改鲧\"堵\"为\"疏\" → 治水十三年 → 三过家门而不入 → 开通九河 → 划分九州",
+      "影响": "大禹治水成功，威望大增，受舜禅让建立夏朝，开\"家天下\"之始",
+      "简介": "大禹治水，大禹受舜命治理洪水，十三年三过家门而不入，采用疏导之法成功治水，划分九州，奠定夏朝基础。"
+    },
+    "aliases": [
+      "禹贡"
+    ],
+    "tags": [
+      "神话时代",
+      "夏朝",
+      "治水"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "大禹",
+          "role": "治水者"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-dayu-event-1",
+        "name": "尚书·禹贡",
+        "date": "先秦",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "《尚书·禹贡》记载大禹治水划分九州",
+        "type": "古籍",
+        "url": "https://ctext.org/shang-shu/yu-gong",
+        "publicationDate": "战国（约前5世纪~前3世纪）"
+      },
+      {
+        "id": "src-dayu-event-2",
+        "name": "史记·夏本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "尚书·禹贡",
+        "note": "司马迁著《史记·夏本纪》记载大禹治水",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/xia-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-dayu-event-3",
+        "name": "现代研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "史记·夏本纪",
+        "note": "现代学者对大禹治水的研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "鸣条之战",
+    "name": "鸣条之战",
+    "type": "event",
+    "props": {
+      "时间": "约前1600年",
+      "地点": "鸣条（今山西运城安邑）",
+      "结果": "商汤胜，夏朝灭亡",
+      "起因": "夏桀暴虐无道，商汤顺应天命伐之",
+      "经过": "商汤起兵 → 伐桀于鸣条 → 桀败走南巢 → 夏朝灭亡 → 商汤建立商朝",
+      "影响": "夏朝灭亡，商朝建立，中国历史上第一次改朝换代",
+      "简介": "鸣条之战，商汤率军伐夏桀，战于鸣条，桀败亡，夏朝灭亡，商朝建立。"
+    },
+    "aliases": [
+      "汤桀之战",
+      "商汤灭夏"
+    ],
+    "tags": [
+      "夏朝",
+      "商朝",
+      "战役",
+      "改朝换代"
+    ],
+    "relations": {
+      "参战方": [
+        {
+          "target": "商",
+          "role": "获胜方"
+        },
+        {
+          "target": "夏",
+          "role": "战败方"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "汤",
+          "role": "商军统帅"
+        },
+        {
+          "target": "伊尹",
+          "role": "商相"
+        },
+        {
+          "target": "桀",
+          "role": "夏王"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-mingtiao-event-1",
+        "name": "尚书·汤誓",
+        "date": "先秦",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "《尚书·汤誓》记载汤伐桀之事",
+        "type": "古籍",
+        "url": "https://ctext.org/shang-shu/tang-shi",
+        "publicationDate": "商代~西周（约前16世纪~前11世纪）"
+      },
+      {
+        "id": "src-mingtiao-event-2",
+        "name": "史记·殷本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "尚书·汤誓",
+        "note": "司马迁记载鸣条之战",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/yin-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-mingtiao-event-3",
+        "name": "现代研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "史记·殷本纪",
+        "note": "现代学者对鸣条之战的研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "牧野之战",
+    "name": "牧野之战",
+    "type": "event",
+    "props": {
+      "时间": "前1046年",
+      "地点": "牧野（今河南新乡）",
+      "结果": "周武王胜，商朝灭亡",
+      "起因": "商纣暴虐无道，周武王顺天应人伐之",
+      "经过": "周武王率军东征 → 与纣军战于牧野 → 商军阵前倒戈 → 纣自焚于鹿台 → 商亡周兴",
+      "影响": "商朝灭亡，西周建立，开创八百年周朝基业",
+      "简介": "牧野之战，周武王率军伐商纣，战于牧野。商军阵前倒戈，纣自焚鹿台，商亡周兴。是中国古代重要的改朝换代之战。"
+    },
+    "aliases": [
+      "武王伐纣"
+    ],
+    "tags": [
+      "商朝",
+      "西周",
+      "战役",
+      "改朝换代"
+    ],
+    "relations": {
+      "参战方": [
+        {
+          "target": "西周",
+          "role": "获胜方"
+        },
+        {
+          "target": "商",
+          "role": "战败方"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "周武王",
+          "role": "周军统帅"
+        },
+        {
+          "target": "姜子牙",
+          "role": "军师"
+        },
+        {
+          "target": "周公旦",
+          "role": "辅臣"
+        },
+        {
+          "target": "纣",
+          "role": "商王"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-muye-event-1",
+        "name": "尚书·牧誓",
+        "date": "先秦",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "《尚书·牧誓》记载武王伐纣之事",
+        "type": "古籍",
+        "url": "https://ctext.org/shang-shu/mu-shi",
+        "publicationDate": "西周初年（约前1046年）"
+      },
+      {
+        "id": "src-muye-event-2",
+        "name": "史记·周本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "尚书·牧誓",
+        "note": "司马迁记载牧野之战",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/zhou-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-muye-event-3",
+        "name": "现代考古",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "史记·周本纪",
+        "note": "利簋铭文记载武王伐纣时间，证实牧野之战",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "三监之乱",
+    "name": "三监之乱",
+    "type": "event",
+    "props": {
+      "时间": "前1042年 ~ 前1039年",
+      "地点": "东方诸侯国",
+      "结果": "周公旦平叛成功",
+      "起因": "武庚联合管叔、蔡叔、霍叔叛周",
+      "经过": "武王死后成王年幼 → 周公摄政 → 管叔蔡叔联合武庚叛乱 → 周公东征三年平叛 → 杀武庚管叔 → 放蔡叔",
+      "影响": "周公东征平叛，巩固了周朝统治，为成康之治奠定基础",
+      "简介": "三监之乱，周武王死后，管叔、蔡叔、霍叔联合商遗民武庚叛乱，周公旦东征三年平定，巩固了西周统治。"
+    },
+    "aliases": [
+      "周公东征"
+    ],
+    "tags": [
+      "西周",
+      "叛乱"
+    ],
+    "relations": {
+      "参战方": [
+        {
+          "target": "西周",
+          "role": "平叛方"
+        }
+      ],
+      "参与人物": [
+        {
+          "target": "周公旦",
+          "role": "平叛者"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-sanjian-event-1",
+        "name": "尚书·金縢",
+        "date": "先秦",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "《尚书·金縢》记载周公辅政之事",
+        "type": "古籍",
+        "url": "https://ctext.org/shang-shu/jin-teng",
+        "publicationDate": "西周"
+      },
+      {
+        "id": "src-sanjian-event-2",
+        "name": "史记·周本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "尚书·金縢",
+        "note": "司马迁记载三监之乱",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/zhou-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-sanjian-event-3",
+        "name": "现代研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "史记·周本纪",
+        "note": "现代学者对三监之乱的研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "国人暴动",
+    "name": "国人暴动",
+    "type": "event",
+    "props": {
+      "时间": "前841年",
+      "地点": "镐京（今陕西西安）",
+      "结果": "周厉王出奔，共和行政",
+      "起因": "周厉王暴虐，国人谤王，厉王以卫巫监谤",
+      "经过": "国人不堪暴政 → 聚众暴动 → 攻入王宫 → 厉王出奔彘 → 召公、周公共和行政",
+      "影响": "共和元年（前841年）是中国历史有确切纪年的开始",
+      "简介": "国人暴动，西周国人因不满周厉王暴政而发动暴动，厉王出奔，召公、周公共和行政。共和元年为中国确切纪年之始。"
+    },
+    "aliases": [
+      "彘之乱"
+    ],
+    "tags": [
+      "西周",
+      "暴动",
+      "共和行政"
+    ],
+    "relations": {
+      "参战方": [
+        {
+          "target": "西周",
+          "role": "暴动方"
+        }
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-guoren-event-1",
+        "name": "史记·周本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "",
+        "note": "司马迁记载国人暴动与共和行政",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/zhou-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-guoren-event-2",
+        "name": "竹书纪年",
+        "date": "战国",
+        "transcriber": "",
+        "previousSource": "史记·周本纪",
+        "note": "《竹书纪年》记载共和之事",
+        "type": "古籍",
+        "url": "https://ctext.org/zhu-shu-ji-nian",
+        "publicationDate": "战国（约前3世纪），西晋太康二年（281年）出土"
+      },
+      {
+        "id": "src-guoren-event-3",
+        "name": "现代研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "竹书纪年",
+        "note": "现代学者对国人暴动及共和元年的研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "烽火戏诸侯",
+    "name": "烽火戏诸侯",
+    "type": "event",
+    "props": {
+      "时间": "前771年",
+      "地点": "骊山（今陕西西安）",
+      "结果": "西周灭亡",
+      "起因": "周幽王为博褒姒一笑而点燃烽火",
+      "经过": "褒姒不爱笑 → 幽王点燃烽火 → 诸侯至而无敌 → 褒姒大笑 → 后犬戎真入侵 → 再点烽火诸侯不至 → 幽王被杀于骊山",
+      "影响": "西周灭亡，周平王东迁洛邑，东周开始",
+      "简介": "烽火戏诸侯，周幽王为博褒姒一笑而点燃烽火欺骗诸侯，后犬戎真入侵时诸侯不至，幽王被杀，西周灭亡。"
+    },
+    "aliases": [
+      "烽火戏诸侯"
+    ],
+    "tags": [
+      "西周",
+      "亡国"
+    ],
+    "relations": {
+      "参与人物": [
+        {
+          "target": "周幽王",
+          "role": "周天子"
+        },
+        {
+          "target": "褒姒",
+          "role": "宠妃"
+        }
+      ],
+      "后续事件": [
+        "平王东迁"
+      ]
+    },
+    "sources": [
+      {
+        "id": "src-fenghuo-event-1",
+        "name": "史记·周本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "",
+        "note": "司马迁记载幽王烽火戏诸侯之事",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/zhou-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-fenghuo-event-2",
+        "name": "吕氏春秋",
+        "date": "战国",
+        "transcriber": "",
+        "previousSource": "史记·周本纪",
+        "note": "《吕氏春秋》亦记载幽王戏诸侯之事",
+        "type": "古籍",
+        "url": "https://ctext.org/lv-shi-chun-qiu",
+        "publicationDate": "战国末年（约前239年）",
+        "author": "吕不韦门客"
+      },
+      {
+        "id": "src-fenghuo-event-3",
+        "name": "现代研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "吕氏春秋",
+        "note": "现代学者对烽火戏诸侯传说的研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "平王东迁",
+    "name": "平王东迁",
+    "type": "event",
+    "props": {
+      "时间": "前770年",
+      "地点": "镐京 → 洛邑（今河南洛阳）",
+      "结果": "东周开始，周王室衰微",
+      "起因": "犬戎入侵，镐京残破，西周灭亡",
+      "经过": "犬戎杀幽王 → 诸侯立平王 → 镐京残破 → 平王东迁洛邑 → 东周开始",
+      "影响": "周王室东迁后实力大衰，诸侯争霸，春秋时代开始",
+      "简介": "平王东迁，周平王因镐京残破而迁都洛邑，标志着西周结束、东周开始，周王室从此衰微，春秋时代来临。"
+    },
+    "aliases": [
+      "东迁"
+    ],
+    "tags": [
+      "西周",
+      "东周",
+      "迁都"
+    ],
+    "relations": {
+      "参战方": [],
+      "参与人物": []
+    },
+    "sources": [
+      {
+        "id": "src-pingwang-event-1",
+        "name": "史记·周本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "",
+        "note": "司马迁记载平王东迁之事",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/zhou-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-pingwang-event-2",
+        "name": "左传",
+        "date": "春秋",
+        "transcriber": "",
+        "previousSource": "史记·周本纪",
+        "note": "《左传》记载平王东迁的历史",
+        "type": "古籍",
+        "url": "https://ctext.org/zuo-zhuan",
+        "publicationDate": "春秋战国（约前5世纪~前4世纪）",
+        "author": "左丘明"
+      },
+      {
+        "id": "src-pingwang-event-3",
+        "name": "现代研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "左传",
+        "note": "现代学者对平王东迁的研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1108 @@
+[
+  {
+    "id": "蜀汉",
+    "type": "organization",
+    "name": "蜀汉",
+    "props": {
+      "类型": "政权",
+      "地区": "益州（今四川、重庆、云南、贵州、陕西南部）",
+      "经营范围": "政权",
+      "存续": "221年 ~ 263年",
+      "简介": "蜀汉，三国时期割据政权之一，由刘备建立。疆域主要在益州，以成都为都城。"
+    },
+    "aliases": [
+      "季汉",
+      "蜀国"
+    ],
+    "tags": [
+      "三国",
+      "政权",
+      "刘备"
+    ],
+    "wikiUrl": "https://zh.wikipedia.org/wiki/蜀汉",
+    "relations": {
+      "成员": [
+        {
+          "target": "刘备",
+          "role": "皇帝",
+          "start": "221年",
+          "end": "223年"
+        },
+        {
+          "target": "刘禅",
+          "role": "皇帝",
+          "start": "223年",
+          "end": "263年"
+        },
+        {
+          "target": "关羽",
+          "role": "前将军",
+          "start": "219年",
+          "end": "220年"
+        },
+        {
+          "target": "张飞",
+          "role": "车骑将军",
+          "start": "221年",
+          "end": "221年"
+        },
+        {
+          "target": "诸葛亮",
+          "role": "丞相",
+          "start": "221年",
+          "end": "234年"
+        },
+        {
+          "target": "关平（三国）",
+          "role": "将领",
+          "start": "不详",
+          "end": "220年"
+        }
+      ]
+    }
+  },
+  {
+    "id": "曹魏",
+    "type": "organization",
+    "name": "曹魏",
+    "props": {
+      "类型": "政权",
+      "地区": "北方中原地区（今河南、河北、山东、山西等）",
+      "经营范围": "政权",
+      "存续": "220年 ~ 265年",
+      "简介": "曹魏，三国时期割据政权之一，由曹丕建立。占据北方广大地区，以洛阳为都城。"
+    },
+    "aliases": [
+      "魏国",
+      "曹魏政权"
+    ],
+    "tags": [
+      "三国",
+      "政权",
+      "曹操"
+    ],
+    "wikiUrl": "https://zh.wikipedia.org/wiki/曹魏",
+    "relations": {
+      "成员": [
+        {
+          "target": "曹操",
+          "role": "魏王 / 奠基人",
+          "start": "216年",
+          "end": "220年"
+        },
+        {
+          "target": "曹丕",
+          "role": "皇帝",
+          "start": "220年",
+          "end": "226年"
+        },
+        {
+          "target": "曹植",
+          "role": "陈王",
+          "start": "221年",
+          "end": "232年"
+        },
+        {
+          "target": "司马懿",
+          "role": "太傅",
+          "start": "239年",
+          "end": "251年"
+        }
+      ]
+    }
+  },
+  {
+    "id": "东吴",
+    "type": "organization",
+    "name": "东吴",
+    "props": {
+      "类型": "政权",
+      "地区": "江东地区（今江苏南部、浙江、江西、福建、广东等）",
+      "经营范围": "政权",
+      "存续": "222年 ~ 280年",
+      "简介": "东吴，三国时期割据政权之一，由孙权建立。占据江东，以建业为都城。"
+    },
+    "aliases": [
+      "吴国",
+      "孙吴"
+    ],
+    "tags": [
+      "三国",
+      "政权",
+      "孙权"
+    ],
+    "wikiUrl": "https://zh.wikipedia.org/wiki/东吴",
+    "relations": {
+      "成员": [
+        {
+          "target": "孙权",
+          "role": "皇帝",
+          "start": "229年",
+          "end": "252年"
+        },
+        {
+          "target": "孙坚",
+          "role": "奠基人",
+          "start": "187年",
+          "end": "191年"
+        },
+        {
+          "target": "孙策",
+          "role": "讨逆将军",
+          "start": "196年",
+          "end": "200年"
+        },
+        {
+          "target": "诸葛瑾",
+          "role": "大将军",
+          "start": "229年",
+          "end": "241年"
+        }
+      ]
+    }
+  },
+  {
+    "id": "东汉",
+    "type": "organization",
+    "name": "东汉",
+    "props": {
+      "类型": "政权",
+      "地区": "整个华夏地区",
+      "经营范围": "政权",
+      "存续": "25年 ~ 220年",
+      "简介": "东汉，中国历史上的大一统王朝，由刘秀建立。东汉末年爆发黄巾之乱，走向分裂，进入三国时期。"
+    },
+    "aliases": [
+      "后汉",
+      "东汉王朝"
+    ],
+    "tags": [
+      "中国",
+      "朝代",
+      "汉朝"
+    ],
+    "wikiUrl": "https://zh.wikipedia.org/wiki/东汉",
+    "relations": {
+      "成员": [
+        {
+          "target": "刘备",
+          "role": "左将军 / 豫州牧",
+          "start": "196年",
+          "end": "220年"
+        },
+        {
+          "target": "曹操",
+          "role": "丞相",
+          "start": "208年",
+          "end": "220年"
+        },
+        {
+          "target": "孙坚",
+          "role": "破虏将军",
+          "start": "187年",
+          "end": "191年"
+        },
+        {
+          "target": "刘弘",
+          "role": "小吏",
+          "start": "不详",
+          "end": "不详"
+        }
+      ],
+      "下级组织": [
+        "蜀汉",
+        "曹魏",
+        "东吴"
+      ]
+    }
+  },
+  {
+    "id": "西晋",
+    "type": "organization",
+    "name": "西晋",
+    "props": {
+      "类型": "政权",
+      "地区": "整个华夏地区",
+      "经营范围": "政权",
+      "存续": "265年 ~ 316年",
+      "简介": "西晋，中国历史上的大一统王朝，由司马炎建立。继承曹魏，统一三国。"
+    },
+    "aliases": [
+      "晋朝",
+      "司马晋"
+    ],
+    "tags": [
+      "中国",
+      "朝代",
+      "司马氏"
+    ],
+    "wikiUrl": "https://zh.wikipedia.org/wiki/西晋",
+    "relations": {
+      "成员": [
+        {
+          "target": "司马懿",
+          "role": "奠基人",
+          "start": "249年",
+          "end": "251年"
+        }
+      ]
+    }
+  },
+  {
+    "id": "刘璋势力",
+    "type": "organization",
+    "name": "刘璋势力",
+    "props": {
+      "类型": "势力",
+      "存续": "194年 ~ 214年",
+      "简介": "刘璋割据益州的地方势力。"
+    },
+    "aliases": [],
+    "tags": [
+      "刘璋势力",
+      "三国"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "袁术势力",
+    "type": "organization",
+    "name": "袁术势力",
+    "props": {
+      "类型": "势力",
+      "存续": "? ~ 199年",
+      "简介": "袁术割据淮南的地方势力。"
+    },
+    "aliases": [],
+    "tags": [
+      "袁术势力",
+      "三国"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "黄巾军",
+    "type": "organization",
+    "name": "黄巾军",
+    "props": {
+      "类型": "势力",
+      "存续": "184年 ~ 192年",
+      "简介": "东汉末年张角领导的农民起义军。"
+    },
+    "aliases": [],
+    "tags": [
+      "黄巾军",
+      "三国"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "周",
+    "name": "周",
+    "type": "organization",
+    "props": {
+      "类型": "王朝",
+      "存续": "约前1046年 ~ 前256年",
+      "简介": "周朝是中国历史上继商朝之后的第三个王朝，分为西周和东周两个时期。东周又分为春秋和战国两个时期。"
+    },
+    "aliases": [
+      "周朝",
+      "周王室",
+      "周天子"
+    ],
+    "tags": [
+      "周朝",
+      "王朝"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "齐",
+    "name": "齐",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前1046年 ~ 前221年",
+      "简介": "周朝诸侯国，姜姓吕氏，春秋五霸之一，战国七雄之一。始封君为姜尚（姜子牙）。"
+    },
+    "aliases": [
+      "齐国",
+      "姜齐",
+      "田齐"
+    ],
+    "tags": [
+      "诸侯国",
+      "春秋五霸",
+      "战国七雄"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "晋",
+    "name": "晋",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前1033年 ~ 前376年",
+      "简介": "周朝诸侯国，姬姓，春秋五霸之一。后分裂为韩、赵、魏三国。"
+    },
+    "aliases": [
+      "晋国"
+    ],
+    "tags": [
+      "诸侯国",
+      "春秋五霸"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "楚",
+    "name": "楚",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前1042年 ~ 前223年",
+      "简介": "周朝诸侯国，芈姓熊氏，春秋五霸之一，战国七雄之一。疆域辽阔，文化独特。"
+    },
+    "aliases": [
+      "楚国"
+    ],
+    "tags": [
+      "诸侯国",
+      "春秋五霸",
+      "战国七雄"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "秦",
+    "name": "秦",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前900年 ~ 前221年",
+      "简介": "周朝诸侯国，嬴姓赵氏，春秋五霸之一，战国七雄之一。后统一六国建立秦朝。"
+    },
+    "aliases": [
+      "秦国"
+    ],
+    "tags": [
+      "诸侯国",
+      "春秋五霸",
+      "战国七雄"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "燕",
+    "name": "燕",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前1046年 ~ 前222年",
+      "简介": "周朝诸侯国，姬姓，战国七雄之一。"
+    },
+    "aliases": [
+      "燕国"
+    ],
+    "tags": [
+      "诸侯国",
+      "战国七雄"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "韩",
+    "name": "韩",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "前403年 ~ 前230年",
+      "简介": "战国七雄之一，由晋国分裂而来，姬姓韩氏。"
+    },
+    "aliases": [
+      "韩国"
+    ],
+    "tags": [
+      "诸侯国",
+      "战国七雄"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "赵",
+    "name": "赵",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "前403年 ~ 前222年",
+      "简介": "战国七雄之一，由晋国分裂而来，嬴姓赵氏。"
+    },
+    "aliases": [
+      "赵国"
+    ],
+    "tags": [
+      "诸侯国",
+      "战国七雄"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "魏",
+    "name": "魏",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "前403年 ~ 前225年",
+      "简介": "战国七雄之一，由晋国分裂而来，姬姓魏氏。"
+    },
+    "aliases": [
+      "魏国"
+    ],
+    "tags": [
+      "诸侯国",
+      "战国七雄"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "鲁",
+    "name": "鲁",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前1043年 ~ 前256年",
+      "简介": "周朝诸侯国，姬姓，周公旦的封国，孔子故国。"
+    },
+    "aliases": [
+      "鲁国"
+    ],
+    "tags": [
+      "诸侯国"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "宋",
+    "name": "宋",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前1040年 ~ 前286年",
+      "简介": "周朝诸侯国，子姓，商朝后裔的封国。"
+    },
+    "aliases": [
+      "宋国"
+    ],
+    "tags": [
+      "诸侯国"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "郑",
+    "name": "郑",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "前806年 ~ 前375年",
+      "简介": "周朝诸侯国，姬姓，春秋初期一度称霸。"
+    },
+    "aliases": [
+      "郑国"
+    ],
+    "tags": [
+      "诸侯国"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "吴",
+    "name": "吴",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前12世纪 ~ 前473年",
+      "简介": "周朝诸侯国，姬姓，春秋后期称霸，为越国所灭。"
+    },
+    "aliases": [
+      "吴国"
+    ],
+    "tags": [
+      "诸侯国"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "越",
+    "name": "越",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前2032年 ~ 前222年",
+      "简介": "周朝诸侯国，姒姓，春秋后期称霸，后为楚国所灭。"
+    },
+    "aliases": [
+      "越国"
+    ],
+    "tags": [
+      "诸侯国"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "卫",
+    "name": "卫",
+    "type": "organization",
+    "props": {
+      "类型": "诸侯国",
+      "存续": "约前1040年 ~ 前209年",
+      "简介": "周朝诸侯国，姬姓，存在时间最长的诸侯国之一。"
+    },
+    "aliases": [
+      "卫国"
+    ],
+    "tags": [
+      "诸侯国"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "秦朝",
+    "name": "秦朝",
+    "type": "organization",
+    "props": {
+      "类型": "统一王朝",
+      "存续": "前221年 ~ 前206年",
+      "简介": "中国历史上第一个大一统王朝，由秦始皇嬴政建立，定都咸阳。"
+    },
+    "aliases": [
+      "秦",
+      "大秦",
+      "秦帝国"
+    ],
+    "tags": [
+      "统一王朝",
+      "秦朝"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "西汉",
+    "name": "西汉",
+    "type": "organization",
+    "props": {
+      "类型": "统一王朝",
+      "存续": "前206年 ~ 9年",
+      "简介": "汉朝的前半段，由刘邦建立，定都长安。又称前汉。"
+    },
+    "aliases": [
+      "汉",
+      "前汉",
+      "大汉",
+      "汉朝"
+    ],
+    "tags": [
+      "统一王朝",
+      "西汉"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "新朝",
+    "name": "新朝",
+    "type": "organization",
+    "props": {
+      "类型": "统一王朝",
+      "存续": "9年 ~ 23年",
+      "简介": "王莽篡汉建立的王朝，仅存在14年即为更始军所灭。"
+    },
+    "aliases": [
+      "新"
+    ],
+    "tags": [
+      "统一王朝",
+      "新朝"
+    ],
+    "relations": {}
+  },
+  {
+    "id": "华夏",
+    "name": "华夏",
+    "type": "organization",
+    "props": {
+      "类型": "远古部落联盟",
+      "地区": "黄河流域",
+      "存续": "远古~先秦",
+      "简介": "华夏，中国古人对本族的称谓，亦泛指神话时代至先秦的中原各部落联盟。黄帝、炎帝被尊为华夏始祖，\"炎黄子孙\"由此而来。"
+    },
+    "aliases": [
+      "华夏族",
+      "诸夏"
+    ],
+    "tags": [
+      "神话时代",
+      "远古部落",
+      "华夏"
+    ],
+    "relations": {},
+    "sources": [
+      {
+        "id": "src-huaxia-1",
+        "name": "远古部落口传",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的部落记忆与始祖传说",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-huaxia-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "远古部落口传",
+        "note": "司马迁著《史记·五帝本纪》系统记载黄帝至舜禹的世系",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/wu-di-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-huaxia-3",
+        "name": "现代史学研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "史记·五帝本纪",
+        "note": "现代考古与古史辨派对华夏起源的综合研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "夏",
+    "name": "夏",
+    "type": "organization",
+    "props": {
+      "类型": "王朝",
+      "地区": "中原（今河南、山西南部）",
+      "存续": "约前2070年 ~ 前1600年",
+      "简介": "夏朝，中国史书记载的第一个世袭制朝代，由大禹之子启建立，传十四代十七王，至桀为商所灭。"
+    },
+    "aliases": [
+      "夏朝",
+      "夏后氏"
+    ],
+    "tags": [
+      "夏朝",
+      "王朝"
+    ],
+    "relations": {},
+    "sources": [
+      {
+        "id": "src-xia-org-1",
+        "name": "尚书",
+        "date": "先秦",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "《尚书》记载夏朝史事，如《禹贡》《甘誓》等篇",
+        "type": "古籍",
+        "url": "https://ctext.org/shang-shu",
+        "publicationDate": "先秦（约前10世纪~前5世纪）"
+      },
+      {
+        "id": "src-xia-org-2",
+        "name": "史记·夏本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "尚书",
+        "note": "司马迁著《史记·夏本纪》系统记载夏朝世系",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/xia-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-xia-org-3",
+        "name": "竹书纪年",
+        "date": "战国",
+        "transcriber": "",
+        "previousSource": "史记·夏本纪",
+        "note": "《竹书纪年》出土于汲郡古墓，可与《史记》互证",
+        "type": "古籍",
+        "url": "https://ctext.org/zhu-shu-ji-nian",
+        "publicationDate": "战国（约前3世纪），西晋太康二年（281年）出土"
+      },
+      {
+        "id": "src-xia-org-4",
+        "name": "现代考古与研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "竹书纪年",
+        "note": "二里头遗址考古发掘及夏商周断代工程研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "商",
+    "name": "商",
+    "type": "organization",
+    "props": {
+      "类型": "王朝",
+      "地区": "中原（今河南安阳等地）",
+      "存续": "约前1600年 ~ 前1046年",
+      "简介": "商朝，中国历史上第二个世袭制朝代，由汤灭夏后建立，传十七代三十一王，至纣为周所灭。甲骨文的发现证实了商朝世系。"
+    },
+    "aliases": [
+      "商朝",
+      "殷商",
+      "殷"
+    ],
+    "tags": [
+      "商朝",
+      "王朝"
+    ],
+    "relations": {},
+    "sources": [
+      {
+        "id": "src-shang-org-1",
+        "name": "尚书",
+        "date": "先秦",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "《尚书》记载商朝史事，如《汤誓》《盘庚》等篇",
+        "type": "古籍",
+        "url": "https://ctext.org/shang-shu",
+        "publicationDate": "先秦（约前10世纪~前5世纪）"
+      },
+      {
+        "id": "src-shang-org-2",
+        "name": "史记·殷本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "尚书",
+        "note": "司马迁著《史记·殷本纪》记载商朝世系",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/yin-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-shang-org-3",
+        "name": "甲骨文考古发现",
+        "date": "近现代",
+        "transcriber": "",
+        "previousSource": "史记·殷本纪",
+        "note": "殷墟甲骨文出土，证实《史记·殷本纪》所载商王世系基本可信",
+        "type": "出版",
+        "publicationDate": "1899年至今"
+      },
+      {
+        "id": "src-shang-org-4",
+        "name": "现代研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "甲骨文考古发现",
+        "note": "现代学者结合甲骨文与传世文献的综合研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "西周",
+    "name": "西周",
+    "type": "organization",
+    "props": {
+      "类型": "王朝",
+      "地区": "关中、中原（都镐京、洛邑）",
+      "存续": "前1046年 ~ 前771年",
+      "简介": "西周，周武王灭商后建立的王朝，定都镐京。实行分封制与宗法制，至幽王时犬戎入侵，平王东迁洛邑，西周结束。"
+    },
+    "aliases": [
+      "西周朝",
+      "宗周"
+    ],
+    "tags": [
+      "西周",
+      "王朝"
+    ],
+    "relations": {},
+    "sources": [
+      {
+        "id": "src-xizhou-org-1",
+        "name": "诗经",
+        "date": "西周~春秋",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "《诗经》中《大雅》《周颂》等篇反映西周史事",
+        "type": "古籍",
+        "url": "https://ctext.org/book-of-poetry",
+        "publicationDate": "西周~春秋（约前11世纪~前6世纪）"
+      },
+      {
+        "id": "src-xizhou-org-2",
+        "name": "尚书·周书",
+        "date": "先秦",
+        "transcriber": "",
+        "previousSource": "诗经",
+        "note": "《尚书》周书各篇记载西周政治",
+        "type": "古籍",
+        "url": "https://ctext.org/shang-shu/zhou-shu",
+        "publicationDate": "西周"
+      },
+      {
+        "id": "src-xizhou-org-3",
+        "name": "史记·周本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "尚书·周书",
+        "note": "司马迁著《史记·周本纪》记载西周历史",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/zhou-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-xizhou-org-4",
+        "name": "现代考古与研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "史记·周本纪",
+        "note": "利簋等青铜器铭文及夏商周断代工程研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "有熊氏",
+    "name": "有熊氏",
+    "type": "organization",
+    "props": {
+      "类型": "远古部落",
+      "地区": "中原（今河南新郑一带）",
+      "存续": "远古",
+      "简介": "有熊氏，黄帝所属部落，因黄帝为有熊国君之子而得名。是华夏文明的重要源头之一。"
+    },
+    "aliases": [
+      "有熊"
+    ],
+    "tags": [
+      "神话时代",
+      "远古部落"
+    ],
+    "relations": {},
+    "sources": [
+      {
+        "id": "src-youxiong-org-1",
+        "name": "远古部落口传",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的有熊氏部落记忆",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-youxiong-org-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "远古部落口传",
+        "note": "司马迁记载\"黄帝者，少典之子，姓公孙，名曰轩辕\"",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/wu-di-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-youxiong-org-3",
+        "name": "现代研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "史记·五帝本纪",
+        "note": "现代学者对有熊氏地望与部落迁徙的研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "九黎",
+    "name": "九黎",
+    "type": "organization",
+    "props": {
+      "类型": "远古部落",
+      "地区": "黄河下游及长江中游",
+      "存续": "远古",
+      "简介": "九黎，蚩尤所属的远古部落联盟，由九个部落组成。蚩尤与黄帝战于涿鹿，败后其部众部分融入华夏，部分南迁成为三苗。"
+    },
+    "aliases": [
+      "九黎族",
+      "黎"
+    ],
+    "tags": [
+      "神话时代",
+      "远古部落"
+    ],
+    "relations": {},
+    "sources": [
+      {
+        "id": "src-jiuli-org-1",
+        "name": "远古部落口传",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的九黎部落记忆",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-jiuli-org-2",
+        "name": "国语·楚语",
+        "date": "春秋战国",
+        "transcriber": "",
+        "previousSource": "远古部落口传",
+        "note": "《国语·楚语》记载\"九黎乱德，民神杂糅\"",
+        "type": "古籍",
+        "url": "https://ctext.org/guo-yu/chu-yu",
+        "publicationDate": "战国（约前5世纪~前4世纪）"
+      },
+      {
+        "id": "src-jiuli-org-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "国语·楚语",
+        "note": "司马迁记载蚩尤与黄帝涿鹿之战",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/wu-di-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      }
+    ]
+  },
+  {
+    "id": "神农氏",
+    "name": "神农氏",
+    "type": "organization",
+    "props": {
+      "类型": "远古部落",
+      "地区": "渭河流域（今陕西宝鸡一带）",
+      "存续": "远古",
+      "简介": "神农氏，炎帝所属部落，以农耕和医药著称。炎帝与黄帝同源，后因部落冲突战于阪泉。炎黄融合后成为华夏的重要来源。"
+    },
+    "aliases": [
+      "炎帝部落"
+    ],
+    "tags": [
+      "神话时代",
+      "远古部落"
+    ],
+    "relations": {},
+    "sources": [
+      {
+        "id": "src-shennong-org-1",
+        "name": "远古部落口传",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的神农氏部落记忆",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-shennong-org-2",
+        "name": "国语·晋语",
+        "date": "春秋战国",
+        "transcriber": "",
+        "previousSource": "远古部落口传",
+        "note": "《国语·晋语》记载\"昔少典娶于有蟜氏，生黄帝、炎帝\"",
+        "type": "古籍",
+        "url": "https://ctext.org/guo-yu/jin-yu",
+        "publicationDate": "战国（约前5世纪~前4世纪）"
+      },
+      {
+        "id": "src-shennong-org-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "国语·晋语",
+        "note": "司马迁记载炎帝与黄帝的阪泉之战",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/wu-di-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      },
+      {
+        "id": "src-shennong-org-4",
+        "name": "现代研究",
+        "date": "现代",
+        "transcriber": "",
+        "previousSource": "史记·五帝本纪",
+        "note": "现代学者对神农氏地望与文化的研究",
+        "type": "出版",
+        "publicationDate": "现代"
+      }
+    ]
+  },
+  {
+    "id": "涂山氏",
+    "name": "涂山氏",
+    "type": "organization",
+    "props": {
+      "类型": "远古部落",
+      "地区": "涂山（今安徽蚌埠一带）",
+      "存续": "远古",
+      "简介": "涂山氏，大禹妻族，大禹治水时娶涂山氏女为妻。涂山之会标志着夏朝建立的开始。"
+    },
+    "aliases": [
+      "涂山"
+    ],
+    "tags": [
+      "神话时代",
+      "远古部落"
+    ],
+    "relations": {},
+    "sources": [
+      {
+        "id": "src-tushan-org-1",
+        "name": "远古部落口传",
+        "date": "远古",
+        "transcriber": "",
+        "previousSource": "",
+        "note": "远古先民口耳相传的涂山氏部落记忆",
+        "type": "口传",
+        "publicationDate": "远古（无文字记载前）"
+      },
+      {
+        "id": "src-tushan-org-2",
+        "name": "尚书·皋陶谟",
+        "date": "先秦",
+        "transcriber": "",
+        "previousSource": "远古部落口传",
+        "note": "《尚书》记载大禹娶涂山氏女",
+        "type": "古籍",
+        "url": "https://ctext.org/shang-shu/gao-yao-mo",
+        "publicationDate": "西周~春秋"
+      },
+      {
+        "id": "src-tushan-org-3",
+        "name": "史记·夏本纪",
+        "date": "西汉",
+        "transcriber": "【司马迁】",
+        "previousSource": "尚书·皋陶谟",
+        "note": "司马迁记载\"禹者，涂山氏女之子也\"",
+        "type": "古籍",
+        "url": "https://ctext.org/shiji/xia-ben-ji",
+        "publicationDate": "约前91年",
+        "author": "司马迁"
+      }
+    ]
+  }
+]
