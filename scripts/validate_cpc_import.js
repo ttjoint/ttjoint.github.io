@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+/** Import and validate the current CPC/People.cn political-person index. */
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),cp=require('child_process');
+const root=path.join(__dirname,'..'),manifest=path.join(root,'data','imports','cpc');
+function latest(){if(!fs.existsSync(manifest))return null;return fs.readdirSync(manifest).sort().reverse().find(x=>fs.existsSync(path.join(manifest,x,'manifest.json')))}
+const batch=latest();if(!batch)throw Error('没有找到人民网导入批次，请先运行 npm run import:cpc');const m=JSON.parse(fs.readFileSync(path.join(manifest,batch,'manifest.json')));const errors=[];if(!m.source||!m.fetchedAt)errors.push('缺少批次元数据');if(m.imported!==m.records.length)errors.push('imported 与 records 数量不一致');const ids=new Set(),urls=new Set();for(const x of m.records){if(!x.id||!/^person:[0-9a-f]{20}$/.test(x.id))errors.push(`非法 ID: ${x.id}`);if(ids.has(x.id))errors.push(`重复 ID: ${x.id}`);ids.add(x.id);if(!x.url||!/^https?:\/\/cpc\.people\.com\.cn\//.test(x.url))errors.push(`非法来源 URL: ${x.url}`);urls.add(x.url)}if(m.imported<1)errors.push('没有导入任何人物');console.log(JSON.stringify({batch,source:m.source,discovered:m.discovered,imported:m.imported,uniqueIds:ids.size,uniqueUrls:urls.size,errors},null,2));if(errors.length)process.exit(1);

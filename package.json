@@ -4,6 +4,8 @@
   "private": true,
   "description": "HumanMap - 人际关系·家族图谱",
   "scripts": {
+    "validate:cpc": "node scripts/validate_cpc_import.js",
+    "validate:cpc": "node scripts/validate_cpc_import.js",
     "import:cpc": "node scripts/import_cpc.js",
     "migrate:ids": "node scripts/migrate_ids.js",
     "build:index": "node scripts/build_index.js",

@@ -17,7 +17,9 @@ const INDEX = 'https://cpc.people.com.cn/GB/64162/394696/index.html';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 function get(url) { return new Promise((resolve, reject) => { const lib=url.startsWith('https')?https:http; lib.get(url,{headers:{'User-Agent':'HumanMap offline importer/1.0'}},res=>{let b=[];res.on('data',x=>b.push(x));res.on('end',()=>res.statusCode>=400?reject(Error('HTTP '+res.statusCode)):resolve(Buffer.concat(b).toString('utf8')))}).on('error',reject); }); }
 function entityId(name) { return 'person:' + require('crypto').createHash('sha256').update(`person\0${name}`).digest('hex').slice(0,20); }
-function text(html) { return html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&#\d+;/g,' ').replace(/\s+/g,' ').trim(); }
+function abs(href) { return new URL(href, INDEX).href; }
+function decodeHtml(s) { return s.replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#(\d+);/g,(_,n)=>String.fromCharCode(Number(n))); }
+function text(html) { return decodeHtml(html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim()); }
 function links(html) { const out=[]; const re=/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi; let m; while((m=re.exec(html))) { const name=text(m[2]); const url=abs(m[1]); if(name && /cpc\.people\.com\.cn/.test(url) && /n1\//.test(url)) out.push({name,url}); } return [...new Map(out.map(x=>[x.url,x])).values()]; }
 function field(html, label) { const re=new RegExp(label+'[：:]?\\s*([^<]{1,120})','i'); const m=html.match(re); return m ? text(m[1]) : ''; }
 (async()=>{ const args=process.argv.slice(2); const limit=+(args.find(x=>x.startsWith('--limit='))||'--limit=999').split('=')[1]; const indexHtml=await get(INDEX); const people=links(indexHtml).slice(0,limit); const now=new Date().toISOString(); const records=[];
