@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "sources": [
+    {"id":"source:gov:org","name":"中国政府网·国务院组织机构","url":"https://www.gov.cn/gwyzzjg/index.htm","kind":"organization-directory","priority":"A","enabled":true},
+    {"id":"source:gov:cabinet","name":"中国政府网·国务院","url":"https://www.gov.cn/guowuyuan/index.htm","kind":"personnel-and-appointments","priority":"A","enabled":true},
+    {"id":"source:cppcc","name":"中国政协网","url":"http://www.cppcc.gov.cn/","kind":"cppcc-directory","priority":"A","enabled":true},
+    {"id":"source:npc","name":"中国人大网","url":"https://www.npc.gov.cn/","kind":"npc-directory","priority":"A","enabled":true},
+    {"id":"source:ndrc","name":"国家发展和改革委员会","url":"http://www.ndrc.gov.cn/","kind":"ministry-directory","priority":"B","enabled":true},
+    {"id":"source:moe","name":"教育部","url":"http://www.moe.gov.cn/","kind":"ministry-directory","priority":"B","enabled":true},
+    {"id":"source:nhc","name":"国家卫生健康委员会","url":"http://www.nhc.gov.cn/","kind":"ministry-directory","priority":"B","enabled":true},
+    {"id":"source:sasac","name":"国务院国资委","url":"http://www.sasac.gov.cn/","kind":"ministry-directory","priority":"B","enabled":true},
+    {"id":"source:ccdi","name":"中央纪委国家监委","url":"http://www.ccdi.gov.cn/","kind":"oversight-announcements","priority":"C","enabled":true},
+    {"id":"source:court","name":"最高人民法院","url":"https://www.court.gov.cn/","kind":"judicial-directory","priority":"C","enabled":true},
+    {"id":"source:spp","name":"最高人民检察院","url":"https://www.spp.gov.cn/","kind":"procuratorate-directory","priority":"C","enabled":true}
+  ]
+}
