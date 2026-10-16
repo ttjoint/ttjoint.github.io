@@ -5,6 +5,8 @@
   "description": "HumanMap - 人际关系·家族图谱",
   "scripts": {
     "validate:cpc": "node scripts/validate_cpc_import.js",
+    "extract:structured": "node scripts/extract_structured_candidates.js",
+    "validate:structured": "node scripts/validate_structured_candidates.js",
     "verify:cppcc": "node scripts/verify_cppcc_profiles.js",
     "import:cppcc-leaders": "node scripts/import_cppcc_leaders.js",
     "discover:articles": "node scripts/discover_official_articles.js",
