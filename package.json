@@ -10,6 +10,8 @@
     "shard:data": "node scripts/shard_data.js",
     "validate": "node scripts/validate_data.js",
     "check:refs": "node scripts/check_references.js",
+    "admin": "node scripts/admin_server.js",
+    "publish": "node scripts/export_static.js",
     "check:manifests": "node scripts/check_manifests.js",
     "test": "node --test test/*.test.js",
     "check": "npm run build:index && npm run validate && npm run check:refs && npm run check:manifests && npm test",
