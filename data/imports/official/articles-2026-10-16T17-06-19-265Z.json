@@ -1,0 +1,13 @@
+{
+  "source": {
+    "id": "source:gov:cabinet",
+    "name": "中国政府网·国务院",
+    "url": "https://www.gov.cn/guowuyuan/index.htm",
+    "kind": "personnel-and-appointments",
+    "priority": "A",
+    "enabled": true
+  },
+  "discoveredAt": "2026-10-16T17:06:19.266Z",
+  "count": 0,
+  "articles": []
+}
