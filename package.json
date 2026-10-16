@@ -5,9 +5,11 @@
   "description": "HumanMap - 人际关系·家族图谱",
   "scripts": {
     "validate:cpc": "node scripts/validate_cpc_import.js",
+    "register:sources": "node scripts/register_approved_sources.js",
     "discover:gov": "node scripts/discover_gov_organizations.js",
     "import:gov-org": "node scripts/import_gov_organizations.js",
     "sources:check": "node scripts/check_official_sources.js",
+    "sources:validate-check": "node scripts/validate_official_check.js",
     "sources:validate": "node scripts/validate_official_sources.js",
     "validate:cpc": "node scripts/validate_cpc_import.js",
     "import:cpc": "node scripts/import_cpc.js",
@@ -20,7 +22,7 @@
     "publish": "node scripts/export_static.js",
     "check:manifests": "node scripts/check_manifests.js",
     "test": "node --test test/*.test.js",
-    "check": "npm run build:index && npm run validate && npm run check:refs && npm run check:manifests && npm run sources:validate && npm test",
+    "check": "npm run build:index && npm run validate && npm run check:refs && npm run check:manifests && npm run sources:validate && npm run sources:validate-check && npm test",
     "import-cbdb": "node scripts/import_cbdb.js"
   },
   "engines": { "node": ">=18" },
