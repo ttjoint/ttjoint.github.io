@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+/** Check every relation/reference points to an existing stable entity ID. */
+const fs=require('fs'),path=require('path');const root=path.join(__dirname,'..','data');const entities=new Map();
+for(const [folder,type] of Object.entries({persons:'person',organizations:'organization',events:'event'})){for(const x of JSON.parse(fs.readFileSync(path.join(root,folder,'index.json'))))entities.set(x.id,type)}
+let errors=0;for(const [folder] of Object.entries({persons:'person',organizations:'organization',events:'event'})){for(const x of JSON.parse(fs.readFileSync(path.join(root,folder,'index.json')))){const f=path.join(root,folder,'entities',encodeURIComponent(x.id)+'.json');if(!fs.existsSync(f)){console.error('missing detail',x.id);errors++;continue}const e=JSON.parse(fs.readFileSync(f));for(const [rel,values] of Object.entries(e.relations||{})){for(const v of values||[]){const id=typeof v==='string'?v:v.target;if(id&&!entities.has(id)&&!id.startsWith('←')){console.error('broken reference',e.id,rel,id);errors++}}}}}console.log(`references checked: ${entities.size}`);process.exitCode=errors?1:0;

@@ -1,11 +1,19 @@
 {
   "name": "humanmap",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "private": true,
   "description": "HumanMap - 人际关系·家族图谱",
   "scripts": {
+    "import:cpc": "node scripts/import_cpc.js",
+    "migrate:ids": "node scripts/migrate_ids.js",
+    "shard:data": "node scripts/shard_data.js",
+    "validate": "node scripts/validate_data.js",
+    "check:refs": "node scripts/check_references.js",
+    "check:manifests": "node scripts/check_manifests.js",
+    "test": "node --test test/*.test.js",
+    "check": "npm run validate && npm run check:refs && npm run check:manifests && npm test",
     "import-cbdb": "node scripts/import_cbdb.js"
   },
-  "dependencies": {
-    "sql.js": "^1.11.0"
-  }
+  "engines": { "node": ">=18" },
+  "dependencies": { "sql.js": "^1.11.0" }
 }

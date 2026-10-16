@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "type": "event",
+  "count": 30,
+  "generatedAt": "2026-10-16T15:43:33.492Z",
+  "index": "index.json",
+  "detailDir": "entities/"
+}

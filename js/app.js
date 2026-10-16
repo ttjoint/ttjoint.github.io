@@ -138,10 +138,11 @@ const DataStore = {
   async init() {
     if (this.loaded) return;
     try {
+      const load = async (url) => fetch(url).then(r => r.json());
       const [pRes, oRes, eRes] = await Promise.all([
-        fetch('data/persons/index.json').then(r => r.json()).catch(() => []),
-        fetch('data/organizations/index.json').then(r => r.json()).catch(() => []),
-        fetch('data/events/index.json').then(r => r.json()).catch(() => [])
+        load('data/persons/index.json').catch(() => []),
+        load('data/organizations/index.json').catch(() => []),
+        load('data/events/index.json').catch(() => [])
       ]);
 
       const localP = this._loadLocal('hm_persons');
@@ -172,6 +173,16 @@ const DataStore = {
       console.error('数据加载失败:', e);
     }
   },
+
+    loadEntity(id) {
+      const existing = this.getEntity(id);
+      if (!existing || existing._full || !existing.detail) return Promise.resolve(existing);
+      const type = this.getType(id);
+      const folder = { person: 'persons', organization: 'organizations', event: 'events' }[type];
+      return fetch(`data/${folder}/${existing.detail}`).then(r => r.json()).then(detail => {
+        detail._full = true; this[folder][id] = detail; this._refreshLists(); return detail;
+      }).catch(e => { console.warn('详情加载失败', id, e); return existing; });
+    },
 
   // 通用获取
   getEntity(id) {
@@ -1382,6 +1393,7 @@ function createEntityDetail(entityType) {
     async mounted() {
       const id = this.$route.params.id;
       await DataStore.init();
+      await DataStore.loadEntity(id);
       this.entity = this._ensureEntity(id);
       this.$nextTick(() => {
         if (this.showGraph && this.$refs.graph) {
@@ -1393,6 +1405,7 @@ function createEntityDetail(entityType) {
       '$route.params.id': {
         async handler(id) {
           await DataStore.init();
+          await DataStore.loadEntity(id);
           this.entity = this._ensureEntity(id);
           this.showGraph = true;
         }
@@ -1453,6 +1466,7 @@ function createEntityDetail(entityType) {
         <div class="toolbar">
           <button v-if="isLocal" class="btn" @click="editEntity">编辑</button>
           <span class="toolbar-spacer"></span>
+          <span v-if="entity.external?.cpcUrl" class="tag clickable" @click="openWiki(entity.external.cpcUrl)">人民网来源</span>
           <span v-if="entity.wikiUrl" class="tag clickable" @click="openWiki(entity.wikiUrl)">Wikipedia</span>
         </div>
 
@@ -1570,6 +1584,7 @@ function createEntityDetail(entityType) {
                           <span class="source-label">上层来源：</span>
                           <span class="source-prev-name">{{ src.previousSourceName }}</span>
                         </div>
+                        <div v-if="src.accessedAt" class="source-card-field"><span class="source-label">抓取时间：</span>{{ src.accessedAt }}</div>
                         <div v-if="src.note" class="source-card-note">{{ src.note }}</div>
                       </div>
                     </div>
@@ -2162,7 +2177,8 @@ const AllObjects = {
       filterType: 'all',
       sortBy: 'name',
       sortAsc: true,
-      searchQuery: ''
+      searchQuery: '',
+      sourceFilter: 'all'
     };
   },
   computed: {
@@ -2189,6 +2205,9 @@ const AllObjects = {
       let items = this.allItems;
       if (this.filterType !== 'all') {
         items = items.filter(i => i.type === this.filterType);
+      }
+      if (this.sourceFilter === 'cpc') {
+        items = items.filter(i => i.entity.external?.cpcUrl || (i.entity.tags || []).includes('人民网专题'));
       }
       if (this.searchQuery) {
         const q = this.searchQuery.toLowerCase();
@@ -2265,6 +2284,9 @@ const AllObjects = {
         </div>
         <div class="all-objects-search">
           <input type="text" v-model="searchQuery" placeholder="搜索名称或描述…" />
+          <button class="btn btn-sm" :class="{ 'btn-primary': sourceFilter === 'cpc' }" @click="sourceFilter = sourceFilter === 'cpc' ? 'all' : 'cpc'">
+            人民网专题
+          </button>
         </div>
       </div>
 
