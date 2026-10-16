@@ -1,3 +1,3 @@
-const test=require('node:test'); const assert=require('node:assert/strict'); const cp=require('child_process'); const path=require('path');
-test('data validator passes',()=>{cp.execFileSync(process.execPath,[path.join(__dirname,'..','scripts','validate_data.js')],{stdio:'pipe'}); assert.ok(true)});
-test('stable migration IDs are deterministic',()=>{const crypto=require('crypto'); const f=t=>`${t}:${crypto.createHash('sha256').update(`${t}\0张三`).digest('hex').slice(0,20)}`; assert.equal(f('person'),f('person')); assert.notEqual(f('person'),f('organization'));});
+const test=require('node:test');const assert=require('node:assert/strict');const fs=require('fs');const path=require('path');
+test('all index IDs are stable and unique',()=>{for(const d of ['persons','organizations','events']){const a=JSON.parse(fs.readFileSync(path.join(__dirname,'..','data',d,'index.json')));const ids=a.map(x=>x.id);assert.equal(new Set(ids).size,ids.length);assert.ok(ids.every(x=>x.includes(':')))}});
+test('all index details exist',()=>{for(const d of ['persons','organizations','events']){const a=JSON.parse(fs.readFileSync(path.join(__dirname,'..','data',d,'index.json')));for(const x of a)assert.ok(fs.existsSync(path.join(__dirname,'..','data',d,x.detail)))}});

@@ -6,12 +6,13 @@
   "scripts": {
     "import:cpc": "node scripts/import_cpc.js",
     "migrate:ids": "node scripts/migrate_ids.js",
+    "build:index": "node scripts/build_index.js",
     "shard:data": "node scripts/shard_data.js",
     "validate": "node scripts/validate_data.js",
     "check:refs": "node scripts/check_references.js",
     "check:manifests": "node scripts/check_manifests.js",
     "test": "node --test test/*.test.js",
-    "check": "npm run validate && npm run check:refs && npm run check:manifests && npm test",
+    "check": "npm run build:index && npm run validate && npm run check:refs && npm run check:manifests && npm test",
     "import-cbdb": "node scripts/import_cbdb.js"
   },
   "engines": { "node": ">=18" },
