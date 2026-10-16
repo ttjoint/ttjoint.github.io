@@ -1,0 +1,71 @@
+{
+  "source": "https://www.gov.cn/gwyzzjg/index.htm",
+  "discoveredAt": "2026-10-16T16:48:09.852Z",
+  "count": 8,
+  "sources": [
+    {
+      "id": "source:govorg:9fc35c574209",
+      "name": "全国人大",
+      "url": "http://www.npc.gov.cn/",
+      "kind": "ministry-directory",
+      "priority": "B",
+      "enabled": false
+    },
+    {
+      "id": "source:govorg:5421e57a776c",
+      "name": "全国政协",
+      "url": "http://www.cppcc.gov.cn/",
+      "kind": "ministry-directory",
+      "priority": "B",
+      "enabled": false
+    },
+    {
+      "id": "source:govorg:106257963762",
+      "name": "国家监察委员会",
+      "url": "http://www.ccdi.gov.cn/",
+      "kind": "ministry-directory",
+      "priority": "B",
+      "enabled": false
+    },
+    {
+      "id": "source:govorg:635894b650f6",
+      "name": "最高人民法院",
+      "url": "http://www.court.gov.cn/",
+      "kind": "ministry-directory",
+      "priority": "B",
+      "enabled": false
+    },
+    {
+      "id": "source:govorg:6b5b67b5547a",
+      "name": "最高人民检察院",
+      "url": "http://www.spp.gov.cn/",
+      "kind": "ministry-directory",
+      "priority": "B",
+      "enabled": false
+    },
+    {
+      "id": "source:govorg:5d031ad44644",
+      "name": "京ICP备05070218号",
+      "url": "https://beian.miit.gov.cn/#/Integrated/index",
+      "kind": "ministry-directory",
+      "priority": "B",
+      "enabled": false
+    },
+    {
+      "id": "source:govorg:e3d06e2f58a4",
+      "name": "京公网安备11010202000001号",
+      "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010202000001",
+      "kind": "ministry-directory",
+      "priority": "B",
+      "enabled": false
+    },
+    {
+      "id": "source:govorg:3b5dd27ceba6",
+      "name": "微博",
+      "url": "https://weibo.com/zhengfu",
+      "kind": "ministry-directory",
+      "priority": "B",
+      "enabled": false
+    }
+  ]
+}
