@@ -17,7 +17,6 @@
     "sources:check": "node scripts/check_official_sources.js",
     "sources:validate-check": "node scripts/validate_official_check.js",
     "sources:validate": "node scripts/validate_official_sources.js",
-    "validate:cpc": "node scripts/validate_cpc_import.js",
     "import:cpc": "node scripts/import_cpc.js",
     "migrate:ids": "node scripts/migrate_ids.js",
     "build:index": "node scripts/build_index.js",
@@ -29,8 +28,15 @@
     "check:manifests": "node scripts/check_manifests.js",
     "test": "node --test test/*.test.js",
     "check": "npm run build:index && npm run validate && npm run check:refs && npm run check:manifests && npm run sources:validate && npm run sources:validate-check && npm test",
-    "import-cbdb": "node scripts/import_cbdb.js"
+    "import-cbdb": "node scripts/import_cbdb.js",
+    "import:spp": "node scripts/import_spp_leaders.js",
+    "structure:spp": "node scripts/structure_spp_leaders.js",
+    "merge:dupes": "node scripts/merge_duplicate_persons.js"
   },
-  "engines": { "node": ">=18" },
-  "dependencies": { "sql.js": "^1.11.0" }
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "sql.js": "^1.11.0"
+  }
 }

@@ -1,0 +1,164 @@
+{
+  "source": "最高人民检察院",
+  "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml",
+  "fetchedAt": "2026-10-17T03:05:02.429Z",
+  "count": 10,
+  "records": [
+    {
+      "id": "person:ecc10921464635686f75",
+      "name": "应勇",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthDate": "1957年11月",
+      "education": "大学本科学历，法学硕士学位",
+      "positions": [
+        "中共二十届中央委员",
+        "最高人民检察院党组书记",
+        "检察长",
+        "检察委员会委员",
+        "首席大检察官"
+      ],
+      "resume": "应勇，男，汉族，1957年11月生，大学本科学历，法学硕士学位，中共党员，现任中共二十届中央委员，最高人民检察院党组书记、检察长、检察委员会委员，首席大检察官。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    },
+    {
+      "id": "person:dbb4561d2057544f4f9e",
+      "name": "童建明",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthDate": "1963年6月",
+      "education": "研究生学历，法学硕士学位",
+      "positions": [
+        "中共二十届中央委员",
+        "最高人民检察院党组副书记",
+        "分管日常工作的副检察长（正部长级）",
+        "检察委员会委员",
+        "一级大检察官"
+      ],
+      "resume": "童建明，男，汉族，1963年6月生，研究生学历，法学硕士学位，中共党员，现任中共二十届中央委员，最高人民检察院党组副书记、分管日常工作的副检察长（正部长级）、检察委员会委员，一级大检察官。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    },
+    {
+      "id": "person:0908c84c02f653b48779",
+      "name": "葛晓燕",
+      "gender": "女",
+      "ethnicity": "汉族",
+      "birthDate": "1964年12月",
+      "education": "省委党校研究生学历，法学学士学位",
+      "positions": [
+        "最高人民检察院党组成员",
+        "副检察长",
+        "检察委员会委员",
+        "二级大检察官"
+      ],
+      "resume": "葛晓燕，女，汉族，1964年12月生，省委党校研究生学历，法学学士学位，中共党员，现任最高人民检察院党组成员、副检察长、检察委员会委员，二级大检察官。 全国妇联第十三届副主席（兼）。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    },
+    {
+      "id": "person:6492ca25cd7aaf8ee4a3",
+      "name": "刘炤",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthDate": "1963年4月",
+      "education": "大学本科学历，法学学士学位",
+      "positions": [
+        "中共二十届中纪委委员",
+        "最高人民检察院党组成员",
+        "中央纪委国家监委驻最高人民检察院纪检监察组组长",
+        "二级副总监察官"
+      ],
+      "resume": "刘炤，男，汉族，1963年4月生，大学本科学历，法学学士学位，中共党员，现任中共二十届中纪委委员，最高人民检察院党组成员、中央纪委国家监委驻最高人民检察院纪检监察组组长、二级副总监察官。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    },
+    {
+      "id": "person:a7bb4a401519bafed850",
+      "name": "张雪樵",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthDate": "1966年7月",
+      "education": "研究生学历，法学博士学位",
+      "positions": [
+        "最高人民检察院副检察长",
+        "检察委员会委员",
+        "二级大检察官"
+      ],
+      "resume": "张雪樵，男，汉族，1966年7月生，研究生学历，法学博士学位，民革成员，最高人民检察院副检察长、检察委员会委员，二级大检察官。 十四届全国政协常务委员，十三届全国政协常务委员、社会和法制委员会委员，十四届、十三届民革中央常务委员。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    },
+    {
+      "id": "person:3c61a6f91f2f68039fa4",
+      "name": "苗生明",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthDate": "1965年11月",
+      "education": "研究生学历，法学博士学位",
+      "positions": [
+        "最高人民检察院党组成员",
+        "副检察长",
+        "检察委员会委员",
+        "二级大检察官"
+      ],
+      "resume": "苗生明，男，汉族，1965年11月生，研究生学历，法学博士学位，中共党员，现任最高人民检察院党组成员、副检察长、检察委员会委员，二级大检察官。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    },
+    {
+      "id": "person:fd2452eb8417dbbfbaf1",
+      "name": "史卫忠",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthDate": "1969年1月",
+      "education": "研究生学历，法学博士学位",
+      "positions": [
+        "最高人民检察院党组成员",
+        "副检察长",
+        "检察委员会委员",
+        "二级大检察官"
+      ],
+      "resume": "史卫忠，男，汉族，1969年1月生，研究生学历，法学博士学位，中共党员，现任最高人民检察院党组成员、副检察长、检察委员会委员，二级大检察官。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    },
+    {
+      "id": "person:2d71f22aec9edaace198",
+      "name": "陈东升",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthDate": "1970年11月",
+      "education": "研究生学历，法学博士学位",
+      "positions": [
+        "最高人民检察院党组成员",
+        "政治部主任",
+        "机关党委书记"
+      ],
+      "resume": "陈东升，男，汉族，1970年11月生，研究生学历，法学博士学位，中共党员，现任最高人民检察院党组成员、政治部主任、机关党委书记。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    },
+    {
+      "id": "person:808fc857dedda8be999b",
+      "name": "张晓津",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthDate": "1968年11月",
+      "education": "研究生学历，法学硕士学位",
+      "positions": [
+        "最高人民检察院检察委员会副部级专职委员",
+        "二级大检察官"
+      ],
+      "resume": "张晓津，男，汉族，1968年11月生，研究生学历，法学硕士学位，中共党员，现任最高人民检察院检察委员会副部级专职委员，二级大检察官。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    },
+    {
+      "id": "person:5239132ec4fed06cb1ed",
+      "name": "杜学毅",
+      "gender": "男",
+      "ethnicity": "汉族",
+      "birthDate": "1973年11月",
+      "education": "研究生学历，法学博士学位",
+      "positions": [
+        "最高人民检察院检察委员会副部级专职委员",
+        "二级大检察官"
+      ],
+      "resume": "杜学毅，男，汉族，1973年11月生，研究生学历，法学博士学位，中共党员，现任最高人民检察院检察委员会副部级专职委员，二级大检察官。",
+      "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+    }
+  ]
+}

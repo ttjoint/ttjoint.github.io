@@ -2049,6 +2049,19 @@
     "detail": "entities/person%3A6b9a1802e798ebc4dda3.json"
   },
   {
+    "id": "person:2d71f22aec9edaace198",
+    "name": "陈东升",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "陈东升，男，汉族，1970年11月生，研究生学历，法学博士学位，中共党员，现任最高人民检察院党组成员、政治部主任、机关党委书记。",
+    "external": null,
+    "detail": "entities/person%3A2d71f22aec9edaace198.json"
+  },
+  {
     "id": "person:8bddf085873276887084",
     "name": "陈吉宁",
     "type": "person",
@@ -8576,6 +8589,19 @@
     "detail": "entities/person%3A70316da229f35c857a9d.json"
   },
   {
+    "id": "person:5239132ec4fed06cb1ed",
+    "name": "杜学毅",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "杜学毅，男，汉族，1973年11月生，研究生学历，法学博士学位，中共党员，现任最高人民检察院检察委员会副部级专职委员，二级大检察官。",
+    "external": null,
+    "detail": "entities/person%3A5239132ec4fed06cb1ed.json"
+  },
+  {
     "id": "person:83c8b430bae0d2e3e52b",
     "name": "杜遜",
     "type": "person",
@@ -12018,6 +12044,19 @@
     "summary": "",
     "external": null,
     "detail": "entities/person%3A3caa55dd8be533aa4aff.json"
+  },
+  {
+    "id": "person:0908c84c02f653b48779",
+    "name": "葛晓燕",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "葛晓燕，女，汉族，1964年12月生，省委党校研究生学历，法学学士学位，中共党员，现任最高人民检察院党组成员、副检察长、检察委员会委员，二级大检察官。 全国妇联第十三届副主席（兼）。",
+    "external": null,
+    "detail": "entities/person%3A0908c84c02f653b48779.json"
   },
   {
     "id": "person:bb94b31a3d5e6ad88fd9",
@@ -24817,6 +24856,19 @@
     "detail": "entities/person%3A8b1a6cc85b312a1ae535.json"
   },
   {
+    "id": "person:6492ca25cd7aaf8ee4a3",
+    "name": "刘炤",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "刘炤，男，汉族，1963年4月生，大学本科学历，法学学士学位，中共党员，现任中共二十届中纪委委员，最高人民检察院党组成员、中央纪委国家监委驻最高人民检察院纪检监察组组长、二级副总监察官。",
+    "external": null,
+    "detail": "entities/person%3A6492ca25cd7aaf8ee4a3.json"
+  },
+  {
     "id": "person:702c6770d308fa24565f",
     "name": "劉霸",
     "type": "person",
@@ -31429,6 +31481,19 @@
     "summary": "",
     "external": null,
     "detail": "entities/person%3A114ed63d221e76e2708d.json"
+  },
+  {
+    "id": "person:3c61a6f91f2f68039fa4",
+    "name": "苗生明",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "苗生明，男，汉族，1965年11月生，研究生学历，法学博士学位，中共党员，现任最高人民检察院党组成员、副检察长、检察委员会委员，二级大检察官。",
+    "external": null,
+    "detail": "entities/person%3A3c61a6f91f2f68039fa4.json"
   },
   {
     "id": "person:410eef61e01bbe355e32",
@@ -38886,6 +38951,19 @@
     "detail": "entities/person%3Ad5d903e6f2cb912cfe76.json"
   },
   {
+    "id": "person:fd2452eb8417dbbfbaf1",
+    "name": "史卫忠",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "史卫忠，男，汉族，1969年1月生，研究生学历，法学博士学位，中共党员，现任最高人民检察院党组成员、副检察长、检察委员会委员，二级大检察官。",
+    "external": null,
+    "detail": "entities/person%3Afd2452eb8417dbbfbaf1.json"
+  },
+  {
     "id": "person:51e7f2dae2cabd927a88",
     "name": "史憲",
     "type": "person",
@@ -42213,6 +42291,19 @@
     "summary": "",
     "external": null,
     "detail": "entities/person%3A1857b81909a0a7dd7f6e.json"
+  },
+  {
+    "id": "person:dbb4561d2057544f4f9e",
+    "name": "童建明",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "童建明，男，汉族，1963年6月生，研究生学历，法学硕士学位，中共党员，现任中共二十届中央委员，最高人民检察院党组副书记、分管日常工作的副检察长（正部长级）、检察委员会委员，一级大检察官。",
+    "external": null,
+    "detail": "entities/person%3Adbb4561d2057544f4f9e.json"
   },
   {
     "id": "person:a626230f0de28ecfa187",
@@ -54589,20 +54680,19 @@
     "detail": "entities/person%3Afb53059f9b01a8fc3e70.json"
   },
   {
-    "id": "person:fef6eb7d197674c2e940",
+    "id": "person:ecc10921464635686f75",
     "name": "应勇",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "应勇简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 高",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0312/c64036-32642372.html",
-      "title": "应勇简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3Afef6eb7d197674c2e940.json"
+    "external": null,
+    "detail": "entities/person%3Aecc10921464635686f75.json"
   },
   {
     "id": "person:a73ae41131a791d4b797",
@@ -57049,6 +57139,19 @@
     "detail": "entities/person%3A913b003d64c995faaf00.json"
   },
   {
+    "id": "person:808fc857dedda8be999b",
+    "name": "张晓津",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "张晓津，男，汉族，1968年11月生，研究生学历，法学硕士学位，中共党员，现任最高人民检察院检察委员会副部级专职委员，二级大检察官。",
+    "external": null,
+    "detail": "entities/person%3A808fc857dedda8be999b.json"
+  },
+  {
     "id": "person:65b579e496c901861c68",
     "name": "张休",
     "type": "person",
@@ -57074,6 +57177,19 @@
     "summary": "",
     "external": null,
     "detail": "entities/person%3A85385a03192fa1af105d.json"
+  },
+  {
+    "id": "person:a7bb4a401519bafed850",
+    "name": "张雪樵",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "张雪樵，男，汉族，1966年7月生，研究生学历，法学博士学位，民革成员，最高人民检察院副检察长、检察委员会委员，二级大检察官。 十四届全国政协常务委员，十三届全国政协常务委员、社会和法制委员会委员，十四届、十三届民革中央常务委员。",
+    "external": null,
+    "detail": "entities/person%3Aa7bb4a401519bafed850.json"
   },
   {
     "id": "person:98c28ecf2cd064f4aa8f",
