@@ -10,6 +10,7 @@
       "阪泉"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A190279b2bfe613938dc9.json"
   },
@@ -25,6 +26,7 @@
       "奔月"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A79367725ddd78bc7a4a1.json"
   },
@@ -40,6 +42,7 @@
       "战役"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A4f228daf943a55337060.json"
   },
@@ -58,6 +61,7 @@
       "赤壁"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A61f34d36cc44b14eaa7e.json"
   },
@@ -75,6 +79,7 @@
       "战争"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Aedd45c63bdf5dc105a5a.json"
   },
@@ -91,6 +96,7 @@
       "治水"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A34550a3f94ceb492d7fb.json"
   },
@@ -104,6 +110,7 @@
       "农民起义"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A76c30221ff6532039440.json"
   },
@@ -122,6 +129,7 @@
       "荆州"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A70af1ea675f3ca8abd88.json"
   },
@@ -135,6 +143,7 @@
       "政治事件"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Ab80b5480026853b56d79.json"
   },
@@ -150,6 +159,7 @@
       "亡国"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A9049377a15638afe8d49.json"
   },
@@ -165,6 +175,7 @@
       "水神"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Af08b427b670d47f6db42.json"
   },
@@ -182,6 +193,7 @@
       "person:d79bdc09473fac3930a4"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Ae70dddb5e5e37e0a4665.json"
   },
@@ -198,6 +210,7 @@
       "共和行政"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A5095700a4fbceadd94e3.json"
   },
@@ -215,6 +228,7 @@
       "英雄"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Ad7c8e72b437b57925f75.json"
   },
@@ -228,6 +242,7 @@
       "填海"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A32be1062d7eb6554bf61.json"
   },
@@ -241,6 +256,7 @@
       "战役"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Acab2ce3fbd9cd0ad9e4e.json"
   },
@@ -256,6 +272,7 @@
       "逐日"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A96afe55a4c3cda5fa453.json"
   },
@@ -274,6 +291,7 @@
       "改朝换代"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Abccbed7e0b090d038db9.json"
   },
@@ -291,6 +309,7 @@
       "改朝换代"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A4e3c2a1f6372ef3cfc8d.json"
   },
@@ -307,6 +326,7 @@
       "英雄神话"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Af7dc095e38fa21e67d87.json"
   },
@@ -323,6 +343,7 @@
       "造人"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A0b5f52d04830be6d11d3.json"
   },
@@ -338,6 +359,7 @@
       "创世神话"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A6aa30035ec605149d99d.json"
   },
@@ -354,6 +376,7 @@
       "迁都"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A538f9fd4f8e825a003ec.json"
   },
@@ -369,6 +392,7 @@
       "叛乱"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A93ae56eaa6ade822375c.json"
   },
@@ -384,6 +408,7 @@
       "叛乱"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Ac1d63a95f850da1583c3.json"
   },
@@ -401,6 +426,7 @@
       "典故"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Ab1257d949c37183a9ad6.json"
   },
@@ -419,6 +445,7 @@
       "organization:38c1eae4de9587f9e14d"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A810a0b1a21091fcd1ffa.json"
   },
@@ -436,6 +463,7 @@
       "丝绸之路"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A7965348a851e8192f86c.json"
   },
@@ -451,6 +479,7 @@
       "战役"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3A7b727788de75a615400a.json"
   },
@@ -465,6 +494,7 @@
       "涿鹿"
     ],
     "summary": "",
+    "lifespan": null,
     "external": null,
     "detail": "entities/event%3Ae9ad5d087646ffce0c17.json"
   }

@@ -1,0 +1,24 @@
+{
+  "$comment": "Project-specific predicate extensions merged into the builtin registry at load time. Add entries here to introduce new relation words without touching code. Conflicts with builtin aliases are recorded in PredicateRegistry.mergeConflicts and must be resolved by hand.",
+  "version": 1,
+  "predicates": [
+    {
+      "key": "succeededBy",
+      "label": "继任者",
+      "domain": "person",
+      "range": "person",
+      "inverse": "predecessor",
+      "aliases": ["继任", "接任"],
+      "negatable": true
+    },
+    {
+      "key": "predecessor",
+      "label": "前任",
+      "domain": "person",
+      "range": "person",
+      "inverse": "succeededBy",
+      "aliases": ["前任", "前手"],
+      "negatable": true
+    }
+  ]
+}

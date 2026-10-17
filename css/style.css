@@ -993,3 +993,86 @@ img { max-width: 100%; display: block; }
 .relation-item.default {
   border-left: 3px solid var(--color-primary);
 }
+/* ---- 时间轴范围筛选 ---- */
+.timeline-filter {
+  background: var(--color-surface, #fff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 10px;
+  padding: 14px 18px 12px;
+  margin: 12px 0 16px;
+}
+.timeline-filter .tl-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.timeline-filter .tl-label {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--color-text-muted, #64748b);
+}
+.timeline-filter .tl-range {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary, #2563eb);
+  font-variant-numeric: tabular-nums;
+}
+.timeline-filter .tl-track {
+  position: relative;
+  height: 34px;
+  background: linear-gradient(90deg, #eef2f7, #e2e8f0);
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+body.dark .timeline-filter .tl-track {
+  background: linear-gradient(90deg, #1e293b, #0f172a);
+}
+.timeline-filter .tl-highlight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(37, 99, 235, .18);
+  border-left: 2px solid var(--color-primary, #2563eb);
+  border-right: 2px solid var(--color-primary, #2563eb);
+  cursor: grab;
+}
+.timeline-filter .tl-handle {
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 26px;
+  margin-left: -7px;
+  transform: translateY(-50%);
+  background: var(--color-primary, #2563eb);
+  border-radius: 4px;
+  cursor: ew-resize;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+.timeline-filter .tl-handle:hover {
+  background: #1d4ed8;
+}
+.timeline-filter .tl-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: .72rem;
+  color: var(--color-text-muted, #94a3b8);
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.timeline-filter .tl-conf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+  font-size: .82rem;
+  color: var(--color-text, #334155);
+}
+.timeline-filter .tl-conf label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}

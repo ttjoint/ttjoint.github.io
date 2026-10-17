@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 // ====================== 配置 ======================
-const DATA_DIR = path.join(__dirname, '..', 'data');
+const DATA_DIR = path.join(__dirname, '..', '..', 'data');
 const PERSONS_FILE = path.join(DATA_DIR, 'persons', 'index.json');
 const ORGS_FILE = path.join(DATA_DIR, 'organizations', 'index.json');
 const EVENTS_FILE = path.join(DATA_DIR, 'events', 'index.json');

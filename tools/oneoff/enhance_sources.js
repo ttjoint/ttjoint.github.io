@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
+const DATA_DIR = path.join(__dirname, '..', '..', 'data');
 
 // ====================== 参考文献注册表 ======================
 const REFS = {

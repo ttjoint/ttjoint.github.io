@@ -2172,13 +2172,16 @@ const RelationPanel = {
 
 // -- 全部对象浏览页 --
 const AllObjects = {
+  components: { TimelineFilter: window.HMTime ? window.HMTime.TimelineFilter : null },
   data() {
     return {
       filterType: 'all',
       sortBy: 'name',
       sortAsc: true,
       searchQuery: '',
-      sourceFilter: 'all'
+      sourceFilter: 'all',
+      timeEnabled: false,
+      timeFilter: null
     };
   },
   computed: {
@@ -2212,6 +2215,12 @@ const AllObjects = {
       if (this.searchQuery) {
         const q = this.searchQuery.toLowerCase();
         items = items.filter(i => i.name.toLowerCase().includes(q) || i.subtitle.toLowerCase().includes(q));
+      }
+      // Timeline: keep only entities inside the dragged window whose date
+      // confidence bucket is enabled. Undated items drop out while active.
+      if (this.timeEnabled && this.timeFilter) {
+        const tf = this.timeFilter;
+        items = items.filter(i => window.HMTime.inWindow(i.entity, tf.loJdn, tf.hiJdn, tf.confidence));
       }
       items = [...items].sort((a, b) => {
         let cmp = 0;
@@ -2250,6 +2259,13 @@ const AllObjects = {
         this.sortBy = field;
         this.sortAsc = true;
       }
+    },
+    onTimeChange(filter) {
+      this.timeFilter = filter;
+      this.timeEnabled = true;
+    },
+    onTimeToggle() {
+      if (!this.timeEnabled) this.timeEnabled = false;
     }
   },
   template: `
@@ -2287,8 +2303,13 @@ const AllObjects = {
           <button class="btn btn-sm" :class="{ 'btn-primary': sourceFilter === 'cpc' }" @click="sourceFilter = sourceFilter === 'cpc' ? 'all' : 'cpc'">
             人民网专题
           </button>
+          <button class="btn btn-sm" :class="{ 'btn-primary': timeEnabled }" @click="timeEnabled = !timeEnabled">
+            ⏱ 时间轴
+          </button>
         </div>
       </div>
+
+      <timeline-filter v-if="timeEnabled" @change="onTimeChange"></timeline-filter>
 
       <div class="card" style="padding:0;overflow:hidden">
         <table class="all-objects-table">

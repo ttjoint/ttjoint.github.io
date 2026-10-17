@@ -12,3 +12,7 @@ Thumbs.db
 data/persons/entities/
 data/organizations/entities/
 data/events/entities/
+# Scratch output from one-off verification scripts
+_cdp_check.js
+_render_test.js
+_app_render_test.js
