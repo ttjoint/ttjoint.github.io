@@ -34,7 +34,9 @@
     "merge:dupes": "node scripts/merge_duplicate_persons.js",
     "import:gov-leaders": "node scripts/import_gov_leaders.js",
     "structure:gov": "node scripts/structure_gov_leaders.js",
-    "repair:gbk": "node scripts/repair_gbk_persons.js"
+    "repair:gbk": "node scripts/repair_gbk_persons.js",
+    "structure:cpc": "node scripts/structure_cpc_persons.js",
+    "clean:summaries": "node scripts/clean_person_summaries.js"
   },
   "engines": {
     "node": ">=18"

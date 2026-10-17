@@ -49,10 +49,18 @@ function facts(e) {
   const text = [p['简介'], e.summary, p['介绍']].filter(Boolean).join(' ').replace(/[\s　]+/g, '');
   // Text-derived facts win over stored props: stored props may be mis-extracted
   // (e.g. 出生于澳门 was once recorded as 籍贯), while the resume wording is authoritative.
-  const mBirth = text.match(/(\d{4})年(\d{1,2})月(?:\d{0,2}日)?生/);
-  const birth = mBirth ? mBirth[1] + '年' + mBirth[2] + '月' : norm(p['出生年月']);
-  const mNative = text.match(/([一-鿿]{2,8})(?:市|县|区)?人[，,。]/);
-  const native = mNative ? mNative[1] : norm(p['籍贯']);
+  // Accept both "1955年7月生" and LLM-rewritten "于1955年7月出生".
+  const mBirth = text.match(/(\d{4})年(\d{1,2})月(?:\d{0,2}日)?出生|(\d{4})年(\d{1,2})月(?:\d{0,2}日)?生/);
+  const birth = mBirth
+    ? (mBirth[1] || mBirth[3]) + '年' + (mBirth[2] || mBirth[4]) + '月'
+    : norm(p['出生年月']);
+  // "安徽怀宁人" / "是安徽怀宁人" / "籍贯安徽怀宁"
+  const mNative = text.match(/([一-鿿]{2,8})(?:市|县|区)?人[，,。]/) || text.match(/籍贯[:：]?([一-鿿]{2,10})/);
+  // Strip a leading "是"/"为" or an accidental person-name prefix such as
+  // "蒋作君是安徽怀宁" produced by greedy matching.
+  const native = mNative
+    ? mNative[1].replace(/^[是为]/, '').replace(/^[一-鿿]{2,4}(?=是)/, '').replace(/^[是为]/, '')
+    : norm(p['籍贯']);
   const edu = norm(p['学历']) || ((text.match(/([一-鿿]{2,10}大学[^，。；、]{0,24})/) || [])[1] || '');
   return { birth: birth || '', native: native || '', edu: edu || '' };
 }
