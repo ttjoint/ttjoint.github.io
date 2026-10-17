@@ -216,20 +216,19 @@
     "detail": "entities/person%3A9d1e8e2a8116f9bf5c73.json"
   },
   {
-    "id": "person:a9dca76c9470013f8553",
+    "id": "person:194884f4e88b8997230e",
     "name": "巴特尔",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "巴特尔简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641920.html",
-      "title": "巴特尔简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3Aa9dca76c9470013f8553.json"
+    "external": null,
+    "detail": "entities/person%3A194884f4e88b8997230e.json"
   },
   {
     "id": "person:4f6ecf4e774a538acd86",
@@ -2133,20 +2132,19 @@
     "detail": "entities/person%3A2e277c62af309a708b63.json"
   },
   {
-    "id": "person:62ffe876e76a616a4b55",
+    "id": "person:d899dd27c4183b344091",
     "name": "陈武",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "陈武简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 高",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641925.html",
-      "title": "陈武简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A62ffe876e76a616a4b55.json"
+    "external": null,
+    "detail": "entities/person%3Ad899dd27c4183b344091.json"
   },
   {
     "id": "person:61e619966bfddf60f9d5",
@@ -11853,6 +11851,19 @@
     "detail": "entities/person%3A1eff0b7db5dc657640fb.json"
   },
   {
+    "id": "person:054362b596bc03683b5d",
+    "name": "高云龙",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "高云龙，男，汉族，生于1958年12月，籍贯山东莱芜。他毕业于清华大学化工系（化工专业），拥有研究生学历和工学博士学位，是一位高级工程师。目前担任十四届全国政协副主席、中华全国工商业联合会主席以及中国民间商会会长。",
+    "external": null,
+    "detail": "entities/person%3A054362b596bc03683b5d.json"
+  },
+  {
     "id": "person:2ec23a806fba687d84f3",
     "name": "高振",
     "type": "person",
@@ -13872,20 +13883,19 @@
     "detail": "entities/person%3A31a8981e2dbf728e132f.json"
   },
   {
-    "id": "person:16dcc76d7bbde09d65c8",
+    "id": "person:ba8a9a038cc00f9a2b91",
     "name": "何报翔",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "何报翔简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641935.html",
-      "title": "何报翔简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A16dcc76d7bbde09d65c8.json"
+    "external": null,
+    "detail": "entities/person%3Aba8a9a038cc00f9a2b91.json"
   },
   {
     "id": "person:24ef7c66e64f43795578",
@@ -13924,20 +13934,19 @@
     "detail": "entities/person%3A7d5210f1d330655adeea.json"
   },
   {
-    "id": "person:f08bef488fc791eb5ec9",
+    "id": "person:4423d13a996732bf3492",
     "name": "何厚铧",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "何厚铧简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641918.html",
-      "title": "何厚铧简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3Af08bef488fc791eb5ec9.json"
+    "external": null,
+    "detail": "entities/person%3A4423d13a996732bf3492.json"
   },
   {
     "id": "person:7161918c3a7e2315e8fa",
@@ -14417,20 +14426,19 @@
     "detail": "entities/person%3A14f1cd21e11796d4cc2b.json"
   },
   {
-    "id": "person:d60100970c2c440581c0",
+    "id": "person:ee39ec6338941b65fe21",
     "name": "胡春华",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "胡春华简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641912.html",
-      "title": "胡春华简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3Ad60100970c2c440581c0.json"
+    "external": null,
+    "detail": "entities/person%3Aee39ec6338941b65fe21.json"
   },
   {
     "id": "person:c84d9565eb716a012027",
@@ -15957,20 +15965,19 @@
     "detail": "entities/person%3A2af7dcc4d552ddb2f391.json"
   },
   {
-    "id": "person:0e4d839173984f9c18b0",
+    "id": "person:db9aee3a7c2e4d931799",
     "name": "姜信治",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "姜信治简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641932.html",
-      "title": "姜信治简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A0e4d839173984f9c18b0.json"
+    "external": null,
+    "detail": "entities/person%3Adb9aee3a7c2e4d931799.json"
   },
   {
     "id": "person:5dfed41f8b3279ee8219",
@@ -16016,6 +16023,19 @@
     "summary": "",
     "external": null,
     "detail": "entities/person%3A8c271cab1d4b03f72cfb.json"
+  },
+  {
+    "id": "person:20faef14292477922d7f",
+    "name": "蒋作君",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "蒋作君是安徽怀宁人，汉族，于1955年7月出生。他毕业于南京医学院基础医学部寄生虫学专业，拥有研究生学历和医学博士学位，现任十四届全国政协副主席、致公党中央主席。",
+    "external": null,
+    "detail": "entities/person%3A20faef14292477922d7f.json"
   },
   {
     "id": "person:62afbe707a1dbab9cb89",
@@ -24174,20 +24194,19 @@
     "detail": "entities/person%3A5538bd8b083e9ee65ad2.json"
   },
   {
-    "id": "person:82bff2bc4a49b30b2b11",
+    "id": "person:83cedf8d961363083f6b",
     "name": "梁振英",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "梁振英简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641919.html",
-      "title": "梁振英简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A82bff2bc4a49b30b2b11.json"
+    "external": null,
+    "detail": "entities/person%3A83cedf8d961363083f6b.json"
   },
   {
     "id": "person:b96c99ebe88c3c9872a1",
@@ -33481,20 +33500,19 @@
     "detail": "entities/person%3Ab0801a330eb86844693b.json"
   },
   {
-    "id": "person:baaf5efc47400b6bf787",
+    "id": "person:4649955bcd26f75ada49",
     "name": "穆虹",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "穆虹简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 高",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641926.html",
-      "title": "穆虹简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3Abaaf5efc47400b6bf787.json"
+    "external": null,
+    "detail": "entities/person%3A4649955bcd26f75ada49.json"
   },
   {
     "id": "person:1bd189140646555a3fe8",
@@ -33873,20 +33891,19 @@
     "detail": "entities/person%3Ab7ed83f54aaa2a484e21.json"
   },
   {
-    "id": "person:5f7a2df64d644fd3642f",
-    "name": "帕巴拉·格 列朗杰",
+    "id": "person:d3547d204c8ecd23829a",
+    "name": "帕巴拉·格列朗杰",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "帕巴拉·格列朗杰简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641917.html",
-      "title": "帕巴拉·格列朗杰简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A5f7a2df64d644fd3642f.json"
+    "external": null,
+    "detail": "entities/person%3Ad3547d204c8ecd23829a.json"
   },
   {
     "id": "person:1a43c39f23fe580a3d8f",
@@ -37180,20 +37197,19 @@
     "detail": "entities/person%3A8b50b09837b8bdd630f9.json"
   },
   {
-    "id": "person:851beb581fb811d35038",
+    "id": "person:b1b11d3fb7c39512d644",
     "name": "秦博勇",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "秦博勇简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641937.html",
-      "title": "秦博勇简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A851beb581fb811d35038.json"
+    "external": null,
+    "detail": "entities/person%3Ab1b11d3fb7c39512d644.json"
   },
   {
     "id": "person:b92bc37e3302cb425e4b",
@@ -38226,20 +38242,19 @@
     "detail": "entities/person%3A668ce610bd339d765dc5.json"
   },
   {
-    "id": "person:2ef91dc3e45369619f79",
+    "id": "person:f96997f063d0def5f3f3",
     "name": "邵鸿",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "邵鸿简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 高",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641923.html",
-      "title": "邵鸿简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A2ef91dc3e45369619f79.json"
+    "external": null,
+    "detail": "entities/person%3Af96997f063d0def5f3f3.json"
   },
   {
     "id": "person:7f019778a51c3bf0f50e",
@@ -38489,20 +38504,19 @@
     "detail": "entities/person%3Ae49a0fd6ff8063a76169.json"
   },
   {
-    "id": "person:750a4c49e6e801103343",
+    "id": "person:6d1f814f18a0b801e1aa",
     "name": "沈跃跃",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "沈跃跃简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641913.html",
-      "title": "沈跃跃简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A750a4c49e6e801103343.json"
+    "external": null,
+    "detail": "entities/person%3A6d1f814f18a0b801e1aa.json"
   },
   {
     "id": "person:29d0edb2f2aec07b1d0e",
@@ -38701,20 +38715,19 @@
     "detail": "entities/person%3A3839ddf17a0b1b03f159.json"
   },
   {
-    "id": "person:33d2d402ec7dd8549e47",
+    "id": "person:1a21a54164de8d9c0294",
     "name": "石泰峰",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "石泰峰同志简历--资料中心--人民网 石泰峰同志简历 石泰峰，男，汉族，1956年9月生，山西榆社人，1974年5月参加工作，1982年6月加入中国共产党，北京大学法律系法学基础理论专业毕业，研究生学历，法学硕士学位，教授。 现任中共二十届中央政治局委员、中央书记处书记，十四届全国政协副主席，中央组织部部长。 （来源：人民日报、新华社，2025年4月更新） 人 民 网 股 份 有 限 公 司 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用 Copyright &co",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2022/1023/c448511-32550085.html",
-      "title": "石泰峰同志简历--资料中心--人民网"
-    },
-    "detail": "entities/person%3A33d2d402ec7dd8549e47.json"
+    "external": null,
+    "detail": "entities/person%3A1a21a54164de8d9c0294.json"
   },
   {
     "id": "person:de0222992fbcdaf971d8",
@@ -40146,6 +40159,19 @@
     "summary": "",
     "external": null,
     "detail": "entities/person%3A91f5b6059cc333faeec2.json"
+  },
+  {
+    "id": "person:035ee9138aafd3ce0938",
+    "name": "苏辉",
+    "type": "person",
+    "aliases": [],
+    "tags": [
+      "官方资料",
+      "已审核"
+    ],
+    "summary": "苏辉是汉族女性，于1956年5月生，籍贯台湾台南。她是台盟成员和中共党员。她毕业于中央财政金融学院财政系（财政学专业），拥有大学学历并持有高级会计师资格。目前担任十四届全国政协副主席及台盟中央主席。",
+    "external": null,
+    "detail": "entities/person%3A035ee9138aafd3ce0938.json"
   },
   {
     "id": "person:5ea6d987b778a8ffd278",
@@ -42757,20 +42783,19 @@
     "detail": "entities/person%3A21b05cfd20dcd5ccd3b5.json"
   },
   {
-    "id": "person:2360431fa38d5e54d11a",
+    "id": "person:5945c7bcc30a04be6846",
     "name": "王东峰",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "王东峰简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641931.html",
-      "title": "王东峰简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A2360431fa38d5e54d11a.json"
+    "external": null,
+    "detail": "entities/person%3A5945c7bcc30a04be6846.json"
   },
   {
     "id": "person:55b64708e186b67b7578",
@@ -42941,20 +42966,19 @@
     "detail": "entities/person%3A9a2954639e62e4f3ccb5.json"
   },
   {
-    "id": "person:d7f2bf531140a2b00571",
+    "id": "person:942305a3d680d9815096",
     "name": "王光谦",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "王光谦简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641936.html",
-      "title": "王光谦简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3Ad7f2bf531140a2b00571.json"
+    "external": null,
+    "detail": "entities/person%3A942305a3d680d9815096.json"
   },
   {
     "id": "person:42ef22e9d8bfb283a279",
@@ -45502,20 +45526,19 @@
     "detail": "entities/person%3A91e82cca840a2b9bc466.json"
   },
   {
-    "id": "person:56436fe9ac2131ca11a6",
+    "id": "person:de173dab60e90f0475ad",
     "name": "王勇",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "王勇简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 高",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641914.html",
-      "title": "王勇简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A56436fe9ac2131ca11a6.json"
+    "external": null,
+    "detail": "entities/person%3Ade173dab60e90f0475ad.json"
   },
   {
     "id": "person:b8b7def6db911a9aab21",
@@ -47764,20 +47787,19 @@
     "detail": "entities/person%3A4c991c2b5aba022c7ce5.json"
   },
   {
-    "id": "person:bfacbac1569914a577ac",
+    "id": "person:dfb267ea706aa6a5e3a1",
     "name": "咸辉",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "咸辉简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 高",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641928.html",
-      "title": "咸辉简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3Abfacbac1569914a577ac.json"
+    "external": null,
+    "detail": "entities/person%3Adfb267ea706aa6a5e3a1.json"
   },
   {
     "id": "person:91fc25e1a7162ce36f5a",
@@ -51168,20 +51190,19 @@
     "detail": "entities/person%3Af783ece41f9860dddbaa.json"
   },
   {
-    "id": "person:f757b20a2ec2f37e0099",
+    "id": "person:6c53f93e280691c715e8",
     "name": "杨震",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "杨震简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 高",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641940.html",
-      "title": "杨震简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3Af757b20a2ec2f37e0099.json"
+    "external": null,
+    "detail": "entities/person%3A6c53f93e280691c715e8.json"
   },
   {
     "id": "person:d694c836588754e7a079",
@@ -63466,20 +63487,19 @@
     "detail": "entities/person%3A86fe5969052a3f567168.json"
   },
   {
-    "id": "person:61134f0a90635de7d63c",
+    "id": "person:8e814a1cd799b536707e",
     "name": "周强",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "周强简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 高",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641916.html",
-      "title": "周强简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A61134f0a90635de7d63c.json"
+    "external": null,
+    "detail": "entities/person%3A8e814a1cd799b536707e.json"
   },
   {
     "id": "person:7964442934ab62dfef8f",
@@ -63928,20 +63948,19 @@
     "detail": "entities/person%3Aabece962f7f1fafeea7e.json"
   },
   {
-    "id": "person:84b77b1442d9b331c48d",
+    "id": "person:6b89134b67014bebeb96",
     "name": "朱永新",
     "type": "person",
     "aliases": [],
     "tags": [
+      "官方资料",
+      "已审核",
       "中国共产党",
       "人民网专题"
     ],
     "summary": "朱永新简历--中国共产党新闻网-中国共产党新闻网 打开 登录人民网通行证     立即注册 记住登录状态 忘记密码？ \"不忘初心、牢记使命\"官网 | 中共中央党史和文献研究院 | 中国共产党历史和文献网 | 中组部12380举报网 | 全国社科工作办 | 中国人事考试网 学习贯彻习近平新时代中国特色社会主义思想主题教育官网 | 党史学习教育官方网站 | 整治形式主义为基层减负工作平台 | 旗帜网 工会新闻网 | 中国侨联 | 毛主席纪念堂 | 周恩来纪念网 | 邓小平纪念网 ",
-    "external": {
-      "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641938.html",
-      "title": "朱永新简历--中国共产党新闻网-中国共产党新闻网"
-    },
-    "detail": "entities/person%3A84b77b1442d9b331c48d.json"
+    "external": null,
+    "detail": "entities/person%3A6b89134b67014bebeb96.json"
   },
   {
     "id": "person:ce55efcf607ae6c98a9f",
