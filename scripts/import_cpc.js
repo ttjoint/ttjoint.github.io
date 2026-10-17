@@ -15,7 +15,18 @@ const BATCH_DIR = path.join(ROOT, 'data', 'imports', 'cpc', BATCH);
 const FILE = path.join(ROOT, 'data/persons/index.json');
 const INDEX = 'https://cpc.people.com.cn/GB/64162/394696/index.html';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-function get(url) { return new Promise((resolve, reject) => { const lib=url.startsWith('https')?https:http; lib.get(url,{headers:{'User-Agent':'HumanMap offline importer/1.0'}},res=>{let b=[];res.on('data',x=>b.push(x));res.on('end',()=>res.statusCode>=400?reject(Error('HTTP '+res.statusCode)):resolve(Buffer.concat(b).toString('utf8')))}).on('error',reject); }); }
+function decode(buf, contentType) {
+  // These People's Daily pages declare GB2312/GBK and will be mangled if forced to UTF-8.
+  let label = '';
+  const m = /charset=["']?([\w-]+)/i.exec(buf.slice(0, 2000).toString('latin1'));
+  if (m) label = m[1].toLowerCase();
+  else if (contentType && /charset=([\w-]+)/i.test(contentType)) label = RegExp.$1.toLowerCase();
+  if (/gb2312|gbk|gb18030/.test(label)) {
+    return new TextDecoder('gbk').decode(buf);
+  }
+  return buf.toString('utf8');
+}
+function get(url) { return new Promise((resolve, reject) => { const lib=url.startsWith('https')?https:http; lib.get(url,{headers:{'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36','Accept':'text/html,application/xhtml+xml','Accept-Language':'zh-CN,zh;q=0.9'}},res=>{let b=[];res.on('data',x=>b.push(x));res.on('end',()=>res.statusCode>=400?reject(Error('HTTP '+res.statusCode)):resolve(decode(Buffer.concat(b),res.headers['content-type'])))}).on('error',reject); }); }
 function entityId(name) { return 'person:' + require('crypto').createHash('sha256').update(`person\0${name}`).digest('hex').slice(0,20); }
 function abs(href) { return new URL(href, INDEX).href; }
 function decodeHtml(s) { return s.replace(/&nbsp;|&#160;/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#(\d+);/g,(_,n)=>String.fromCharCode(Number(n))); }
