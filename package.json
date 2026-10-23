@@ -53,7 +53,8 @@
     "structure:cpc": "node scripts/structure_cpc_persons.js",
     "clean:summaries": "node tools/oneoff/clean_person_summaries.js",
     "build:site": "node scripts/build_site.js --clean",
-    "build:static": "node scripts/build_static_pages.js"
+    "build:static": "node scripts/build_static_pages.js",
+    "report:sources": "node scripts/report_source_locatability.js"
   },
   "engines": {
     "node": ">=18"
