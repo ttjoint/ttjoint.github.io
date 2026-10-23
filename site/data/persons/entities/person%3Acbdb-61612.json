@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61612|520237|180",
             "locator": {
               "pages": "4952",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=61612 c_kin_id=520237",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -34,7 +35,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61612|520238|180",
             "locator": {
               "pages": "4952",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=61612 c_kin_id=520238",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -49,7 +51,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61612|520239|180",
             "locator": {
               "pages": "4952",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=61612 c_kin_id=520239",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -64,7 +67,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61612|520240|180",
             "locator": {
               "pages": "4952",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=61612 c_kin_id=520240",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -81,7 +85,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61612|576621|126",
             "locator": {
               "pages": "lgid=1163613",
-              "sourceId": 65192
+              "sourceId": 65192,
+              "title": "民國歙縣志: 十六卷"
             },
             "quote": "c_kin_code=126（弟） c_personid=61612 c_kin_id=576621",
             "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《民國歙縣志: 十六卷》",

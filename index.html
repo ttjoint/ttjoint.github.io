@@ -22,6 +22,7 @@
         <div class="header-right">
           <router-link to="/all" class="btn btn-sm" style="margin-right:4px">全部对象</router-link>
           <a class="btn btn-sm" href="#/predicate" style="margin-right:8px">谓词表</a>
+          <a class="btn btn-sm" href="#/sources" style="margin-right:8px">文献</a>
           <div class="mode-badge" :class="{ local: isLocalMode }">
             {{ isLocalMode ? '本地模式' : '只读模式' }}
           </div>
@@ -78,6 +79,7 @@
   <script src="js/views/all_objects.js"></script>
   <script src="js/views/search_results.js"></script>
   <script src="js/views/predicate_page.js"></script>
+  <script src="js/views/source_page.js"></script>
   <!-- 装配入口：路由 + 根实例 + 挂载 -->
   <script src="js/app.js"></script>
 </body>

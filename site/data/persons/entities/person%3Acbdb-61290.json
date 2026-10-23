@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61290|519975|75",
             "locator": {
               "pages": "4622",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=75（父） c_personid=61290 c_kin_id=519975",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61290|696279|111",
             "locator": {
               "pages": "lgid=294390",
-              "sourceId": 68002
+              "sourceId": 68002,
+              "title": "海鹽縣志: 二十二卷(光緒)"
             },
             "quote": "c_kin_code=111（母） c_personid=61290 c_kin_id=696279",
             "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《海鹽縣志: 二十二卷(光緒)》",
@@ -54,7 +56,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61290|519974|180",
             "locator": {
               "pages": "4622",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=61290 c_kin_id=519974",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

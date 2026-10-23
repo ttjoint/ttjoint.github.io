@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54478|519950|75",
             "locator": {
               "pages": "4591",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=75（父） c_personid=54478 c_kin_id=519950",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54478|519949|176",
             "locator": {
               "pages": "4591",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=176（女兒） c_personid=54478 c_kin_id=519949",
             "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -54,7 +56,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54478|519948|180",
             "locator": {
               "pages": "4591",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=54478 c_kin_id=519948",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -71,7 +74,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54478|519951|125",
             "locator": {
               "pages": "4591",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=125（兄） c_personid=54478 c_kin_id=519951",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -87,7 +91,8 @@
           {
             "rawRef": "raw:cbdb/KIN_DATA/54478|54481|134",
             "locator": {
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=134（丈夫） c_personid=54478 c_kin_id=54481",
             "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -102,7 +107,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54478|519947|134",
             "locator": {
               "pages": "4591",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=134（丈夫） c_personid=54478 c_kin_id=519947",
             "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

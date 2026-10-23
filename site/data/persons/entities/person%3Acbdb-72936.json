@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/72936|120947|75",
             "locator": {
               "pages": "3997",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=75（父） c_personid=72936 c_kin_id=120947",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -36,7 +37,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/72936|120935|111",
             "locator": {
               "pages": "3997",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=111（母） c_personid=72936 c_kin_id=120935",
             "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《明清婦女著作數據庫》",

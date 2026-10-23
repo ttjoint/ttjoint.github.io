@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/79403|79382|75",
             "locator": {
               "pages": "lgid=1163703",
-              "sourceId": 65192
+              "sourceId": 65192,
+              "title": "民國歙縣志: 十六卷"
             },
             "quote": "c_kin_code=75（父） c_personid=79403 c_kin_id=79382",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《民國歙縣志: 十六卷》",

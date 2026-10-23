@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54547|120807|135",
             "locator": {
               "pages": "MQWW PoetID #3757, HuWenKai #713",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=135（妻子） c_personid=54547 c_kin_id=120807",
             "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《明清婦女著作數據庫》",

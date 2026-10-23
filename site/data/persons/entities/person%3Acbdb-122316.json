@@ -21,7 +21,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/122316|89173|134",
             "locator": {
               "pages": "MQWW PoetID #4438",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0089173, KinCode = 0135",
             "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",

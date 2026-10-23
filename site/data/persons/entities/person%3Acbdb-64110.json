@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/64110|521149|184",
             "locator": {
               "pages": "7508",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=184（三子） c_personid=64110 c_kin_id=521149",
             "reason": "c_kin_code=184 → 三子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

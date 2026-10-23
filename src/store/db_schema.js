@@ -218,8 +218,24 @@ const DDL = [
      raw_ref     TEXT,
      quote       TEXT NOT NULL,
      reason      TEXT,
+     -- JSON：{\"sourceId\":2229,\"pages\":\"MQWW PoetID #1761\"}。
+     -- 88.9% 的边级出处有它（抽样 20 万条），但此前只存在于分片 JSON 里，
+     -- 没进数据库——于是「《宋史》的哪一页」这个查询做不了。
+     --
+     -- 这是溯源精度所在：raw_ref 指向源记录，locator 指向记录内部的
+     -- 页码/条目号。只有 raw_ref 的话，一条边只能追到「CBDB 的某一行」，
+     -- 追不到「《宋史》卷 471 页 21a」。
+     locator     TEXT,
+     -- 文献名，从 CBDB 的 TEXT_CODES 表查得（locator.sourceId → c_title_chn）。
+     --
+     -- 为什么单独存一列而不是每次从 reason 里解析《…》：
+     --   1. 解析字符串不可靠——reason 是给人看的，格式会变；
+     --   2. 反向视图要按文献分组统计，有列才能走索引；
+     --   3. 「《宋史》支撑了哪些断言」这个问题，答案不该依赖正则。
+     source_title TEXT,
      commit_id   TEXT
    )`,
+  `CREATE INDEX idx_prov_source_title ON provenance(source_title)`,
   `CREATE INDEX idx_prov_target   ON provenance(target_id)`,
   `CREATE INDEX idx_prov_evidence ON provenance(evidence_id)`,
   `CREATE INDEX idx_prov_raw      ON provenance(raw_ref)`,

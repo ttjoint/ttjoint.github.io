@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/70995|528808|183",
             "locator": {
               "pages": "14631",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=183（次子） c_personid=70995 c_kin_id=528808",
             "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/70995|528811|230",
             "locator": {
               "pages": "14631",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=230（二女） c_personid=70995 c_kin_id=528811",
             "reason": "c_kin_code=230 → 二女；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -52,7 +54,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/70995|528810|327",
             "locator": {
               "pages": "14631",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=327（長女） c_personid=70995 c_kin_id=528810",
             "reason": "c_kin_code=327 → 長女；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -67,7 +70,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/70995|528809|329",
             "locator": {
               "pages": "14631",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=329（三女） c_personid=70995 c_kin_id=528809",
             "reason": "c_kin_code=329 → 三女；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -82,7 +86,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/70995|528807|334",
             "locator": {
               "pages": "14631",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=334（四女） c_personid=70995 c_kin_id=528807",
             "reason": "c_kin_code=334 → 四女；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -99,7 +104,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/70995|528806|125",
             "locator": {
               "pages": "14631",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=125（兄） c_personid=70995 c_kin_id=528806",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

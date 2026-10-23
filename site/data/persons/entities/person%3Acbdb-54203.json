@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54203|54212|75",
             "locator": {
               "pages": "MQWW PoetID #258, HuWenKai #372",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0054212, KinCode = 0327",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54203|54202|134",
             "locator": {
               "pages": "MQWW PoetID #258, HuWenKai #372",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "林旭被害后其妻仰藥死",
             "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",

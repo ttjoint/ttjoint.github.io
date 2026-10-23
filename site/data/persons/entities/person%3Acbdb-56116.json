@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/56116|56114|176",
             "locator": {
               "pages": "MQWW PoetID #249, HuWenKai #340",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=176（女兒） c_personid=56116 c_kin_id=56114",
             "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -35,7 +36,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/56116|521323|176",
             "locator": {
               "pages": "7968",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=176（女兒） c_personid=56116 c_kin_id=521323",
             "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -50,7 +52,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/56116|521324|176",
             "locator": {
               "pages": "7968",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=176（女兒） c_personid=56116 c_kin_id=521324",
             "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -67,7 +70,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/56116|521325|180",
             "locator": {
               "pages": "7968",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=56116 c_kin_id=521325",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -82,7 +86,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/56116|521326|180",
             "locator": {
               "pages": "7968",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=56116 c_kin_id=521326",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

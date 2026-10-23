@@ -38,7 +38,11 @@ test('predicate: 按 domain→range 分组而不是平铺', () => {
 test('predicate: 边数从 /api/predicates 来，静态模式下降级不报错', () => {
   assert.match(SRC, /Api\.get\('\/api\/predicates'\)/);
   // 静态部署没有后端：counts 保持 null，页面仍可读，只是不显示次数。
-  assert.match(SRC, /if \(!Api\.isAvailable\(\)\) return;/);
+  //
+  // 必须用 whenReady() 而不是 isAvailable()：后者是同步检查，而 probe 在
+  // app.mounted() 里异步跑，子组件可能先于它——那时 isAvailable() 是 false，
+  // 页面就永远走「静态模式」，即使后端明明在。/sources 页实测过这个竞态。
+  assert.match(SRC, /await Api\.whenReady\(\)/);
 });
 
 test('predicate: 反向谓词单独一节', () => {

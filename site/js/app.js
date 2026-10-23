@@ -29,6 +29,10 @@ const routes = [
   // 而谓词是代码资产，不该由界面改。
   { path: '/predicate', name: 'predicate', component: PredicateIndexPage },
   { path: '/predicate/:key', name: 'predicate-detail', component: PredicateDetailPage },
+  // 反向视图：从证据文件看它支撑了哪些断言。
+  // 管理界面（后续 S3）要用这个方向核对 bot 抽取质量。
+  { path: '/sources', name: 'sources', component: SourceIndexPage },
+  { path: '/sources/:title', name: 'source-detail', component: SourceDetailPage },
   { path: '/all', name: 'all', component: AllObjects },
   // The family tree is its own page rather than a panel inside the detail view:
   // it needs a recursive query the static shards cannot answer, and mixing that

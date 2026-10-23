@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54860|54851|82",
             "locator": {
               "pages": "MQWW PoetID #238, HuWenKai #312",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=82（嗣父） c_personid=54860 c_kin_id=54851",
             "reason": "c_kin_code=82 → 嗣父；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -36,7 +37,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54860|54855|378",
             "locator": {
               "pages": "MQWW PoetID #238, HuWenKai #312",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=378（嗣母） c_personid=54860 c_kin_id=54855",
             "reason": "c_kin_code=378 → 嗣母；经 CBDB 转述，出处《明清婦女著作數據庫》",

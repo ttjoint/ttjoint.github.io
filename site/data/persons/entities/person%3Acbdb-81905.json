@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/81905|54426|126",
             "locator": {
               "pages": "MQWW PoetID #430",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=126（弟） c_personid=81905 c_kin_id=54426",
             "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《明清婦女著作數據庫》",

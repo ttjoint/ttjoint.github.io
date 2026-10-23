@@ -32,7 +32,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/81808|338109|165",
             "locator": {
               "pages": "4104",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=165（長兄） c_personid=81808 c_kin_id=338109",
             "reason": "c_kin_code=165 → 長兄；经 CBDB 转述，出处《明清婦女著作數據庫》",

@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/64984|521577|111",
             "locator": {
               "pages": "8398",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=111（母） c_personid=64984 c_kin_id=521577",
             "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

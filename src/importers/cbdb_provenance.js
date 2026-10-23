@@ -63,6 +63,10 @@ function provenanceFromKinRow(row, opts = {}) {
   if (hasSource) locator.sourceId = row.c_source;
 
   const title = hasSource ? (titles.get(row.c_source) || '') : '';
+  // 文献名也放进 locator：反向视图要按文献分组（「《宋史》支撑了哪些断言」），
+  // 有结构化字段才能建索引。只存在 reason 的《…》里的话，那个查询只能靠
+  // 正则扫全表，而且 reason 是给人看的、格式随时可能变。
+  if (title) locator.title = title;
   const reason = [
     opts.kinLabel ? `c_kin_code=${row.c_kin_code} → ${opts.kinLabel}` : `c_kin_code=${row.c_kin_code}`,
     // 「经 CBDB」不能省。`出处《宋史》` 读起来像我们直接查了《宋史》，

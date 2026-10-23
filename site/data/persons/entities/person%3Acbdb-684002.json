@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/684002|684004|180",
             "locator": {
               "pages": "lgid=1163917",
-              "sourceId": 65192
+              "sourceId": 65192,
+              "title": "民國歙縣志: 十六卷"
             },
             "quote": "c_kin_code=180（子） c_personid=684002 c_kin_id=684004",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《民國歙縣志: 十六卷》",

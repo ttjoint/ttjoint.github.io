@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54534|518977|180",
             "locator": {
               "pages": "3284",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=54534 c_kin_id=518977",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -35,7 +36,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54534|518978|180",
             "locator": {
               "pages": "3284",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=54534 c_kin_id=518978",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -50,7 +52,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54534|518979|180",
             "locator": {
               "pages": "3284",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=54534 c_kin_id=518979",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

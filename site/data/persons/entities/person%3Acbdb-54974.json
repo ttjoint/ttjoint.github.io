@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54974|88379|75",
             "locator": {
               "pages": "lgid=1167286",
-              "sourceId": 68286
+              "sourceId": 68286,
+              "title": "(民國)黟縣四志: 十六卷卷首一卷卷末一卷"
             },
             "quote": "c_kin_code=75（父） c_personid=54974 c_kin_id=88379",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《(民國)黟縣四志: 十六卷卷首一卷卷末一卷》",

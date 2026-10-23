@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/74335|121118|75",
             "locator": {
               "pages": "MQWW PoetID #4222, HuWenKai #712",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0121118, KinCode = 0180",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/74335|121106|111",
             "locator": {
               "pages": "MQWW PoetID #4222, HuWenKai #712",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=111（母） c_personid=74335 c_kin_id=121106",
             "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -54,7 +56,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/74335|121148|180",
             "locator": {
               "pages": "MQWW PoetID #4222, HuWenKai #712",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0121148, KinCode = 0075",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -71,7 +74,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/74335|121143|118",
             "locator": {
               "pages": "MQWW PoetID #4222, HuWenKai #712",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0121143, KinCode = 0118",
             "reason": "c_kin_code=118 → 兄弟；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -88,7 +92,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/74335|121132|169",
             "locator": {
               "pages": "MQWW PoetID #4222, HuWenKai #712",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0121132, KinCode = 0125",
             "reason": "c_kin_code=169 → 妹；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",

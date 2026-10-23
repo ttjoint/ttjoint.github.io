@@ -68,7 +68,9 @@ const PredicateIndexPage = {
     },
   },
   async mounted() {
-    if (!Api.isAvailable()) return;
+    // 等 probe 有结果：谓词页只是「恰好」排在探测之后，
+    // 靠运气正确不算正确。
+    if (!(await Api.whenReady())) return;
     this.apiAvailable = true;
     try {
       const res = await Api.get('/api/predicates');
@@ -198,7 +200,7 @@ const PredicateDetailPage = {
   },
   async mounted() {
     this.key = decodeURIComponent(this.$route.params.key || '');
-    if (!Api.isAvailable()) return;
+    if (!(await Api.whenReady())) return;
     this.apiAvailable = true;
     try {
       const res = await Api.get('/api/predicates/' + encodeURIComponent(this.key));

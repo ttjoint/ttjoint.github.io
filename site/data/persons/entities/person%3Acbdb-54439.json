@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/54439|691407|75",
             "locator": {
               "pages": "lgid=294074",
-              "sourceId": 68002
+              "sourceId": 68002,
+              "title": "海鹽縣志: 二十二卷(光緒)"
             },
             "quote": "c_kin_code=75（父） c_personid=54439 c_kin_id=691407",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《海鹽縣志: 二十二卷(光緒)》",

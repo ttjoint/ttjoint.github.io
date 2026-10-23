@@ -87,3 +87,41 @@
   color: var(--color-primary);
   text-decoration: underline;
 }
+
+/* ---- 文献页 ---- */
+.source-table td { vertical-align: middle; }
+.source-bar {
+  height: 6px;
+  background: var(--color-border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.source-bar-fill {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+
+.source-claim { cursor: default; }
+.source-claim .rel-name a { cursor: pointer; }
+.source-claim .rel-name a:hover { color: var(--color-primary); text-decoration: underline; }
+
+/* 引文块：等宽字体 + 左侧竖线，与正文区分。
+   等宽是因为这些 quote 常常是字段串（c_birthyear=1873 …），
+   比例字体会让等号对不齐、更难读。 */
+.source-quote {
+  margin-top: 6px;
+  padding: 6px 10px;
+  border-left: 3px solid var(--color-border);
+  background: var(--color-bg);
+  font-family: ui-monospace, monospace;
+  font-size: .78rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+/* 引文多样性标签 */
+.tag.good { background: var(--badge-person-bg); color: var(--badge-person-fg); }
+.tag.ok   { background: var(--badge-event-bg); color: var(--badge-event-fg); }
+.tag.warn { background: var(--badge-event-bg); color: var(--badge-event-fg); }

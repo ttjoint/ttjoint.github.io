@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61773|120345|176",
             "locator": {
               "pages": "MQWW PoetID #3733, HuWenKai #624",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=176（女兒） c_personid=61773 c_kin_id=120345",
             "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61773|520373|180",
             "locator": {
               "pages": "5118",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=61773 c_kin_id=520373",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -52,7 +54,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61773|520374|180",
             "locator": {
               "pages": "5118",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=61773 c_kin_id=520374",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

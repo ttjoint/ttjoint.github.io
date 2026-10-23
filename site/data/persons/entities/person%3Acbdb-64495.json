@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/64495|521294|135",
             "locator": {
               "pages": "7899",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=135（妻子） c_personid=64495 c_kin_id=521294",
             "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

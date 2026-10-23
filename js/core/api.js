@@ -103,6 +103,23 @@
   };
 
   /**
+   * 等到 probe 有结果。
+   *
+   * `isAvailable()` 是同步检查，而 probe 在 app.mounted() 里异步跑。
+   * 子组件的 mounted 可能先于 probe 完成——此时 isAvailable() 返回 false，
+   * 组件就永远走「静态模式」分支，即使后端明明在。
+   *
+   * 这不是假设：/sources 页实测过，Api.isAvailable() 在控制台是 true，
+   * 但组件里 apiAvailable 是 false、列表 0 行。谓词页看起来正常只是
+   * 因为它的 mounted 恰好排在 probe 之后。
+   */
+  ApiClient.prototype.whenReady = function () {
+    if (this.status !== 'unknown') return Promise.resolve(this.isAvailable());
+    if (!this._probe) return Promise.resolve(false);
+    return this._probe.then(() => this.isAvailable()).catch(() => false);
+  };
+
+  /**
    * Which capabilities can this deployment support?
    *
    * Views ask this instead of checking `isAvailable()` and then guessing, so the

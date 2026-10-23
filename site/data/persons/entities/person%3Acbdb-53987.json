@@ -33,7 +33,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/53987|54026|125",
             "locator": {
               "pages": "MQWW PoetID #359",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=125（兄） c_personid=53987 c_kin_id=54026",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -48,7 +49,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/53987|54028|126",
             "locator": {
               "pages": "MQWW PoetID #359",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=126（弟） c_personid=53987 c_kin_id=54028",
             "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -63,7 +65,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/53987|54029|126",
             "locator": {
               "pages": "MQWW PoetID #359",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=126（弟） c_personid=53987 c_kin_id=54029",
             "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《明清婦女著作數據庫》",

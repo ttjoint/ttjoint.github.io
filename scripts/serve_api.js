@@ -138,6 +138,14 @@ function familyTree(id, dir, depth, predicate) {
   return db.prepare(sql).all(...params);
 }
 /** One entity plus every edge that touches it, in both directions. */
+/**
+ * 解析数据库里存的 JSON 列。解析失败返回 null 而不是抛——
+ * 一条坏数据不该让整个请求 500。
+ */
+function safeJson(text) {
+  try { return JSON.parse(text); } catch { return null; }
+}
+
 function entityDetail(id) {
   let row = db.prepare(
     `SELECT id, type, name, summary, props_json, valid_from, valid_to, folder
@@ -455,6 +463,102 @@ async function route(req, res) {
       const predicate = url.searchParams.get('predicate') || null;
       const rows = familyTree(id, dir, depth, predicate);
       return json(res, 200, { id, dir, depth, predicate, maxDepth: MAX_DEPTH, rows });
+    }
+
+    // ---------------------------------------------------------------- sources
+    //
+    // 反向视图：证据文件 → 它支撑了哪些断言。
+    //
+    // 现有查询方向都是「实体 → 它的出处」，管理界面需要反过来看：
+    // 「《宋史》到底被引用了多少次、支撑了哪些关系、有没有可疑的批量生成」。
+    // 这个方向也能用来核对出处质量——比如某个文献的 quote 全是同一条模板，
+    // 说明它并非真的被读过。
+    if (parts[1] === 'sources') {
+      const want = parts[2];
+
+      // 单个文献的详情：按 scope 分组统计 + 抽样断言。
+      if (want) {
+        const title = decodeURIComponent(want);
+        const counts = db.prepare(
+          `SELECT scope, COUNT(*) AS n FROM provenance WHERE source_title = ? GROUP BY scope`,
+        ).all(title);
+        const byScope = {};
+        for (const r of counts) byScope[r.scope] = r.n;
+
+        // 抽样：边级给出「主语 —谓词→ 宾语」，实体级给出「实体名 + 字段」。
+        const edgeSamples = db.prepare(
+          `SELECT p.target_id, p.raw_ref, p.quote, p.reason, p.locator,
+                  e.subject, e.predicate, e.object,
+                  s.name AS subject_name, o.name AS object_name
+             FROM provenance p
+             JOIN edges e ON e.id = p.target_id
+             LEFT JOIN entities s ON s.id = e.subject
+             LEFT JOIN entities o ON o.id = e.object
+            WHERE p.source_title = ? AND p.scope = 'edge'
+            ORDER BY p.id
+            LIMIT ?`,
+        ).all(title, Number(url.searchParams.get('limit') || 30));
+
+        const entitySamples = db.prepare(
+          `SELECT p.target_id, p.raw_ref, p.quote, p.reason, p.locator,
+                  en.name AS entity_name, en.type AS entity_type
+             FROM provenance p
+             LEFT JOIN entities en ON en.id = p.target_id
+            WHERE p.source_title = ? AND p.scope = 'entity'
+            ORDER BY p.id
+            LIMIT ?`,
+        ).all(title, Number(url.searchParams.get('limit') || 10));
+
+        const distinctQuotes = db.prepare(
+          `SELECT COUNT(DISTINCT quote) AS n FROM provenance WHERE source_title = ?`,
+        ).get(title).n;
+        const total = (byScope.edge || 0) + (byScope.entity || 0);
+
+        return json(res, 200, {
+          title,
+          total,
+          byScope,
+          // 不同 quote 的条数。远小于总数说明大量断言共用同一条引文——
+          // 那通常意味着自动生成，不是逐条读过。
+          distinctQuotes,
+          edges: edgeSamples.map((r) => ({
+            targetId: r.target_id,
+            subject: r.subject,
+            subjectName: r.subject_name,
+            predicate: r.predicate,
+            object: r.object,
+            objectName: r.object_name,
+            rawRef: r.raw_ref,
+            quote: r.quote,
+            reason: r.reason,
+            locator: r.locator ? safeJson(r.locator) : null,
+          })),
+          entities: entitySamples.map((r) => ({
+            targetId: r.target_id,
+            entityName: r.entity_name,
+            entityType: r.entity_type,
+            rawRef: r.raw_ref,
+            quote: r.quote,
+            reason: r.reason,
+            locator: r.locator ? safeJson(r.locator) : null,
+          })),
+        });
+      }
+
+      // 总表：按文献分组，带条数。
+      const rows = db.prepare(
+        `SELECT source_title AS title, COUNT(*) AS n,
+                SUM(CASE WHEN scope = 'edge' THEN 1 ELSE 0 END) AS edges,
+                SUM(CASE WHEN scope = 'entity' THEN 1 ELSE 0 END) AS entities
+           FROM provenance
+          WHERE source_title IS NOT NULL
+          GROUP BY source_title
+          ORDER BY n DESC`,
+      ).all();
+      const untitled = db.prepare(
+        `SELECT COUNT(*) AS n FROM provenance WHERE source_title IS NULL`,
+      ).get().n;
+      return json(res, 200, { sources: rows, untitled, total: rows.reduce((a, r) => a + r.n, 0) });
     }
 
     if (parts[1] === 'predicates') {

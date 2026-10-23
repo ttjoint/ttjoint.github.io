@@ -22,6 +22,7 @@
         <div class="header-right">
           <router-link to="/all" class="btn btn-sm" style="margin-right:4px">全部对象</router-link>
           <a class="btn btn-sm" href="#/predicate" style="margin-right:8px">谓词表</a>
+          <a class="btn btn-sm" href="#/sources" style="margin-right:8px">文献</a>
           <div class="mode-badge" :class="{ local: isLocalMode }">
             {{ isLocalMode ? '本地模式' : '只读模式' }}
           </div>
@@ -78,7 +79,20 @@
   <script src="js/views/all_objects.js"></script>
   <script src="js/views/search_results.js"></script>
   <script src="js/views/predicate_page.js"></script>
+  <script src="js/views/source_page.js"></script>
   <!-- 装配入口：路由 + 根实例 + 挂载 -->
   <script src="js/app.js"></script>
+<div id="static-fallback">
+  <h2>HumanMap：人物与组织关系图谱</h2>
+  <p>已发布 3847 条记录，每条都有可检索的独立页面。数据来源为 CBDB（中国历代人物传记资料库）与官方公开文献，每项取值均附原文证据。</p>
+  <ul class="static-list">
+      <li><a href="/browse/person/">人物</a><span class="static-year">3641 条</span></li>
+      <li><a href="/browse/organization/">组织</a><span class="static-year">67 条</span></li>
+      <li><a href="/browse/event/">事件</a><span class="static-year">22 条</span></li>
+      <li><a href="/browse/thing/">非人实体</a><span class="static-year">6 条</span></li>
+      <li><a href="/browse/evidence/">证据</a><span class="static-year">111 条</span></li>
+  </ul>
+  <p><a href="/browse/">按类型浏览全部 3847 条记录 →</a></p>
+</div>
 </body>
 </html>

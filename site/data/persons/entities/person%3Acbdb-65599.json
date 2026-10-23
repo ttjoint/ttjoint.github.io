@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/65599|521972|75",
             "locator": {
               "pages": "9033",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=75（父） c_personid=65599 c_kin_id=521972",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/65599|122327|168",
             "locator": {
               "pages": "MQWW PoetID #4532",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=168（妾） c_personid=65599 c_kin_id=122327",
             "reason": "c_kin_code=168 → 妾；经 CBDB 转述，出处《明清婦女著作數據庫》",

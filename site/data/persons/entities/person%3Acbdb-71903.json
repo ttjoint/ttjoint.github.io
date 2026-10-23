@@ -33,7 +33,8 @@
           {
             "rawRef": "raw:cbdb/KIN_DATA/71903|73027|111",
             "locator": {
-              "sourceId": 35194
+              "sourceId": 35194,
+              "title": "晚晴簃詩匯:二百卷"
             },
             "quote": "徐世昌《晚晴簃詩匯》卷一九〇",
             "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《晚晴簃詩匯:二百卷》；CBDB 自动生成",

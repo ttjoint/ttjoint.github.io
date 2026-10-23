@@ -26,7 +26,7 @@ const VIEWS = [
   // entity/ 子组件先于 entity_detail.js——模板里引用它们。
   'search_bar.js', 'home.js', 'entity/info_card.js', 'entity/source_chain.js',
   'entity_detail.js', 'family_tree.js',
-  'predicate_page.js', 'all_objects.js', 'search_results.js',
+  'predicate_page.js', 'source_page.js', 'all_objects.js', 'search_results.js',
 ];
 
 function boot() {

@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/58672|517549|183",
             "locator": {
               "pages": "1935",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=183（次子） c_personid=58672 c_kin_id=517549",
             "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -34,7 +35,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/58672|517550|184",
             "locator": {
               "pages": "1935",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=184（三子） c_personid=58672 c_kin_id=517550",
             "reason": "c_kin_code=184 → 三子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -49,7 +51,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/58672|517548|185",
             "locator": {
               "pages": "1935",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=185（四子） c_personid=58672 c_kin_id=517548",
             "reason": "c_kin_code=185 → 四子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -64,7 +67,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/58672|517547|191",
             "locator": {
               "pages": "1935",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=191（五子） c_personid=58672 c_kin_id=517547",
             "reason": "c_kin_code=191 → 五子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -81,7 +85,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/58672|517545|125",
             "locator": {
               "pages": "1935",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=125（兄） c_personid=58672 c_kin_id=517545",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

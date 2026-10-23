@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526870|75",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=75（父） c_personid=69333 c_kin_id=526870",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526855|176",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=176（女兒） c_personid=69333 c_kin_id=526855",
             "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -52,7 +54,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526856|176",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=176（女兒） c_personid=69333 c_kin_id=526856",
             "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -67,7 +70,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526857|176",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=176（女兒） c_personid=69333 c_kin_id=526857",
             "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -84,7 +88,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526859|180",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=69333 c_kin_id=526859",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -99,7 +104,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526860|180",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=69333 c_kin_id=526860",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -114,7 +120,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526862|180",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=69333 c_kin_id=526862",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -129,7 +136,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526863|180",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=69333 c_kin_id=526863",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -144,7 +152,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526866|180",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=69333 c_kin_id=526866",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
@@ -159,7 +168,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/69333|526869|180",
             "locator": {
               "pages": "13037",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=69333 c_kin_id=526869",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

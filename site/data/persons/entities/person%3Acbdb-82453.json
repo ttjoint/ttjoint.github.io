@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/82453|85576|163",
             "locator": {
               "pages": "MQWW PoetID #4258, HuWenKai #833",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=163（第二任妻） c_personid=82453 c_kin_id=85576",
             "reason": "c_kin_code=163 → 第二任妻；经 CBDB 转述，出处《明清婦女著作數據庫》",

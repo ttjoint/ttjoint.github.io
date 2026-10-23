@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/122143|89137|75",
             "locator": {
               "pages": "MQWW PoetID #4407",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=75（父） c_personid=122143 c_kin_id=89137",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -36,7 +37,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/122143|122150|134",
             "locator": {
               "pages": "MQWW PoetID #4407",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0122150, KinCode = 0135",
             "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",

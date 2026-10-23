@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/61013|519737|180",
             "locator": {
               "pages": "4337",
-              "sourceId": 9602
+              "sourceId": 9602,
+              "title": "人名權威資料（中央研究院歷史語言研究所）"
             },
             "quote": "c_kin_code=180（子） c_personid=61013 c_kin_id=519737",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",

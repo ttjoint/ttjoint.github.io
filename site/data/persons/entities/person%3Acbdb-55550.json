@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/55550|55542|75",
             "locator": {
               "pages": "MQWW PoetID #4424, HuWenKai #637",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=75（父） c_personid=55550 c_kin_id=55542",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/55550|55553|180",
             "locator": {
               "pages": "MQWW PoetID #4424, HuWenKai #637",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0055553, KinCode = 0111",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -54,7 +56,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/55550|55562|125",
             "locator": {
               "pages": "MQWW PoetID #4667",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0055562, KinCode = 0169",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -71,7 +74,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/55550|55552|134",
             "locator": {
               "pages": "MQWW PoetID #4424, HuWenKai #637",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0055552, KinCode = 0135",
             "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -88,7 +92,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/55550|55547|169",
             "locator": {
               "pages": "MQWW PoetID #4424, HuWenKai #637",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "c_kin_code=169（妹） c_personid=55550 c_kin_id=55547",
             "reason": "c_kin_code=169 → 妹；经 CBDB 转述，出处《明清婦女著作數據庫》",

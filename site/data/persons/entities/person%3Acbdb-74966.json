@@ -19,7 +19,8 @@
           {
             "rawRef": "raw:cbdb/KIN_DATA/74966|58139|75",
             "locator": {
-              "sourceId": 17477
+              "sourceId": 17477,
+              "title": "清史稿"
             },
             "quote": "《清史稿》列傳二百三十三。",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《清史稿》",

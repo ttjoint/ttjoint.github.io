@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/55312|55313|75",
             "locator": {
               "pages": "MQWW PoetID #206, HuWenKai #618",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0055313, KinCode = 0176",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/55312|81169|125",
             "locator": {
               "pages": "MQWW PoetID #206, HuWenKai #618",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0081169, KinCode = 0169",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -52,7 +54,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/55312|55315|126",
             "locator": {
               "pages": "MQWW PoetID #206, HuWenKai #618",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0055315, KinCode = 0164",
             "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
@@ -69,7 +72,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/55312|55316|342",
             "locator": {
               "pages": "MQWW PoetID #206, HuWenKai #618",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "念植亡﹐過門守貞。",
             "reason": "c_kin_code=342 → 未婚夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",

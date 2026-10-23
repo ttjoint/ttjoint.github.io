@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/120222|56894|134",
             "locator": {
               "pages": "3739",
-              "sourceId": 9601
+              "sourceId": 9601,
+              "title": "明清婦女著作數據庫"
             },
             "quote": "Auto-generated from PersonID = 0056894, KinCode = 0135",
             "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",

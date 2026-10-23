@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/57938|701591|75",
             "locator": {
               "pages": "lgid=1018944",
-              "sourceId": 70721
+              "sourceId": 70721,
+              "title": "(民國)續修陝西通志稿: 二百二十四卷 卷首一卷"
             },
             "quote": "c_kin_code=75（父） c_personid=57938 c_kin_id=701591",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《(民國)續修陝西通志稿: 二百二十四卷 卷首一卷》",
@@ -37,7 +38,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/57938|362314|180",
             "locator": {
               "pages": "lgid=1018946",
-              "sourceId": 70721
+              "sourceId": 70721,
+              "title": "(民國)續修陝西通志稿: 二百二十四卷 卷首一卷"
             },
             "quote": "c_kin_code=180（子） c_personid=57938 c_kin_id=362314",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《(民國)續修陝西通志稿: 二百二十四卷 卷首一卷》",

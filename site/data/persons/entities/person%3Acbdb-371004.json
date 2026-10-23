@@ -19,7 +19,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/371004|82082|75",
             "locator": {
               "pages": "lgid=869208",
-              "sourceId": 59645
+              "sourceId": 59645,
+              "title": "(民國)信陽縣志：三十一卷"
             },
             "quote": "c_kin_code=75（父） c_personid=371004 c_kin_id=82082",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《(民國)信陽縣志：三十一卷》",
@@ -36,7 +37,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/371004|559935|111",
             "locator": {
               "pages": "lgid=869208",
-              "sourceId": 59645
+              "sourceId": 59645,
+              "title": "(民國)信陽縣志：三十一卷"
             },
             "quote": "c_kin_code=111（母） c_personid=371004 c_kin_id=559935",
             "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《(民國)信陽縣志：三十一卷》",
@@ -53,7 +55,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/371004|578648|180",
             "locator": {
               "pages": "lgid=869218",
-              "sourceId": 59645
+              "sourceId": 59645,
+              "title": "(民國)信陽縣志：三十一卷"
             },
             "quote": "c_kin_code=180（子） c_personid=371004 c_kin_id=578648",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《(民國)信陽縣志：三十一卷》",
@@ -68,7 +71,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/371004|578649|180",
             "locator": {
               "pages": "lgid=869218",
-              "sourceId": 59645
+              "sourceId": 59645,
+              "title": "(民國)信陽縣志：三十一卷"
             },
             "quote": "c_kin_code=180（子） c_personid=371004 c_kin_id=578649",
             "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《(民國)信陽縣志：三十一卷》",
@@ -85,7 +89,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/371004|559937|125",
             "locator": {
               "pages": "lgid=869208",
-              "sourceId": 59645
+              "sourceId": 59645,
+              "title": "(民國)信陽縣志：三十一卷"
             },
             "quote": "c_kin_code=125（兄） c_personid=371004 c_kin_id=559937",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《(民國)信陽縣志：三十一卷》",
@@ -100,7 +105,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/371004|559938|125",
             "locator": {
               "pages": "lgid=869208",
-              "sourceId": 59645
+              "sourceId": 59645,
+              "title": "(民國)信陽縣志：三十一卷"
             },
             "quote": "c_kin_code=125（兄） c_personid=371004 c_kin_id=559938",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《(民國)信陽縣志：三十一卷》",
@@ -115,7 +121,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/371004|559939|125",
             "locator": {
               "pages": "lgid=869208",
-              "sourceId": 59645
+              "sourceId": 59645,
+              "title": "(民國)信陽縣志：三十一卷"
             },
             "quote": "c_kin_code=125（兄） c_personid=371004 c_kin_id=559939",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《(民國)信陽縣志：三十一卷》",
@@ -130,7 +137,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/371004|559940|125",
             "locator": {
               "pages": "lgid=869208",
-              "sourceId": 59645
+              "sourceId": 59645,
+              "title": "(民國)信陽縣志：三十一卷"
             },
             "quote": "c_kin_code=125（兄） c_personid=371004 c_kin_id=559940",
             "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《(民國)信陽縣志：三十一卷》",
@@ -145,7 +153,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/371004|559936|165",
             "locator": {
               "pages": "lgid=869208",
-              "sourceId": 59645
+              "sourceId": 59645,
+              "title": "(民國)信陽縣志：三十一卷"
             },
             "quote": "c_kin_code=165（長兄） c_personid=371004 c_kin_id=559936",
             "reason": "c_kin_code=165 → 長兄；经 CBDB 转述，出处《(民國)信陽縣志：三十一卷》",

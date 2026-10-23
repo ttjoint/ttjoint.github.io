@@ -20,7 +20,8 @@
             "rawRef": "raw:cbdb/KIN_DATA/62528|88748|75",
             "locator": {
               "pages": "lgid=152242",
-              "sourceId": 39136
+              "sourceId": 39136,
+              "title": "武進陽湖縣志"
             },
             "quote": "c_kin_code=75（父） c_personid=62528 c_kin_id=88748",
             "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《武進陽湖縣志》",

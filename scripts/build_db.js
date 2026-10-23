@@ -169,8 +169,8 @@ function main() {
       'INSERT OR IGNORE INTO edges (id, subject, predicate, object, qualifiers) VALUES (?, ?, ?, ?, ?)',
     );
     const insertProv = db.prepare(
-      `INSERT INTO provenance (id, scope, target_id, evidence_id, raw_ref, quote, reason, commit_id)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+      `INSERT INTO provenance (id, scope, target_id, evidence_id, raw_ref, quote, reason, locator, source_title, commit_id)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     );
 
     db.exec('BEGIN');
@@ -267,6 +267,11 @@ function main() {
                   p.rawRef || null,
                   p.quote || '',
                   p.reason || null,
+                  // locator 存 JSON 字符串。空对象存 null 而不是 '{}'——
+                  // 「没有页码」和「页码是空对象」不是一回事，存 '{}' 会让
+                  // 「有 locator 的条数」这个统计虚高。
+                  p.locator && Object.keys(p.locator).length ? JSON.stringify(p.locator) : null,
+                  (p.locator && p.locator.title) || null,
                   p.commitId || 'c-000001',
                 );
                 stats.edgeProvenance = (stats.edgeProvenance || 0) + 1;
@@ -293,6 +298,8 @@ function main() {
             p.rawRef || null,
             p.quote || '',
             p.reason || null,
+            p.locator && Object.keys(p.locator).length ? JSON.stringify(p.locator) : null,
+            (p.locator && p.locator.title) || null,
             p.commitId || null,
           );
           stats.provenance++;
