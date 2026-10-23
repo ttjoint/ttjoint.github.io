@@ -473,6 +473,51 @@ async function route(req, res) {
     // 「《宋史》到底被引用了多少次、支撑了哪些关系、有没有可疑的批量生成」。
     // 这个方向也能用来核对出处质量——比如某个文献的 quote 全是同一条模板，
     // 说明它并非真的被读过。
+    // ---------------------------------------------------------------- commit
+    //
+    // 提交校验端点。**本端点不写盘。**
+    //
+    // 它只回答「这批断言能不能入库」，供录入后台在提交前自检。
+    // 真正写入需要走完整链路：落 raw/ → transformer 重跑 → 重新 build。
+    // 那个链路涉及多个进程和分钟级耗时，不能挂在一个 HTTP 请求里。
+    //
+    // 现在没有写入口是有意的：宁可暂时没有，也不要一个绕过校验的入口。
+    if (parts[1] === 'commit') {
+      if (req.method !== 'POST') return fail(res, 405, 'POST only');
+      let body;
+      try {
+        body = await readBody(req);
+      } catch (e) {
+        return fail(res, 400, e.message);
+      }
+
+      const { validateBatch } = require('../src/store/commit_validation.js');
+      const rawStore = require('../src/store/raw_store.js');
+
+      const claims = Array.isArray(body) ? body : (body && body.claims) || [];
+      if (!claims.length) return fail(res, 400, 'claims is empty');
+
+      const result = validateBatch(claims, {
+        // rawRef 必须在 raw 层真实存在。这是「出处不是编的」的硬证据。
+        rawExists: (ref) => rawStore.exists(ref),
+      });
+
+      return json(res, result.ok ? 200 : 422, {
+        ok: result.ok,
+        total: result.total,
+        failed: result.failed,
+        results: result.results.map((r) => ({
+          index: r.index,
+          ok: r.ok,
+          issues: r.issues,
+        })),
+        // 明确告知调用方下一步，避免误以为已经写入。
+        note: result.ok
+          ? '校验通过。写入需走 raw/ → transformer → build 链路，本端点不落盘。'
+          : '校验未通过，未写入任何内容。',
+      });
+    }
+
     if (parts[1] === 'sources') {
       const want = parts[2];
 

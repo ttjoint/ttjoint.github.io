@@ -1,0 +1,143 @@
+// 提交校验。
+//
+// 编辑界面的价值不在于「能改」，而在于改得可信。没有校验的编辑框
+// 等于把前端曾经做过的 localStorage 假写搬到后端重演一遍。
+//
+// 规则来自 docs/architecture/节点类型与谓词.md §6。
+
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = path.join(__dirname, '..', '..');
+const { validateClaim, validateBatch, buildCommit } = require('../../src/store/commit_validation.js');
+
+const GOOD = {
+  subject: 'person:cbdb-1',
+  predicate: 'maleChild',
+  object: 'person:cbdb-2',
+  provenance: {
+    rawRef: 'raw:cbdb/KIN_DATA/1|2|180',
+    quote: 'c_kin_code=180（子） c_personid=1 c_kin_id=2',
+  },
+};
+
+test('commit: 合法断言通过', () => {
+  const r = validateClaim(GOOD);
+  assert.equal(r.ok, true);
+  assert.deepEqual(r.issues, []);
+  assert.equal(r.normalized.predicate, 'maleChild');
+});
+
+test('commit: quote 必填非空', () => {
+  // 空 quote 等于没出处——正是清理 111 条空 excerpt 证据时要消灭的东西。
+  for (const q of ['', '   ', undefined, null]) {
+    const r = validateClaim({ ...GOOD, provenance: { ...GOOD.provenance, quote: q } });
+    assert.equal(r.ok, false, `quote=${JSON.stringify(q)} 应被拒绝`);
+    assert.ok(r.issues.some((i) => i.field === 'quote' && i.code === 'required'));
+  }
+});
+
+test('commit: rawRef 必填，且给了校验函数时必须在 raw 层存在', () => {
+  // 没有 rawRef 就追不到第 0 层，这条断言无法核对。
+  const noRef = validateClaim({ ...GOOD, provenance: { quote: 'q' } });
+  assert.ok(noRef.issues.some((i) => i.field === 'rawRef'));
+
+  // 编造的 ref 必须被拦。这是「出处不是编的」的硬证据。
+  const fake = validateClaim(GOOD, { rawExists: () => false });
+  assert.equal(fake.ok, false);
+  assert.ok(fake.issues.some((i) => i.code === 'raw-not-found'));
+
+  // 真实存在的 ref 通过。
+  const real = validateClaim(GOOD, { rawExists: () => true });
+  assert.equal(real.ok, true);
+});
+
+test('commit: 未注册谓词被拒绝', () => {
+  // 未注册谓词入库会怎样：这条边能被写入，但查询层不认识它，
+  // 于是既不能被「父亲」查到，也不出现在任何关系卡片里——
+  // 一条存在但看不见的边，比不存在更糟。
+  const r = validateClaim({ ...GOOD, predicate: 'inventedRelation' });
+  assert.equal(r.ok, false);
+  assert.ok(r.issues.some((i) => i.code === 'unknown-predicate'));
+});
+
+test('commit: 自指被拒绝', () => {
+  const r = validateClaim({ ...GOOD, object: GOOD.subject });
+  assert.equal(r.ok, false);
+  assert.ok(r.issues.some((i) => i.code === 'self-reference'));
+});
+
+test('commit: 一次返回全部问题，不是遇到第一个就停', () => {
+  // 用户提交一次表单，应该一次看到所有问题。
+  const r = validateClaim({ subject: '', predicate: '', object: '', provenance: {} });
+  assert.equal(r.ok, false);
+  const fields = r.issues.map((i) => i.field);
+  for (const f of ['subject', 'predicate', 'object', 'rawRef', 'quote']) {
+    assert.ok(fields.includes(f), `应报告 ${f}`);
+  }
+});
+
+test('commit: 批量校验汇总正确', () => {
+  const r = validateBatch([GOOD, { ...GOOD, predicate: 'nope' }, GOOD]);
+  assert.equal(r.total, 3);
+  assert.equal(r.failed, 1);
+  assert.equal(r.ok, false);
+  assert.equal(r.results[1].ok, false);
+  assert.equal(r.results[0].ok, true);
+});
+
+test('commit: 空批次不算成功', () => {
+  // 「提交 0 条」不该报 ok——那会让调用方以为写入了什么。
+  const r = validateBatch([]);
+  assert.equal(r.ok, false);
+});
+
+test('commit: buildCommit 记录每条断言的 rawRef', () => {
+  const c = buildCommit([GOOD, GOOD], { commitId: 'c-000010', author: 'tester', message: 'test' });
+  assert.equal(c.commitId, 'c-000010');
+  assert.equal(c.stats.claims, 2);
+  assert.equal(c.stats.rawRefs.length, 2);
+  // 便于事后核对「这次提交读了哪些原始记录」
+  assert.equal(c.stats.rawRefs[0], GOOD.provenance.rawRef);
+});
+
+test('commit: 端点只校验不落盘', () => {
+  // 真正写入要走 raw/ → transformer → build，那是分钟级、多进程的链路，
+  // 不能挂在一个 HTTP 请求里。端点必须在响应里说明这一点，
+  // 否则调用方会以为已经写入。
+  const api = fs.readFileSync(path.join(ROOT, 'scripts', 'serve_api.js'), 'utf8');
+  assert.match(api, /parts\[1\] === 'commit'/);
+  assert.match(api, /本端点不落盘/);
+  assert.match(api, /validateBatch/);
+  assert.match(api, /rawExists/);
+});
+
+test('commit: 现有数据全部能通过校验', () => {
+  // 规则若与真实数据冲突，说明规则写错了（或数据有问题）。
+  // 抽样真实分片验证，防止校验比数据更严导致编辑功能无法使用。
+  const dir = path.join(ROOT, 'data', 'persons', 'entities');
+  if (!fs.existsSync(dir)) return;
+  const files = fs.readdirSync(dir).slice(0, 300);
+  let checked = 0, failed = 0;
+  for (const f of files) {
+    const e = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+    for (const [pred, entries] of Object.entries(e.relations || {})) {
+      for (const x of entries) {
+        if (typeof x !== 'object' || !x.provenance || !x.provenance.length) continue;
+        const p = x.provenance[0];
+        const r = validateClaim({
+          subject: e.id,
+          predicate: String(pred).replace(/\/反$/, ''),
+          object: x.id,
+          provenance: { rawRef: p.rawRef, quote: p.quote },
+        });
+        checked++;
+        if (!r.ok) failed++;
+      }
+    }
+  }
+  assert.ok(checked > 0, '应抽到数据');
+  assert.equal(failed, 0, `${failed}/${checked} 条现有数据未通过校验`);
+});
