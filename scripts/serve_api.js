@@ -500,6 +500,10 @@ async function route(req, res) {
       const result = validateBatch(claims, {
         // rawRef 必须在 raw 层真实存在。这是「出处不是编的」的硬证据。
         rawExists: (ref) => rawStore.exists(ref),
+        // quote 由服务端按 span 从原文截取，**不接受提交者直接填写**。
+        // 允许直接写 quote 的话，它与手写一条断言没有区别——任何内容都能
+        // 被塞进「原文摘录」，而校验无法分辨是抄的还是编的。
+        rawGet: (ref) => rawStore.getByRawId(ref),
       });
 
       return json(res, result.ok ? 200 : 422, {
@@ -510,6 +514,11 @@ async function route(req, res) {
           index: r.index,
           ok: r.ok,
           issues: r.issues,
+          // 回显服务端截出的引文：调用方要能确认「截的是哪一句」。
+          // 不回显的话，录入员提交完不知道系统截到了什么。
+          quote: r.normalized ? r.normalized.provenance.quote : null,
+          span: r.normalized ? r.normalized.provenance.span : null,
+          fingerprint: r.normalized ? r.normalized.provenance.fingerprint : null,
         })),
         // 明确告知调用方下一步，避免误以为已经写入。
         note: result.ok

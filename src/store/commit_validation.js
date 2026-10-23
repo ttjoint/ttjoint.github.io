@@ -22,6 +22,7 @@
 'use strict';
 
 const { PredicateRegistry } = require('../predicates/registry.js');
+const { resolveQuote } = require('./quote_slice.js');
 
 /**
  * @typedef {object} ValidationIssue
@@ -29,6 +30,132 @@ const { PredicateRegistry } = require('../predicates/registry.js');
  * @property {string} code    机器可读的错误码
  * @property {string} message 给人看的说明
  */
+
+/**
+ * 校验一条待新建/修改的实体。
+ *
+ * 与断言同样的原则：必须有出处，且 quote 从原文截取。
+ *
+ * 额外要求：
+ *   - `id` 必须带类型前缀（`person:` / `organization:` …），否则查询层
+ *     无法判断它该进哪张表；
+ *   - `name` 非空——匿名实体无法被检索，等于不存在；
+ *   - 新建时 id 不能与现有实体重复（调用方通过 `ctx.entityExists` 检查）。
+ *
+ * @param {object} entity
+ *   @param {string} entity.id
+ *   @param {string} entity.type
+ *   @param {string} entity.name
+ *   @param {object} [entity.props]
+ *   @param {object} entity.provenance  { rawRef, span, quote?, reason? }
+ * @param {object} ctx  同 validateClaim，另加 entityExists
+ * @returns {{ok:boolean, issues:Array, normalized:object|null}}
+ */
+function validateEntity(entity, ctx = {}) {
+  const issues = [];
+
+  if (!entity || typeof entity !== 'object') {
+    return { ok: false, issues: [{ field: '*', code: 'not-an-object', message: '提交内容不是一个对象' }], normalized: null };
+  }
+
+  const id = String(entity.id || '').trim();
+  const type = String(entity.type || '').trim();
+  const name = String(entity.name || '').trim();
+
+  const TYPES = ['person', 'organization', 'event', 'thing', 'evidence'];
+  if (!id) {
+    issues.push({ field: 'id', code: 'required', message: '缺少实体 id' });
+  } else {
+    const prefix = id.split(':')[0];
+    if (!TYPES.includes(prefix)) {
+      issues.push({
+        field: 'id',
+        code: 'bad-id-prefix',
+        message: `实体 id 必须以类型前缀开头（${TYPES.join(' / ')}），实际是 "${prefix}"`,
+      });
+    }
+    if (type && prefix !== type) {
+      issues.push({
+        field: 'id',
+        code: 'id-type-mismatch',
+        message: `id 前缀 "${prefix}" 与 type "${type}" 不一致`,
+      });
+    }
+  }
+
+  if (!name) {
+    // 匿名实体无法被检索，等于不存在。
+    issues.push({ field: 'name', code: 'required', message: '缺少 name——匿名实体无法被检索' });
+  }
+
+  if (ctx.entityExists && id && ctx.entityExists(id)) {
+    issues.push({
+      field: 'id',
+      code: 'id-exists',
+      message: `实体 ${id} 已存在。修改现有实体应走 update，不是 create。`,
+    });
+  }
+
+  // 出处校验与断言完全一致：span 截取，不接受直接填 quote。
+  const prov = entity.provenance || {};
+  const rawRef = String(prov.rawRef || '').trim();
+  if (!rawRef) {
+    issues.push({ field: 'rawRef', code: 'required', message: '缺少 rawRef（第 0 层定位）' });
+  } else if (ctx.rawExists && !ctx.rawExists(rawRef)) {
+    issues.push({ field: 'rawRef', code: 'raw-not-found', message: `rawRef "${rawRef}" 在 raw 层找不到` });
+  }
+
+  let resolvedQuote = null;
+  if (rawRef && ctx.rawGet) {
+    const resolved = resolveQuote(ctx.rawGet(rawRef), {
+      span: prov.span,
+      quote: prov.quote,
+      formatVersion: prov.formatVersion,
+    });
+    if (!resolved.ok) issues.push(...resolved.issues);
+    else resolvedQuote = resolved;
+  } else if (rawRef && (!prov.span || !Number.isInteger(prov.span.start))) {
+    issues.push({
+      field: 'span',
+      code: 'required',
+      message: '缺少 span（原文中的字符区间）——quote 由服务端按 span 截取',
+    });
+  }
+
+  const ok = issues.length === 0;
+  return {
+    ok,
+    issues,
+    normalized: ok
+      ? {
+          id,
+          type: type || id.split(':')[0],
+          name,
+          props: entity.props && typeof entity.props === 'object' ? entity.props : {},
+          provenance: {
+            rawRef,
+            quote: resolvedQuote ? resolvedQuote.quote : undefined,
+            span: resolvedQuote ? resolvedQuote.span : prov.span,
+            formatVersion: resolvedQuote ? resolvedQuote.formatVersion : undefined,
+            fingerprint: resolvedQuote ? resolvedQuote.fingerprint : undefined,
+            reason: prov.reason ? String(prov.reason) : undefined,
+          },
+        }
+      : null,
+  };
+}
+
+/**
+ * 按 `kind` 分派校验。`kind` 缺省为 `claim`（边断言）。
+ *
+ * @param {object} item  { kind?, ... }
+ * @param {object} ctx
+ */
+function validateItem(item, ctx = {}) {
+  const kind = (item && item.kind) || 'claim';
+  if (kind === 'entity') return validateEntity(item, ctx);
+  return validateClaim(item, ctx);
+}
 
 /**
  * 校验一条待提交的断言。
@@ -86,7 +213,6 @@ function validateClaim(claim, ctx = {}) {
   // ---------------------------------------------------------------- 出处
   const prov = claim.provenance || {};
   const rawRef = String(prov.rawRef || '').trim();
-  const quote = String(prov.quote || '').trim();
 
   if (!rawRef) {
     issues.push({ field: 'rawRef', code: 'required', message: '缺少 rawRef（第 0 层定位）' });
@@ -101,13 +227,37 @@ function validateClaim(claim, ctx = {}) {
     }
   }
 
-  if (!quote) {
-    // 空 quote 等于没出处。这正是清理 111 条空 excerpt 证据时要消灭的东西。
-    issues.push({
-      field: 'quote',
-      code: 'required',
-      message: '缺少 quote（原文摘录）——没有它，这条断言无从核对',
+  // ---------------------------------------------------------------- 引文
+  //
+  // quote **不由提交者填写**，必须按 span 从原文截取。
+  //
+  // 若允许直接写 quote，它与手写一条断言没有区别——任何内容都能被塞进
+  // 「原文摘录」，校验无法分辨是抄的还是编的。改成只收 span、服务端截取，
+  // 编造在结构上就不可能。
+  let resolvedQuote = null;
+  if (rawRef && ctx.rawGet) {
+    const record = ctx.rawGet(rawRef);
+    const resolved = resolveQuote(record, {
+      span: prov.span,
+      quote: prov.quote,          // 仅用于比对，不采用
+      formatVersion: prov.formatVersion,
     });
+    if (!resolved.ok) {
+      issues.push(...resolved.issues);
+    } else {
+      resolvedQuote = resolved;
+    }
+  } else {
+    // 没有 rawGet 时（纯逻辑测试）只能做形状检查：必须给 span。
+    // 无论 rawRef 有没有给，都检查 span——一次报全所有问题，
+    // 不要让用户改一个字段再发现下一个。
+    if (!prov.span || !Number.isInteger(prov.span.start) || !Number.isInteger(prov.span.end)) {
+      issues.push({
+        field: 'span',
+        code: 'required',
+        message: '缺少 span（原文中的字符区间）——quote 由服务端按 span 截取，不接受直接填写',
+      });
+    }
   }
 
   // ---------------------------------------------------------------- 类型
@@ -137,7 +287,11 @@ function validateClaim(claim, ctx = {}) {
           object,
           provenance: {
             rawRef,
-            quote,
+            // 采用服务端截取的结果，不是提交者给的字符串
+            quote: resolvedQuote ? resolvedQuote.quote : undefined,
+            span: resolvedQuote ? resolvedQuote.span : prov.span,
+            formatVersion: resolvedQuote ? resolvedQuote.formatVersion : undefined,
+            fingerprint: resolvedQuote ? resolvedQuote.fingerprint : undefined,
             locator: prov.locator && typeof prov.locator === 'object' ? prov.locator : undefined,
             reason: prov.reason ? String(prov.reason) : undefined,
           },
@@ -155,7 +309,9 @@ function validateClaim(claim, ctx = {}) {
  */
 function validateBatch(claims, ctx = {}) {
   const list = Array.isArray(claims) ? claims : [];
-  const results = list.map((c, i) => ({ index: i, ...validateClaim(c, ctx) }));
+  // 分派：每条可以是 entity 或 claim。
+  // 一批里允许混合——「建节点 + 建关系」本来就是一次录入动作。
+  const results = list.map((c, i) => ({ index: i, ...validateItem(c, ctx) }));
   const failed = results.filter((r) => !r.ok).length;
   return { ok: failed === 0 && list.length > 0, total: list.length, failed, results };
 }
@@ -188,4 +344,4 @@ function buildCommit(claims, meta = {}) {
   };
 }
 
-module.exports = { validateClaim, validateBatch, buildCommit };
+module.exports = { validateClaim, validateEntity, validateItem, validateBatch, buildCommit };

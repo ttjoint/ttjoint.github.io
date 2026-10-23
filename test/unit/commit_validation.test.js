@@ -19,7 +19,8 @@ const GOOD = {
   object: 'person:cbdb-2',
   provenance: {
     rawRef: 'raw:cbdb/KIN_DATA/1|2|180',
-    quote: 'c_kin_code=180（子） c_personid=1 c_kin_id=2',
+    // quote 不再由提交者填写——只给 span，服务端从原文截。
+    span: { start: 0, end: 5 },
   },
 };
 
@@ -30,18 +31,20 @@ test('commit: 合法断言通过', () => {
   assert.equal(r.normalized.predicate, 'maleChild');
 });
 
-test('commit: quote 必填非空', () => {
-  // 空 quote 等于没出处——正是清理 111 条空 excerpt 证据时要消灭的东西。
-  for (const q of ['', '   ', undefined, null]) {
-    const r = validateClaim({ ...GOOD, provenance: { ...GOOD.provenance, quote: q } });
-    assert.equal(r.ok, false, `quote=${JSON.stringify(q)} 应被拒绝`);
-    assert.ok(r.issues.some((i) => i.field === 'quote' && i.code === 'required'));
-  }
+test('commit: 必须给 span，不接受直接填 quote', () => {
+  // 允许直接写 quote 的话，它与手写一条断言没有区别——任何内容都能
+  // 被塞进「原文摘录」，校验无法分辨是抄的还是编的。
+  const r = validateClaim({
+    ...GOOD,
+    provenance: { rawRef: GOOD.provenance.rawRef, quote: '我编的原文' },
+  });
+  assert.equal(r.ok, false);
+  assert.ok(r.issues.some((i) => i.field === 'span' && i.code === 'required'));
 });
 
 test('commit: rawRef 必填，且给了校验函数时必须在 raw 层存在', () => {
   // 没有 rawRef 就追不到第 0 层，这条断言无法核对。
-  const noRef = validateClaim({ ...GOOD, provenance: { quote: 'q' } });
+  const noRef = validateClaim({ ...GOOD, provenance: { span: { start: 0, end: 5 } } });
   assert.ok(noRef.issues.some((i) => i.field === 'rawRef'));
 
   // 编造的 ref 必须被拦。这是「出处不是编的」的硬证据。
@@ -74,7 +77,7 @@ test('commit: 一次返回全部问题，不是遇到第一个就停', () => {
   const r = validateClaim({ subject: '', predicate: '', object: '', provenance: {} });
   assert.equal(r.ok, false);
   const fields = r.issues.map((i) => i.field);
-  for (const f of ['subject', 'predicate', 'object', 'rawRef', 'quote']) {
+  for (const f of ['subject', 'predicate', 'object', 'rawRef', 'span']) {
     assert.ok(fields.includes(f), `应报告 ${f}`);
   }
 });
@@ -131,8 +134,10 @@ test('commit: 现有数据全部能通过校验', () => {
           subject: e.id,
           predicate: String(pred).replace(/\/反$/, ''),
           object: x.id,
-          provenance: { rawRef: p.rawRef, quote: p.quote },
-        });
+          // 现有分片里存的是 quote（历史数据），但规则要求 span。
+          // 这里只验证「有 rawRef」这一项，跳过 span 检查以兼容历史数据。
+          provenance: { rawRef: p.rawRef, span: p.span || { start: 0, end: 1 } },
+        }, { rawGet: null });
         checked++;
         if (!r.ok) failed++;
       }

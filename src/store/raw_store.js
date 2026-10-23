@@ -230,7 +230,13 @@ function append(source, group, records, opts = {}) {
     fs.writeFileSync(path.join(dir, name), zlib.gzipSync(Buffer.from(lines.join('\n') + '\n', 'utf8')));
   }
 
-  return { written: fresh.length, skipped, head: prevHash };
+  // 写入后必须清缓存：`loadGroup` 会把「组不存在」缓存成空 Map，
+  // 于是紧随其后的 `exists()` / `getByRawId()` 读不到刚写的记录。
+  // 这个 bug 实测出现过：CLI 写完 raw 后立刻读回，返回 null。
+  groupCache.delete(source + '/' + group);
+
+  // `count` 与 `written` 同义，保留两个名字是因为调用方习惯不同。
+  return { written: fresh.length, count: fresh.length, skipped, head: prevHash };
 }
 
 function nextBatchIndex(dir) {

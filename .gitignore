@@ -48,11 +48,26 @@ Thumbs.db
 # The leading slash is load-bearing: an unanchored `data/` also matches
 # `site/data/`, which silently stripped the published tree's actual content from
 # git — leaving a site that deployed with no entities at all. Always anchor.
-/data/
+/data/*
+# 先排除内容、再逐个放行。git 对「目录已被排除」的路径无法用 `!` 救回：
+# `/data/` 会把整个目录剪掉，后面的 `!/data/commits/` 就永远不生效。
+# 必须写成 `/data/*` 才能让子项有被重新包含的机会。
+!/data/commits/
 
 # Built site data is the opposite: it is committed on purpose. Re-assert it so a
 # future broad ignore pattern cannot cannibalise it again.
 !/site/data/
+
+# Commit log is the audit trail: append-only, one JSON per line.
+#
+# It must be in git. `commits` answers "who changed what, when, based on which
+# raw record" — the question you ask after something looks wrong. A local-only
+# log would be lost exactly when you need it (disk failure, bad rebuild).
+#
+# The `raw/` records it points at are NOT in git (they are large and
+# reconstructible from the upstream sources), so the log names them by rawId;
+# that indirection is intentional.
+!/data/commits/
 
 # Entity shards are the AUTHORITATIVE store, not a generated artifact.
 #
