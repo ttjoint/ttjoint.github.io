@@ -325,10 +325,21 @@ function relationsFromApiDetail(detail) {
  * together. Falls back to DataStore.loadEntity, which has the shard but only the
  * outgoing relations recorded in it.
  */
-async function loadEntityDetail(id) {
+async function loadEntityDetail(id, type) {
+  // 等 probe 完成再判断。isAvailable() 是同步检查，而 probe 在 app.mounted()
+  // 里异步跑——子组件可能先于它，于是这里返回 false，页面永远走分片路径，
+  // 显示「未找到该实体」。/sources 页实测过同一个竞态。
+  await Api.whenReady();
   if (Api.isAvailable()) {
     try {
-      const detail = await Api.entity(id);
+      // 路由参数不带类型前缀（`/person/web-xxx`），而实体 id 带
+      // （`person:web-xxx`）。不补前缀 API 会 404，于是页面回落分片、
+      // 显示「未找到该实体」——即使数据就在库里。
+      //
+      // 分片路径靠文件名匹配（文件名含前缀），所以这个 bug 在 CBDB
+      // 实体上一直没暴露；新导入的网页实体没有分片，才显出来。
+      const fullId = String(id).includes(':') ? id : ((type || 'person') + ':' + id);
+      const detail = await Api.entity(fullId);
       // 统一成 `relations`，让视图不必知道数据是从 API 还是分片来的。
       detail.relations = relationsFromApiDetail(detail);
       // API 把出处平铺在 `provenance` 里（带 evidence_name/evidence_url），
@@ -349,10 +360,10 @@ async function loadEntityDetail(id) {
         }
         if (sources.length) detail.sources = sources;
       }
-      const type = detail.type || 'person';
-      const folder = { person: 'persons', thing: 'things', organization: 'organizations', event: 'events', evidence: 'evidence' }[type];
+      const dtype = detail.type || 'person';
+      const folder = { person: 'persons', thing: 'things', organization: 'organizations', event: 'events', evidence: 'evidence' }[dtype];
       if (folder && DataStore[folder]) {
-        DataStore[folder][id] = { ...detail, _full: true };
+        DataStore[folder][fullId] = { ...detail, _full: true };
         DataStore._refreshLists();
       }
       return detail;

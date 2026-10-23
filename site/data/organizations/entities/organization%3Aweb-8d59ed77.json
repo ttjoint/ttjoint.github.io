@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-8d59ed77",
+  "type": "organization",
+  "name": "中国农工民主党",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/5bdc94f55e90",
+      "span": {
+        "start": 65,
+        "end": 70
+      },
+      "quote": "农工党成员",
+      "formatVersion": 1,
+      "reason": "原文：农工党成员"
+    }
+  ]
+}

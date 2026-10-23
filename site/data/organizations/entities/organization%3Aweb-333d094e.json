@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-333d094e",
+  "type": "organization",
+  "name": "江苏盐城",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/8d92cfa4074c",
+      "span": {
+        "start": 60,
+        "end": 64
+      },
+      "quote": "江苏盐城",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

@@ -34,6 +34,9 @@ function createEntityDetail(entityType) {
         // 边级出处：由关系项的 ⓘ 填进来。与实体级的 citeRows 分开，
         // 因为「这个人生于 1042」和「他的父亲是某某」是两条不同的原始记录。
         relCiteRows: null,
+        // API 原始详情（含 outgoing/incoming）。存下来是为了让 resolvedProps
+        // 能读到 literal 边（性别/生日等）——它们不在 props 里。
+        apiDetail: null,
       };
     },
     computed: {
@@ -91,6 +94,29 @@ function createEntityDetail(entityType) {
             resolved[key] = { _multi: true, parts };
           }
         }
+
+        // literal 谓词（gender / birthDate / ethnicity …）也是「基本信息」的一部分。
+        //
+        // 它们按设计走边而不是 props（属性应该是一个谓词一条三元组，
+        // 见 docs/architecture/节点类型与谓词.md）。但详情页的「基本信息」
+        // 表只读 props，于是抽取器刚写进去的性别/生日在页面上完全不显示——
+        // 数据在库里，读者看不到。
+        //
+        // 这里把 literal 边合进来。只取 range='literal' 的谓词：对象是节点的
+        // 那些属于「关系」，已经在下面单独成节，重复显示会让同一事实出现两次。
+        const LITERAL_LABELS = {
+          gender: '性别', ethnicity: '民族', birthDate: '出生时间',
+          deathDate: '逝世时间', education: '学历',
+        };
+        for (const e of (this.apiDetail && this.apiDetail.outgoing) || []) {
+          if (!LITERAL_LABELS[e.predicate]) continue;
+          const label = LITERAL_LABELS[e.predicate];
+          // props 里已有同名键时不覆盖——props 是手写/导入的原文，
+          // 优先级高于从边推导的值。
+          if (resolved[label]) continue;
+          resolved[label] = e.other_name || e.other;
+        }
+
         return resolved;
       },
       resolvedRelations() {
@@ -98,6 +124,12 @@ function createEntityDetail(entityType) {
         const resolved = {};
         for (const [relKey, relData] of Object.entries(this.entity.relations)) {
           const relDef = RelationRegistry[relKey];
+          // literal 谓词（性别/民族/出生时间…）已在「基本信息」表显示
+          // （见 resolvedProps），这里跳过，否则同一事实在页面出现两次。
+          //
+          // 判断用「这个谓词是 literal」而不是「它出现在 LITERAL_LABELS 里」：
+          // 前者跟着谓词注册表走，注册表加了新 literal 谓词时不用改这里。
+          if (relDef && relDef.targetType === 'literal') continue;
           // 缺省反向关系：显示但标记为 auto-generated
           const isAuto = !relDef && isDefaultInverse(relKey);
           // 未注册的谓词过去直接 `continue` 跳过。那会让数据变得不可见：
@@ -124,8 +156,12 @@ function createEntityDetail(entityType) {
               // 「（未收录）」——它们不在发布切片里，但确实存在。
               const known = !!DataStore.getEntity(tid);
               const ownName = r.name || null;
+              // qualifiers 可能是嵌套对象（API 形状 `{role:...}`）或扁平放在
+              // 条目上（分片形状）。模板读 `r.role`，这里统一成扁平。
+              const q = r.qualifiers && typeof r.qualifiers === 'object' ? r.qualifiers : {};
               return {
                 ...r,
+                ...q,
                 id: tid,
                 // 原始谓词键：`父亲（反）` 的 label 是显示用的，
                 // 要跳谓词页得知道它其实是 `father/反`。
@@ -324,9 +360,15 @@ function createEntityDetail(entityType) {
       // 分片只有已发布集合（1900+ 阈值，3,641 人）；而 CBDB 的亲属数据集中在
       // 古代，于是「父亲」「妻子」这些肯定存在的对象全显示成「（未收录）」。
       // 不是数据缺失，是详情页没连全量库。
-      const detail = await loadEntityDetail(id);
+      const detail = await loadEntityDetail(id, this.entityType);
+      this.apiDetail = detail || null;
       if (detail) {
-        this.entity = this._ensureEntity(id);
+        // 直接用 API 的详情构造 entity，不经过 DataStore 查找。
+        //
+        // `_ensureEntity` 按 id 精确查 DataStore，而路由参数不带类型前缀
+        // （`web-xxx` vs `person:web-xxx`），查不到就返回 `_missing` 占位，
+        // 页面显示「未找到该实体」——即使 detail 就在手上。
+        this.entity = this._entityFromDetail(id, detail);
       } else {
         await DataStore.loadEntity(id);
         this.entity = this._ensureEntity(id);
@@ -342,11 +384,12 @@ function createEntityDetail(entityType) {
       '$route.params.id': {
         async handler(id) {
           await DataStore.init();
-          const detail = await loadEntityDetail(id);
+          const detail = await loadEntityDetail(id, this.entityType);
+          this.apiDetail = detail || null;
           if (!detail) {
             await DataStore.loadEntity(id);
           }
-          this.entity = this._ensureEntity(id);
+          this.entity = detail ? this._entityFromDetail(id, detail) : this._ensureEntity(id);
           this.evidenceMap = {};
           await this.loadEvidence();
           this.showGraph = true;
@@ -367,6 +410,25 @@ function createEntityDetail(entityType) {
         this.$router.push('/tree/' + encodeURIComponent(this.entity.id));
       },
 
+      /**
+       * 用 API 详情构造视图用的 entity 对象。
+       *
+       * 与 `_ensureEntity` 的区别：那个按 id 查 DataStore，这个直接用
+       * 已经拿到的 detail，不依赖缓存键是否匹配。
+       */
+      _entityFromDetail(id, detail) {
+        return {
+          id: detail.id || id,
+          name: detail.name || id,
+          type: detail.type || this.entityType,
+          props: detail.props || {},
+          aliases: detail.aliases || [],
+          relations: detail.relations || {},
+          sources: detail.sources || [],
+          lifespan: detail.lifespan || null,
+          summary: detail.summary || '',
+        };
+      },
       _ensureEntity(id) {
         const entity = DataStore.getEntity(id);
         if (entity) return entity;

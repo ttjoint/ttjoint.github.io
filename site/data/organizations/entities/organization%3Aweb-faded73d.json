@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-faded73d",
+  "type": "organization",
+  "name": "中国民主建国会",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/57fafabc1aa7",
+      "span": {
+        "start": 67,
+        "end": 71
+      },
+      "quote": "民建成员",
+      "formatVersion": 1,
+      "reason": "原文：民建成员"
+    }
+  ]
+}

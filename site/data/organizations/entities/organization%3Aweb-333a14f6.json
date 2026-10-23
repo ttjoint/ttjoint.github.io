@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-333a14f6",
+  "type": "organization",
+  "name": "江苏常州",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/5bdc94f55e90",
+      "span": {
+        "start": 59,
+        "end": 63
+      },
+      "quote": "江苏常州",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

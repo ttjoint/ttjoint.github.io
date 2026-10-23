@@ -229,6 +229,10 @@ function entityDetail(id) {
   }
   const withProv = (rows) => rows.map((e) => ({
     ...e,
+    // qualifiers 在表里存的是 JSON 字符串。不解析的话前端拿到的是
+    // 文本 `"{\"role\":\"中央主席\"}"`，读 `.role` 得 undefined，
+    // 职务信息在页面上静默消失——数据在库里，读者看不见。
+    qualifiers: safeJson(e.qualifiers),
     provenance: provByEdge.get(e.edge_id) || [],
   }));
 

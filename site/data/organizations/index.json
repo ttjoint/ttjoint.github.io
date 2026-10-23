@@ -1,10 +1,20 @@
 {
   "_truncated": false,
-  "_count": 68,
-  "_pageSize": 68,
+  "_count": 82,
+  "_pageSize": 82,
   "_manifest": "manifest.json",
   "_note": "生成文件：仅为兼容保留，只含首页。全部数据见 index/page-*.json 或 entities/。请勿写入。",
   "rows": [
+    {
+      "id": "organization:web-2b0f6bd5",
+      "name": "安徽怀宁",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2b0f6bd5.json"
+    },
     {
       "id": "organization:local-000003",
       "name": "曹魏",
@@ -102,6 +112,36 @@
       "detail": "entities/organization%3Alocal-000037.json"
     },
     {
+      "id": "organization:web-32aee491",
+      "name": "河北永清",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-32aee491.json"
+    },
+    {
+      "id": "organization:web-32b4be10",
+      "name": "河南镇平",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-32b4be10.json"
+    },
+    {
+      "id": "organization:web-336c9361",
+      "name": "湖南岳阳",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-336c9361.json"
+    },
+    {
       "id": "organization:local-000071",
       "name": "华夏",
       "type": "organization",
@@ -123,6 +163,26 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000091.json"
+    },
+    {
+      "id": "organization:web-333a14f6",
+      "name": "江苏常州",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-333a14f6.json"
+    },
+    {
+      "id": "organization:web-333d094e",
+      "name": "江苏盐城",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-333d094e.json"
     },
     {
       "id": "organization:local-000043",
@@ -221,6 +281,26 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000085.json"
+    },
+    {
+      "id": "organization:web-3346f6c8",
+      "name": "清华大学",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-3346f6c8.json"
+    },
+    {
+      "id": "organization:web-26547745",
+      "name": "全国政协",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-26547745.json"
     },
     {
       "id": "organization:local-000035",
@@ -572,6 +652,16 @@
       "detail": "entities/organization%3Alocal-000129.json"
     },
     {
+      "id": "organization:web-18b8e6ec",
+      "name": "中国国民党革命委员会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-18b8e6ec.json"
+    },
+    {
       "id": "organization:local-000127",
       "name": "中国国民党革命委员会中央委员会",
       "type": "organization",
@@ -594,6 +684,16 @@
       "detail": "entities/organization%3Alocal-000065.json"
     },
     {
+      "id": "organization:web-faac9ca8",
+      "name": "中国民主促进会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-faac9ca8.json"
+    },
+    {
       "id": "organization:local-000119",
       "name": "中国民主促进会中央委员会",
       "type": "organization",
@@ -604,6 +704,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000119.json"
+    },
+    {
+      "id": "organization:web-faded73d",
+      "name": "中国民主建国会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-faded73d.json"
     },
     {
       "id": "organization:local-000005",
@@ -618,6 +728,16 @@
       "detail": "entities/organization%3Alocal-000005.json"
     },
     {
+      "id": "organization:web-62ed348d",
+      "name": "中国民主同盟",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-62ed348d.json"
+    },
+    {
       "id": "organization:local-000083",
       "name": "中国民主同盟中央委员会",
       "type": "organization",
@@ -628,6 +748,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000083.json"
+    },
+    {
+      "id": "organization:web-8d59ed77",
+      "name": "中国农工民主党",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-8d59ed77.json"
     },
     {
       "id": "organization:local-000041",
@@ -690,6 +820,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000097.json"
+    },
+    {
+      "id": "organization:web-77205df2",
+      "name": "中国致公党",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-77205df2.json"
     },
     {
       "id": "organization:web-zgzhi",

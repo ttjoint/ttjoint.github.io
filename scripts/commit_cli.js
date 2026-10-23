@@ -178,8 +178,16 @@ function writeClaimShard(c) {
   const e = JSON.parse(fs.readFileSync(file, 'utf8'));
   e.relations = e.relations || {};
   const bucket = e.relations[c.predicate] = e.relations[c.predicate] || [];
+  // qualifiers（role/dates/place…）是断言的一部分，丢了的话
+  // 「致公党中央主席」就只剩「成员」，职务信息静默消失。
+  //
+  // 分片格式是**扁平**的：role 直接放在条目上，不是 `qualifiers: {role}`
+  // 嵌套对象——build_db 的 `splitRelationEntry` 把 id/provenance 之外的
+  // 所有键都当 qualifier，写嵌套对象会产生 `{"qualifiers":{...}}` 双层结构。
+  const quals = c.qualifiers && typeof c.qualifiers === 'object' ? c.qualifiers : {};
   const entry = {
     id: c.object,
+    ...quals,
     provenance: [{
       rawRef: c.provenance.rawRef,
       span: c.provenance.span,
