@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-556800",
+  "name": "李佩珍",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1870年 ± 30",
+    "逝世时间": "约 1899年 ± 30"
+  },
+  "external": {
+    "cbdbId": 556800
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/556800",
+      "locator": {},
+      "quote": "c_birthyear=1870 c_by_nh_code=666 c_by_nh_year=9 c_deathyear=1899 c_dy_nh_code=667 c_dy_nh_year=25",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

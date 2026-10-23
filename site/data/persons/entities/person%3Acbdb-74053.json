@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-74053",
+  "name": "朱文鑫",
+  "type": "person",
+  "props": {
+    "出生年月": "1883年",
+    "逝世时间": "1938年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒9年~中華民國27年。 【參考《清代人物生卒年表》#4309.】"
+  },
+  "external": {
+    "cbdbId": 74053
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/74053",
+      "locator": {},
+      "quote": "c_birthyear=1883 c_by_nh_code=667 c_by_nh_year=9 c_deathyear=1938 c_dy_nh_code=669 c_dy_nh_year=27 c_notes=《清代人物生卒年表》定其生卒年為光緒9年~中華民國27年。 【參考《清代人物生卒年表》#4309.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

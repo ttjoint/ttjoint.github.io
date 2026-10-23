@@ -1,0 +1,26 @@
+/* 全局响应式。组件自身的响应式规则放在各组件文件里。 */
+
+/* ---- 响应式 ---- */
+@media (max-width: 768px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+  .relation-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+  .graph-container { height: 350px; }
+  .search-section h1 { font-size: 1.3rem; }
+  .search-input-row input { height: 42px; font-size: .95rem; }
+  .card { padding: 16px; }
+  .info-table td:first-child { width: 70px; }
+}
+
+@media (max-width: 480px) {
+  .header-inner { padding: 0 12px; }
+  .app-main { padding: 16px 12px; }
+  .browse-grid { grid-template-columns: repeat(2, 1fr); }
+  .relation-grid { grid-template-columns: 1fr; }
+  .toolbar { flex-direction: column; }
+  .toolbar .btn { width: 100%; justify-content: center; }
+}
+

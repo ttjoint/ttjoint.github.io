@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-81079",
+  "name": "張耀曾",
+  "type": "person",
+  "props": {
+    "出生年月": "1885年",
+    "逝世时间": "1938年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒11年~中華民國27年。 【參考《清代人物生卒年表》#12481.】"
+  },
+  "external": {
+    "cbdbId": 81079
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/81079",
+      "locator": {},
+      "quote": "c_birthyear=1885 c_by_nh_code=667 c_by_nh_year=11 c_deathyear=1938 c_dy_nh_code=669 c_dy_nh_year=27 c_notes=《清代人物生卒年表》定其生卒年為光緒11年~中華民國27年。 【參考《清代人物生卒年表》#12481.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

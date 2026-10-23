@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-58023",
+  "name": "劉豫師",
+  "type": "person",
+  "props": {
+    "出生年月": "1825年",
+    "逝世时间": "1906年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光5年~？。 【參考《清代人物生卒年表》#24745.】"
+  },
+  "external": {
+    "cbdbId": 58023
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58023",
+      "locator": {},
+      "quote": "c_birthyear=1825 c_by_nh_code=664 c_by_nh_year=5 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32 c_notes=《清代人物生卒年表》定其生卒年為道光5年~？。 【參考《清代人物生卒年表》#24745.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "person:cbdb-124914",
+  "name": "崔佳聯元",
+  "type": "person",
+  "props": {
+    "出生年月": "1838年",
+    "逝世时间": "1900年",
+    "史料注记": "清人:道光18年-光緖26年"
+  },
+  "external": {
+    "cbdbId": 124914
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-529196",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124914|529196|180",
+            "locator": {
+              "pages": "14876",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=124914 c_kin_id=529196",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-529198",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124914|529198|180",
+            "locator": {
+              "pages": "14876",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=124914 c_kin_id=529198",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124914",
+      "locator": {},
+      "quote": "c_birthyear=1838 c_by_nh_code=664 c_by_nh_year=18 c_deathyear=1900 c_dy_nh_code=667 c_dy_nh_year=26 c_notes=清人:道光18年-光緖26年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

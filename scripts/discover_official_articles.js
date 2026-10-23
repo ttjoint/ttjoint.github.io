@@ -1,4 +1,55 @@
 #!/usr/bin/env node
-/** Discover appointment/news article links from a government source page. */
-const fs=require('fs'),path=require('path'),https=require('https'),http=require('http');const root=path.join(__dirname,'..'),sources=JSON.parse(fs.readFileSync(path.join(root,'data/sources/official.json'))).sources;
-function get(u){return new Promise((ok,no)=>{const l=u.startsWith('https')?https:http;l.get(u,{headers:{'User-Agent':'HumanMap government-discovery/1.0','Accept':'text/html'}},r=>{let b=[];r.on('data',x=>b.push(x));r.on('end',()=>ok(Buffer.concat(b).toString('utf8')))}).on('error',no)})}function clean(x){return x.replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim()}(async()=>{const key=process.argv.find(x=>x.startsWith('--source='))?.split('=')[1]||'source:gov:cabinet';const s=sources.find(x=>x.id===key);if(!s)throw Error('unknown source '+key);const html=await get(s.url),out=[],re=/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;let m;while((m=re.exec(html))){const title=clean(m[2]),u=new URL(m[1],s.url).href;if(title&&/^https?:\/\//.test(u)&&/任免|任职|免职|国务院|领导|人事|部长|主任|局长/.test(title)&&!out.some(x=>x.url===u))out.push({title,url:u,sourceId:s.id,status:'unreviewed'})}const dir=path.join(root,'data/imports/official'),stamp=new Date().toISOString().replace(/[:.]/g,'-');fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'articles-'+stamp+'.json'),JSON.stringify({source:s,discoveredAt:new Date().toISOString(),count:out.length,articles:out},null,2)+'\n');console.log(`discovered ${out.length} candidate articles from ${s.name}`)})().catch(e=>{console.error(e.message);process.exit(1)})
+/**
+ * Discover appointment/news article links from a configured government source.
+ *
+ * Usage: node scripts/discover_official_articles.js [--source=source:gov:cabinet]
+ *
+ * Articles are unfiltered text matches on appointment vocabulary; a human
+ * reviews them before `status` becomes `approved`.
+ */
+const fs = require('fs');
+const path = require('path');
+const { fetchOk, extractLinks } = require('../src/net/http');
+const { writeBatch } = require('../src/store/batches');
+
+const ROOT = path.join(__dirname, '..');
+const SOURCES_FILE = path.join(ROOT, 'data', 'sources', 'official.json');
+
+/** Link text that suggests an appointment or personnel article. */
+const RELEVANT_TEXT = /任免|任职|免职|国务院|领导|人事|部长|主任|局长/;
+
+const DEFAULT_SOURCE = 'source:gov:cabinet';
+
+async function main() {
+  const arg = process.argv.find((x) => x.startsWith('--source='));
+  const key = arg ? arg.split('=')[1] : DEFAULT_SOURCE;
+
+  const { sources } = JSON.parse(fs.readFileSync(SOURCES_FILE, 'utf8'));
+  const source = sources.find((s) => s.id === key);
+  if (!source) throw new Error(`unknown source ${key}`);
+
+  const { body } = await fetchOk(source.url);
+
+  const articles = extractLinks(body, source.url)
+    .filter(({ text }) => RELEVANT_TEXT.test(text))
+    .map(({ text, url }) => ({
+      title: text,
+      url,
+      sourceId: source.id,
+      status: 'unreviewed',
+    }));
+
+  const file = writeBatch('articles-', {
+    source,
+    discoveredAt: new Date().toISOString(),
+    count: articles.length,
+    articles,
+  });
+
+  console.log(`discovered ${articles.length} candidate articles from ${source.name} -> ${path.basename(file)}`);
+}
+
+main().catch((e) => {
+  console.error(e.message);
+  process.exit(1);
+});

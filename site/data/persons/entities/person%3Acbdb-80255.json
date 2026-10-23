@@ -1,0 +1,29 @@
+{
+  "id": "person:cbdb-80255",
+  "name": "張天爵",
+  "type": "person",
+  "props": {
+    "出生年月": "1856年",
+    "逝世时间": "1930年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐6年~中華民國19年。 【參考《清代人物生卒年表》#11548.】"
+  },
+  "external": {
+    "cbdbId": 80255
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-260974"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/80255",
+      "locator": {},
+      "quote": "c_birthyear=1856 c_by_nh_code=665 c_by_nh_year=6 c_deathyear=1930 c_dy_nh_code=669 c_dy_nh_year=19 c_notes=《清代人物生卒年表》定其生卒年為咸豐6年~中華民國19年。 【參考《清代人物生卒年表》#11548.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

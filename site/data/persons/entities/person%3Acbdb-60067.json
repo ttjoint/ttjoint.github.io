@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-60067",
+  "name": "張曾敭",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1828年 ± 30",
+    "逝世时间": "1907年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光23年~中華民國10年。 【參考《清代人物生卒年表》#12337.】"
+  },
+  "external": {
+    "cbdbId": 60067
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/60067",
+      "locator": {},
+      "quote": "c_birthyear=1828 c_by_nh_code=664 c_by_nh_year=8 c_deathyear=1907 c_dy_nh_code=667 c_dy_nh_year=33 c_notes=《清代人物生卒年表》定其生卒年為道光23年~中華民國10年。 【參考《清代人物生卒年表》#12337.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

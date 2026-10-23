@@ -1,0 +1,14 @@
+{
+  "id": "organization:local-000035",
+  "type": "organization",
+  "name": "人民日报社",
+  "props": {
+    "类型": "新闻机构",
+    "简介": "人民日报社是中国共产党中央委员会机关报社，出版《人民日报》并主办人民网。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000047"
+  ],
+  "external": {}
+}

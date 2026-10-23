@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000009",
+  "type": "organization",
+  "name": "中华全国工商业联合会",
+  "aliases": [
+    "全国工商联"
+  ],
+  "props": {
+    "类型": "人民团体",
+    "简介": "中国共产党领导的以民营企业和民营经济人士为主体的社会团体。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

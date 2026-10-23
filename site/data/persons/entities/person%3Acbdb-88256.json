@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-88256",
+  "name": "黃紹第",
+  "type": "person",
+  "props": {
+    "出生年月": "1855年",
+    "逝世时间": "1914年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐5年~中華民國3年。 【參考《清代人物生卒年表》#20791.】"
+  },
+  "external": {
+    "cbdbId": 88256
+  },
+  "aliases": [],
+  "relations": {
+    "femaleChild": [
+      {
+        "id": "person:cbdb-122159",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/88256|122159|176",
+            "locator": {
+              "pages": "MQWW PoetID #4409",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=176（女兒） c_personid=88256 c_kin_id=122159",
+            "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/88256",
+      "locator": {},
+      "quote": "c_birthyear=1855 c_by_nh_code=665 c_by_nh_year=5 c_deathyear=1914 c_dy_nh_code=669 c_dy_nh_year=3 c_notes=《清代人物生卒年表》定其生卒年為咸豐5年~中華民國3年。 【參考《清代人物生卒年表》#20791.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

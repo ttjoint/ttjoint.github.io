@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-58458",
+  "name": "程文炳",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1834年 ± 30",
+    "逝世时间": "1910年"
+  },
+  "external": {
+    "cbdbId": 58458
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58458",
+      "locator": {},
+      "quote": "c_birthyear=1834 c_by_nh_code=664 c_by_nh_year=14 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

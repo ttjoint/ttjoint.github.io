@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-576945",
+  "name": "巴樂中",
+  "type": "person",
+  "props": {
+    "出生年月": "1881年",
+    "逝世时间": "1921年"
+  },
+  "external": {
+    "cbdbId": 576945
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576945",
+      "locator": {},
+      "quote": "c_birthyear=1881 c_deathyear=1921",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

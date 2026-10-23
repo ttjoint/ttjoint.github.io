@@ -1,0 +1,1218 @@
+{
+  "import_mythology.js": {
+    "header": "/**\n * 中国古代神话至先秦时代数据导入脚本\n * 将神话时代、五帝、夏、商、西周的人物、组织、事件数据导入 HumanMap\n * 严格记录引用来源链（口传 → 古籍 → 后世辑录 → 现代整理）\n * 用法: node scripts/import_mythology.js\n */",
+    "sourceCalls": 237,
+    "sources": [
+      {
+        "id": "src-huaxia-1",
+        "name": "远古部落口传",
+        "date": "远古"
+      },
+      {
+        "id": "src-huaxia-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-huaxia-3",
+        "name": "现代史学研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-xia-org-1",
+        "name": "尚书",
+        "date": "先秦"
+      },
+      {
+        "id": "src-xia-org-2",
+        "name": "史记·夏本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-xia-org-3",
+        "name": "竹书纪年",
+        "date": "战国"
+      },
+      {
+        "id": "src-xia-org-4",
+        "name": "现代考古与研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-shang-org-1",
+        "name": "尚书",
+        "date": "先秦"
+      },
+      {
+        "id": "src-shang-org-2",
+        "name": "史记·殷本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-shang-org-3",
+        "name": "甲骨文考古发现",
+        "date": "近现代"
+      },
+      {
+        "id": "src-shang-org-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-xizhou-org-1",
+        "name": "诗经",
+        "date": "西周~春秋"
+      },
+      {
+        "id": "src-xizhou-org-2",
+        "name": "尚书·周书",
+        "date": "先秦"
+      },
+      {
+        "id": "src-xizhou-org-3",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-xizhou-org-4",
+        "name": "现代考古与研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-youxiong-org-1",
+        "name": "远古部落口传",
+        "date": "远古"
+      },
+      {
+        "id": "src-youxiong-org-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-youxiong-org-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-jiuli-org-1",
+        "name": "远古部落口传",
+        "date": "远古"
+      },
+      {
+        "id": "src-jiuli-org-2",
+        "name": "国语·楚语",
+        "date": "春秋战国"
+      },
+      {
+        "id": "src-jiuli-org-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-shennong-org-1",
+        "name": "远古部落口传",
+        "date": "远古"
+      },
+      {
+        "id": "src-shennong-org-2",
+        "name": "国语·晋语",
+        "date": "春秋战国"
+      },
+      {
+        "id": "src-shennong-org-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-shennong-org-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-tushan-org-1",
+        "name": "远古部落口传",
+        "date": "远古"
+      },
+      {
+        "id": "src-tushan-org-2",
+        "name": "尚书·皋陶谟",
+        "date": "先秦"
+      },
+      {
+        "id": "src-tushan-org-3",
+        "name": "史记·夏本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-simaqian-1",
+        "name": "汉书·司马迁传",
+        "date": "东汉"
+      },
+      {
+        "id": "src-simaqian-2",
+        "name": "现代史学研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-liuan-1",
+        "name": "汉书·淮南王传",
+        "date": "东汉"
+      },
+      {
+        "id": "src-liuan-2",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-xuzheng-1",
+        "name": "三国志·吴书",
+        "date": "西晋"
+      },
+      {
+        "id": "src-xuzheng-2",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-huangfumi-1",
+        "name": "晋书·皇甫谧传",
+        "date": "唐初"
+      },
+      {
+        "id": "src-huangfumi-2",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-yingshao-1",
+        "name": "后汉书·应劭传",
+        "date": "南朝宋"
+      },
+      {
+        "id": "src-yingshao-2",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-ganbao-1",
+        "name": "晋书·干宝传",
+        "date": "唐初"
+      },
+      {
+        "id": "src-ganbao-2",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-yuanke-1",
+        "name": "现代学者生平记录",
+        "date": "现代"
+      },
+      {
+        "id": "src-yuanke-2",
+        "name": "中国古代神话",
+        "date": "1950年"
+      },
+      {
+        "id": "src-ouyangxun-1",
+        "name": "旧唐书·欧阳询传",
+        "date": "后晋"
+      },
+      {
+        "id": "src-ouyangxun-2",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-lifang-1",
+        "name": "宋史·李昉传",
+        "date": "元"
+      },
+      {
+        "id": "src-lifang-2",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-liuxiang-1",
+        "name": "汉书·刘向传",
+        "date": "东汉"
+      },
+      {
+        "id": "src-liuxiang-2",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-pangu-1",
+        "name": "盘古开天辟地神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-pangu-2",
+        "name": "三五历纪",
+        "date": "三国·吴"
+      },
+      {
+        "id": "src-pangu-3",
+        "name": "艺文类聚",
+        "date": "唐·武德七年（624年）"
+      },
+      {
+        "id": "src-pangu-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-nvwa-1",
+        "name": "女娲神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-nvwa-2",
+        "name": "山海经·大荒西经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-nvwa-3",
+        "name": "淮南子·览冥训",
+        "date": "西汉"
+      },
+      {
+        "id": "src-nvwa-4",
+        "name": "风俗通义",
+        "date": "东汉"
+      },
+      {
+        "id": "src-nvwa-5",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-fuxi-1",
+        "name": "伏羲神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-fuxi-2",
+        "name": "易·系辞下",
+        "date": "先秦"
+      },
+      {
+        "id": "src-fuxi-3",
+        "name": "史记·太史公自序",
+        "date": "西汉"
+      },
+      {
+        "id": "src-fuxi-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-shennong-1",
+        "name": "神农神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-shennong-2",
+        "name": "国语·晋语",
+        "date": "春秋战国"
+      },
+      {
+        "id": "src-shennong-3",
+        "name": "淮南子·修务训",
+        "date": "西汉"
+      },
+      {
+        "id": "src-shennong-4",
+        "name": "神农本草经",
+        "date": "汉代"
+      },
+      {
+        "id": "src-shennong-5",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-suiren-1",
+        "name": "燧人氏神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-suiren-2",
+        "name": "韩非子·五蠹",
+        "date": "战国"
+      },
+      {
+        "id": "src-suiren-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-youchao-1",
+        "name": "有巢氏神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-youchao-2",
+        "name": "韩非子·五蠹",
+        "date": "战国"
+      },
+      {
+        "id": "src-youchao-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-gonggong-person-1",
+        "name": "共工神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-gonggong-person-2",
+        "name": "山海经·海内经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-gonggong-person-3",
+        "name": "淮南子·天文训",
+        "date": "西汉"
+      },
+      {
+        "id": "src-gonggong-person-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-kuafu-person-1",
+        "name": "夸父神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-kuafu-person-2",
+        "name": "山海经·海外北经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-kuafu-person-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-houyi-person-1",
+        "name": "后羿神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-houyi-person-2",
+        "name": "山海经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-houyi-person-3",
+        "name": "淮南子·本经训",
+        "date": "西汉"
+      },
+      {
+        "id": "src-houyi-person-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-change-person-1",
+        "name": "嫦娥神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-change-person-2",
+        "name": "淮南子·览冥训",
+        "date": "西汉"
+      },
+      {
+        "id": "src-change-person-3",
+        "name": "搜神记",
+        "date": "东晋"
+      },
+      {
+        "id": "src-change-person-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-jingwei-person-1",
+        "name": "精卫神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-jingwei-person-2",
+        "name": "山海经·北山经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-jingwei-person-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-xingtian-1",
+        "name": "刑天神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-xingtian-2",
+        "name": "山海经·海外西经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-xingtian-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-chiyou-1",
+        "name": "蚩尤神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-chiyou-2",
+        "name": "山海经·大荒北经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-chiyou-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-chiyou-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-zhurong-1",
+        "name": "祝融神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-zhurong-2",
+        "name": "山海经·海外南经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-zhurong-3",
+        "name": "史记·楚世家",
+        "date": "西汉"
+      },
+      {
+        "id": "src-zhurong-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-huangdi-1",
+        "name": "黄帝传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-huangdi-2",
+        "name": "大戴礼记·五帝德",
+        "date": "西汉"
+      },
+      {
+        "id": "src-huangdi-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-huangdi-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-zhuanxu-1",
+        "name": "颛顼传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-zhuanxu-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-zhuanxu-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-diku-1",
+        "name": "帝喾传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-diku-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-diku-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-yao-1",
+        "name": "尧传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-yao-2",
+        "name": "尚书·尧典",
+        "date": "先秦"
+      },
+      {
+        "id": "src-yao-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-yao-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-shun-1",
+        "name": "舜传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-shun-2",
+        "name": "尚书·舜典",
+        "date": "先秦"
+      },
+      {
+        "id": "src-shun-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-shun-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-danzhu-1",
+        "name": "丹朱传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-danzhu-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-danzhu-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-shangjun-1",
+        "name": "商均传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-shangjun-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-shangjun-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-dayu-1",
+        "name": "大禹传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-dayu-2",
+        "name": "尚书·禹贡",
+        "date": "先秦"
+      },
+      {
+        "id": "src-dayu-3",
+        "name": "史记·夏本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-dayu-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-qi-1",
+        "name": "启传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-qi-2",
+        "name": "尚书·甘誓",
+        "date": "先秦"
+      },
+      {
+        "id": "src-qi-3",
+        "name": "史记·夏本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-qi-4",
+        "name": "竹书纪年",
+        "date": "战国"
+      },
+      {
+        "id": "src-qi-5",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-jie-1",
+        "name": "桀传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-jie-2",
+        "name": "尚书",
+        "date": "先秦"
+      },
+      {
+        "id": "src-jie-3",
+        "name": "史记·夏本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-jie-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-meixi-1",
+        "name": "妹喜传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-meixi-2",
+        "name": "国语·晋语",
+        "date": "春秋战国"
+      },
+      {
+        "id": "src-meixi-3",
+        "name": "史记·夏本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-meixi-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-tang-1",
+        "name": "尚书·汤誓",
+        "date": "先秦"
+      },
+      {
+        "id": "src-tang-2",
+        "name": "史记·殷本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-tang-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-yiyin-1",
+        "name": "尚书",
+        "date": "先秦"
+      },
+      {
+        "id": "src-yiyin-2",
+        "name": "史记·殷本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-yiyin-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-zhou-1",
+        "name": "尚书·牧誓",
+        "date": "先秦"
+      },
+      {
+        "id": "src-zhou-2",
+        "name": "史记·殷本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-zhou-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-daji-1",
+        "name": "妲己传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-daji-2",
+        "name": "史记·殷本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-daji-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-bigan-1",
+        "name": "尚书",
+        "date": "先秦"
+      },
+      {
+        "id": "src-bigan-2",
+        "name": "史记·殷本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-bigan-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-fuhao-1",
+        "name": "甲骨文记载",
+        "date": "商代"
+      },
+      {
+        "id": "src-fuhao-2",
+        "name": "殷墟考古发现",
+        "date": "1976年"
+      },
+      {
+        "id": "src-fuhao-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-zhouwenwang-1",
+        "name": "尚书",
+        "date": "先秦"
+      },
+      {
+        "id": "src-zhouwenwang-2",
+        "name": "诗经·大雅",
+        "date": "西周"
+      },
+      {
+        "id": "src-zhouwenwang-3",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-zhouwenwang-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-zhouwuwang-1",
+        "name": "尚书·牧誓",
+        "date": "先秦"
+      },
+      {
+        "id": "src-zhouwuwang-2",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-zhouwuwang-3",
+        "name": "现代考古",
+        "date": "现代"
+      },
+      {
+        "id": "src-zhougongdan-1",
+        "name": "尚书·金縢",
+        "date": "先秦"
+      },
+      {
+        "id": "src-zhougongdan-2",
+        "name": "史记·鲁周公世家",
+        "date": "西汉"
+      },
+      {
+        "id": "src-zhougongdan-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-jiangziya-1",
+        "name": "尚书",
+        "date": "先秦"
+      },
+      {
+        "id": "src-jiangziya-2",
+        "name": "史记·齐太公世家",
+        "date": "西汉"
+      },
+      {
+        "id": "src-jiangziya-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-zhouyouwang-1",
+        "name": "诗经·小雅",
+        "date": "西周"
+      },
+      {
+        "id": "src-zhouyouwang-2",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-zhouyouwang-3",
+        "name": "吕氏春秋",
+        "date": "战国"
+      },
+      {
+        "id": "src-zhouyouwang-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-baosi-1",
+        "name": "褒姒传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-baosi-2",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-baosi-3",
+        "name": "吕氏春秋",
+        "date": "战国"
+      },
+      {
+        "id": "src-baosi-4",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-boyikao-1",
+        "name": "伯邑考传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-boyikao-2",
+        "name": "史记·管蔡世家",
+        "date": "西汉"
+      },
+      {
+        "id": "src-boyikao-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-pan-gu-event-1",
+        "name": "盘古开天辟地神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-pan-gu-event-2",
+        "name": "三五历纪",
+        "date": "三国·吴"
+      },
+      {
+        "id": "src-pan-gu-event-3",
+        "name": "艺文类聚",
+        "date": "唐·武德七年（624年）"
+      },
+      {
+        "id": "src-pan-gu-event-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-nvwa-zaoren-event-1",
+        "name": "女娲造人神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-nvwa-zaoren-event-2",
+        "name": "风俗通义",
+        "date": "东汉"
+      },
+      {
+        "id": "src-nvwa-zaoren-event-3",
+        "name": "太平御览",
+        "date": "北宋"
+      },
+      {
+        "id": "src-nvwa-butian-event-1",
+        "name": "女娲补天神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-nvwa-butian-event-2",
+        "name": "淮南子·览冥训",
+        "date": "西汉"
+      },
+      {
+        "id": "src-nvwa-butian-event-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-gonggong-event-1",
+        "name": "共工怒触不周山神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-gonggong-event-2",
+        "name": "淮南子·天文训",
+        "date": "西汉"
+      },
+      {
+        "id": "src-gonggong-event-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-zhuolu-event-1",
+        "name": "涿鹿之战传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-zhuolu-event-2",
+        "name": "大戴礼记·五帝德",
+        "date": "西汉"
+      },
+      {
+        "id": "src-zhuolu-event-3",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-zhuolu-event-4",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-banquan-event-1",
+        "name": "阪泉之战传说（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-banquan-event-2",
+        "name": "史记·五帝本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-banquan-event-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-kuafu-event-1",
+        "name": "夸父逐日神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-kuafu-event-2",
+        "name": "山海经·海外北经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-kuafu-event-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-houyi-event-1",
+        "name": "后羿射日神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-houyi-event-2",
+        "name": "淮南子·本经训",
+        "date": "西汉"
+      },
+      {
+        "id": "src-houyi-event-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-change-event-1",
+        "name": "嫦娥奔月神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-change-event-2",
+        "name": "淮南子·览冥训",
+        "date": "西汉"
+      },
+      {
+        "id": "src-change-event-3",
+        "name": "搜神记",
+        "date": "东晋"
+      },
+      {
+        "id": "src-jingwei-event-1",
+        "name": "精卫填海神话（口传）",
+        "date": "远古"
+      },
+      {
+        "id": "src-jingwei-event-2",
+        "name": "山海经·北山经",
+        "date": "先秦"
+      },
+      {
+        "id": "src-jingwei-event-3",
+        "name": "中国古代神话",
+        "date": "现代"
+      },
+      {
+        "id": "src-dayu-event-1",
+        "name": "尚书·禹贡",
+        "date": "先秦"
+      },
+      {
+        "id": "src-dayu-event-2",
+        "name": "史记·夏本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-dayu-event-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-mingtiao-event-1",
+        "name": "尚书·汤誓",
+        "date": "先秦"
+      },
+      {
+        "id": "src-mingtiao-event-2",
+        "name": "史记·殷本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-mingtiao-event-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-muye-event-1",
+        "name": "尚书·牧誓",
+        "date": "先秦"
+      },
+      {
+        "id": "src-muye-event-2",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-muye-event-3",
+        "name": "现代考古",
+        "date": "现代"
+      },
+      {
+        "id": "src-sanjian-event-1",
+        "name": "尚书·金縢",
+        "date": "先秦"
+      },
+      {
+        "id": "src-sanjian-event-2",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-sanjian-event-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-guoren-event-1",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-guoren-event-2",
+        "name": "竹书纪年",
+        "date": "战国"
+      },
+      {
+        "id": "src-guoren-event-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-fenghuo-event-1",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-fenghuo-event-2",
+        "name": "吕氏春秋",
+        "date": "战国"
+      },
+      {
+        "id": "src-fenghuo-event-3",
+        "name": "现代研究",
+        "date": "现代"
+      },
+      {
+        "id": "src-pingwang-event-1",
+        "name": "史记·周本纪",
+        "date": "西汉"
+      },
+      {
+        "id": "src-pingwang-event-2",
+        "name": "左传",
+        "date": "春秋"
+      },
+      {
+        "id": "src-pingwang-event-3",
+        "name": "现代研究",
+        "date": "现代"
+      }
+    ],
+    "approxCounts": {
+      "person": 48,
+      "org": 8,
+      "event": 17
+    }
+  },
+  "import_pre_qin_han.js": {
+    "header": "/**\n * 先秦至西汉人物数据导入脚本\n * 将春秋、战国、秦、西汉时期的重要人物数据转换为 HumanMap 格式\n * 用法: node scripts/import_pre_qin_han.js\n */",
+    "sourceCalls": 0,
+    "sources": [],
+    "approxCounts": {
+      "person": 59,
+      "org": 18,
+      "event": 8
+    }
+  },
+  "import_three_kingdoms.js": {
+    "header": "/**\n * 三国人物数据导入脚本\n * 将 Characters_of_the_Three_Kingdoms 的数据转换为 HumanMap 格式\n * 用法: node scripts/import_three_kingdoms.js\n */",
+    "sourceCalls": 0,
+    "sources": [],
+    "approxCounts": {
+      "person": 1,
+      "org": 1,
+      "event": 0
+    }
+  }
+}

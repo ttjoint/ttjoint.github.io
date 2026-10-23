@@ -1,0 +1,40 @@
+{
+  "id": "person:cbdb-56737",
+  "name": "羅振常",
+  "type": "person",
+  "props": {
+    "出生年月": "1875年",
+    "逝世时间": "约 1942年 ± 30",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒1年~中華民國33年。 【參考《清代人物生卒年表》#14594.】"
+  },
+  "external": {
+    "cbdbId": 56737
+  },
+  "aliases": [],
+  "relations": {
+    "brother": [
+      {
+        "id": "person:cbdb-56741",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/56737|56741|125",
+            "locator": {},
+            "quote": "Auto-generated from PersonID = 0056741, KinCode = 0126",
+            "reason": "c_kin_code=125 → 兄；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/56737",
+      "locator": {},
+      "quote": "c_birthyear=1875 c_by_nh_code=667 c_by_nh_year=1 c_deathyear=1942 c_dy_nh_code=669 c_dy_nh_year=31 c_notes=《清代人物生卒年表》定其生卒年為光緒1年~中華民國33年。 【參考《清代人物生卒年表》#14594.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

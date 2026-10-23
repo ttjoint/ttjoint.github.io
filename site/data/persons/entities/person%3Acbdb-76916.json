@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-76916",
+  "name": "楊斯盛",
+  "type": "person",
+  "props": {
+    "逝世时间": "1906年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為？~光緒32年。 【參考《清代人物生卒年表》#7651.】"
+  },
+  "external": {
+    "cbdbId": 76916
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/76916",
+      "locator": {},
+      "quote": "c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32 c_notes=《清代人物生卒年表》定其生卒年為？~光緒32年。 【參考《清代人物生卒年表》#7651.】",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

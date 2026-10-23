@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-124217",
+  "name": "台慶",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1883年 ± 30",
+    "史料注记": "清人:-光緖[9]年"
+  },
+  "external": {
+    "cbdbId": 124217
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124217",
+      "locator": {},
+      "quote": "c_deathyear=1883 c_dy_nh_code=667 c_dy_nh_year=9 c_notes=清人:-光緖[9]年",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

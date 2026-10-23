@@ -1,0 +1,93 @@
+{
+  "id": "person:cbdb-35219",
+  "name": "袁昶",
+  "type": "person",
+  "props": {
+    "出生年月": "1846年",
+    "逝世时间": "1900年",
+    "史料注记": "Yuan(1) Chang [35219] CHECK biographical sources cited in Lidai renwu nianli tongpu. 《清代人物生卒年表》定其生卒年為道光26年~光緒26年。 【參考《清代人物生卒年表》#17962.】"
+  },
+  "external": {
+    "cbdbId": 35219
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-522273",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/35219|522273|75",
+            "locator": {
+              "pages": "9221",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=35219 c_kin_id=522273",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-522272",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/35219|522272|180",
+            "locator": {
+              "pages": "9221",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=35219 c_kin_id=522272",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-522274",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/35219|522274|180",
+            "locator": {
+              "pages": "9221",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=35219 c_kin_id=522274",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-522275",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/35219|522275|180",
+            "locator": {
+              "pages": "9221",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=35219 c_kin_id=522275",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "colleague": [
+      "person:cbdb-125654"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/35219",
+      "locator": {},
+      "quote": "c_birthyear=1846 c_by_nh_code=664 c_by_nh_year=26 c_deathyear=1900 c_dy_nh_code=667 c_dy_nh_year=26 c_notes=Yuan(1) Chang [35219] CHECK biographical sources cited in Lidai renwu nianli tongpu. 《清代人物生卒年表》定其生卒年為道光26年~光緒26年。 【參考《清代人物生卒年表》#17962.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

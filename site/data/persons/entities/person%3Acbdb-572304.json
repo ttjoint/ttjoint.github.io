@@ -1,0 +1,26 @@
+{
+  "id": "person:cbdb-572304",
+  "name": "孟司鐸",
+  "type": "person",
+  "props": {
+    "出生年月": "1833年",
+    "逝世时间": "约 1880年 ± 30"
+  },
+  "external": {
+    "cbdbId": 572304
+  },
+  "aliases": [
+    "Joseph Mong"
+  ],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/572304",
+      "locator": {},
+      "quote": "c_birthyear=1833 c_deathyear=1880",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

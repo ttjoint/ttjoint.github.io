@@ -1,0 +1,41 @@
+{
+  "id": "person:cbdb-694350",
+  "name": "葉賞清",
+  "type": "person",
+  "props": {
+    "逝世时间": "1910年"
+  },
+  "external": {
+    "cbdbId": 694350
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-694425",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/694350|694425|180",
+            "locator": {
+              "pages": "lgid=1167257",
+              "sourceId": 68286
+            },
+            "quote": "c_kin_code=180（子） c_personid=694350 c_kin_id=694425",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《(民國)黟縣四志: 十六卷卷首一卷卷末一卷》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/694350",
+      "locator": {},
+      "quote": "c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

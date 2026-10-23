@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-124760",
+  "name": "徐學功",
+  "type": "person",
+  "props": {
+    "逝世时间": "1910年",
+    "史料注记": "清人:-宣統2年"
+  },
+  "external": {
+    "cbdbId": 124760
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124760",
+      "locator": {},
+      "quote": "c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2 c_notes=清人:-宣統2年",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

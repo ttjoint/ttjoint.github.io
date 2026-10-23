@@ -1,0 +1,51 @@
+{
+  "id": "person:local-000241",
+  "type": "person",
+  "name": "秦博勇",
+  "props": {
+    "简介": "秦博勇，女，汉族，1964年11月生，河北永清人，民建成员，1986年7月参加工作，北京大学法律系刑法学专业毕业，在职研究生学历，法学硕士学位。 现任十四届全国政协副主席，民建中央常务副主席。 （2023年4月更新）",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "女",
+    "出生年月": "1964年11月",
+    "籍贯": "河北永清",
+    "民族": "汉族",
+    "学历": "北京大学法律系刑法学专业毕业，在职研究生学历，法学硕士学位"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000109",
+    "evidence:local-000207"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "十四届全国政协",
+        "role": "副主席",
+        "evidence": "现任十四届全国政协副主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/qby/202405/t20240530_215311.html"
+      },
+      {
+        "organization": "民建中央",
+        "role": "常务副主席",
+        "evidence": "现任...民建中央常务副主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/qby/202405/t20240530_215311.html"
+      },
+      {
+        "organization": "审计署",
+        "role": "副审计长",
+        "evidence": "现任...审计署副审计长",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/qby/202405/t20240530_215311.html"
+      }
+    ],
+    "career": [
+      {
+        "date": "1986年7月",
+        "organization": "（未具体说明，指参加工作的时间点）",
+        "role": "参加工作",
+        "evidence": "1986年7月参加工作",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/qby/202405/t20240530_215311.html"
+      }
+    ]
+  },
+  "external": {}
+}

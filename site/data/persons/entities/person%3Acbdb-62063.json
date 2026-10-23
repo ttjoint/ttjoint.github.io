@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-62063",
+  "name": "周莊山",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1837年 ± 30",
+    "逝世时间": "1908年"
+  },
+  "external": {
+    "cbdbId": 62063
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/62063",
+      "locator": {},
+      "quote": "c_birthyear=1837 c_by_nh_code=664 c_by_nh_year=17 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

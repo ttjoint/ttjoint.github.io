@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-63805",
+  "name": "桑果爾依興阿",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1836年 ± 30",
+    "逝世时间": "1906年"
+  },
+  "external": {
+    "cbdbId": 63805
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/63805",
+      "locator": {},
+      "quote": "c_birthyear=1836 c_by_nh_code=664 c_by_nh_year=16 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

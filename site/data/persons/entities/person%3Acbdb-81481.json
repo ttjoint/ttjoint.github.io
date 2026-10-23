@@ -1,0 +1,80 @@
+{
+  "id": "person:cbdb-81481",
+  "name": "陳豪",
+  "type": "person",
+  "props": {
+    "出生年月": "1839年",
+    "逝世时间": "1910年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光19年~宣統2年。 【參考《清代人物生卒年表》#12956.】"
+  },
+  "external": {
+    "cbdbId": 81481
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-292926"
+    ],
+    "father": [
+      {
+        "id": "person:cbdb-530089",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/81481|530089|75",
+            "locator": {
+              "pages": "15542",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=81481 c_kin_id=530089",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-530088",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/81481|530088|180",
+            "locator": {
+              "pages": "15542",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=81481 c_kin_id=530088",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-530091",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/81481|530091|126",
+            "locator": {
+              "pages": "15542",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=81481 c_kin_id=530091",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/81481",
+      "locator": {},
+      "quote": "c_birthyear=1839 c_by_nh_code=664 c_by_nh_year=19 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2 c_notes=《清代人物生卒年表》定其生卒年為道光19年~宣統2年。 【參考《清代人物生卒年表》#12956.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

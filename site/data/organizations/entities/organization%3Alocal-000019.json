@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000019",
+  "type": "organization",
+  "name": "国务院办公厅",
+  "props": {
+    "类型": "国家机关",
+    "职能": "协助国务院领导处理国务院日常工作",
+    "简介": "国务院办公厅是协助国务院领导同志处理国务院日常工作的机构。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000151"
+  ],
+  "external": {}
+}

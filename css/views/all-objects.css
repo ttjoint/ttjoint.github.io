@@ -1,0 +1,501 @@
+/* 视图层：全部对象浏览。 */
+
+/* ---- 分类浏览 ---- */
+.browse-section { margin-top: 32px; }
+.browse-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.browse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+.browse-card {
+  padding: 14px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+}
+.browse-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+.browse-card .browse-name { font-weight: 600; font-size: .9rem; }
+.browse-card .browse-sub { font-size: .75rem; color: var(--color-text-secondary); margin-top: 2px; }
+
+/* ---- 全部对象浏览页 ---- */
+.all-objects-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.all-objects-header h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.all-objects-stats {
+  font-size: .85rem;
+  color: var(--color-text-secondary);
+}
+.all-objects-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.all-objects-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.all-objects-search input {
+  padding: 6px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: .85rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  outline: none;
+  width: 200px;
+}
+.all-objects-search input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+.all-objects-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.all-objects-table th {
+  text-align: left;
+  padding: 10px 16px;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  user-select: none;
+}
+.all-objects-table th.sortable {
+  cursor: pointer;
+}
+.all-objects-table th.sortable:hover {
+  color: var(--color-primary);
+}
+.sort-icon {
+  font-size: .65rem;
+  margin-left: 4px;
+}
+.all-objects-table td {
+  padding: 10px 16px;
+  font-size: .88rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.all-objects-row {
+  cursor: pointer;
+  transition: var(--transition);
+}
+.all-objects-row:hover {
+  background: var(--color-primary-light);
+}
+.all-objects-row:last-child td {
+  border-bottom: none;
+}
+.all-objects-name {
+  font-weight: 600;
+}
+.all-objects-sub {
+  color: var(--color-text-secondary);
+  font-size: .82rem;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---- 时间轴范围筛选 ---- */
+.timeline-filter {
+  background: var(--color-surface, #fff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 10px;
+  padding: 14px 18px 12px;
+  margin: 12px 0 16px;
+}
+.timeline-filter .tl-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.timeline-filter .tl-label {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--color-text-muted, #64748b);
+}
+.timeline-filter .tl-range {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary, #2563eb);
+  font-variant-numeric: tabular-nums;
+}
+.timeline-filter .tl-track {
+  position: relative;
+  height: 34px;
+  background: linear-gradient(90deg, #eef2f7, #e2e8f0);
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+body.dark .timeline-filter .tl-track {
+  background: linear-gradient(90deg, #1e293b, #0f172a);
+}
+.timeline-filter .tl-highlight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(37, 99, 235, .18);
+  border-left: 2px solid var(--color-primary, #2563eb);
+  border-right: 2px solid var(--color-primary, #2563eb);
+  cursor: grab;
+}
+.timeline-filter .tl-handle {
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 26px;
+  margin-left: -7px;
+  transform: translateY(-50%);
+  background: var(--color-primary, #2563eb);
+  border-radius: 4px;
+  cursor: ew-resize;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .25);
+}
+.timeline-filter .tl-handle:hover {
+  background: #1d4ed8;
+}
+.timeline-filter .tl-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: .72rem;
+  color: var(--color-text-muted, #94a3b8);
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.timeline-filter .tl-conf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+  font-size: .82rem;
+  color: var(--color-text, #334155);
+}
+.timeline-filter .tl-conf label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* ============================================
+   家谱视图（family_tree.js）
+
+   布局按代分行的理由：家谱的答案是「隔了几代」，力导向图会把这个信息
+   摊平掉。每一行就是一个深度，读起来就是答案本身。
+   ============================================ */
+
+.family-tree-page .page-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tree-controls {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  background: var(--card-bg, #fff);
+  border-radius: 8px;
+  box-shadow: var(--card-shadow, 0 1px 3px rgba(0, 0, 0, .1));
+}
+
+.tree-controls .control-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tree-controls label {
+  font-size: .85rem;
+  color: var(--text-muted, #666);
+}
+
+.tree-controls .depth-value {
+  font-variant-numeric: tabular-nums;
+  min-width: 1.5em;
+  text-align: center;
+}
+
+.tree-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tree-summary {
+  font-size: .85rem;
+  color: var(--text-muted, #666);
+  margin-bottom: 12px;
+}
+
+.tree-summary .warn-inline {
+  color: #b8860b;
+}
+
+.tree-generation {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px solid var(--border, #eee);
+}
+
+.generation-label {
+  flex: 0 0 64px;
+  font-size: .8rem;
+  color: var(--text-muted, #888);
+  text-align: right;
+  padding-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.generation-people {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+}
+
+.tree-person {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border, #e0e0e0);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .15s, box-shadow .15s;
+}
+
+.tree-person:hover {
+  border-color: var(--primary, #2c5f8a);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.tree-person.is-focus {
+  border-color: var(--primary, #2c5f8a);
+  border-width: 2px;
+  font-weight: 600;
+}
+
+.tree-person-name {
+  font-size: .95rem;
+}
+
+.tree-person-years {
+  font-size: .75rem;
+  color: var(--text-muted, #888);
+  font-variant-numeric: tabular-nums;
+}
+
+/* The "家谱 ⟶" link in the detail view's graph header. */
+.graph-tree-link {
+  margin-left: 12px;
+  font-size: .8rem;
+  color: var(--primary, #2c5f8a);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.graph-tree-link:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   静态页（scripts/build_static_pages.js 生成）
+
+   这些页面不含 JavaScript，只用本文件里已有的布局类（.app-header /
+   .app-main / .app-footer）保持与 SPA 一致的外壳，下面补的是正文部分。
+   刻意不新增颜色变量：静态页和动态页共用同一套令牌，主题才不会漂移。
+   ============================================ */
+
+.static-entity {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 28px 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.static-crumb {
+  font-size: .82rem;
+  color: var(--color-text-muted);
+  margin-bottom: 14px;
+}
+.static-crumb a { color: var(--color-text-secondary); }
+.static-crumb a:hover { color: var(--color-primary); }
+
+.static-entity h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.static-meta {
+  color: var(--color-text-secondary);
+  font-size: .88rem;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.static-section { margin-bottom: 26px; }
+.static-section h2 {
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: none;
+  letter-spacing: .02em;
+  margin-bottom: 10px;
+}
+
+/* <dl> 用两列网格而不是表格：长引用可以自然换行，窄屏自动单列 */
+.static-props {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 8px 20px;
+  margin: 0;
+}
+.static-prop { display: contents; }
+.static-props dt {
+  color: var(--color-text-secondary);
+  font-size: .85rem;
+  white-space: nowrap;
+}
+.static-props dd {
+  margin: 0;
+  font-size: .88rem;
+  word-break: break-word;
+}
+
+.static-quotes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.static-quotes li {
+  border-left: 3px solid var(--color-border);
+  padding: 6px 0 6px 14px;
+  margin-bottom: 10px;
+  font-size: .82rem;
+}
+.static-reason {
+  display: inline-block;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  margin-right: 8px;
+}
+.static-quote {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: .78rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  margin: 4px 0;
+  overflow-wrap: anywhere;
+}
+.static-ref {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: .74rem;
+}
+
+.static-unpublished { color: var(--color-text-muted); }
+
+.static-cta { margin-top: 28px; }
+
+.static-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  column-gap: 28px;
+}
+.static-list li {
+  break-inside: avoid;
+  padding: 5px 0;
+  border-bottom: 1px dotted var(--color-border);
+  font-size: .88rem;
+}
+.static-year {
+  color: var(--color-text-muted);
+  font-size: .76rem;
+  margin-left: 8px;
+}
+
+.static-pager {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+  font-size: .85rem;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .static-entity { padding: 20px 16px; }
+  .static-list { columns: 1; }
+  .static-props { grid-template-columns: 1fr; gap: 2px; }
+  .static-props dd { margin-bottom: 8px; }
+}
+
+/* 静态页正文在 <body class="static-page"> 下，用它限定作用域，避免这些
+   规则影响 SPA 的 #app 内部布局。 */
+.static-page .app-main { padding: 32px 20px 56px; }
+
+/* 首页的静态降级块：由 build_site.js 写进 site/index.html 的 </body> 前，
+   供爬虫和无 JS 访客阅读，app.js 挂载后立即移除。放在页尾避免闪烁。 */
+#static-fallback {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: .88rem;
+}
+#static-fallback h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+#static-fallback p { margin-bottom: 12px; }
+#static-fallback .static-list { columns: 2; }
+

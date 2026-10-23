@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-124078",
+  "name": "白如鏡",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1875年 ± 30",
+    "逝世时间": "1911年",
+    "史料注记": "清人:光緖[1]年-宣統3年"
+  },
+  "external": {
+    "cbdbId": 124078
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124078",
+      "locator": {},
+      "quote": "c_birthyear=1875 c_by_nh_code=667 c_by_nh_year=1 c_deathyear=1911 c_dy_nh_code=668 c_dy_nh_year=3 c_notes=清人:光緖[1]年-宣統3年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

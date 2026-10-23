@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-69033",
+  "name": "王文域",
+  "type": "person",
+  "props": {
+    "逝世时间": "1911年"
+  },
+  "external": {
+    "cbdbId": 69033
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/69033",
+      "locator": {},
+      "quote": "c_deathyear=1911 c_dy_nh_code=668 c_dy_nh_year=3",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

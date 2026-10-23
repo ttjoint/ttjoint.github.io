@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-56110",
+  "name": "宗舜年",
+  "type": "person",
+  "props": {
+    "出生年月": "1865年",
+    "逝世时间": "1933年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治4年~中華民國22年。 【參考《清代人物生卒年表》#15758.】"
+  },
+  "external": {
+    "cbdbId": 56110
+  },
+  "aliases": [],
+  "relations": {
+    "wife": [
+      {
+        "id": "person:cbdb-56106",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/56110|56106|135",
+            "locator": {
+              "pages": "MQWW PoetID #248, HuWenKai #415",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=135（妻子） c_personid=56110 c_kin_id=56106",
+            "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/56110",
+      "locator": {},
+      "quote": "c_birthyear=1865 c_by_nh_code=666 c_by_nh_year=4 c_deathyear=1933 c_dy_nh_code=669 c_dy_nh_year=22 c_notes=《清代人物生卒年表》定其生卒年為同治4年~中華民國22年。 【參考《清代人物生卒年表》#15758.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

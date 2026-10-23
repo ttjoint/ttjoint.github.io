@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-54297",
+  "name": "愛新覺羅載湉",
+  "type": "person",
+  "props": {
+    "出生年月": "1871年",
+    "逝世时间": "1908年",
+    "史料注记": "【參考資料: MQWW PoetID #272.】 《清代人物生卒年表》定其生卒年為同治10年~光緒34年。 【參考《清代人物生卒年表》#17942.】"
+  },
+  "external": {
+    "cbdbId": 54297
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54297",
+      "locator": {},
+      "quote": "c_birthyear=1871 c_by_nh_code=666 c_by_nh_year=10 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34 c_notes=【參考資料: MQWW PoetID #272.】 《清代人物生卒年表》定其生卒年為同治10年~光緒34年。 【參考《清代人物生卒年表》#17942.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

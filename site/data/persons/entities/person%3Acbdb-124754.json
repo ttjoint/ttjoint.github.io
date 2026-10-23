@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-124754",
+  "name": "朱其昂",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1878年 ± 30",
+    "史料注记": "清人:-光緖[4]年"
+  },
+  "external": {
+    "cbdbId": 124754
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124754",
+      "locator": {},
+      "quote": "c_deathyear=1878 c_dy_nh_code=667 c_dy_nh_year=4 c_notes=清人:-光緖[4]年",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

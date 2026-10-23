@@ -1,0 +1,196 @@
+{
+  "id": "person:cbdb-60124",
+  "name": "任道鎔",
+  "type": "person",
+  "props": {
+    "出生年月": "1823年",
+    "逝世时间": "1906年"
+  },
+  "external": {
+    "cbdbId": 60124
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-519039",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519039|180",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60124 c_kin_id=519039",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519040",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519040|180",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60124 c_kin_id=519040",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519041",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519041|180",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60124 c_kin_id=519041",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519042",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519042|180",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60124 c_kin_id=519042",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519043",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519043|180",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60124 c_kin_id=519043",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519061",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519061|180",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60124 c_kin_id=519061",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519062",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519062|180",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60124 c_kin_id=519062",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519063",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519063|180",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60124 c_kin_id=519063",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-519059",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519059|125",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=60124 c_kin_id=519059",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519060",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|519060|125",
+            "locator": {
+              "pages": "3434",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=60124 c_kin_id=519060",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "wife": [
+      {
+        "id": "person:cbdb-120513",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60124|120513|163",
+            "locator": {
+              "pages": "3741",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=163（第二任妻） c_personid=60124 c_kin_id=120513",
+            "reason": "c_kin_code=163 → 第二任妻；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/60124",
+      "locator": {},
+      "quote": "c_birthyear=1823 c_by_nh_code=664 c_by_nh_year=3 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

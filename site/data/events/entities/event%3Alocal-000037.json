@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000037",
+  "name": "官渡之战",
+  "type": "event",
+  "aliases": [
+    "官渡大战"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

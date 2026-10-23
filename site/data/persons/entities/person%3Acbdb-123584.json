@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-123584",
+  "name": "王懋勳",
+  "type": "person",
+  "props": {
+    "逝世时间": "1909年",
+    "史料注记": "清人:-宣統1年"
+  },
+  "external": {
+    "cbdbId": 123584
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/123584",
+      "locator": {},
+      "quote": "c_deathyear=1909 c_dy_nh_code=668 c_dy_nh_year=1 c_notes=清人:-宣統1年",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

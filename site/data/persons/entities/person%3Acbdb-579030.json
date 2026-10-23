@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-579030",
+  "name": "安斯穆",
+  "type": "person",
+  "props": {
+    "出生年月": "1883年",
+    "逝世时间": "1934年"
+  },
+  "external": {
+    "cbdbId": 579030
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/579030",
+      "locator": {},
+      "quote": "c_birthyear=1883 c_deathyear=1934",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

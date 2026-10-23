@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-62368",
+  "name": "孫萬林",
+  "type": "person",
+  "props": {
+    "逝世时间": "1905年"
+  },
+  "external": {
+    "cbdbId": 62368
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/62368",
+      "locator": {},
+      "quote": "c_deathyear=1905 c_dy_nh_code=667 c_dy_nh_year=31",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

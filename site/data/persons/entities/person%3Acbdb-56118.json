@@ -1,0 +1,59 @@
+{
+  "id": "person:cbdb-56118",
+  "name": "楊芬若",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1900年 ± 30",
+    "逝世时间": "约 1949年 ± 30"
+  },
+  "external": {
+    "cbdbId": 56118
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-56117",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/56118|56117|75",
+            "locator": {
+              "pages": "MQWW PoetID #4406",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=75（父） c_personid=56118 c_kin_id=56117",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "mother": [
+      {
+        "id": "person:cbdb-56114",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/56118|56114|111",
+            "locator": {
+              "pages": "MQWW PoetID #4406",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=111（母） c_personid=56118 c_kin_id=56114",
+            "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/56118",
+      "locator": {},
+      "quote": "c_birthyear=1900 c_by_nh_code=667 c_by_nh_year=26 c_deathyear=1949 c_dy_nh_code=0",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

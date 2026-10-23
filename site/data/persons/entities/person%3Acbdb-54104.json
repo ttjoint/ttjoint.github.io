@@ -1,0 +1,46 @@
+{
+  "id": "person:cbdb-54104",
+  "name": "翁同龢",
+  "type": "person",
+  "props": {
+    "出生年月": "1830年",
+    "逝世时间": "1904年",
+    "史料注记": "【參考資料: MQWW PoetID #272.】 《清代人物生卒年表》定其生卒年為道光10年~光緒30年。 【參考《清代人物生卒年表》#19597.】"
+  },
+  "external": {
+    "cbdbId": 54104
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-55008",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54104|55008|75",
+            "locator": {
+              "pages": "MQWW PoetID #177, HuWenKai #489",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=75（父） c_personid=54104 c_kin_id=55008",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "friend": [
+      "person:cbdb-79382"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54104",
+      "locator": {},
+      "quote": "c_birthyear=1830 c_by_nh_code=664 c_by_nh_year=10 c_deathyear=1904 c_dy_nh_code=667 c_dy_nh_year=30 c_notes=【參考資料: MQWW PoetID #272.】 《清代人物生卒年表》定其生卒年為道光10年~光緒30年。 【參考《清代人物生卒年表》#19597.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,2 +1,42 @@
 #!/usr/bin/env node
-const fs=require('fs'),path=require('path');const root=path.join(__dirname,'..'),dir=path.join(root,'data/imports/official');const f=fs.readdirSync(dir).filter(x=>x.startsWith('articles-')&&x.endsWith('.json')).sort().at(-1);if(!f)throw Error('run discover:articles first');const x=JSON.parse(fs.readFileSync(path.join(dir,f))),bad=[];if(!x.source?.id||!x.discoveredAt)bad.push('missing batch metadata');const urls=new Set();for(const a of x.articles){if(!a.title||!a.url||!a.sourceId)bad.push('incomplete article');if(urls.has(a.url))bad.push('duplicate URL '+a.url);urls.add(a.url);if(a.status!=='unreviewed'&&a.status!=='approved')bad.push('invalid status '+a.url)}console.log(JSON.stringify({file:f,count:x.count,actual:x.articles.length,uniqueUrls:urls.size,errors:bad},null,2));process.exitCode=bad.length||x.count!==x.articles.length?1:0;
+/**
+ * Validate the latest discovered-articles batch.
+ *
+ * Checks batch metadata, per-article completeness, URL uniqueness, and that the
+ * declared `count` matches reality — a mismatch means a write was truncated.
+ */
+const {
+  readLatestBatch,
+} = require('../src/store/batches');
+
+const VALID_STATUS = ['unreviewed', 'approved'];
+
+function main() {
+  const { name, data: x } = readLatestBatch('articles-', 'npm run discover:articles');
+
+  const bad = [];
+  if (!x.source?.id || !x.discoveredAt) bad.push('missing batch metadata');
+
+  const urls = new Set();
+  for (const a of x.articles || []) {
+    if (!a.title || !a.url || !a.sourceId) bad.push('incomplete article');
+    if (urls.has(a.url)) bad.push('duplicate URL ' + a.url);
+    urls.add(a.url);
+    if (!VALID_STATUS.includes(a.status)) bad.push('invalid status ' + a.url);
+  }
+
+  const actual = (x.articles || []).length;
+  if (x.count !== actual) bad.push(`count mismatch: declared ${x.count}, actual ${actual}`);
+
+  console.log(JSON.stringify({
+    file: name,
+    count: x.count,
+    actual,
+    uniqueUrls: urls.size,
+    errors: bad,
+  }, null, 2));
+
+  process.exitCode = bad.length ? 1 : 0;
+}
+
+main();

@@ -1,0 +1,104 @@
+{
+  "id": "person:cbdb-58672",
+  "name": "方友升",
+  "type": "person",
+  "props": {
+    "出生年月": "1841年",
+    "逝世时间": "1906年"
+  },
+  "external": {
+    "cbdbId": 58672
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-517549",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58672|517549|183",
+            "locator": {
+              "pages": "1935",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=183（次子） c_personid=58672 c_kin_id=517549",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517550",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58672|517550|184",
+            "locator": {
+              "pages": "1935",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=184（三子） c_personid=58672 c_kin_id=517550",
+            "reason": "c_kin_code=184 → 三子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517548",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58672|517548|185",
+            "locator": {
+              "pages": "1935",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=185（四子） c_personid=58672 c_kin_id=517548",
+            "reason": "c_kin_code=185 → 四子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517547",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58672|517547|191",
+            "locator": {
+              "pages": "1935",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=191（五子） c_personid=58672 c_kin_id=517547",
+            "reason": "c_kin_code=191 → 五子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-517545",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58672|517545|125",
+            "locator": {
+              "pages": "1935",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=58672 c_kin_id=517545",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58672",
+      "locator": {},
+      "quote": "c_birthyear=1841 c_by_nh_code=664 c_by_nh_year=21 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

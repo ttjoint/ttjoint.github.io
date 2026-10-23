@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-63384",
+  "name": "高德元",
+  "type": "person",
+  "props": {
+    "逝世时间": "1904年"
+  },
+  "external": {
+    "cbdbId": 63384
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/63384",
+      "locator": {},
+      "quote": "c_deathyear=1904 c_dy_nh_code=667 c_dy_nh_year=30",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

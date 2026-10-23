@@ -1,0 +1,58 @@
+{
+  "id": "person:cbdb-58290",
+  "name": "瓜爾佳榮祿",
+  "type": "person",
+  "props": {
+    "出生年月": "1843年",
+    "逝世时间": "1903年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光23年~光緒29年。 《清代人物生卒年表》原注：「榮祿生年，湯志鈞 《戊戌變法人物傳稿》卷七誤作道光十四年（1834）。」 【參考《清代人物生卒年表》#16351.】"
+  },
+  "external": {
+    "cbdbId": 58290
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-516746",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58290|516746|180",
+            "locator": {
+              "pages": "1536",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58290 c_kin_id=516746",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-516747",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58290|516747|180",
+            "locator": {
+              "pages": "1536",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58290 c_kin_id=516747",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58290",
+      "locator": {},
+      "quote": "c_birthyear=1843 c_by_nh_code=664 c_by_nh_year=23 c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29 c_notes=《清代人物生卒年表》定其生卒年為道光23年~光緒29年。 《清代人物生卒年表》原注：「榮祿生年，湯志鈞 《戊戌變法人物傳稿》卷七誤作道光十四年（1834）。」 【參考《清代人物生卒年表》#16351.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "person:cbdb-35497",
+  "name": "繆荃孫",
+  "type": "person",
+  "props": {
+    "出生年月": "1844年",
+    "逝世时间": "1919年",
+    "史料注记": "Miu(1) Quansun [35497] CHECK biographical sources cited in Lidai renwu nianli tongpu. 《清代人物生卒年表》定其生卒年為道光24年~中華民國8年。 【參考《清代人物生卒年表》#24403.】"
+  },
+  "external": {
+    "cbdbId": 35497
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-528709",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/35497|528709|75",
+            "locator": {
+              "pages": "14559",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=35497 c_kin_id=528709",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-528706",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/35497|528706|180",
+            "locator": {
+              "pages": "14559",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=35497 c_kin_id=528706",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-528708",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/35497|528708|180",
+            "locator": {
+              "pages": "14559",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=35497 c_kin_id=528708",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-528710",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/35497|528710|180",
+            "locator": {
+              "pages": "14559",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=35497 c_kin_id=528710",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "colleague": [
+      "person:cbdb-63550",
+      "person:cbdb-125654"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/35497",
+      "locator": {},
+      "quote": "c_birthyear=1844 c_by_nh_code=664 c_by_nh_year=24 c_deathyear=1919 c_dy_nh_code=669 c_dy_nh_year=8 c_notes=Miu(1) Quansun [35497] CHECK biographical sources cited in Lidai renwu nianli tongpu. 《清代人物生卒年表》定其生卒年為道光24年~中華民國8年。 【參考《清代人物生卒年表》#24403.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

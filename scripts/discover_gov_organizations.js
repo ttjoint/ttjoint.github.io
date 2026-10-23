@@ -1,4 +1,59 @@
 #!/usr/bin/env node
-/** Discover official organization links from the State Council directory. */
-const fs=require('fs'),path=require('path'),https=require('https'),http=require('http'),crypto=require('crypto');const ROOT=path.join(__dirname,'..'),URL0='https://www.gov.cn/gwyzzjg/index.htm';
-function get(u){return new Promise((ok,no)=>{const l=u.startsWith('https')?https:http;l.get(u,{headers:{'User-Agent':'HumanMap official-source-discovery/1.0','Accept':'text/html'}},r=>{let b=[];r.on('data',x=>b.push(x));r.on('end',()=>ok(Buffer.concat(b).toString('utf8')))}).on('error',no)})}function clean(x){return x.replace(/<[^>]+>/g,' ').replace(/&nbsp;|&#160;/g,' ').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim()}(async()=>{const html=await get(URL0),out=[],re=/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;let m;while((m=re.exec(html))){const name=clean(m[2]),u=new URL(m[1],URL0).href;if(name&&/^https?:\/\//.test(u)&&!/www\.gov\.cn/.test(new URL(u).hostname)&&!out.some(x=>x.url===u)&&!/(beian\.miit\.gov\.cn|beian\.gov\.cn|weibo\.com)/.test(u)&&!/(备案|微博|京ICP备|京公网安备)/.test(name))out.push({id:'source:govorg:'+crypto.createHash('sha1').update(u).digest('hex').slice(0,12),name,url:u,kind:'ministry-directory',priority:'B',enabled:false})}const dir=path.join(ROOT,'data/imports/official'),batch=new Date().toISOString().replace(/[:.]/g,'-');fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'gov-org-'+batch+'.json'),JSON.stringify({source:URL0,discoveredAt:new Date().toISOString(),count:out.length,sources:out},null,2)+'\n');console.log(`discovered ${out.length} external organization links`);for(const x of out)console.log(x.name,x.url)})().catch(e=>{console.error(e);process.exit(1)})
+/**
+ * Discover official organization links from the State Council directory.
+ *
+ * Writes a review batch; nothing here is enabled until a human flips `enabled`.
+ */
+const path = require('path');
+const { fetchOk, cleanHtml, extractLinks } = require('../src/net/http');
+const { writeBatch } = require('../src/store/batches');
+const { entityId } = require('../src/store/entity_id');
+
+const ROOT = path.join(__dirname, '..');
+const INDEX_URL = 'https://www.gov.cn/gwyzzjg/index.htm';
+
+/** Hosts that appear in the directory but are not organization sites. */
+const EXCLUDED_HOSTS = /(beian\.miit\.gov\.cn|beian\.gov\.cn|weibo\.com)/;
+
+/** Link text that indicates navigation chrome rather than an organization. */
+const EXCLUDED_TEXT = /(备案|微博|京ICP备|京公网安备)/;
+
+async function main() {
+  const { body } = await fetchOk(INDEX_URL);
+
+  const sources = extractLinks(body, INDEX_URL)
+    .filter(({ text, url }) => {
+      // Only external sites: www.gov.cn links are internal navigation.
+      try {
+        if (/www\.gov\.cn$/.test(new URL(url).hostname)) return false;
+        if (EXCLUDED_HOSTS.test(url)) return false;
+      } catch {
+        return false;
+      }
+      return text && !EXCLUDED_TEXT.test(text);
+    })
+    .map(({ text, url }) => ({
+      // Source-registry ids are their own namespace (not entities).
+      id: 'source:govorg:' + require('crypto').createHash('sha1').update(url).digest('hex').slice(0, 12),
+      name: text,
+      url,
+      kind: 'ministry-directory',
+      priority: 'B',
+      enabled: false,
+    }));
+
+  const file = writeBatch('gov-org-', {
+    source: INDEX_URL,
+    discoveredAt: new Date().toISOString(),
+    count: sources.length,
+    sources,
+  });
+
+  console.log(`discovered ${sources.length} external organization links -> ${path.basename(file)}`);
+  for (const s of sources) console.log(s.name, s.url);
+}
+
+main().catch((e) => {
+  console.error(e.message);
+  process.exit(1);
+});

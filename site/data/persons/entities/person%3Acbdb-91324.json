@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-91324",
+  "name": "樊錐",
+  "type": "person",
+  "props": {
+    "出生年月": "1872年",
+    "逝世时间": "1906年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治11年~光緒32年。 【參考《清代人物生卒年表》#24429.】"
+  },
+  "external": {
+    "cbdbId": 91324
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/91324",
+      "locator": {},
+      "quote": "c_birthyear=1872 c_by_nh_code=666 c_by_nh_year=11 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32 c_notes=《清代人物生卒年表》定其生卒年為同治11年~光緒32年。 【參考《清代人物生卒年表》#24429.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

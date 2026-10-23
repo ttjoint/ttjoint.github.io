@@ -1,0 +1,58 @@
+{
+  "id": "person:cbdb-55500",
+  "name": "蔣梅笙",
+  "type": "person",
+  "props": {
+    "逝世时间": "1951年"
+  },
+  "external": {
+    "cbdbId": 55500
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-55498",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55500|55498|75",
+            "locator": {
+              "pages": "MQWW PoetID #218, HuWenKai #779",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=75（父） c_personid=55500 c_kin_id=55498",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "mother": [
+      {
+        "id": "person:cbdb-55497",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55500|55497|111",
+            "locator": {
+              "pages": "MQWW PoetID #218, HuWenKai #779",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=111（母） c_personid=55500 c_kin_id=55497",
+            "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/55500",
+      "locator": {},
+      "quote": "c_deathyear=1951 c_dy_nh_code=0",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

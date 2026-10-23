@@ -1,0 +1,58 @@
+{
+  "id": "person:cbdb-60847",
+  "name": "容閎",
+  "type": "person",
+  "props": {
+    "出生年月": "1828年",
+    "逝世时间": "1912年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光8年~中華民國1年。 《清代人物生卒年表》原注：「容閎卒日， 《中國歷代人物年譜考錄》引民國六年重修 《容氏譜牒》卷十五容聯芳撰 《容閎傳》，作民國元年十二月二十三日，公曆為1913年1月22日。」 【參考《清代人物生卒年表》#20264.】"
+  },
+  "external": {
+    "cbdbId": 60847
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-519612",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60847|519612|180",
+            "locator": {
+              "pages": "4168",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60847 c_kin_id=519612",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519613",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60847|519613|180",
+            "locator": {
+              "pages": "4168",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60847 c_kin_id=519613",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/60847",
+      "locator": {},
+      "quote": "c_birthyear=1828 c_by_nh_code=664 c_by_nh_year=8 c_deathyear=1912 c_dy_nh_code=669 c_dy_nh_year=1 c_notes=《清代人物生卒年表》定其生卒年為道光8年~中華民國1年。 《清代人物生卒年表》原注：「容閎卒日， 《中國歷代人物年譜考錄》引民國六年重修 《容氏譜牒》卷十五容聯芳撰 《容閎傳》，作民國元年十二月二十三日，公曆為1913年1月22日。」 【參考《清代人物生卒年表》#20264.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

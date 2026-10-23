@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-57916",
+  "name": "郭博勒達虎里郭貝爾豐陞阿",
+  "type": "person",
+  "props": {
+    "逝世时间": "1909年"
+  },
+  "external": {
+    "cbdbId": 57916
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/57916",
+      "locator": {},
+      "quote": "c_deathyear=1909 c_dy_nh_code=668 c_dy_nh_year=1",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

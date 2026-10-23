@@ -1,0 +1,40 @@
+{
+  "id": "person:cbdb-85845",
+  "name": "袁克文",
+  "type": "person",
+  "props": {
+    "出生年月": "1890年",
+    "逝世时间": "1931年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒16年~中華民國20年。 【參考《清代人物生卒年表》#18014.】"
+  },
+  "external": {
+    "cbdbId": 85845
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-63546",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/85845|63546|75",
+            "locator": {},
+            "quote": "c_kin_code=75（父） c_personid=85845 c_kin_id=63546",
+            "reason": "c_kin_code=75 → 父；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/85845",
+      "locator": {},
+      "quote": "c_birthyear=1890 c_by_nh_code=667 c_by_nh_year=16 c_deathyear=1931 c_dy_nh_code=669 c_dy_nh_year=20 c_notes=《清代人物生卒年表》定其生卒年為光緒16年~中華民國20年。 【參考《清代人物生卒年表》#18014.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

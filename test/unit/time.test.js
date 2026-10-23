@@ -35,6 +35,16 @@ test('julian: parseYearMonth handles common Chinese date forms', () => {
   assert.equal(J.parseYearMonth('不是日期'), null);
 });
 
+test('julian: BCE parsing follows both conventions', () => {
+  // Chinese phrasing '公元前1200年' means 1200 BCE = astronomical year -1199.
+  assert.equal(J.parseYearMonth('公元前1200年').year, -1199);
+  // A bare negative number is already astronomical ('-1200' = 1201 BCE).
+  assert.equal(J.parseYearMonth('-1200').year, -1200);
+  assert.match(J.formatJdnYear(J.julianToJdn(-1199, 7, 1)), /公元前1200/);
+  assert.match(J.formatJdnYear(J.julianToJdn(-1200, 7, 1)), /公元前1201/);
+});
+
+
 test('julian: fuzzyRange encodes midpoint and uncertainty', () => {
   const r = J.fuzzyRange(-1200, 50);
   assert.equal(r.uncertainty, 50);
@@ -43,6 +53,24 @@ test('julian: fuzzyRange encodes midpoint and uncertainty', () => {
   assert.ok(Math.abs(back.year - (-1200)) <= 1, `mid year ${back.year}`);
   assert.ok(r.start < r.mid && r.mid < r.end);
 });
+
+test('julian: explicit ± text is parsed as a fuzzy estimate', () => {
+  assert.deepEqual(J.parseFuzzy('-1200±50年'), { year: -1200, radius: 50 });
+  // 公元前N年 -> astronomical year (1 BCE = 0)
+  assert.deepEqual(J.parseFuzzy('约公元前1200年±50年'), { year: -1199, radius: 50 });
+  assert.deepEqual(J.parseFuzzy('1200+/-50'), { year: 1200, radius: 50 });
+  // 「前N年」必须与「公元前N年」等价。导入器写出的正是「前300年」这种形式
+  // （formatYear 的 BCE 写法），而这里原先只认「公元前」，于是
+  // `约 前300年 ± 30` 被读成公元 300 年——一个战国人变成了西晋人。
+  assert.deepEqual(J.parseFuzzy('约 前300年 ± 30'), { year: -299, radius: 30 });
+  assert.deepEqual(J.parseFuzzy('约 公元前300年 ± 30'), { year: -299, radius: 30 });
+  // A plain year carries no ± and must not be mistaken for a guess.
+  assert.equal(J.parseFuzzy('1956年'), null);
+  assert.equal(J.parseFuzzy(''), null);
+  const r = J.fuzzyRange(...[J.parseFuzzy('-1200±50年').year, J.parseFuzzy('-1200±50年').radius]);
+  assert.equal(J.confidenceClass(r), 'fuzzy');
+});
+
 
 test('julian: lifespanRange supports death-only', () => {
   const r = J.lifespanRange({ death: '1104年' });

@@ -1,0 +1,230 @@
+/* 视图层：实体详情（双栏/时间线/溯源链）。 */
+
+/* ---- 双栏布局 ---- */
+/*
+ * 窄屏单列（主内容在上、关系在下），宽屏两栏（关系移到右侧）。
+ *
+ * 原先 `.detail-main` 死限 900px：2560px 屏幕上，容器 1200px 里
+ * 正文只占 900px，右侧 300px 白白空着，而关系卡片还在 240px 一列地
+ * 往下堆成一长条。宽屏下把关系独立成栏，主内容也能用满剩余宽度。
+ *
+ * 断点 1400px 的依据：两栏各自最小可用宽度约 560px + 420px + 间距，
+ * 再窄下去单栏反而更好读。用 `minmax(0, …)` 防止内容撑破网格。
+ */
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+.detail-main { min-width: 0; }
+.detail-side { min-width: 0; }
+
+@media (min-width: 1400px) {
+  .detail-layout {
+    /* 主内容 : 关系 ≈ 1.6 : 1。关系卡片是窄条目（头像+名字+箭头），
+       不需要和正文一样宽。 */
+    grid-template-columns: minmax(0, 1.6fr) minmax(360px, 1fr);
+  }
+  /* 侧栏在宽屏下跟随滚动，关系多时不必回到顶部才能看见。 */
+  .detail-side {
+    position: sticky;
+    top: 76px;
+    max-height: calc(100vh - 96px);
+    overflow-y: auto;
+    /* 滚动条出现时不挤压内容 */
+    scrollbar-gutter: stable;
+  }
+}
+
+/* ---- 事件时间线 ---- */
+.timeline-container {
+  position: relative;
+  padding: 8px 0 8px 24px;
+}
+.timeline-item {
+  position: relative;
+  padding: 0 0 20px 20px;
+  border-left: 2px solid var(--color-border);
+}
+.timeline-item:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+.timeline-dot {
+  position: absolute;
+  left: -7px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 2px solid var(--color-surface);
+  z-index: 1;
+}
+.timeline-dot.cause {
+  background: var(--color-warning);
+}
+.timeline-dot.progress {
+  background: var(--color-primary);
+}
+.timeline-dot.effect {
+  background: var(--color-success);
+}
+.timeline-content {
+  padding-bottom: 4px;
+}
+.timeline-label {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: 2px;
+}
+.timeline-text {
+  font-size: .9rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/* ---- 数据源溯源链 ---- */
+.source-chain-container {
+  padding: 8px 0;
+}
+/*
+ * 溯源链。卡片铺满容器宽度，不再限宽居中。
+ *
+ * 原先 `.source-card` 是 `max-width: 480px` + `align-items: center`：
+ * 2560px 屏幕上容器 1021px，卡片只有 480px 且居中，右侧空 270px，
+ * 看起来像「被挤出屏幕」——其实是限宽 + 居中造成的假象。
+ *
+ * 卡片里是「标签：值」的短行（媒介/可信度/链接），不需要限制行长；
+ * 真正的阅读行长约束应该加在正文段落上，不是这种字段表。
+ */
+.source-chain {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.source-chain-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.source-card {
+  width: 100%;
+  padding: 14px 18px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+.source-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+.source-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.source-card-name {
+  font-weight: 700;
+  font-size: .95rem;
+  color: var(--color-text);
+}
+.source-card-date {
+  font-size: .78rem;
+  color: var(--color-text-muted);
+  background: var(--color-tag-bg);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+.source-card-body {
+  font-size: .82rem;
+  color: var(--color-text-secondary);
+}
+.source-card-transcriber,
+.source-card-prev {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.source-label {
+  color: var(--color-text-muted);
+  font-size: .78rem;
+}
+.source-prev-name {
+  font-weight: 500;
+  color: var(--color-accent);
+}
+.source-card-note {
+  margin-top: 6px;
+  font-size: .78rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  padding-top: 4px;
+  border-top: 1px dashed var(--color-border);
+}
+.source-chain-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 0;
+  color: var(--color-text-muted);
+}
+.source-chain-arrow .arrow-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+.source-chain-arrow .arrow-label {
+  font-size: .7rem;
+  color: var(--color-text-muted);
+}
+.source-card-entity {
+  border-color: var(--color-primary);
+  border-width: 2px;
+  background: var(--color-primary-light);
+}
+.source-chain-entity {
+  margin-top: 2px;
+}
+.source-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.source-type-badge {
+  font-size: .65rem;
+  padding: 1px 6px;
+  border-radius: 8px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.source-type-badge.口传 { background: #f3e8ff; color: #7c3aed; }
+.source-type-badge.古籍 { background: #fef3c7; color: #92400e; }
+.source-type-badge.出版 { background: #dbeafe; color: #1d4ed8; }
+.source-type-badge.网站 { background: #d1fae5; color: #065f46; }
+.source-card-field {
+  margin-top: 4px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-size: .82rem;
+  color: var(--color-text-secondary);
+}
+.source-isbn {
+  font-family: var(--font-mono);
+  font-size: .78rem;
+}
+.source-url {
+  font-size: .78rem;
+  color: var(--color-primary);
+  word-break: break-all;
+}
+.source-url:hover { text-decoration: underline; }
+

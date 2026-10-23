@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-577690",
+  "name": "陳惠眾",
+  "type": "person",
+  "props": {
+    "出生年月": "18931年"
+  },
+  "external": {
+    "cbdbId": 577690
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/577690",
+      "locator": {},
+      "quote": "c_birthyear=18931",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "organization:local-000063",
+  "type": "organization",
+  "name": "最高人民法院",
+  "props": {
+    "类型": "国家审判机关",
+    "简介": "中华人民共和国最高审判机关。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

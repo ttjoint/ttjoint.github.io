@@ -1,0 +1,46 @@
+{
+  "id": "person:local-000105",
+  "type": "person",
+  "name": "王东峰",
+  "props": {
+    "简介": "王东峰，男，汉族，1958年2月生，陕西西安人，1981年7月参加工作，1980年12月加入中国共产党，西安交通大学应用经济学专业毕业，在职研究生学历，经济学硕士学位，高级经济师。 现任十四届全国政协副主席兼秘书长。",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "男",
+    "出生年月": "1958年2月",
+    "籍贯": "陕西西安",
+    "民族": "汉族",
+    "学历": "西安交通大学应用经济学专业毕业，在职研究生学历，经济学硕士学位，高级经济师"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000075",
+    "evidence:local-000217"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "十四届全国政协",
+        "role": "副主席兼秘书长",
+        "evidence": "现任十四届全国政协副主席兼秘书长。",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/msz/wdf/202405/t20240530_213261.html"
+      }
+    ],
+    "career": [
+      {
+        "date": "1981年7月",
+        "organization": "",
+        "role": "",
+        "evidence": "1981年7月参加工作",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/msz/wdf/202405/t20240530_213261.html"
+      },
+      {
+        "date": "1980年12月",
+        "organization": "中国共产党",
+        "role": "",
+        "evidence": "1980年12月加入中国共产党",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/msz/wdf/202405/t20240530_213261.html"
+      }
+    ]
+  },
+  "external": {}
+}

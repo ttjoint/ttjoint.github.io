@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-75268",
+  "name": "劉翊宸",
+  "type": "person",
+  "props": {
+    "出生年月": "1818年",
+    "逝世时间": "1910年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為嘉慶23年~宣統2年。 【參考《清代人物生卒年表》#5694.】"
+  },
+  "external": {
+    "cbdbId": 75268
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/75268",
+      "locator": {},
+      "quote": "c_birthyear=1818 c_by_nh_code=663 c_by_nh_year=23 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2 c_notes=《清代人物生卒年表》定其生卒年為嘉慶23年~宣統2年。 【參考《清代人物生卒年表》#5694.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

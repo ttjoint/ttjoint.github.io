@@ -1,0 +1,105 @@
+{
+  "id": "person:cpc-448511-32550100",
+  "legacyId": "公安部部长 王小洪",
+  "name": "王小洪",
+  "type": "person",
+  "props": {
+    "性别": "男",
+    "出生年月": "1957年7月",
+    "籍贯": "福建福州",
+    "民族": "汉族",
+    "学历": "中央党校大学学历",
+    "简介": "王小洪，男，汉族，1957年7月生，福建福州人，1974年7月参加工作，1982年12月加入中国共产党，中央党校大学学历。 现任中共二十届中央书记处书记，国务委员、国务院党组成员，公安部部长、党委书记，中央政法委员会副书记，总警监。 （",
+    "来源栏目": "人民网：中国共产党历届中央领导集体"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000183",
+    "evidence:local-000161"
+  ],
+  "external": {
+    "cpcUrl": "http://cpc.people.com.cn/n1/2022/1023/c448511-32550100.html",
+    "title": "王小洪同志简历--资料中心--人民网"
+  },
+  "summary": "王小洪，男，汉族，1957年7月生，福建福州人，1974年7月参加工作，1982年12月加入中国共产党，中央党校大学学历。 现任中共二十届中央书记处书记，国务委员、国务院党组成员，公安部部长、党委书记，中央政法委员会副书记，总警监。 （",
+  "claims": {
+    "currentPositions": [
+      {
+        "role": "中共二十届中央书记处书记",
+        "evidence": "中共二十届中央书记处书记",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2022/1023/c448511-32550100.html"
+      },
+      {
+        "role": "国务委员",
+        "evidence": "国务委员",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2022/1023/c448511-32550100.html"
+      },
+      {
+        "role": "国务院党组成员",
+        "evidence": "国务院党组成员",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2022/1023/c448511-32550100.html"
+      },
+      {
+        "role": "公安部部长",
+        "evidence": "公安部部长",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2022/1023/c448511-32550100.html"
+      },
+      {
+        "role": "党委书记",
+        "evidence": "党委书记",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2022/1023/c448511-32550100.html"
+      },
+      {
+        "role": "中央政法委员会副书记",
+        "evidence": "中央政法委员会副书记",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2022/1023/c448511-32550100.html"
+      },
+      {
+        "role": "总警监",
+        "evidence": "总警监",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2022/1023/c448511-32550100.html"
+      },
+      {
+        "organization": "中共二十届中央书记处书记",
+        "evidence": "中共二十届中央书记处书记",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746384.htm"
+      },
+      {
+        "organization": "",
+        "role": "国务委员",
+        "evidence": "国务委员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746384.htm"
+      },
+      {
+        "organization": "国务院",
+        "role": "党组成员",
+        "evidence": "国务院党组成员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746384.htm"
+      },
+      {
+        "organization": "公安部",
+        "role": "部长",
+        "evidence": "公安部部长",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746384.htm"
+      },
+      {
+        "organization": "",
+        "role": "党委书记",
+        "evidence": "党委书记",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746384.htm"
+      },
+      {
+        "organization": "中央政法委员会",
+        "role": "副书记",
+        "evidence": "中央政法委员会副书记",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746384.htm"
+      },
+      {
+        "organization": "",
+        "role": "总警监",
+        "evidence": "总警监",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746384.htm"
+      }
+    ]
+  }
+}

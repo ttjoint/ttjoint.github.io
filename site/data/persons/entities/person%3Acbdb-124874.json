@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-124874",
+  "name": "覃修綱",
+  "type": "person",
+  "props": {
+    "逝世时间": "1905年",
+    "史料注记": "清人:-光緖31年"
+  },
+  "external": {
+    "cbdbId": 124874
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124874",
+      "locator": {},
+      "quote": "c_deathyear=1905 c_dy_nh_code=667 c_dy_nh_year=31 c_notes=清人:-光緖31年",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

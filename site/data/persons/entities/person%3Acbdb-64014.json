@@ -1,0 +1,41 @@
+{
+  "id": "person:cbdb-64014",
+  "name": "溫宗堯",
+  "type": "person",
+  "props": {
+    "逝世时间": "1947年"
+  },
+  "external": {
+    "cbdbId": 64014
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-521119",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/64014|521119|180",
+            "locator": {
+              "pages": "7410",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=64014 c_kin_id=521119",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64014",
+      "locator": {},
+      "quote": "c_deathyear=1947 c_dy_nh_code=669 c_dy_nh_year=36",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

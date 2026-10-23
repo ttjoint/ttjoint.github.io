@@ -1,0 +1,87 @@
+{
+  "id": "person:cbdb-34240",
+  "name": "錢應溥",
+  "type": "person",
+  "props": {
+    "出生年月": "1824年",
+    "逝世时间": "1901年",
+    "史料注记": "Qian(1) Yingpu [34240] CHECK biographical sources cited in Lidai renwu nianli tongpu. RM, p. 1621."
+  },
+  "external": {
+    "cbdbId": 34240
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-29767",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/34240|29767|75",
+            "locator": {},
+            "quote": "c_kin_code=75（父） c_personid=34240 c_kin_id=29767",
+            "reason": "c_kin_code=75 → 父；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-528978",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/34240|528978|180",
+            "locator": {
+              "pages": "14744",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=34240 c_kin_id=528978",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-528980",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/34240|528980|180",
+            "locator": {
+              "pages": "14744",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=34240 c_kin_id=528980",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-528981",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/34240|528981|180",
+            "locator": {
+              "pages": "14744",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=34240 c_kin_id=528981",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/34240",
+      "locator": {},
+      "quote": "c_birthyear=1824 c_by_nh_code=0 c_deathyear=1901 c_dy_nh_code=0 c_notes=Qian(1) Yingpu [34240] CHECK biographical sources cited in Lidai renwu nianli tongpu. RM, p. 1621.",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

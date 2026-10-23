@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-438095",
+  "name": "龍應奎",
+  "type": "person",
+  "props": {
+    "出生年月": "1873年",
+    "逝世时间": "约 1929年 ± 30"
+  },
+  "external": {
+    "cbdbId": 438095
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/438095",
+      "locator": {},
+      "quote": "c_birthyear=1873 c_by_nh_code=666 c_by_nh_year=12 c_deathyear=1929 c_dy_nh_code=669 c_dy_nh_year=18",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

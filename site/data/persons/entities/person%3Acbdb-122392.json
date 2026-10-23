@@ -1,0 +1,41 @@
+{
+  "id": "person:cbdb-122392",
+  "name": "桂坫",
+  "type": "person",
+  "props": {
+    "逝世时间": "1958年"
+  },
+  "external": {
+    "cbdbId": 122392
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-85991",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/122392|85991|75",
+            "locator": {
+              "pages": "MQWW PoetID #4542",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0085991, KinCode = 0180",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/122392",
+      "locator": {},
+      "quote": "c_deathyear=1958 c_dy_nh_code=0",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

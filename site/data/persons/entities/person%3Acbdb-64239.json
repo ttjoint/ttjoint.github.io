@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-64239",
+  "name": "顏瓊林",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1904年 ± 30"
+  },
+  "external": {
+    "cbdbId": 64239
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64239",
+      "locator": {},
+      "quote": "c_deathyear=1904 c_dy_nh_code=667 c_dy_nh_year=30",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

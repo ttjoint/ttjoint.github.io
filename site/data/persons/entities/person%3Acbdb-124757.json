@@ -1,0 +1,90 @@
+{
+  "id": "person:cbdb-124757",
+  "name": "嚴作霖",
+  "type": "person",
+  "props": {
+    "出生年月": "1837年",
+    "逝世时间": "1905年",
+    "史料注记": "清人:道光17年-光緖31年"
+  },
+  "external": {
+    "cbdbId": 124757
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-528863",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124757|528863|75",
+            "locator": {
+              "pages": "14657",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=124757 c_kin_id=528863",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-528865",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124757|528865|180",
+            "locator": {
+              "pages": "14657",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=124757 c_kin_id=528865",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-528866",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124757|528866|180",
+            "locator": {
+              "pages": "14657",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=124757 c_kin_id=528866",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-528867",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124757|528867|180",
+            "locator": {
+              "pages": "14657",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=124757 c_kin_id=528867",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124757",
+      "locator": {},
+      "quote": "c_birthyear=1837 c_by_nh_code=664 c_by_nh_year=17 c_deathyear=1905 c_dy_nh_code=667 c_dy_nh_year=31 c_notes=清人:道光17年-光緖31年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-576645",
+  "name": "古達德",
+  "type": "person",
+  "props": {
+    "出生年月": "1865年",
+    "逝世时间": "1922年"
+  },
+  "external": {
+    "cbdbId": 576645
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576645",
+      "locator": {},
+      "quote": "c_birthyear=1865 c_deathyear=1922",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

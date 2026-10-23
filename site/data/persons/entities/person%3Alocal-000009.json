@@ -1,0 +1,45 @@
+{
+  "id": "person:local-000009",
+  "type": "person",
+  "name": "葛晓燕",
+  "props": {
+    "性别": "女",
+    "出生年月": "1964年12月",
+    "民族": "汉族",
+    "学历": "省委党校研究生学历，法学学士学位",
+    "简介": "葛晓燕，女，汉族，1964年12月生，省委党校研究生学历，法学学士学位，中共党员，现任最高人民检察院党组成员、副检察长、检察委员会委员，二级大检察官。 全国妇联第十三届副主席（兼）。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000035"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "最高人民检察院",
+        "role": "党组成员",
+        "evidence": "最高人民检察院党组成员",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "",
+        "role": "副检察长",
+        "evidence": "副检察长",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "",
+        "role": "检察委员会委员",
+        "evidence": "检察委员会委员",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "",
+        "role": "二级大检察官",
+        "evidence": "二级大检察官",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      }
+    ]
+  },
+  "external": {}
+}

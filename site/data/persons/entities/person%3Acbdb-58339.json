@@ -1,0 +1,120 @@
+{
+  "id": "person:cbdb-58339",
+  "name": "楊宗濂",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1834年 ± 30",
+    "逝世时间": "1906年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光12年~光緒32年。 【參考《清代人物生卒年表》#7545.】"
+  },
+  "external": {
+    "cbdbId": 58339
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-516839",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58339|516839|180",
+            "locator": {
+              "pages": "1586",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58339 c_kin_id=516839",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-516840",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58339|516840|180",
+            "locator": {
+              "pages": "1586",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58339 c_kin_id=516840",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-516841",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58339|516841|180",
+            "locator": {
+              "pages": "1586",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58339 c_kin_id=516841",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-516830",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58339|516830|126",
+            "locator": {
+              "pages": "1586",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=58339 c_kin_id=516830",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-516831",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58339|516831|126",
+            "locator": {
+              "pages": "1586",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=58339 c_kin_id=516831",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-516843",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58339|516843|126",
+            "locator": {
+              "pages": "1586",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=58339 c_kin_id=516843",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58339",
+      "locator": {},
+      "quote": "c_birthyear=1834 c_by_nh_code=664 c_by_nh_year=14 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32 c_notes=《清代人物生卒年表》定其生卒年為道光12年~光緒32年。 【參考《清代人物生卒年表》#7545.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

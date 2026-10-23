@@ -1,0 +1,12 @@
+{
+  "id": "organization:local-000079",
+  "type": "organization",
+  "name": "公安部",
+  "props": {
+    "类型": "国务院组成部门",
+    "简介": "国务院主管全国公安工作的组成部门。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

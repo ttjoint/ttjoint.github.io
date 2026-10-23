@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000029",
+  "name": "桃园结义",
+  "type": "event",
+  "aliases": [
+    "桃园三结义"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

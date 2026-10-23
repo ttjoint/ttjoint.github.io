@@ -1,0 +1,16 @@
+{
+  "id": "organization:local-000121",
+  "type": "organization",
+  "name": "中国人民政治协商会议第十四届全国委员会",
+  "aliases": [
+    "十四届全国政协",
+    "全国政协"
+  ],
+  "props": {
+    "类型": "统一战线组织",
+    "简介": "中国人民政治协商会议第十四届全国委员会。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

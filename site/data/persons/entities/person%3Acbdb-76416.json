@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-76416",
+  "name": "蘇曼殊",
+  "type": "person",
+  "props": {
+    "出生年月": "1884年",
+    "逝世时间": "1918年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒10年~中華民國7年。 【參考《清代人物生卒年表》#7060.】"
+  },
+  "external": {
+    "cbdbId": 76416
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/76416",
+      "locator": {},
+      "quote": "c_birthyear=1884 c_by_nh_code=667 c_by_nh_year=10 c_deathyear=1918 c_dy_nh_code=669 c_dy_nh_year=7 c_notes=《清代人物生卒年表》定其生卒年為光緒10年~中華民國7年。 【參考《清代人物生卒年表》#7060.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

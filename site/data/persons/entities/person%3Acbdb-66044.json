@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-66044",
+  "name": "恩順",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1853年 ± 30",
+    "逝世时间": "1911年"
+  },
+  "external": {
+    "cbdbId": 66044
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/66044",
+      "locator": {},
+      "quote": "c_birthyear=1853 c_by_nh_code=665 c_by_nh_year=3 c_deathyear=1911 c_dy_nh_code=668 c_dy_nh_year=3",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

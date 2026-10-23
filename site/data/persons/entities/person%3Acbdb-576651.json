@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-576651",
+  "name": "席賓猶",
+  "type": "person",
+  "props": {
+    "出生年月": "1870年",
+    "逝世时间": "1905年"
+  },
+  "external": {
+    "cbdbId": 576651
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576651",
+      "locator": {},
+      "quote": "c_birthyear=1870 c_deathyear=1905",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-521119",
+  "name": "溫慶麟",
+  "type": "person",
+  "props": {
+    "生卒": "1914年"
+  },
+  "external": {
+    "cbdbId": 521119
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-64014",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/521119|64014|75",
+            "locator": {
+              "pages": "7410",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=521119 c_kin_id=64014",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/521119",
+      "locator": {
+        "sourceId": 64014
+      },
+      "quote": "c_index_year=1914 c_index_year_type_code=2912",
+      "reason": "生卒；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

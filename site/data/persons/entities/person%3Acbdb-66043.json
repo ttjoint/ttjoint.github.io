@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-66043",
+  "name": "博爾濟吉特多羅特色楞",
+  "type": "person",
+  "props": {
+    "逝世时间": "1909年"
+  },
+  "external": {
+    "cbdbId": 66043
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/66043",
+      "locator": {},
+      "quote": "c_deathyear=1909 c_dy_nh_code=668 c_dy_nh_year=1",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

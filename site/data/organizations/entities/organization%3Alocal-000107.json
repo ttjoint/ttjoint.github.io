@@ -1,0 +1,16 @@
+{
+  "id": "organization:local-000107",
+  "type": "organization",
+  "name": "国务院",
+  "aliases": [
+    "中华人民共和国国务院",
+    "中央人民政府"
+  ],
+  "props": {
+    "类型": "国家行政机关",
+    "简介": "中华人民共和国中央人民政府，最高国家行政机关。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

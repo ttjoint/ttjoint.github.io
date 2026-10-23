@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-577055",
+  "name": "德隆",
+  "type": "person",
+  "props": {
+    "出生年月": "1878年",
+    "逝世时间": "1936年"
+  },
+  "external": {
+    "cbdbId": 577055
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/577055",
+      "locator": {},
+      "quote": "c_birthyear=1878 c_deathyear=1936",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

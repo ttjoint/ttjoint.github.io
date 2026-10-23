@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-62888",
+  "name": "朱祖謀",
+  "type": "person",
+  "props": {
+    "出生年月": "1857年",
+    "逝世时间": "1931年"
+  },
+  "external": {
+    "cbdbId": 62888
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-520707",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62888|520707|180",
+            "locator": {
+              "pages": "6254",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=62888 c_kin_id=520707",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/62888",
+      "locator": {},
+      "quote": "c_birthyear=1857 c_by_nh_code=665 c_by_nh_year=7 c_deathyear=1931 c_dy_nh_code=669 c_dy_nh_year=20",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

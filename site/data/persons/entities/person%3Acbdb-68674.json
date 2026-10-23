@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-68674",
+  "name": "李南華",
+  "type": "person",
+  "props": {
+    "逝世时间": "1902年"
+  },
+  "external": {
+    "cbdbId": 68674
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/68674",
+      "locator": {},
+      "quote": "c_deathyear=1902 c_dy_nh_code=667 c_dy_nh_year=28",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

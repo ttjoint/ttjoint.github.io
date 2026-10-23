@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-576900",
+  "name": "董默如",
+  "type": "person",
+  "props": {
+    "出生年月": "18715年"
+  },
+  "external": {
+    "cbdbId": 576900
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576900",
+      "locator": {},
+      "quote": "c_birthyear=18715",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

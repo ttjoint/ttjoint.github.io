@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000005",
+  "type": "organization",
+  "name": "中国民主建国会中央委员会",
+  "aliases": [
+    "民建中央"
+  ],
+  "props": {
+    "类型": "民主党派中央",
+    "简介": "中国民主建国会中央委员会。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

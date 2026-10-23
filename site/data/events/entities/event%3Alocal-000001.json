@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000001",
+  "name": "女娲造人",
+  "type": "event",
+  "aliases": [
+    "女娲抟土造人"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

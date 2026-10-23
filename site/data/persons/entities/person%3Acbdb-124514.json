@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-124514",
+  "name": "舒舒覺羅春齡",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1837年 ± 30",
+    "逝世时间": "1908年",
+    "史料注记": "清人:道光[17]年-光緖33年"
+  },
+  "external": {
+    "cbdbId": 124514
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-528261",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124514|528261|180",
+            "locator": {
+              "pages": "14313",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=124514 c_kin_id=528261",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124514",
+      "locator": {},
+      "quote": "c_birthyear=1837 c_by_nh_code=664 c_by_nh_year=17 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=33 c_notes=清人:道光[17]年-光緖33年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

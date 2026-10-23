@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-572970",
+  "name": "謝德三",
+  "type": "person",
+  "props": {
+    "出生年月": "1847年",
+    "逝世时间": "1929年"
+  },
+  "external": {
+    "cbdbId": 572970
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/572970",
+      "locator": {},
+      "quote": "c_birthyear=1847 c_deathyear=1929",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

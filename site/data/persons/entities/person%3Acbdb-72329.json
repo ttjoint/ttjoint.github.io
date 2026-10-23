@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-72329",
+  "name": "毛慶澄",
+  "type": "person",
+  "props": {
+    "逝世时间": "1907年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為？~光緒33年。 【參考《清代人物生卒年表》#2171.】"
+  },
+  "external": {
+    "cbdbId": 72329
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/72329",
+      "locator": {},
+      "quote": "c_deathyear=1907 c_dy_nh_code=667 c_dy_nh_year=33 c_notes=《清代人物生卒年表》定其生卒年為？~光緒33年。 【參考《清代人物生卒年表》#2171.】",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

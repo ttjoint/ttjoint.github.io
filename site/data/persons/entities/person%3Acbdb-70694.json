@@ -1,0 +1,40 @@
+{
+  "id": "person:cbdb-70694",
+  "name": "丁惠康",
+  "type": "person",
+  "props": {
+    "出生年月": "1869年",
+    "逝世时间": "1909年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治8年~宣統1年。 【參考《清代人物生卒年表》#160.】"
+  },
+  "external": {
+    "cbdbId": 70694
+  },
+  "aliases": [],
+  "relations": {
+    "brother": [
+      {
+        "id": "person:cbdb-122399",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/70694|122399|125",
+            "locator": {},
+            "quote": "《翁同龢日記》光緒二十九年閏五月初二日，第3506頁。",
+            "reason": "c_kin_code=125 → 兄；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/70694",
+      "locator": {},
+      "quote": "c_birthyear=1869 c_by_nh_code=666 c_by_nh_year=8 c_deathyear=1909 c_dy_nh_code=668 c_dy_nh_year=1 c_notes=《清代人物生卒年表》定其生卒年為同治8年~宣統1年。 【參考《清代人物生卒年表》#160.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

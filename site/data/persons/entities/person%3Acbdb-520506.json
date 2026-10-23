@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-520506",
+  "name": "李家超",
+  "type": "person",
+  "props": {
+    "生卒": "1927年"
+  },
+  "external": {
+    "cbdbId": 520506
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/520506",
+      "locator": {
+        "sourceId": 62129
+      },
+      "quote": "c_index_year=1927 c_index_year_type_code=27",
+      "reason": "生卒；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

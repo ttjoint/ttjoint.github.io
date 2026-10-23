@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-71475",
+  "name": "王世鼐",
+  "type": "person",
+  "props": {
+    "出生年月": "1902年",
+    "逝世时间": "1943年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒28年~中華民國32年。 【參考《清代人物生卒年表》#1143.】"
+  },
+  "external": {
+    "cbdbId": 71475
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/71475",
+      "locator": {},
+      "quote": "c_birthyear=1902 c_by_nh_code=667 c_by_nh_year=28 c_deathyear=1943 c_dy_nh_code=669 c_dy_nh_year=32 c_notes=《清代人物生卒年表》定其生卒年為光緒28年~中華民國32年。 【參考《清代人物生卒年表》#1143.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-691209",
+  "name": "支碧湖",
+  "type": "person",
+  "props": {
+    "逝世时间": "1906年之后"
+  },
+  "external": {
+    "cbdbId": 691209
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/691209",
+      "locator": {},
+      "quote": "c_deathyear=1906",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

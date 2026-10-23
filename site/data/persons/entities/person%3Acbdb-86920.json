@@ -1,0 +1,29 @@
+{
+  "id": "person:cbdb-86920",
+  "name": "徐汝翼",
+  "type": "person",
+  "props": {
+    "出生年月": "1866年",
+    "逝世时间": "1926年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治5年~中華民國15年。 【參考《清代人物生卒年表》#19269.】"
+  },
+  "external": {
+    "cbdbId": 86920
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-330002"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/86920",
+      "locator": {},
+      "quote": "c_birthyear=1866 c_by_nh_code=666 c_by_nh_year=5 c_deathyear=1926 c_dy_nh_code=669 c_dy_nh_year=15 c_notes=《清代人物生卒年表》定其生卒年為同治5年~中華民國15年。 【參考《清代人物生卒年表》#19269.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

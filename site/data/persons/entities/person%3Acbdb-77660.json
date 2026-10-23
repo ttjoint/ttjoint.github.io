@@ -1,0 +1,35 @@
+{
+  "id": "person:cbdb-77660",
+  "name": "李學詩",
+  "type": "person",
+  "props": {
+    "出生年月": "1874年",
+    "逝世时间": "1930年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治13年~中華民國19年。 【參考《清代人物生卒年表》#8516.】"
+  },
+  "external": {
+    "cbdbId": 77660
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-214751",
+      {
+        "target": "person:cbdb-214752",
+        "role": "繼"
+      },
+      "person:cbdb-331887",
+      "person:cbdb-331951"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/77660",
+      "locator": {},
+      "quote": "c_birthyear=1874 c_by_nh_code=666 c_by_nh_year=13 c_deathyear=1930 c_dy_nh_code=669 c_dy_nh_year=19 c_notes=《清代人物生卒年表》定其生卒年為同治13年~中華民國19年。 【參考《清代人物生卒年表》#8516.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

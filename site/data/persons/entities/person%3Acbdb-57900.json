@@ -1,0 +1,103 @@
+{
+  "id": "person:cbdb-57900",
+  "name": "瞿鴻禨",
+  "type": "person",
+  "props": {
+    "出生年月": "1850年",
+    "逝世时间": "1918年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光30年~中華民國7年。 【參考《清代人物生卒年表》#25105.】"
+  },
+  "external": {
+    "cbdbId": 57900
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-515902",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57900|515902|180",
+            "locator": {
+              "pages": "1134",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57900 c_kin_id=515902",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-515903",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57900|515903|180",
+            "locator": {
+              "pages": "1134",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57900 c_kin_id=515903",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-515904",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57900|515904|180",
+            "locator": {
+              "pages": "1134",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57900 c_kin_id=515904",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-515905",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57900|515905|180",
+            "locator": {
+              "pages": "1134",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57900 c_kin_id=515905",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-515906",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57900|515906|180",
+            "locator": {
+              "pages": "1134",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57900 c_kin_id=515906",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/57900",
+      "locator": {},
+      "quote": "c_birthyear=1850 c_by_nh_code=664 c_by_nh_year=30 c_deathyear=1918 c_dy_nh_code=669 c_dy_nh_year=7 c_notes=《清代人物生卒年表》定其生卒年為道光30年~中華民國7年。 【參考《清代人物生卒年表》#25105.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

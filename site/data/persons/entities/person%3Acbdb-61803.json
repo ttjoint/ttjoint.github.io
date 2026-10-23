@@ -1,0 +1,107 @@
+{
+  "id": "person:cbdb-61803",
+  "name": "黃忠浩",
+  "type": "person",
+  "props": {
+    "出生年月": "1859年",
+    "逝世时间": "1911年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐9年~宣統3年。 【參考《清代人物生卒年表》#20751.】"
+  },
+  "external": {
+    "cbdbId": 61803
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-520382",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61803|520382|75",
+            "locator": {
+              "pages": "5148",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=61803 c_kin_id=520382",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-520379",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61803|520379|180",
+            "locator": {
+              "pages": "5148",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61803 c_kin_id=520379",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520380",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61803|520380|180",
+            "locator": {
+              "pages": "5148",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61803 c_kin_id=520380",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520381",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61803|520381|180",
+            "locator": {
+              "pages": "5148",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61803 c_kin_id=520381",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-520383",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61803|520383|125",
+            "locator": {
+              "pages": "5148",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=61803 c_kin_id=520383",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61803",
+      "locator": {},
+      "quote": "c_birthyear=1859 c_by_nh_code=665 c_by_nh_year=9 c_deathyear=1911 c_dy_nh_code=668 c_dy_nh_year=3 c_notes=《清代人物生卒年表》定其生卒年為咸豐9年~宣統3年。 【參考《清代人物生卒年表》#20751.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "organization:local-000023",
+  "name": "西晋",
+  "type": "organization",
+  "aliases": [
+    "晋朝",
+    "司马晋"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {}
+}

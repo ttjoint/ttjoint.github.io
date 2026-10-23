@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-578622",
+  "name": "徐志謙",
+  "type": "person",
+  "props": {
+    "出生年月": "1900年"
+  },
+  "external": {
+    "cbdbId": 578622
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/578622",
+      "locator": {},
+      "quote": "c_birthyear=1900",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

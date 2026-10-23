@@ -1,0 +1,14 @@
+{
+  "id": "event:local-000031",
+  "name": "鸣条之战",
+  "type": "event",
+  "aliases": [
+    "汤桀之战",
+    "商汤灭夏"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

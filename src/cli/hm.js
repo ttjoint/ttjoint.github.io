@@ -107,7 +107,7 @@ function cmdGraphPredicates() {
   const g = loadGraph();
   const q = new QueryEngine(g);
   for (const p of q.predicateCatalog()) {
-    const flags = [p.negatable ? 'negatable' : null, p.subjectGender ? `gender:${p.subjectGender}` : null]
+    const flags = [p.negatable ? 'negatable' : null, p.objectGender ? `gender:${p.objectGender}` : null]
       .filter(Boolean).join(',');
     console.log(`${p.key.padEnd(18)} ${p.label.padEnd(8)} ${String(p.count).padStart(6)}  ${flags}`);
   }

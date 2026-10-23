@@ -1,0 +1,12 @@
+{
+  "id": "organization:local-000025",
+  "type": "organization",
+  "name": "中共二十届中央政治局",
+  "props": {
+    "类型": "中央政治局",
+    "简介": "中国共产党第二十届中央政治局。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

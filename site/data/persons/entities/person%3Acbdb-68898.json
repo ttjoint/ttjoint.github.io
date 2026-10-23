@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-68898",
+  "name": "張鎮芳",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1866年 ± 30",
+    "逝世时间": "1933年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治2年~中華民國22年。 【參考《清代人物生卒年表》#12436.】"
+  },
+  "external": {
+    "cbdbId": 68898
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/68898",
+      "locator": {},
+      "quote": "c_birthyear=1866 c_by_nh_code=666 c_by_nh_year=5 c_deathyear=1933 c_dy_nh_code=669 c_dy_nh_year=22 c_notes=《清代人物生卒年表》定其生卒年為同治2年~中華民國22年。 【參考《清代人物生卒年表》#12436.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

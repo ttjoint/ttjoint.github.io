@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000003",
+  "name": "大禹治水",
+  "type": "event",
+  "aliases": [
+    "禹贡"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-65589",
+  "name": "吳鳳柱",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1832年 ± 30",
+    "逝世时间": "1900年"
+  },
+  "external": {
+    "cbdbId": 65589
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/65589",
+      "locator": {},
+      "quote": "c_birthyear=1832 c_by_nh_code=664 c_by_nh_year=12 c_deathyear=1900 c_dy_nh_code=667 c_dy_nh_year=26",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

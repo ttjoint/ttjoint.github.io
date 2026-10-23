@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-75145",
+  "name": "劉岳雲",
+  "type": "person",
+  "props": {
+    "出生年月": "1849年",
+    "逝世时间": "1917年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光29年~中華民國6年。 【參考《清代人物生卒年表》#5552.】"
+  },
+  "external": {
+    "cbdbId": 75145
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/75145",
+      "locator": {},
+      "quote": "c_birthyear=1849 c_by_nh_code=664 c_by_nh_year=29 c_deathyear=1917 c_dy_nh_code=669 c_dy_nh_year=6 c_notes=《清代人物生卒年表》定其生卒年為道光29年~中華民國6年。 【參考《清代人物生卒年表》#5552.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

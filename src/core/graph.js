@@ -13,12 +13,33 @@
  *    keeping query code branch-free.
  */
 
-const { PredicateRegistry, modifier, isNegated, baseKey, MODIFIER } = require('../predicates/registry');
+const {
+  PredicateRegistry, modifier, isNegated, baseKey, splitModifiers, MODIFIER,
+} = require('../predicates/registry');
 
-const NODE_TYPES = Object.freeze(['person', 'organization', 'event']);
+const { ALL_TYPES: NODE_TYPES } = require('../store/entity_types');
 
 function nowIso() {
   return new Date().toISOString();
+}
+
+/**
+ * Does an edge belong to the requested predicate view?
+ *
+ * - `father`          matches `father`, `father/inverse` (never `father/negate`)
+ * - `father/negate`   matches exactly the negated form
+ */
+function matchPredicate(list, predicate, includeNegated) {
+  const wanted = splitModifiers(predicate);
+  const wantsNegate = wanted.mods.includes(MODIFIER.NEGATE);
+  const base = wanted.base;
+  return list.filter(e => {
+    if (baseKey(e.key) !== base) return false;
+    const negated = isNegated(e.key);
+    if (negated) return wantsNegate || includeNegated;
+    // A request for the negated form only returns negated edges.
+    return !wantsNegate;
+  });
 }
 
 /**
@@ -30,10 +51,16 @@ function nowIso() {
  *   role             optional qualifier (官职/头衔)
  *   range            TimeRange | null   (validity of the assertion)
  *   note, sourceUrl, confidence
+ *   provenance       [ { rawRef, locator, quote, reason, commitId } ] 这条断言出自哪里
  *   createdAt        ingestion time (never changes)
  * }
+ *
+ * `provenance` 挂在**边的每次实例**上，不是挂在谓词定义上。
+ * 「张三是李四的父亲」这条断言出自 KIN_DATA 的某一行，而「王五是赵六的父亲」
+ * 出自另一行——同一种谓词，两处出处。把它记在谓词表上等于说
+ * 「所有父亲关系都出自同一份文献」，那是错的（§6.1）。
  */
-function makeEdge({ key, subject, object, literal = false, role = '', range = null, note = '', sourceUrl = '', confidence = 1, createdAt }) {
+function makeEdge({ key, subject, object, literal = false, role = '', range = null, note = '', sourceUrl = '', confidence = 1, provenance = null, createdAt }) {
   if (!key) throw Error('edge requires a predicate key');
   if (!subject) throw Error('edge requires a subject');
   if (object == null || object === '') throw Error('edge requires an object');
@@ -54,6 +81,7 @@ function makeEdge({ key, subject, object, literal = false, role = '', range = nu
     note: note || '',
     sourceUrl: sourceUrl || '',
     confidence: Number.isFinite(confidence) ? confidence : 1,
+    provenance: Array.isArray(provenance) && provenance.length ? provenance : null,
     createdAt: createdAt || nowIso(),
   };
 }
@@ -112,20 +140,25 @@ class GraphStore {
     return this.nodes.get(id) || null;
   }
 
-  /** All edges leaving a node, optionally filtered by base predicate. */
-  outgoings(id, predicate = null) {
+  /**
+   * All edges leaving a node, optionally filtered by predicate.
+   *
+   * Matching is by **base** predicate, so `father` also matches `father/inverse`,
+   * but *not* `father/negate`: a negated assertion says the relation is false and
+   * must never leak into a positive relation listing. Ask for it explicitly with
+   * `{ includeNegated: true }` or by passing the literal key `father/negate`.
+   */
+  outgoings(id, predicate = null, { includeNegated = false } = {}) {
     const list = this.outEdges.get(id) || [];
-    if (!predicate) return list;
-    const base = baseKey(predicate);
-    return list.filter(e => baseKey(e.key) === base);
+    if (!predicate) return includeNegated ? list : list.filter(e => !isNegated(e.key));
+    return matchPredicate(list, predicate, includeNegated);
   }
 
-  /** All edges pointing at a node. */
-  incomings(id, predicate = null) {
+  /** All edges pointing at a node (same negate rules as `outgoings`). */
+  incomings(id, predicate = null, { includeNegated = false } = {}) {
     const list = this.inEdges.get(id) || [];
-    if (!predicate) return list;
-    const base = baseKey(predicate);
-    return list.filter(e => baseKey(e.key) === base);
+    if (!predicate) return includeNegated ? list : list.filter(e => !isNegated(e.key));
+    return matchPredicate(list, predicate, includeNegated);
   }
 
   /**
@@ -134,12 +167,13 @@ class GraphStore {
    * declares them as inverses of one another and callers almost always want the
    * whole family of assertions rather than one storage orientation.
    */
-  edgesByPredicate(predicate) {
+  edgesByPredicate(predicate, { includeNegated = false } = {}) {
     const base = baseKey(predicate);
-    const direct = this.byPredicate.get(base) || [];
+    const keep = list => (includeNegated ? list : list.filter(e => !isNegated(e.key)));
+    const direct = keep(this.byPredicate.get(base) || []);
     const inv = this.registry.inverseKey(base);
     if (!inv || inv === base) return direct;
-    const inverseList = this.byPredicate.get(inv) || [];
+    const inverseList = keep(this.byPredicate.get(inv) || []);
     if (!inverseList.length) return direct;
     // Deduplicate defensively: a symmetric predicate can appear on both sides.
     const seen = new Set(direct.map(e => e.id));
@@ -183,8 +217,8 @@ class GraphStore {
         range: e.range,
       });
     };
-    for (const e of this.outgoings(id, predicate)) push(e, 'out');
-    for (const e of this.incomings(id, predicate)) push(e, 'in');
+    for (const e of this.outgoings(id, predicate, { includeNegated })) push(e, 'out');
+    for (const e of this.incomings(id, predicate, { includeNegated })) push(e, 'in');
     return out;
   }
 

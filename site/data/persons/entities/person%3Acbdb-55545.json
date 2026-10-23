@@ -1,0 +1,59 @@
+{
+  "id": "person:cbdb-55545",
+  "name": "左錫蕙",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1830年 ± 30",
+    "逝世时间": "约 1900年 ± 30"
+  },
+  "external": {
+    "cbdbId": 55545
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-55537",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55545|55537|75",
+            "locator": {
+              "pages": "MQWW PoetID #225, HuWenKai #267",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=75（父） c_personid=55545 c_kin_id=55537",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "sister": [
+      {
+        "id": "person:cbdb-55540",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55545|55540|169",
+            "locator": {
+              "pages": "MQWW PoetID #4860",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=169（妹） c_personid=55545 c_kin_id=55540",
+            "reason": "c_kin_code=169 → 妹；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/55545",
+      "locator": {},
+      "quote": "c_birthyear=1830 c_by_nh_code=664 c_by_nh_year=10 c_deathyear=1900 c_dy_nh_code=667 c_dy_nh_year=26",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

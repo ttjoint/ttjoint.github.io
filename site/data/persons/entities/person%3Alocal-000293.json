@@ -1,0 +1,46 @@
+{
+  "id": "person:local-000293",
+  "type": "person",
+  "name": "咸辉",
+  "props": {
+    "简介": "咸辉，女，回族，1958年3月生，甘肃定西人，1975年3月参加工作，1976年12月加入中国共产党，兰州大学管理学院行政管理专业毕业，在职研究生学历，管理学博士学位。 现任十四届全国政协副主席。",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "女",
+    "出生年月": "1958年3月",
+    "籍贯": "甘肃定西",
+    "民族": "回族",
+    "学历": "兰州大学管理学院行政管理专业毕业，在职研究生学历，管理学博士学位"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000039",
+    "evidence:local-000181"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "十四届全国政协",
+        "role": "副主席",
+        "evidence": "现任十四届全国政协副主席。",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/xh/202405/t20240530_214706.html"
+      }
+    ],
+    "career": [
+      {
+        "date": "1975年3月",
+        "organization": "",
+        "role": "参加工作",
+        "evidence": "1975年3月参加工作",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/xh/202405/t20240530_214706.html"
+      },
+      {
+        "date": "1976年12月",
+        "organization": "中国共产党",
+        "role": "加入",
+        "evidence": "1976年12月加入中国共产党",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/xh/202405/t20240530_214706.html"
+      }
+    ]
+  },
+  "external": {}
+}

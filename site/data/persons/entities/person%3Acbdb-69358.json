@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-69358",
+  "name": "王垿",
+  "type": "person",
+  "props": {
+    "出生年月": "1857年",
+    "逝世时间": "1933年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐8年~中華民國22年。 【參考《清代人物生卒年表》#717.】"
+  },
+  "external": {
+    "cbdbId": 69358
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-526896",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/69358|526896|180",
+            "locator": {
+              "pages": "13062",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=69358 c_kin_id=526896",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/69358",
+      "locator": {},
+      "quote": "c_birthyear=1857 c_by_nh_code=665 c_by_nh_year=7 c_deathyear=1933 c_dy_nh_code=669 c_dy_nh_year=22 c_notes=《清代人物生卒年表》定其生卒年為咸豐8年~中華民國22年。 【參考《清代人物生卒年表》#717.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

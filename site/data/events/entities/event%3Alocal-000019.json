@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000019",
+  "name": "张骞出使西域",
+  "type": "event",
+  "aliases": [
+    "凿空西域",
+    "丝绸之路开辟"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {}
+}

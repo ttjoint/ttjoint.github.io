@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "publish": {
+    "filtered": true,
+    "personsFromYear": 1900,
+    "note": "仅发布 1900 年及以后的现代人物；全量数据保留在本地 data/，不进入版本库。"
+  },
+  "types": {
+    "persons": {
+      "count": 3641,
+      "dated": 3641,
+      "pages": 2
+    },
+    "things": {
+      "count": 6,
+      "dated": 0,
+      "pages": 1
+    },
+    "organizations": {
+      "count": 67,
+      "dated": 0,
+      "pages": 1
+    },
+    "events": {
+      "count": 22,
+      "dated": 0,
+      "pages": 1
+    },
+    "evidence": {
+      "count": 111,
+      "dated": 0,
+      "pages": 1
+    }
+  },
+  "total": 3847
+}

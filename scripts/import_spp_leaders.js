@@ -57,7 +57,10 @@ const clean = html => html
   .replace(/\s+/g, ' ')
   .trim();
 
-const stableId = name => 'person:' + crypto.createHash('sha256').update('spp\0' + name).digest('hex').slice(0, 20);
+// Canonical id: see src/store/entity_id.js. The old 'spp\0' salt made the same
+// person a different node than the same person from another source.
+const { entityId } = require('../src/store/entity_id');
+const { personKeyFromUrl } = require('../src/store/source_key');
 
 // The resume body always opens with "<name>，<gender>，<ethnicity>，...".
 const RESUME_RE = /([\u4e00-\u9fff·]{2,12})\s*，\s*(男|女)\s*，\s*([\u4e00-\u9fff]{1,4}族)?\s*，?\s*(\d{4})年(\d{1,2})月/g;
@@ -101,7 +104,7 @@ function extract(html, sourceUrl) {
     const degree = (body.match(/([\u4e00-\u9fff]{2,12}学位)/) || [])[1] || '';
 
     people.push({
-      id: stableId(name),
+      id: entityId('person', personKeyFromUrl(url)),
       name,
       gender,
       ethnicity,

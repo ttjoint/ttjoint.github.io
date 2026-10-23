@@ -1,0 +1,92 @@
+{
+  "id": "person:cbdb-65169",
+  "name": "龍湛霖",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1837年 ± 30",
+    "逝世时间": "1905年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光17年~光緒31年。 【參考《清代人物生卒年表》#2997.】"
+  },
+  "external": {
+    "cbdbId": 65169
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-521702",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65169|521702|75",
+            "locator": {
+              "pages": "8590",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=65169 c_kin_id=521702",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-521705",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65169|521705|180",
+            "locator": {
+              "pages": "8590",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=65169 c_kin_id=521705",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-521706",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65169|521706|180",
+            "locator": {
+              "pages": "8590",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=65169 c_kin_id=521706",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-521708",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65169|521708|125",
+            "locator": {
+              "pages": "8590",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=65169 c_kin_id=521708",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/65169",
+      "locator": {},
+      "quote": "c_birthyear=1837 c_by_nh_code=664 c_by_nh_year=17 c_deathyear=1905 c_dy_nh_code=667 c_dy_nh_year=31 c_notes=《清代人物生卒年表》定其生卒年為道光17年~光緒31年。 【參考《清代人物生卒年表》#2997.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

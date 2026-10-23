@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-572401",
+  "name": "譚微道",
+  "type": "person",
+  "props": {
+    "出生年月": "1826年",
+    "逝世时间": "1900年"
+  },
+  "external": {
+    "cbdbId": 572401
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/572401",
+      "locator": {},
+      "quote": "c_birthyear=1826 c_deathyear=1900",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-71033",
+  "name": "馬福祥",
+  "type": "person",
+  "props": {
+    "出生年月": "1876年",
+    "逝世时间": "1932年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒2年~中華民國21年。 【參考《清代人物生卒年表》#566.】"
+  },
+  "external": {
+    "cbdbId": 71033
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/71033",
+      "locator": {},
+      "quote": "c_birthyear=1876 c_by_nh_code=667 c_by_nh_year=2 c_deathyear=1932 c_dy_nh_code=669 c_dy_nh_year=21 c_notes=《清代人物生卒年表》定其生卒年為光緒2年~中華民國21年。 【參考《清代人物生卒年表》#566.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

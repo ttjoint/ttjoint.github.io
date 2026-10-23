@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-80836",
+  "name": "張培爵",
+  "type": "person",
+  "props": {
+    "出生年月": "1876年",
+    "逝世时间": "1915年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒2年~中華民國4年。 【參考《清代人物生卒年表》#12209.】"
+  },
+  "external": {
+    "cbdbId": 80836
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/80836",
+      "locator": {},
+      "quote": "c_birthyear=1876 c_by_nh_code=667 c_by_nh_year=2 c_deathyear=1915 c_dy_nh_code=669 c_dy_nh_year=4 c_notes=《清代人物生卒年表》定其生卒年為光緒2年~中華民國4年。 【參考《清代人物生卒年表》#12209.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

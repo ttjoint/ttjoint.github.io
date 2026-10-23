@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-73137",
+  "name": "葉壽朋",
+  "type": "person",
+  "props": {
+    "出生年月": "1847年",
+    "逝世时间": "1902年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光27年~光緒28年。 【參考《清代人物生卒年表》#3208.】"
+  },
+  "external": {
+    "cbdbId": 73137
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/73137",
+      "locator": {},
+      "quote": "c_birthyear=1847 c_by_nh_code=664 c_by_nh_year=27 c_deathyear=1902 c_dy_nh_code=667 c_dy_nh_year=28 c_notes=《清代人物生卒年表》定其生卒年為道光27年~光緒28年。 【參考《清代人物生卒年表》#3208.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

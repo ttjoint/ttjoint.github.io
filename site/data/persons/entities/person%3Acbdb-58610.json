@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-58610",
+  "name": "丁槐",
+  "type": "person",
+  "props": {
+    "出生年月": "1854年",
+    "逝世时间": "1935年"
+  },
+  "external": {
+    "cbdbId": 58610
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-517411",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58610|517411|75",
+            "locator": {
+              "pages": "1871",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=58610 c_kin_id=517411",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58610",
+      "locator": {},
+      "quote": "c_birthyear=1854 c_by_nh_code=665 c_by_nh_year=4 c_deathyear=1935 c_dy_nh_code=669 c_dy_nh_year=24",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

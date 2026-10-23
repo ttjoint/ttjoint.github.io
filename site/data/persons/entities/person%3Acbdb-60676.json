@@ -1,0 +1,102 @@
+{
+  "id": "person:cbdb-60676",
+  "name": "陳鳳樓",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1836年 ± 30",
+    "逝世时间": "1905年"
+  },
+  "external": {
+    "cbdbId": 60676
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-519424",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60676|519424|180",
+            "locator": {
+              "pages": "3996",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60676 c_kin_id=519424",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519425",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60676|519425|180",
+            "locator": {
+              "pages": "3996",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60676 c_kin_id=519425",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519426",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60676|519426|180",
+            "locator": {
+              "pages": "3996",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60676 c_kin_id=519426",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519427",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60676|519427|180",
+            "locator": {
+              "pages": "3996",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60676 c_kin_id=519427",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519428",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60676|519428|180",
+            "locator": {
+              "pages": "3996",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60676 c_kin_id=519428",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/60676",
+      "locator": {},
+      "quote": "c_birthyear=1836 c_by_nh_code=664 c_by_nh_year=16 c_deathyear=1905 c_dy_nh_code=667 c_dy_nh_year=31",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

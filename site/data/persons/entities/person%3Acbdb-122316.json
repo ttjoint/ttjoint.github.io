@@ -1,0 +1,44 @@
+{
+  "id": "person:cbdb-122316",
+  "name": "龔夫人",
+  "type": "person",
+  "props": {
+    "出生年月": "1862年",
+    "逝世时间": "1911年"
+  },
+  "external": {
+    "cbdbId": 122316
+  },
+  "aliases": [
+    "梁鼎芬妻"
+  ],
+  "relations": {
+    "husband": [
+      {
+        "id": "person:cbdb-89173",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/122316|89173|134",
+            "locator": {
+              "pages": "MQWW PoetID #4438",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0089173, KinCode = 0135",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/122316",
+      "locator": {},
+      "quote": "c_birthyear=1862 c_by_nh_code=666 c_by_nh_year=1 c_deathyear=1911 c_dy_nh_code=668 c_dy_nh_year=3",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

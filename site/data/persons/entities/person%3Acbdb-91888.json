@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-91888",
+  "name": "瞿福麟",
+  "type": "person",
+  "props": {
+    "出生年月": "1874年",
+    "逝世时间": "1916年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治13年~中華民國5年。 【參考《清代人物生卒年表》#25109.】"
+  },
+  "external": {
+    "cbdbId": 91888
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/91888",
+      "locator": {},
+      "quote": "c_birthyear=1874 c_by_nh_code=666 c_by_nh_year=13 c_deathyear=1916 c_dy_nh_code=669 c_dy_nh_year=5 c_notes=《清代人物生卒年表》定其生卒年為同治13年~中華民國5年。 【參考《清代人物生卒年表》#25109.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "person:cbdb-79382",
+  "name": "汪宗沂",
+  "type": "person",
+  "props": {
+    "出生年月": "1837年",
+    "逝世时间": "1906年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光17年~光緒32年。 【參考《清代人物生卒年表》#10528.】"
+  },
+  "external": {
+    "cbdbId": 79382
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-577076",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/79382|577076|75",
+            "locator": {
+              "pages": "lgid=1163703",
+              "sourceId": 65192
+            },
+            "quote": "c_kin_code=75（父） c_personid=79382 c_kin_id=577076",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《民國歙縣志: 十六卷》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-79403",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/79382|79403|183",
+            "locator": {
+              "pages": "lgid=1163703",
+              "sourceId": 65192
+            },
+            "quote": "c_kin_code=183（次子） c_personid=79382 c_kin_id=79403",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《民國歙縣志: 十六卷》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/79382",
+      "locator": {},
+      "quote": "c_birthyear=1837 c_by_nh_code=664 c_by_nh_year=17 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32 c_notes=《清代人物生卒年表》定其生卒年為道光17年~光緒32年。 【參考《清代人物生卒年表》#10528.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

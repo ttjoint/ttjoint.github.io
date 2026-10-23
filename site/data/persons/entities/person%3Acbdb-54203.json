@@ -1,0 +1,60 @@
+{
+  "id": "person:cbdb-54203",
+  "name": "沈鵲應",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1874年 ± 30",
+    "逝世时间": "约 1898年 ± 30",
+    "史料注记": "《清代人物生卒年表》定其生卒年為？~光緒25年。 【參考《清代人物生卒年表》#10968.】"
+  },
+  "external": {
+    "cbdbId": 54203
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-54212",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54203|54212|75",
+            "locator": {
+              "pages": "MQWW PoetID #258, HuWenKai #372",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0054212, KinCode = 0327",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-54202",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54203|54202|134",
+            "locator": {
+              "pages": "MQWW PoetID #258, HuWenKai #372",
+              "sourceId": 9601
+            },
+            "quote": "林旭被害后其妻仰藥死",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54203",
+      "locator": {},
+      "quote": "c_birthyear=1874 c_by_nh_code=666 c_by_nh_year=13 c_deathyear=1898 c_dy_nh_code=667 c_dy_nh_year=24 c_notes=《清代人物生卒年表》定其生卒年為？~光緒25年。 【參考《清代人物生卒年表》#10968.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

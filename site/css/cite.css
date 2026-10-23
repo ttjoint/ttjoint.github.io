@@ -1,0 +1,107 @@
+/* 组件层：引用按钮与页内气泡。 */
+
+/* ---- 引用来源按钮与页内气泡 ---- */
+.cite-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 8px;
+  padding: 1px 6px;
+  font-size: .78rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  background: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.cite-btn:hover,
+.cite-btn--active {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+.cite-btn-count { font-variant-numeric: tabular-nums; }
+
+/* 遮罩只负责点击关闭，不压暗页面——气泡是补充信息，不是模态对话框 */
+.cite-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: transparent;
+}
+
+.cite-popover {
+  position: fixed;
+  z-index: 91;
+  width: 320px;
+  max-height: 260px;
+  overflow: auto;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+  font-size: .85rem;
+}
+.cite-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-tertiary);
+}
+.cite-title { font-weight: 600; }
+.cite-close {
+  border: 0;
+  background: transparent;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-text-muted);
+}
+.cite-close:hover { color: var(--color-text); }
+.cite-body { padding: 8px 10px; }
+.cite-empty { margin: 0; color: var(--color-text-muted); }
+.cite-item + .cite-item {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--color-border);
+}
+.cite-name { word-break: break-all; }
+.cite-name a { color: var(--color-primary); }
+.cite-rows {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 8px;
+  margin: 4px 0 0;
+  font-size: .8rem;
+  color: var(--color-text-muted);
+}
+.cite-rows dt { font-weight: normal; }
+.cite-rows dd { margin: 0; }
+.cite-unresolved { color: var(--color-warning, #b26a00); }
+
+/* 字段行内的来源按钮：比实体标题旁的小一号，避免压过字段内容 */
+.cite-btn--inline {
+  margin-left: 6px;
+  padding: 0 5px;
+  font-size: .72rem;
+}
+
+/* 未收录：目标实体存在但不在已发布切片内（通常是时间窗口过滤）。
+   不可点击，外观要明确区别于正常链接。 */
+.relation-item--missing {
+  cursor: default;
+  opacity: .65;
+}
+.relation-item--missing:hover {
+  background: transparent;
+  border-color: var(--color-border);
+}
+.static-unpublished {
+  color: var(--color-text-muted);
+  font-size: .85em;
+}
+

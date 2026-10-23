@@ -1,0 +1,14 @@
+{
+  "id": "evidence:local-000047",
+  "type": "evidence",
+  "name": "人民网 · www.people.com.cn/",
+  "carrier": "thing:local-000009",
+  "medium": "web",
+  "documentedAt": null,
+  "url": "http://www.people.com.cn/",
+  "accessedAt": "2026-10-17T08:45:29.296Z",
+  "excerpt": "",
+  "reliability": null,
+  "note": "",
+  "unresolved": false
+}

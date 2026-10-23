@@ -1,0 +1,16 @@
+{
+  "id": "organization:local-000103",
+  "type": "organization",
+  "name": "中共二十届中央委员会",
+  "aliases": [
+    "中共二十届",
+    "中共二十届中央"
+  ],
+  "props": {
+    "类型": "中央委员会",
+    "简介": "中国共产党第二十届中央委员会。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

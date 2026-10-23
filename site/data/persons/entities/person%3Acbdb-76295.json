@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-76295",
+  "name": "嚴文波",
+  "type": "person",
+  "props": {
+    "逝世时间": "1904年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為？~光緒30年。 【參考《清代人物生卒年表》#6919.】"
+  },
+  "external": {
+    "cbdbId": 76295
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/76295",
+      "locator": {},
+      "quote": "c_deathyear=1904 c_dy_nh_code=667 c_dy_nh_year=30 c_notes=《清代人物生卒年表》定其生卒年為？~光緒30年。 【參考《清代人物生卒年表》#6919.】",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000041",
+  "name": "共工怒触不周山",
+  "type": "event",
+  "aliases": [
+    "共工触山"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

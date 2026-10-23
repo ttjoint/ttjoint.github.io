@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-579223",
+  "name": "陳同喜",
+  "type": "person",
+  "props": {
+    "出生年月": "1909年"
+  },
+  "external": {
+    "cbdbId": 579223
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/579223",
+      "locator": {},
+      "quote": "c_birthyear=1909",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

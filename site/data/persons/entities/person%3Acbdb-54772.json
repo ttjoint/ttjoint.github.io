@@ -1,0 +1,81 @@
+{
+  "id": "person:cbdb-54772",
+  "name": "楊書蘭",
+  "type": "person",
+  "props": {
+    "出生年月": "1800年之后",
+    "逝世时间": "1900年之前"
+  },
+  "external": {
+    "cbdbId": 54772
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-54771",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54772|54771|75",
+            "locator": {},
+            "quote": "c_kin_code=75（父） c_personid=54772 c_kin_id=54771",
+            "reason": "c_kin_code=75 → 父；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "mother": [
+      {
+        "id": "person:cbdb-54765",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54772|54765|111",
+            "locator": {},
+            "quote": "c_kin_code=111（母） c_personid=54772 c_kin_id=54765",
+            "reason": "c_kin_code=111 → 母；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "femaleChild": [
+      {
+        "id": "person:cbdb-54781",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54772|54781|176",
+            "locator": {},
+            "quote": "Auto-generated from PersonID = 0054781, KinCode = 0111",
+            "reason": "c_kin_code=176 → 女兒；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "sister": [
+      {
+        "id": "person:cbdb-54775",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54772|54775|169",
+            "locator": {},
+            "quote": "Auto-generated from PersonID = 0054775, KinCode = 0164",
+            "reason": "c_kin_code=169 → 妹；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54772",
+      "locator": {},
+      "quote": "c_birthyear=1800 c_by_nh_code=663 c_by_nh_year=5 c_deathyear=1900 c_dy_nh_code=667 c_dy_nh_year=26",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-64345",
+  "name": "魁福",
+  "type": "person",
+  "props": {
+    "逝世时间": "1910年"
+  },
+  "external": {
+    "cbdbId": 64345
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64345",
+      "locator": {},
+      "quote": "c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-54449",
+  "name": "雷瑊",
+  "type": "person",
+  "props": {
+    "出生年月": "1875年",
+    "逝世时间": "1949年"
+  },
+  "external": {
+    "cbdbId": 54449
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54449",
+      "locator": {},
+      "quote": "c_birthyear=1875 c_by_nh_code=667 c_by_nh_year=1 c_deathyear=1949 c_dy_nh_code=669 c_dy_nh_year=38",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

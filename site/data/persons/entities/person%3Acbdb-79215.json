@@ -1,0 +1,63 @@
+{
+  "id": "person:cbdb-79215",
+  "name": "汪清",
+  "type": "person",
+  "props": {
+    "出生年月": "1865年",
+    "逝世时间": "1902年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治4年~光緒28年。 【參考《清代人物生卒年表》#10334.】"
+  },
+  "external": {
+    "cbdbId": 79215
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-245063"
+    ],
+    "father": [
+      {
+        "id": "person:cbdb-120755",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/79215|120755|75",
+            "locator": {
+              "pages": "MQWW PoetID #3756, HuWenKai #353",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0120755, KinCode = 0176",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-86136",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/79215|86136|134",
+            "locator": {
+              "pages": "MQWW PoetID #3756, HuWenKai #353",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0086136, KinCode = 0135",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/79215",
+      "locator": {},
+      "quote": "c_birthyear=1865 c_by_nh_code=666 c_by_nh_year=4 c_deathyear=1902 c_dy_nh_code=667 c_dy_nh_year=28 c_notes=《清代人物生卒年表》定其生卒年為同治4年~光緒28年。 【參考《清代人物生卒年表》#10334.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

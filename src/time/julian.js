@@ -90,6 +90,12 @@ function parseYearMonth(text) {
   const s = String(text).trim();
   if (!s) return null;
 
+  // 「之前 / 之后」不是年份，是一个开口区间。不能静默取前缀数字：
+  // `1104年之前` 若返回 1104，就把一个半无穷区间压成了一个精确年，
+  // 时间线会把它当成「活到 1104」而不是「不晚于 1104」。
+  // 调用方（lifespanFromProps）负责把它变成单端区间。
+  if (/[之之以]?[前后]$/.test(s)) return null;
+
   // 公元前 / 前 / negative
   let bce = false;
   let body = s;
@@ -140,6 +146,34 @@ function pointRange(parsed, opts = {}) {
   return { start, end, mid: Math.round((start + end) / 2), uncertainty: 0, precision: PRECISION.YEAR, source: opts.source || 'parsed' };
 }
 
+/**
+ * 解析「1104年之前」/ 「1104年之后」这种开口区间。
+ *
+ * CBDB 的 c_by_range / c_dy_range 用 before（-1）/ after（1）表示「只知道在此年之前/后」。
+ * 按设计 §2.6「不虚构起止日」，因此只给已知那一端，另一端留 null。
+ * 不能退化成精确年：那会把「不晚于 1104」读成「活到 1104」。
+ *
+ * Returns { start, end, mid, uncertainty, precision, source } or null.
+ */
+function parseOpenRange(text) {
+  if (text == null) return null;
+  const s = String(text).trim();
+  const m = s.match(/^(公元前|前)?\s*(-?\d{1,5})\s*年?\s*(之前|之后|前|后)$/);
+  if (!m) return null;
+  let year = parseInt(m[2], 10);
+  if (m[1] && year > 0) year = -year + 1;
+  const parsed = { year, month: null, day: null };
+  const r = pointRange(parsed);
+  if (!r) return null;
+  const isBefore = m[3] === '之前' || m[3] === '前';
+  if (isBefore) {
+    // 不晚于该年年底：上界已知，下界未知。
+    return { start: null, end: r.end, mid: r.mid, uncertainty: 0, precision: PRECISION.UNKNOWN, source: 'open' };
+  }
+  // 不早于该年年初：下界已知，上界未知。
+  return { start: r.start, end: null, mid: r.mid, uncertainty: 0, precision: PRECISION.UNKNOWN, source: 'open' };
+}
+
 /** Build a fuzzy range: a mid point plus a ± radius in years. */
 function fuzzyRange(year, radiusYears, opts = {}) {
   const mid = yearToJdn(year);
@@ -152,6 +186,29 @@ function fuzzyRange(year, radiusYears, opts = {}) {
     precision: radiusYears >= 100 ? PRECISION.UNKNOWN : PRECISION.APPROX,
     source: opts.source || 'estimate',
   };
+}
+
+/**
+ * Parse the fuzzy textual form used by the data files, e.g.
+ *
+ *   "-1200±50年"   "约公元前1200年±50年"   "约 前300年 ± 30"   "1200+/-50"
+ *
+ * Returns { year, radius } in astronomical years (1 BCE == 0) or null.
+ * The explicit ± is the *only* signal that the date is a guess; without it a
+ * year is treated as a known calendar year, not as a ±0 estimate.
+ */
+function parseFuzzy(text) {
+  if (text == null) return null;
+  const s = String(text);
+  // 「公元前」与「前」都要认。数据里的 `formatYear()` 写出的是「前300年」，
+  // 而这里原先只匹配「公元前」——于是 `约 前300年 ± 30` 被读成公元 300 年，
+  // 一个战国人的生年就变成了西晋。负号已经覆盖 ISO 写法（-300±30），
+  // 但中文前缀必须单独处理。
+  const m = s.match(/(?:约)?\s*(公元前|前)?\s*(-?\d{1,5})\s*年?\s*(?:±|\+\/-|\+-)\s*(\d{1,4})\s*年?/);
+  if (!m) return null;
+  let year = parseInt(m[2], 10);
+  if (m[1] && year > 0) year = -year + 1; // 公元前N年 / 前N年 -> astronomical
+  return { year, radius: parseInt(m[3], 10) };
 }
 
 /**
@@ -215,7 +272,11 @@ function formatJdnYear(jdn) {
 
 function formatRange(range) {
   if (!range) return '';
-  if (range.uncertainty > 0 && range.mid != null) {
+  // `uncertainty` 描述的是**单个估计点**的±半径。当一个区间同时有起止两端时，
+  // 起止本身就是信息（「947 – 约1004」），压成中点会丢掉生卒年——
+  // 时间线上看到「约 975年」而不是「947–1004」，等于把生卒抹了。
+  if (range.uncertainty > 0 && range.mid != null
+      && (range.start == null || range.end == null)) {
     return `约 ${formatJdnYear(range.mid)} ±${range.uncertainty}年`;
   }
   if (range.start != null && range.end != null && range.start === range.end) {
@@ -233,6 +294,22 @@ function formatRange(range) {
   // death missing). Render just what we actually know instead of "1955 – ?".
   const onlyStart = range.start != null && range.end == null;
   const onlyEnd = range.start == null && range.end != null;
+  // `source === 'open'` marks a date that is *intrinsically* open-ended
+  // (CBDB's before/after), not a lifespan missing one end. Rendering「今」there
+  // would claim a 1104 年之前 person is still alive.
+  if (range.source === 'open') {
+    if (onlyEnd) return `${formatJdnYear(range.end)} 之前`;
+    if (onlyStart) return `${formatJdnYear(range.start)} 之后`;
+    // Both ends open (e.g. a birth recorded as "1104年之前" gives only an upper
+    // bound, which cannot serve as a lifespan start). Show the known anchor with
+    // its direction rather than "? – ?".
+    if (range.mid != null) {
+      const anchor = formatJdnYear(range.mid);
+      if (range.openDir === 'before') return `${anchor} 之前`;
+      if (range.openDir === 'after') return `${anchor} 之后`;
+      return `${anchor} 前后`;
+    }
+  }
   if (onlyStart) return `${formatJdnYear(range.start)} – 今`;
   if (onlyEnd) return `? – ${formatJdnYear(range.end)}`;
   const a = range.start != null ? formatJdnYear(range.start) : '?';
@@ -247,6 +324,8 @@ module.exports = {
   yearToJdn,
   jdnToYear,
   parseYearMonth,
+  parseFuzzy,
+  parseOpenRange,
   pointRange,
   fuzzyRange,
   lifespanRange,

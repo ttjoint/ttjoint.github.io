@@ -1,0 +1,72 @@
+{
+  "id": "person:cpc-64036-32643145",
+  "legacyId": "主席：谌贻琴",
+  "name": "谌贻琴",
+  "type": "person",
+  "props": {
+    "性别": "女",
+    "出生年月": "1959年12月",
+    "籍贯": "贵州织金",
+    "民族": "白族",
+    "学历": "中央党校研究生学历",
+    "简介": "谌贻琴，女，白族，1959年12月生，贵州织金人，1977年3月参加工作，1985年5月加入中国共产党，中央党校研究生学历，研究员。 现任中共二十届中央委员，国务委员、国务院党组成员，中华全国妇女联合会主席。 （",
+    "来源栏目": "人民网：中国共产党历届中央领导集体"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000111",
+    "evidence:local-000115"
+  ],
+  "external": {
+    "cpcUrl": "http://cpc.people.com.cn/n1/2023/0313/c64036-32643145.html",
+    "title": "谌贻琴简历--中国共产党新闻网-中国共产党新闻网"
+  },
+  "claims": {
+    "currentPositions": [
+      {
+        "role": "中共二十届中央委员",
+        "evidence": "中共二十届中央委员",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2023/0313/c64036-32643145.html"
+      },
+      {
+        "role": "国务委员",
+        "evidence": "国务委员",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2023/0313/c64036-32643145.html"
+      },
+      {
+        "role": "国务院党组成员",
+        "evidence": "国务院党组成员",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2023/0313/c64036-32643145.html"
+      },
+      {
+        "role": "中华全国妇女联合会主席",
+        "evidence": "中华全国妇女联合会主席",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2023/0313/c64036-32643145.html"
+      },
+      {
+        "organization": "中共二十届中央委员",
+        "evidence": "中共二十届中央委员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746395.htm"
+      },
+      {
+        "organization": "",
+        "role": "国务委员",
+        "evidence": "国务委员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746395.htm"
+      },
+      {
+        "organization": "国务院",
+        "role": "党组成员",
+        "evidence": "国务院党组成员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746395.htm"
+      },
+      {
+        "organization": "中华全国妇女联合会",
+        "role": "主席",
+        "evidence": "中华全国妇女联合会主席",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746395.htm"
+      }
+    ]
+  },
+  "summary": "谌贻琴，女，白族，1959年12月生，贵州织金人，1977年3月参加工作，1985年5月加入中国共产党，中央党校研究生学历，研究员。 现任中共二十届中央委员，国务委员、国务院党组成员，中华全国妇女联合会主席。 （"
+}

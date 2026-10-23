@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-64027",
+  "name": "多布沁札木楚",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1885年 ± 30"
+  },
+  "external": {
+    "cbdbId": 64027
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64027",
+      "locator": {},
+      "quote": "c_deathyear=1885 c_dy_nh_code=667 c_dy_nh_year=11",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-125048",
+  "name": "庫雅拉保成",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1899年 ± 30",
+    "史料注记": "清人:-光緖[25][26]年"
+  },
+  "external": {
+    "cbdbId": 125048
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/125048",
+      "locator": {},
+      "quote": "c_deathyear=1899 c_dy_nh_code=667 c_dy_nh_year=25 c_notes=清人:-光緖[25][26]年",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

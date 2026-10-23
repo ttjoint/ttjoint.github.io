@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000009",
+  "name": "平王东迁",
+  "type": "event",
+  "aliases": [
+    "东迁"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

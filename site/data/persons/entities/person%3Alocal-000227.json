@@ -1,0 +1,41 @@
+{
+  "id": "person:local-000227",
+  "type": "person",
+  "name": "刘国中",
+  "props": {
+    "简介": "刘国中，男，汉族，1962年7月生，黑龙江望奎人，1982年8月参加工作，1986年11月加入中国共产党，哈尔滨工业大学金属材料及工艺系压力加工专业毕业，研究生学历，工学硕士学位，助理工程师。 现任中共二十届中央政治局委员，国务院副总理、党组成员。 （来源：新华社，2023年3月更新） 人 民 网 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "男",
+    "出生年月": "1962年7月",
+    "籍贯": "黑龙江望奎",
+    "民族": "汉族",
+    "学历": "哈尔滨工业大学金属材料及工艺系压力加工专业毕业，研究生学历"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000123",
+    "evidence:local-000133"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "中共二十届中央政治局委员",
+        "evidence": "中共二十届中央政治局委员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746382.htm"
+      },
+      {
+        "organization": "国务院",
+        "role": "副总理",
+        "evidence": "国务院副总理",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746382.htm"
+      },
+      {
+        "organization": "",
+        "role": "党组成员",
+        "evidence": "党组成员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746382.htm"
+      }
+    ]
+  },
+  "external": {}
+}

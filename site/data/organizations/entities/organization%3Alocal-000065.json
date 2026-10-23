@@ -1,0 +1,12 @@
+{
+  "id": "organization:local-000065",
+  "type": "organization",
+  "name": "中国民间商会",
+  "props": {
+    "类型": "社会团体",
+    "简介": "与中华全国工商业联合会合署办公。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

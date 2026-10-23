@@ -1,0 +1,14 @@
+{
+  "id": "organization:local-000003",
+  "name": "曹魏",
+  "type": "organization",
+  "aliases": [
+    "魏国",
+    "曹魏政权"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

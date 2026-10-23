@@ -1,0 +1,14 @@
+{
+  "id": "thing:local-000011",
+  "type": "thing",
+  "name": "中国人民政治协商会议全国委员会网站",
+  "props": {
+    "类型": "机构网站",
+    "简介": "全国政协官方网站。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000097"
+  ],
+  "external": {}
+}

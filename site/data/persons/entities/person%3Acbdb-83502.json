@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-83502",
+  "name": "周保善",
+  "type": "person",
+  "props": {
+    "出生年月": "1862年",
+    "逝世时间": "1908年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治1年~光緒34年。 【參考《清代人物生卒年表》#15278.】"
+  },
+  "external": {
+    "cbdbId": 83502
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/83502",
+      "locator": {},
+      "quote": "c_birthyear=1862 c_by_nh_code=666 c_by_nh_year=1 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34 c_notes=《清代人物生卒年表》定其生卒年為同治1年~光緒34年。 【參考《清代人物生卒年表》#15278.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

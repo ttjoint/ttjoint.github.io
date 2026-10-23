@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-85576",
+  "name": "姚倚雲",
+  "type": "person",
+  "props": {
+    "出生年月": "1864年",
+    "逝世时间": "1944年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治3年~中華民國33年。 【參考《清代人物生卒年表》#17686.】"
+  },
+  "external": {
+    "cbdbId": 85576
+  },
+  "aliases": [],
+  "relations": {
+    "husband": [
+      {
+        "id": "person:cbdb-82453",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/85576|82453|134",
+            "locator": {
+              "pages": "MQWW PoetID #4258, HuWenKai #833",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0082453, KinCode = 0163",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/85576",
+      "locator": {},
+      "quote": "c_birthyear=1864 c_by_nh_code=666 c_by_nh_year=3 c_deathyear=1944 c_dy_nh_code=669 c_dy_nh_year=33 c_notes=《清代人物生卒年表》定其生卒年為同治3年~中華民國33年。 【參考《清代人物生卒年表》#17686.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

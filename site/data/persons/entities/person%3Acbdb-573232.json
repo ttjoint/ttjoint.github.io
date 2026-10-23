@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-573232",
+  "name": "陸思安",
+  "type": "person",
+  "props": {
+    "出生年月": "1849年",
+    "逝世时间": "1913年"
+  },
+  "external": {
+    "cbdbId": 573232
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/573232",
+      "locator": {},
+      "quote": "c_birthyear=1849 c_deathyear=1913",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

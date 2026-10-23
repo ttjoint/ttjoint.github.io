@@ -1,0 +1,12 @@
+{
+  "id": "event:local-000025",
+  "name": "七国之乱",
+  "type": "event",
+  "aliases": [
+    "吴楚七国之乱"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {}
+}

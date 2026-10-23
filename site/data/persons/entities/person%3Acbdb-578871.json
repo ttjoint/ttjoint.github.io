@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-578871",
+  "name": "範文錦",
+  "type": "person",
+  "props": {
+    "出生年月": "1902年"
+  },
+  "external": {
+    "cbdbId": 578871
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/578871",
+      "locator": {},
+      "quote": "c_birthyear=1902",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

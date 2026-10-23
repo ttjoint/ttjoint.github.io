@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-123563",
+  "name": "顧廷龍",
+  "type": "person",
+  "props": {
+    "出生年月": "1904年",
+    "逝世时间": "1998年",
+    "史料注记": "Based on preliminary research using web resources. http://baike.baidu.com/view/882341.htm. (現代人, 不確定要不要錄入?)"
+  },
+  "external": {
+    "cbdbId": 123563
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/123563",
+      "locator": {},
+      "quote": "c_birthyear=1904 c_by_nh_code=0 c_deathyear=1998 c_dy_nh_code=0 c_notes=Based on preliminary research using web resources. http://baike.baidu.com/view/882341.htm. (現代人, 不確定要不要錄入?)",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

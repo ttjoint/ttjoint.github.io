@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-64242",
+  "name": "黃卓元",
+  "type": "person",
+  "props": {
+    "逝世时间": "1903年"
+  },
+  "external": {
+    "cbdbId": 64242
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64242",
+      "locator": {},
+      "quote": "c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

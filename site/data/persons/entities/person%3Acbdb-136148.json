@@ -1,0 +1,69 @@
+{
+  "id": "person:cbdb-136148",
+  "name": "汪氏",
+  "type": "person",
+  "props": {
+    "出生年月": "1844年",
+    "逝世时间": "1903年"
+  },
+  "external": {
+    "cbdbId": 136148
+  },
+  "aliases": [
+    "孫炳奎妻"
+  ],
+  "relations": {
+    "husband": [
+      {
+        "id": "person:cbdb-136147",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/136148|136147|134",
+            "locator": {},
+            "quote": "c_kin_code=134（丈夫） c_personid=136148 c_kin_id=136147",
+            "reason": "c_kin_code=134 → 丈夫；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "mother": [
+      {
+        "id": "person:cbdb-136152",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/136148|136152|111",
+            "locator": {},
+            "quote": "c_kin_code=111（母） c_personid=136148 c_kin_id=136152",
+            "reason": "c_kin_code=111 → 母；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-75930",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/136148|75930|180",
+            "locator": {},
+            "quote": "c_kin_code=180（子） c_personid=136148 c_kin_id=75930",
+            "reason": "c_kin_code=180 → 子；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/136148",
+      "locator": {},
+      "quote": "c_birthyear=1844 c_by_nh_code=664 c_by_nh_year=24 c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

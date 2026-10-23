@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-70881",
+  "name": "衛若梓",
+  "type": "person",
+  "props": {
+    "逝世时间": "1906年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為？~光緒32年。 【參考《清代人物生卒年表》#388.】"
+  },
+  "external": {
+    "cbdbId": 70881
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/70881",
+      "locator": {},
+      "quote": "c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32 c_notes=《清代人物生卒年表》定其生卒年為？~光緒32年。 【參考《清代人物生卒年表》#388.】",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

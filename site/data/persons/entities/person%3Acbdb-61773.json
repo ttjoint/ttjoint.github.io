@@ -1,0 +1,78 @@
+{
+  "id": "person:cbdb-61773",
+  "name": "勞乃宣",
+  "type": "person",
+  "props": {
+    "出生年月": "1843年",
+    "逝世时间": "1921年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光23年~中華民國10年。 【參考《清代人物生卒年表》#6991.】"
+  },
+  "external": {
+    "cbdbId": 61773
+  },
+  "aliases": [],
+  "relations": {
+    "femaleChild": [
+      {
+        "id": "person:cbdb-120345",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61773|120345|176",
+            "locator": {
+              "pages": "MQWW PoetID #3733, HuWenKai #624",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=176（女兒） c_personid=61773 c_kin_id=120345",
+            "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-520373",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61773|520373|180",
+            "locator": {
+              "pages": "5118",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61773 c_kin_id=520373",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520374",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61773|520374|180",
+            "locator": {
+              "pages": "5118",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61773 c_kin_id=520374",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "colleague": [
+      "person:cbdb-64110"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61773",
+      "locator": {},
+      "quote": "c_birthyear=1843 c_by_nh_code=664 c_by_nh_year=23 c_deathyear=1921 c_dy_nh_code=669 c_dy_nh_year=10 c_notes=《清代人物生卒年表》定其生卒年為道光23年~中華民國10年。 【參考《清代人物生卒年表》#6991.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

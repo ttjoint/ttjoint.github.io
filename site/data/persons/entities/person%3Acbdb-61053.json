@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-61053",
+  "name": "陳啟泰",
+  "type": "person",
+  "props": {
+    "出生年月": "1847年",
+    "逝世时间": "1909年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光27年~宣統1年。 《清代人物生卒年表》原注：「陳啟泰會試卷履歷作生於道光二十七年十二月十九日，公曆為1847年1月24日。 《清人詩文集總目提要》著錄生年為道光二十二年（1842）。」 【參考《清代人物生卒年表》#13394.】"
+  },
+  "external": {
+    "cbdbId": 61053
+  },
+  "aliases": [],
+  "relations": {
+    "wife": [
+      {
+        "id": "person:cbdb-69881",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61053|69881|135",
+            "locator": {
+              "pages": "MQWW PoetID #1232",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0069881, KinCode = 0134",
+            "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61053",
+      "locator": {},
+      "quote": "c_birthyear=1847 c_by_nh_code=664 c_by_nh_year=27 c_deathyear=1909 c_dy_nh_code=668 c_dy_nh_year=1 c_notes=《清代人物生卒年表》定其生卒年為道光27年~宣統1年。 《清代人物生卒年表》原注：「陳啟泰會試卷履歷作生於道光二十七年十二月十九日，公曆為1847年1月24日。 《清人詩文集總目提要》著錄生年為道光二十二年（1842）。」 【參考《清代人物生卒年表》#13394.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

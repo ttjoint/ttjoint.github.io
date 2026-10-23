@@ -1,0 +1,14 @@
+{
+  "id": "organization:local-000029",
+  "name": "东吴",
+  "type": "organization",
+  "aliases": [
+    "吴国",
+    "孙吴"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

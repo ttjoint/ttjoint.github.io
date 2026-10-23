@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000129",
+  "type": "organization",
+  "name": "中国共产党",
+  "aliases": [
+    "中共"
+  ],
+  "props": {
+    "类型": "政党",
+    "简介": "中华人民共和国的执政党。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

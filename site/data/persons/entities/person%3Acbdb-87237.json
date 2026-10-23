@@ -1,0 +1,29 @@
+{
+  "id": "person:cbdb-87237",
+  "name": "高旭",
+  "type": "person",
+  "props": {
+    "出生年月": "1877年",
+    "逝世时间": "1925年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒3年~中華民國14年。 【參考《清代人物生卒年表》#19631.】"
+  },
+  "external": {
+    "cbdbId": 87237
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-230964"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/87237",
+      "locator": {},
+      "quote": "c_birthyear=1877 c_by_nh_code=667 c_by_nh_year=3 c_deathyear=1925 c_dy_nh_code=669 c_dy_nh_year=14 c_notes=《清代人物生卒年表》定其生卒年為光緒3年~中華民國14年。 【參考《清代人物生卒年表》#19631.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

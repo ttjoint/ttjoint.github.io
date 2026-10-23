@@ -1,0 +1,46 @@
+{
+  "id": "person:cbdb-54451",
+  "name": "吳汝綸",
+  "type": "person",
+  "props": {
+    "出生年月": "1840年",
+    "逝世时间": "1903年",
+    "史料注记": "【參考資料: MQWW PoetID #407.】 《清代人物生卒年表》定其生卒年為道光20年~光緒29年。 【參考《清代人物生卒年表》#9355.】"
+  },
+  "external": {
+    "cbdbId": 54451
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-523021",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54451|523021|75",
+            "locator": {
+              "pages": "9578",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=54451 c_kin_id=523021",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "friend": [
+      "person:cbdb-66056"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54451",
+      "locator": {},
+      "quote": "c_birthyear=1840 c_by_nh_code=664 c_by_nh_year=20 c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29 c_notes=【參考資料: MQWW PoetID #407.】 《清代人物生卒年表》定其生卒年為道光20年~光緒29年。 【參考《清代人物生卒年表》#9355.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

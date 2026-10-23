@@ -1,0 +1,14 @@
+{
+  "id": "thing:local-000009",
+  "type": "thing",
+  "name": "人民网",
+  "props": {
+    "类型": "新闻网站",
+    "简介": "人民网是人民日报社主办的中央重点新闻网站。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000047"
+  ],
+  "external": {}
+}

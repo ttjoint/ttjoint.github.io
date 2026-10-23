@@ -1,0 +1,12 @@
+{
+  "id": "organization:local-000049",
+  "type": "organization",
+  "name": "中央全面深化改革委员会办公室",
+  "props": {
+    "类型": "办事机构",
+    "简介": "中央全面深化改革委员会的办事机构。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

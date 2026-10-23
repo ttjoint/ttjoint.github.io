@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-74175",
+  "name": "朱啟勛",
+  "type": "person",
+  "props": {
+    "出生年月": "1857年",
+    "逝世时间": "1902年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐7年~光緒28年。 【參考《清代人物生卒年表》#4441.】"
+  },
+  "external": {
+    "cbdbId": 74175
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/74175",
+      "locator": {},
+      "quote": "c_birthyear=1857 c_by_nh_code=665 c_by_nh_year=7 c_deathyear=1902 c_dy_nh_code=667 c_dy_nh_year=28 c_notes=《清代人物生卒年表》定其生卒年為咸豐7年~光緒28年。 【參考《清代人物生卒年表》#4441.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

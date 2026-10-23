@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-439072",
+  "name": "柳詒徵",
+  "type": "person",
+  "props": {
+    "出生年月": "1880年",
+    "逝世时间": "1956年"
+  },
+  "external": {
+    "cbdbId": 439072
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/439072",
+      "locator": {},
+      "quote": "c_birthyear=1880 c_by_nh_code=667 c_by_nh_year=5 c_deathyear=1956 c_dy_nh_code=669 c_dy_nh_year=45",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

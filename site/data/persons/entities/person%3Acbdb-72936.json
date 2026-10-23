@@ -1,0 +1,59 @@
+{
+  "id": "person:cbdb-72936",
+  "name": "石德芬",
+  "type": "person",
+  "props": {
+    "出生年月": "1852年",
+    "逝世时间": "1920年"
+  },
+  "external": {
+    "cbdbId": 72936
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-120947",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/72936|120947|75",
+            "locator": {
+              "pages": "3997",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=75（父） c_personid=72936 c_kin_id=120947",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "mother": [
+      {
+        "id": "person:cbdb-120935",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/72936|120935|111",
+            "locator": {
+              "pages": "3997",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=111（母） c_personid=72936 c_kin_id=120935",
+            "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/72936",
+      "locator": {},
+      "quote": "c_birthyear=1852 c_by_nh_code=665 c_by_nh_year=2 c_deathyear=1920 c_dy_nh_code=669 c_dy_nh_year=9",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

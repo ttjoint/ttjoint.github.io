@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-64092",
+  "name": "張有亮",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1839年 ± 30",
+    "逝世时间": "约 1911年 ± 30"
+  },
+  "external": {
+    "cbdbId": 64092
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64092",
+      "locator": {},
+      "quote": "c_birthyear=1839 c_by_nh_code=664 c_by_nh_year=19 c_deathyear=1911 c_dy_nh_code=668 c_dy_nh_year=3",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "evidence:local-000125",
+  "type": "evidence",
+  "name": "中国共产党新闻网 · cpc.people.com.cn/",
+  "carrier": "thing:local-000007",
+  "medium": "web",
+  "documentedAt": null,
+  "url": "http://cpc.people.com.cn/",
+  "accessedAt": "2026-10-17T08:45:29.296Z",
+  "excerpt": "",
+  "reliability": null,
+  "note": "",
+  "unresolved": false
+}

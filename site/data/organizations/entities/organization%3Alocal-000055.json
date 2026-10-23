@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000055",
+  "type": "organization",
+  "name": "中共二十届中央书记处",
+  "aliases": [
+    "中央书记处"
+  ],
+  "props": {
+    "类型": "中央书记处",
+    "简介": "中国共产党第二十届中央书记处。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

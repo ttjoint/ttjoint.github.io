@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-70624",
+  "name": "丁甘仁",
+  "type": "person",
+  "props": {
+    "出生年月": "1865年",
+    "逝世时间": "1926年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治4年~中華民國15年。 《清代人物生卒年表》原注：「丁甘仁，名澤周，字甘仁，以字行。」 【參考《清代人物生卒年表》#78.】"
+  },
+  "external": {
+    "cbdbId": 70624
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/70624",
+      "locator": {},
+      "quote": "c_birthyear=1865 c_by_nh_code=666 c_by_nh_year=4 c_deathyear=1926 c_dy_nh_code=669 c_dy_nh_year=15 c_notes=《清代人物生卒年表》定其生卒年為同治4年~中華民國15年。 《清代人物生卒年表》原注：「丁甘仁，名澤周，字甘仁，以字行。」 【參考《清代人物生卒年表》#78.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

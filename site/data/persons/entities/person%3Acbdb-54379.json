@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-54379",
+  "name": "夏愷",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1821年 ± 30",
+    "逝世时间": "约 1874年 ± 30"
+  },
+  "external": {
+    "cbdbId": 54379
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54379",
+      "locator": {},
+      "quote": "c_birthyear=1821 c_by_nh_code=664 c_by_nh_year=1 c_deathyear=1874 c_dy_nh_code=666 c_dy_nh_year=12",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

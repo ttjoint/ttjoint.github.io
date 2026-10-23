@@ -1,0 +1,33 @@
+{
+  "id": "person:cbdb-81955",
+  "name": "陳宗虞",
+  "type": "person",
+  "props": {
+    "出生年月": "1861年",
+    "逝世时间": "1903年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐11年~光緒29年。 【參考《清代人物生卒年表》#13503.】"
+  },
+  "external": {
+    "cbdbId": 81955
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-314136",
+      {
+        "target": "person:cbdb-314137",
+        "role": "繼"
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/81955",
+      "locator": {},
+      "quote": "c_birthyear=1861 c_by_nh_code=665 c_by_nh_year=11 c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29 c_notes=《清代人物生卒年表》定其生卒年為咸豐11年~光緒29年。 【參考《清代人物生卒年表》#13503.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

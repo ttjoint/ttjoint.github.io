@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-59253",
+  "name": "林炳章",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1873年 ± 30",
+    "逝世时间": "1923年"
+  },
+  "external": {
+    "cbdbId": 59253
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/59253",
+      "locator": {},
+      "quote": "c_birthyear=1873 c_by_nh_code=666 c_by_nh_year=12 c_deathyear=1923 c_dy_nh_code=669 c_dy_nh_year=12",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

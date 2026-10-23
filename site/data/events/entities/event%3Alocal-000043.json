@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000043",
+  "name": "女娲补天",
+  "type": "event",
+  "aliases": [
+    "炼石补天"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

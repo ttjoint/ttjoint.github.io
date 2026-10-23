@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-64570",
+  "name": "李經邁",
+  "type": "person",
+  "props": {
+    "出生年月": "1876年",
+    "逝世时间": "1940年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒2年~中華民國27年。 《清代人物生卒年表》原注：「李經邁生於光緒二年十二月初十日，公曆為1877年1月23日。」 【參考《清代人物生卒年表》#8568.】"
+  },
+  "external": {
+    "cbdbId": 64570
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-521330",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/64570|521330|180",
+            "locator": {
+              "pages": "7976",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=64570 c_kin_id=521330",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64570",
+      "locator": {},
+      "quote": "c_birthyear=1876 c_by_nh_code=667 c_by_nh_year=2 c_deathyear=1940 c_dy_nh_code=669 c_dy_nh_year=29 c_notes=《清代人物生卒年表》定其生卒年為光緒2年~中華民國27年。 《清代人物生卒年表》原注：「李經邁生於光緒二年十二月初十日，公曆為1877年1月23日。」 【參考《清代人物生卒年表》#8568.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

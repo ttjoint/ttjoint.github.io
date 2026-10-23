@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-55818",
+  "name": "阮恩海",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1821年 ± 30",
+    "逝世时间": "约 1874年 ± 30"
+  },
+  "external": {
+    "cbdbId": 55818
+  },
+  "aliases": [],
+  "relations": {
+    "sister": [
+      {
+        "id": "person:cbdb-55810",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55818|55810|169",
+            "locator": {
+              "pages": "MQWW PoetID #4676",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=169（妹） c_personid=55818 c_kin_id=55810",
+            "reason": "c_kin_code=169 → 妹；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/55818",
+      "locator": {},
+      "quote": "c_birthyear=1821 c_by_nh_code=664 c_by_nh_year=1 c_deathyear=1874 c_dy_nh_code=666 c_dy_nh_year=13",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

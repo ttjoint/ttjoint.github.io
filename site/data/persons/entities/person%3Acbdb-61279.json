@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-61279",
+  "name": "徐坊",
+  "type": "person",
+  "props": {
+    "出生年月": "1864年",
+    "逝世时间": "1916年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治3年~中華民國5年。 【參考《清代人物生卒年表》#18993.】"
+  },
+  "external": {
+    "cbdbId": 61279
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-519970",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61279|519970|180",
+            "locator": {
+              "pages": "4611",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61279 c_kin_id=519970",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61279",
+      "locator": {},
+      "quote": "c_birthyear=1864 c_by_nh_code=666 c_by_nh_year=3 c_deathyear=1916 c_dy_nh_code=669 c_dy_nh_year=5 c_notes=《清代人物生卒年表》定其生卒年為同治3年~中華民國5年。 【參考《清代人物生卒年表》#18993.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

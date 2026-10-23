@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-579085",
+  "name": "譚若瑟",
+  "type": "person",
+  "props": {
+    "出生年月": "1903年",
+    "逝世时间": "1927年"
+  },
+  "external": {
+    "cbdbId": 579085
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/579085",
+      "locator": {},
+      "quote": "c_birthyear=1903 c_deathyear=1927",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

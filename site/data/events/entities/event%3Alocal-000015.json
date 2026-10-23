@@ -1,0 +1,14 @@
+{
+  "id": "event:local-000015",
+  "name": "樊城之战",
+  "type": "event",
+  "aliases": [
+    "关羽北伐",
+    "水淹七军"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

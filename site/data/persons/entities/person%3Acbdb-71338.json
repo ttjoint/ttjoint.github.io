@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-71338",
+  "name": "王萬芳",
+  "type": "person",
+  "props": {
+    "出生年月": "1855年",
+    "逝世时间": "1901年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐5年~光緒27年。 【參考《清代人物生卒年表》#965.】"
+  },
+  "external": {
+    "cbdbId": 71338
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/71338",
+      "locator": {},
+      "quote": "c_birthyear=1855 c_by_nh_code=665 c_by_nh_year=5 c_deathyear=1901 c_dy_nh_code=667 c_dy_nh_year=27 c_notes=《清代人物生卒年表》定其生卒年為咸豐5年~光緒27年。 【參考《清代人物生卒年表》#965.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

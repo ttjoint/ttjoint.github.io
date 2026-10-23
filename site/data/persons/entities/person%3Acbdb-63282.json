@@ -1,0 +1,56 @@
+{
+  "id": "person:cbdb-63282",
+  "name": "愛新覺羅晉祺",
+  "type": "person",
+  "props": {
+    "逝世时间": "1900年"
+  },
+  "external": {
+    "cbdbId": 63282
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-520843",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/63282|520843|180",
+            "locator": {
+              "pages": "6667",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=63282 c_kin_id=520843",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520844",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/63282|520844|180",
+            "locator": {
+              "pages": "6667",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=63282 c_kin_id=520844",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/63282",
+      "locator": {},
+      "quote": "c_deathyear=1900 c_dy_nh_code=667 c_dy_nh_year=26",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "person:cbdb-122143",
+  "name": "梁令嫻",
+  "type": "person",
+  "props": {
+    "出生年月": "1893年",
+    "逝世时间": "1966年"
+  },
+  "external": {
+    "cbdbId": 122143
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-89137",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/122143|89137|75",
+            "locator": {
+              "pages": "MQWW PoetID #4407",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=75（父） c_personid=122143 c_kin_id=89137",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-122150",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/122143|122150|134",
+            "locator": {
+              "pages": "MQWW PoetID #4407",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0122150, KinCode = 0135",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/122143",
+      "locator": {},
+      "quote": "c_birthyear=1893 c_by_nh_code=667 c_by_nh_year=19 c_deathyear=1966 c_dy_nh_code=0",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

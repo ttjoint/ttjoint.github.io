@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-63585",
+  "name": "袁樹勛",
+  "type": "person",
+  "props": {
+    "出生年月": "1847年",
+    "逝世时间": "1915年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光27年~中華民國4年。 【參考《清代人物生卒年表》#18037.】"
+  },
+  "external": {
+    "cbdbId": 63585
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/63585",
+      "locator": {},
+      "quote": "c_birthyear=1847 c_by_nh_code=664 c_by_nh_year=27 c_deathyear=1915 c_dy_nh_code=669 c_dy_nh_year=4 c_notes=《清代人物生卒年表》定其生卒年為道光27年~中華民國4年。 【參考《清代人物生卒年表》#18037.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

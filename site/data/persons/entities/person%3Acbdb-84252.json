@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-84252",
+  "name": "趙沛濤",
+  "type": "person",
+  "props": {
+    "出生年月": "1842年",
+    "逝世时间": "1908年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光22年~光緒34年。 【參考《清代人物生卒年表》#16146.】"
+  },
+  "external": {
+    "cbdbId": 84252
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/84252",
+      "locator": {},
+      "quote": "c_birthyear=1842 c_by_nh_code=664 c_by_nh_year=22 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34 c_notes=《清代人物生卒年表》定其生卒年為道光22年~光緒34年。 【參考《清代人物生卒年表》#16146.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

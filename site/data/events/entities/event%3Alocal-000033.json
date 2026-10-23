@@ -1,0 +1,12 @@
+{
+  "id": "event:local-000033",
+  "name": "三监之乱",
+  "type": "event",
+  "aliases": [
+    "周公东征"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {}
+}

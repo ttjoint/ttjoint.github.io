@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-691208",
+  "name": "金綬熙",
+  "type": "person",
+  "props": {
+    "逝世时间": "1909年之后"
+  },
+  "external": {
+    "cbdbId": 691208
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/691208",
+      "locator": {},
+      "quote": "c_deathyear=1909",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

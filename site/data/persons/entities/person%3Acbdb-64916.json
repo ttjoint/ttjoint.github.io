@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-64916",
+  "name": "愛新覺羅載洵",
+  "type": "person",
+  "props": {
+    "出生年月": "1885年",
+    "逝世时间": "1949年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒11年~中華民國38年。 【參考《清代人物生卒年表》#17933.】"
+  },
+  "external": {
+    "cbdbId": 64916
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-521517",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/64916|521517|180",
+            "locator": {
+              "pages": "8330",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=64916 c_kin_id=521517",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64916",
+      "locator": {},
+      "quote": "c_birthyear=1885 c_by_nh_code=667 c_by_nh_year=11 c_deathyear=1949 c_dy_nh_code=669 c_dy_nh_year=38 c_notes=《清代人物生卒年表》定其生卒年為光緒11年~中華民國38年。 【參考《清代人物生卒年表》#17933.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

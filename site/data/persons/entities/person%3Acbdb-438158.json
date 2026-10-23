@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-438158",
+  "name": "梁廣照",
+  "type": "person",
+  "props": {
+    "出生年月": "1877年",
+    "逝世时间": "1951年"
+  },
+  "external": {
+    "cbdbId": 438158
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/438158",
+      "locator": {},
+      "quote": "c_birthyear=1877 c_by_nh_code=667 c_by_nh_year=3 c_deathyear=1951 c_dy_nh_code=669 c_dy_nh_year=40",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

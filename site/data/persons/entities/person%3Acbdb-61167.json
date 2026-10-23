@@ -1,0 +1,46 @@
+{
+  "id": "person:cbdb-61167",
+  "name": "陸寶忠",
+  "type": "person",
+  "props": {
+    "出生年月": "1850年",
+    "逝世时间": "1908年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光30年~光緒34年。 【參考《清代人物生卒年表》#12639.】"
+  },
+  "external": {
+    "cbdbId": 61167
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-519857",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61167|519857|180",
+            "locator": {
+              "pages": "4494",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61167 c_kin_id=519857",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "colleague": [
+      "person:cbdb-63550"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61167",
+      "locator": {},
+      "quote": "c_birthyear=1850 c_by_nh_code=664 c_by_nh_year=30 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34 c_notes=《清代人物生卒年表》定其生卒年為道光30年~光緒34年。 【參考《清代人物生卒年表》#12639.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

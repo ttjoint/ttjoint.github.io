@@ -1,0 +1,69 @@
+{
+  "_truncated": false,
+  "_count": 6,
+  "_pageSize": 6,
+  "_manifest": "manifest.json",
+  "_note": "生成文件：仅为兼容保留，只含首页。全部数据见 index/page-*.json 或 entities/。请勿写入。",
+  "rows": [
+    {
+      "id": "thing:local-000005",
+      "name": "人民日报",
+      "type": "thing",
+      "aliases": [],
+      "summary": "中国共产党中央委员会机关报，由人民日报社出版。",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Alocal-000005.json"
+    },
+    {
+      "id": "thing:local-000009",
+      "name": "人民网",
+      "type": "thing",
+      "aliases": [],
+      "summary": "人民网是人民日报社主办的中央重点新闻网站。",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Alocal-000009.json"
+    },
+    {
+      "id": "thing:local-000007",
+      "name": "中国共产党新闻网",
+      "type": "thing",
+      "aliases": [],
+      "summary": "中国共产党新闻网由人民日报社主办，是cpc.people.com.cn站点。",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Alocal-000007.json"
+    },
+    {
+      "id": "thing:local-000011",
+      "name": "中国人民政治协商会议全国委员会网站",
+      "type": "thing",
+      "aliases": [],
+      "summary": "全国政协官方网站。",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Alocal-000011.json"
+    },
+    {
+      "id": "thing:local-000001",
+      "name": "中国政府网",
+      "type": "thing",
+      "aliases": [],
+      "summary": "中国政府网由国务院办公厅主办，是国务院和国务院各部门发布政务信息的官方网站。",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Alocal-000001.json"
+    },
+    {
+      "id": "thing:local-000003",
+      "name": "最高人民检察院网站",
+      "type": "thing",
+      "aliases": [],
+      "summary": "最高人民检察院官方网站。",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Alocal-000003.json"
+    }
+  ]
+}

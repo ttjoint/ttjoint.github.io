@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-58428",
+  "name": "烏雅貽榖",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1927年 ± 30"
+  },
+  "external": {
+    "cbdbId": 58428
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58428",
+      "locator": {},
+      "quote": "c_deathyear=1927 c_dy_nh_code=669 c_dy_nh_year=16",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

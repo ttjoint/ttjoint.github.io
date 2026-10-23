@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-576829",
+  "name": "謝培德",
+  "type": "person",
+  "props": {
+    "出生年月": "1865年",
+    "逝世时间": "1927年"
+  },
+  "external": {
+    "cbdbId": 576829
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576829",
+      "locator": {},
+      "quote": "c_birthyear=1865 c_deathyear=1927",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

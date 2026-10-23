@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-63492",
+  "name": "倪嗣冲",
+  "type": "person",
+  "props": {
+    "出生年月": "1868年",
+    "逝世时间": "1924年"
+  },
+  "external": {
+    "cbdbId": 63492
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/63492",
+      "locator": {},
+      "quote": "c_birthyear=1868 c_by_nh_code=666 c_by_nh_year=7 c_deathyear=1924 c_dy_nh_code=669 c_dy_nh_year=13",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

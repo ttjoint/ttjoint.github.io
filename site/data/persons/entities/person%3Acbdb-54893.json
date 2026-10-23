@@ -1,0 +1,67 @@
+{
+  "id": "person:cbdb-54893",
+  "name": "朱桂榮",
+  "type": "person",
+  "props": {
+    "出生年月": "1858年",
+    "逝世时间": "1918年"
+  },
+  "external": {
+    "cbdbId": 54893
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-54898",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54893|54898|75",
+            "locator": {},
+            "quote": "Auto-generated from PersonID = 0054898, KinCode = 0180",
+            "reason": "c_kin_code=75 → 父；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "femaleChild": [
+      {
+        "id": "person:cbdb-54892",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54893|54892|176",
+            "locator": {},
+            "quote": "c_kin_code=176（女兒） c_personid=54893 c_kin_id=54892",
+            "reason": "c_kin_code=176 → 女兒；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "sister": [
+      {
+        "id": "person:cbdb-54469",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54893|54469|374",
+            "locator": {},
+            "quote": "Auto-generated from PersonID = 0054469, KinCode = 0118",
+            "reason": "c_kin_code=374 → 姊妹；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54893",
+      "locator": {},
+      "quote": "c_birthyear=1858 c_by_nh_code=665 c_by_nh_year=8 c_deathyear=1918 c_dy_nh_code=0",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

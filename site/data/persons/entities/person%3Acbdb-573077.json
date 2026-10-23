@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-573077",
+  "name": "白嘉祿",
+  "type": "person",
+  "props": {
+    "出生年月": "1854年",
+    "逝世时间": "1927年"
+  },
+  "external": {
+    "cbdbId": 573077
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/573077",
+      "locator": {},
+      "quote": "c_birthyear=1854 c_deathyear=1927",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

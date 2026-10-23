@@ -1,0 +1,29 @@
+{
+  "id": "person:cbdb-83221",
+  "name": "周煦",
+  "type": "person",
+  "props": {
+    "出生年月": "1832年",
+    "逝世时间": "1903年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光12年~光緒29年。 【參考《清代人物生卒年表》#14957.】"
+  },
+  "external": {
+    "cbdbId": 83221
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-285513"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/83221",
+      "locator": {},
+      "quote": "c_birthyear=1832 c_by_nh_code=664 c_by_nh_year=12 c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29 c_notes=《清代人物生卒年表》定其生卒年為道光12年~光緒29年。 【參考《清代人物生卒年表》#14957.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

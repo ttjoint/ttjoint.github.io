@@ -1,0 +1,54 @@
+{
+  "version": 3,
+  "type": "event",
+  "count": 22,
+  "dated": 0,
+  "pageSize": 2000,
+  "pageCount": 1,
+  "pages": [
+    {
+      "page": 0,
+      "file": "index/page-000.json",
+      "count": 22,
+      "first": "嫦娥奔月",
+      "last": "张骞出使西域"
+    }
+  ],
+  "chronology": null,
+  "search": {
+    "strategy": "first-char",
+    "targetRows": 4000,
+    "charToFile": {
+      "女": "search/bucket-000.json",
+      "嫦": "search/bucket-000.json",
+      "赤": "search/bucket-000.json",
+      "楚": "search/bucket-000.json",
+      "大": "search/bucket-000.json",
+      "樊": "search/bucket-000.json",
+      "烽": "search/bucket-000.json",
+      "共": "search/bucket-000.json",
+      "官": "search/bucket-000.json",
+      "国": "search/bucket-000.json",
+      "后": "search/bucket-000.json",
+      "夸": "search/bucket-000.json",
+      "鸣": "search/bucket-000.json",
+      "牧": "search/bucket-000.json",
+      "盘": "search/bucket-000.json",
+      "平": "search/bucket-000.json",
+      "七": "search/bucket-000.json",
+      "三": "search/bucket-000.json",
+      "桃": "search/bucket-000.json",
+      "夷": "search/bucket-000.json",
+      "张": "search/bucket-000.json"
+    },
+    "buckets": [
+      {
+        "file": "search/bucket-000.json",
+        "chars": "女嫦赤楚大樊烽共官国后夸鸣牧盘平七三桃夷张",
+        "count": 22
+      }
+    ]
+  },
+  "legacyIndex": "page-000.json",
+  "detailDir": "entities/"
+}

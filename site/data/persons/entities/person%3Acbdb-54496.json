@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-54496",
+  "name": "徐自華",
+  "type": "person",
+  "props": {
+    "出生年月": "1873年",
+    "逝世时间": "1935年"
+  },
+  "external": {
+    "cbdbId": 54496
+  },
+  "aliases": [],
+  "relations": {
+    "sister": [
+      {
+        "id": "person:cbdb-86905",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54496|86905|169",
+            "locator": {
+              "pages": "MQWW PoetID #4413",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0086905, KinCode = 0164",
+            "reason": "c_kin_code=169 → 妹；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54496",
+      "locator": {},
+      "quote": "c_birthyear=1873 c_by_nh_code=666 c_by_nh_year=12 c_deathyear=1935 c_dy_nh_code=669 c_dy_nh_year=24",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "person:cbdb-58450",
+  "name": "夏毓秀",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1838年 ± 30",
+    "逝世时间": "1910年"
+  },
+  "external": {
+    "cbdbId": 58450
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-517079",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58450|517079|183",
+            "locator": {
+              "pages": "1703",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=183（次子） c_personid=58450 c_kin_id=517079",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517080",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58450|517080|184",
+            "locator": {
+              "pages": "1703",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=184（三子） c_personid=58450 c_kin_id=517080",
+            "reason": "c_kin_code=184 → 三子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58450",
+      "locator": {},
+      "quote": "c_birthyear=1838 c_by_nh_code=664 c_by_nh_year=18 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

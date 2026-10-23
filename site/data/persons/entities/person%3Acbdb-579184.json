@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-579184",
+  "name": "周祿喜",
+  "type": "person",
+  "props": {
+    "出生年月": "1907年"
+  },
+  "external": {
+    "cbdbId": 579184
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/579184",
+      "locator": {},
+      "quote": "c_birthyear=1907",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

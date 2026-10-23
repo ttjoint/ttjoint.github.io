@@ -1,0 +1,85 @@
+{
+  "id": "person:cbdb-54106",
+  "name": "宗婉",
+  "type": "person",
+  "props": {
+    "出生年月": "1810年",
+    "逝世时间": "1908年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為嘉慶15年~？。 【參考《清代人物生卒年表》#15740.】"
+  },
+  "external": {
+    "cbdbId": 54106
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      {
+        "id": "person:cbdb-54105",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54106|54105|111",
+            "locator": {},
+            "quote": "c_kin_code=111（母） c_personid=54106 c_kin_id=54105",
+            "reason": "c_kin_code=111 → 母；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-54107",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54106|54107|180",
+            "locator": {},
+            "quote": "Auto-generated from PersonID = 0054107, KinCode = 0111",
+            "reason": "c_kin_code=180 → 子；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-123537",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54106|123537|134",
+            "locator": {
+              "pages": "MQWW PoetID #175, HuWenKai #391",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0123537, KinCode = 0135",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "sister": [
+      {
+        "id": "person:cbdb-54102",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54106|54102|169",
+            "locator": {},
+            "quote": "c_kin_code=169（妹） c_personid=54106 c_kin_id=54102",
+            "reason": "c_kin_code=169 → 妹；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54106",
+      "locator": {},
+      "quote": "c_birthyear=1810 c_by_nh_code=663 c_by_nh_year=15 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34 c_notes=《清代人物生卒年表》定其生卒年為嘉慶15年~？。 【參考《清代人物生卒年表》#15740.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

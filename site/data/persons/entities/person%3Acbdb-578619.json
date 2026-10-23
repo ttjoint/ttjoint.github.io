@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-578619",
+  "name": "熊文祿",
+  "type": "person",
+  "props": {
+    "出生年月": "1900年"
+  },
+  "external": {
+    "cbdbId": 578619
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/578619",
+      "locator": {},
+      "quote": "c_birthyear=1900",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

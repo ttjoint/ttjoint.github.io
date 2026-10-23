@@ -1,0 +1,52 @@
+{
+  "id": "person:local-000177",
+  "type": "person",
+  "name": "周强",
+  "props": {
+    "简介": "周强，男，汉族，1960年4月生，湖北黄梅人，1976年8月参加工作，1978年9月加入中国共产党，西南政法学院研究生院民法专业毕业，研究生学历，法学硕士学位。 现任中共二十届中央委员，十四届全国政协副主席。",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "男",
+    "出生年月": "1960年4月",
+    "籍贯": "湖北黄梅",
+    "民族": "汉族",
+    "学历": "西南政法学院研究生院民法专业毕业，研究生学历，法学硕士学位"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000177",
+    "evidence:local-000093"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "中共二十届中央委员会",
+        "role": "中央委员",
+        "evidence": "现任中共二十届中央委员",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/zq/202405/t20240530_214381.html"
+      },
+      {
+        "organization": "十四届全国政协",
+        "role": "副主席",
+        "evidence": "现任...十四届全国政协副主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/zq/202405/t20240530_214381.html"
+      }
+    ],
+    "career": [
+      {
+        "date": "1976年8月",
+        "organization": "未具体说明（参加工作）",
+        "role": "参加工作",
+        "evidence": "1976年8月参加工作",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/zq/202405/t20240530_214381.html"
+      },
+      {
+        "date": "1978年9月",
+        "organization": "中国共产党",
+        "role": "加入党组织",
+        "evidence": "1978年9月加入中国共产党",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/zq/202405/t20240530_214381.html"
+      }
+    ]
+  },
+  "external": {}
+}

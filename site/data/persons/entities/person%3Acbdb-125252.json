@@ -1,0 +1,58 @@
+{
+  "id": "person:cbdb-125252",
+  "name": "愛新覺羅溥植",
+  "type": "person",
+  "props": {
+    "出生年月": "1882年",
+    "逝世时间": "1936年",
+    "史料注记": "清–民國人:光緖8年-康德3年"
+  },
+  "external": {
+    "cbdbId": 125252
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-529865",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/125252|529865|182",
+            "locator": {
+              "pages": "15371",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=182（長子; 第一子） c_personid=125252 c_kin_id=529865",
+            "reason": "c_kin_code=182 → 長子; 第一子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-529866",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/125252|529866|183",
+            "locator": {
+              "pages": "15371",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=183（次子） c_personid=125252 c_kin_id=529866",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/125252",
+      "locator": {},
+      "quote": "c_birthyear=1882 c_by_nh_code=667 c_by_nh_year=8 c_deathyear=1936 c_dy_nh_code=669 c_dy_nh_year=3 c_notes=清–民國人:光緖8年-康德3年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

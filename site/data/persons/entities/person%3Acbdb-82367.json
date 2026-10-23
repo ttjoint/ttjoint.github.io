@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-82367",
+  "name": "武頌揚",
+  "type": "person",
+  "props": {
+    "出生年月": "1845年",
+    "逝世时间": "1916年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光25年~中華民國5年。 【參考《清代人物生卒年表》#13963.】"
+  },
+  "external": {
+    "cbdbId": 82367
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/82367",
+      "locator": {},
+      "quote": "c_birthyear=1845 c_by_nh_code=664 c_by_nh_year=25 c_deathyear=1916 c_dy_nh_code=669 c_dy_nh_year=5 c_notes=《清代人物生卒年表》定其生卒年為道光25年~中華民國5年。 【參考《清代人物生卒年表》#13963.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

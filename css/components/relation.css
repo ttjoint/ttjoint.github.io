@@ -1,0 +1,64 @@
+/* 组件层：关系网格。 */
+
+/* ---- 关系网格 ---- */
+.relation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.relation-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.relation-item:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+/* 字面量关系（时代 / 性别 / 民族）的目标是一个值，不是实体，所以不可点击，
+   也不应该有 hover 高亮或箭头——那样会暗示这里能跳转。 */
+.relation-item--literal {
+  cursor: default;
+}
+
+.relation-item--literal:hover {
+  border-color: var(--color-border);
+  background: var(--color-bg);
+}
+.relation-item .rel-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: .9rem;
+  flex-shrink: 0;
+}
+.relation-item .rel-info { min-width: 0; }
+.relation-item .rel-name { font-weight: 600; font-size: .9rem; }
+.relation-item .rel-desc { font-size: .75rem; color: var(--color-text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.relation-item .rel-arrow { margin-left: auto; color: var(--color-text-muted); font-size: .8rem; }
+
+/* ---- 关系类型管理面板 ---- */
+.relation-list {
+  overflow-y: auto;
+}
+.relation-item {
+  transition: var(--transition);
+}
+.relation-item:hover {
+  border-color: var(--color-primary);
+}
+.relation-item.default {
+  border-left: 3px solid var(--color-primary);
+}

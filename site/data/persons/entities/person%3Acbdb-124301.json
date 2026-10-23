@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-124301",
+  "name": "丁福保",
+  "type": "person",
+  "props": {
+    "出生年月": "1874年",
+    "逝世时间": "1952年",
+    "史料注记": "清–民國人:同治13年-民國41年"
+  },
+  "external": {
+    "cbdbId": 124301
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124301",
+      "locator": {},
+      "quote": "c_birthyear=1874 c_by_nh_code=666 c_by_nh_year=13 c_deathyear=1952 c_dy_nh_code=669 c_dy_nh_year=41 c_notes=清–民國人:同治13年-民國41年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

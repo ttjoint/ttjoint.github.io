@@ -1,0 +1,40 @@
+{
+  "id": "person:cbdb-123553",
+  "name": "劉光謨",
+  "type": "person",
+  "props": {
+    "出生年月": "1846年",
+    "逝世时间": "1916年",
+    "史料注记": "Based on preliminary research using web resources. http://www.xbsh.cn/tour/mr4.htm."
+  },
+  "external": {
+    "cbdbId": 123553
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-75133",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/123553|75133|75",
+            "locator": {},
+            "quote": "http://www.xbsh.cn/tour/mr4.htm （not available now）",
+            "reason": "c_kin_code=75 → 父；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/123553",
+      "locator": {},
+      "quote": "c_birthyear=1846 c_by_nh_code=664 c_by_nh_year=26 c_deathyear=1916 c_dy_nh_code=669 c_dy_nh_year=5 c_notes=Based on preliminary research using web resources. http://www.xbsh.cn/tour/mr4.htm.",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

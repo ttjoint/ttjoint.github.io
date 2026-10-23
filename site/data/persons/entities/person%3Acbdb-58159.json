@@ -1,0 +1,73 @@
+{
+  "id": "person:cbdb-58159",
+  "name": "耿德壽",
+  "type": "person",
+  "props": {
+    "逝世时间": "1903年"
+  },
+  "external": {
+    "cbdbId": 58159
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-516534",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58159|516534|75",
+            "locator": {
+              "pages": "1402",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=58159 c_kin_id=516534",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-516532",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58159|516532|180",
+            "locator": {
+              "pages": "1402",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58159 c_kin_id=516532",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-516533",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58159|516533|180",
+            "locator": {
+              "pages": "1402",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58159 c_kin_id=516533",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58159",
+      "locator": {},
+      "quote": "c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

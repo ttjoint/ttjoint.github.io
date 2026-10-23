@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-58566",
+  "name": "黃忠立",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1834年 ± 30",
+    "逝世时间": "1909年"
+  },
+  "external": {
+    "cbdbId": 58566
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58566",
+      "locator": {},
+      "quote": "c_birthyear=1834 c_by_nh_code=664 c_by_nh_year=14 c_deathyear=1909 c_dy_nh_code=668 c_dy_nh_year=1",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

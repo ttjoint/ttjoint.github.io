@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-123564",
+  "name": "傅守謙",
+  "type": "person",
+  "props": {
+    "出生年月": "1861年",
+    "逝世时间": "1929年",
+    "史料注记": "Based on preliminary research using web resources. 漢陽人物 (http://cdls.banzhu.net/article/cdls-4-727405.html): 傅守谦（1861--1929）：字济川，号严吾，汉阳蔡甸人。20岁考中秀才，1897年中举人，曾任存古学堂经学教授。著有《证学》10卷，《达可斋文》30卷，《文学四法》23卷，《古文八字诀》8卷。"
+  },
+  "external": {
+    "cbdbId": 123564
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/123564",
+      "locator": {},
+      "quote": "c_birthyear=1861 c_by_nh_code=665 c_by_nh_year=11 c_deathyear=1929 c_dy_nh_code=0 c_notes=Based on preliminary research using web resources. 漢陽人物 (http://cdls.banzhu.net/article/cdls-4-727405.html): 傅守谦（1861--1929）：字济川，号严吾，汉阳蔡甸人。20岁考中秀才，1897年中举人，曾任存古学堂经学教授。著有《证学》10卷，《达可斋文》30卷，《文学四法》23卷，《古文八字诀》8卷。",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

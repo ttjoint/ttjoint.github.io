@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000001",
+  "type": "organization",
+  "name": "中华全国妇女联合会",
+  "aliases": [
+    "全国妇联"
+  ],
+  "props": {
+    "类型": "人民团体",
+    "简介": "中国共产党领导下的全国各族各界妇女的群众组织。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

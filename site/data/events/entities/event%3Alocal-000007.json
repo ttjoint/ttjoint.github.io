@@ -1,0 +1,12 @@
+{
+  "id": "event:local-000007",
+  "name": "国人暴动",
+  "type": "event",
+  "aliases": [
+    "彘之乱"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {}
+}

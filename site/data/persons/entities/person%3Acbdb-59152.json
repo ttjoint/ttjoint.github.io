@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-59152",
+  "name": "支恆榮",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1848年 ± 30",
+    "逝世时间": "1914年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光28年~中華民國3年。 【參考《清代人物生卒年表》#2068.】"
+  },
+  "external": {
+    "cbdbId": 59152
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/59152",
+      "locator": {},
+      "quote": "c_birthyear=1848 c_by_nh_code=664 c_by_nh_year=28 c_deathyear=1914 c_dy_nh_code=669 c_dy_nh_year=3 c_notes=《清代人物生卒年表》定其生卒年為道光28年~中華民國3年。 【參考《清代人物生卒年表》#2068.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

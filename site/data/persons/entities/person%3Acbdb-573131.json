@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-573131",
+  "name": "彭宗義",
+  "type": "person",
+  "props": {
+    "出生年月": "1857年",
+    "逝世时间": "1917年"
+  },
+  "external": {
+    "cbdbId": 573131
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/573131",
+      "locator": {},
+      "quote": "c_birthyear=1857 c_deathyear=1917",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

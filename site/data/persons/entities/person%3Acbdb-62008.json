@@ -1,0 +1,137 @@
+{
+  "id": "person:cbdb-62008",
+  "name": "秦綬章",
+  "type": "person",
+  "props": {
+    "出生年月": "1849年",
+    "逝世时间": "1925年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光29年~中華民國14年。 【參考《清代人物生卒年表》#17887.】"
+  },
+  "external": {
+    "cbdbId": 62008
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-520461",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62008|520461|75",
+            "locator": {
+              "pages": "5355",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=62008 c_kin_id=520461",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-520462",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62008|520462|180",
+            "locator": {
+              "pages": "5355",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=62008 c_kin_id=520462",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520463",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62008|520463|180",
+            "locator": {
+              "pages": "5355",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=62008 c_kin_id=520463",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520465",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62008|520465|180",
+            "locator": {
+              "pages": "5355",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=62008 c_kin_id=520465",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520466",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62008|520466|180",
+            "locator": {
+              "pages": "5355",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=62008 c_kin_id=520466",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520467",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62008|520467|180",
+            "locator": {
+              "pages": "5355",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=62008 c_kin_id=520467",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-520471",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62008|520471|125",
+            "locator": {
+              "pages": "5355",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=62008 c_kin_id=520471",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/62008",
+      "locator": {},
+      "quote": "c_birthyear=1849 c_by_nh_code=664 c_by_nh_year=29 c_deathyear=1925 c_dy_nh_code=669 c_dy_nh_year=14 c_notes=《清代人物生卒年表》定其生卒年為道光29年~中華民國14年。 【參考《清代人物生卒年表》#17887.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

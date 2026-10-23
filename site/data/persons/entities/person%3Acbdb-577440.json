@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-577440",
+  "name": "梅玉清",
+  "type": "person",
+  "props": {
+    "出生年月": "1881年",
+    "逝世时间": "1919年"
+  },
+  "external": {
+    "cbdbId": 577440
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/577440",
+      "locator": {},
+      "quote": "c_birthyear=1881 c_deathyear=1919",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

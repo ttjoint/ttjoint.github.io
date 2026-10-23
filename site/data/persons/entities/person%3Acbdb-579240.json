@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-579240",
+  "name": "師播德",
+  "type": "person",
+  "props": {
+    "出生年月": "1913年"
+  },
+  "external": {
+    "cbdbId": 579240
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/579240",
+      "locator": {},
+      "quote": "c_birthyear=1913",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

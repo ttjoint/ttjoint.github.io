@@ -1,0 +1,33 @@
+{
+  "id": "person:local-000157",
+  "type": "person",
+  "name": "张晓津",
+  "props": {
+    "性别": "男",
+    "出生年月": "1968年11月",
+    "民族": "汉族",
+    "学历": "研究生学历，法学硕士学位",
+    "简介": "张晓津，男，汉族，1968年11月生，研究生学历，法学硕士学位，中共党员，现任最高人民检察院检察委员会副部级专职委员，二级大检察官。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000035"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "最高人民检察院",
+        "role": "检察委员会副部级专职委员",
+        "evidence": "最高人民检察院检察委员会副部级专职委员",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "",
+        "role": "二级大检察官",
+        "evidence": "二级大检察官",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      }
+    ]
+  },
+  "external": {}
+}

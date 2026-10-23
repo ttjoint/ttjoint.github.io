@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-124917",
+  "name": "托忒克端錦",
+  "type": "person",
+  "props": {
+    "逝世时间": "1911年",
+    "史料注记": "清人:-宣統3年"
+  },
+  "external": {
+    "cbdbId": 124917
+  },
+  "aliases": [],
+  "relations": {
+    "brother": [
+      {
+        "id": "person:cbdb-529201",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124917|529201|125",
+            "locator": {
+              "pages": "14882",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=124917 c_kin_id=529201",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124917",
+      "locator": {},
+      "quote": "c_deathyear=1911 c_dy_nh_code=668 c_dy_nh_year=3 c_notes=清人:-宣統3年",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

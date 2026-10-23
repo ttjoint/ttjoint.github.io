@@ -1,0 +1,73 @@
+{
+  "id": "person:cbdb-62774",
+  "name": "史念祖",
+  "type": "person",
+  "props": {
+    "出生年月": "1843年",
+    "逝世时间": "1910年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光23年~宣統2年。 【參考《清代人物生卒年表》#3440.】"
+  },
+  "external": {
+    "cbdbId": 62774
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-520678",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62774|520678|180",
+            "locator": {
+              "pages": "6138",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=62774 c_kin_id=520678",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520679",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62774|520679|180",
+            "locator": {
+              "pages": "6138",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=62774 c_kin_id=520679",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520680",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62774|520680|180",
+            "locator": {
+              "pages": "6138",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=62774 c_kin_id=520680",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/62774",
+      "locator": {},
+      "quote": "c_birthyear=1843 c_by_nh_code=664 c_by_nh_year=23 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2 c_notes=《清代人物生卒年表》定其生卒年為道光23年~宣統2年。 【參考《清代人物生卒年表》#3440.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

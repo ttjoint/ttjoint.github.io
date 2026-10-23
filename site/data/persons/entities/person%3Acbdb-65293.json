@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-65293",
+  "name": "永德",
+  "type": "person",
+  "props": {
+    "出生年月": "1840年",
+    "逝世时间": "1901年"
+  },
+  "external": {
+    "cbdbId": 65293
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      {
+        "id": "person:cbdb-521763",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65293|521763|111",
+            "locator": {
+              "pages": "8716",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=111（母） c_personid=65293 c_kin_id=521763",
+            "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/65293",
+      "locator": {},
+      "quote": "c_birthyear=1840 c_by_nh_code=664 c_by_nh_year=20 c_deathyear=1901 c_dy_nh_code=667 c_dy_nh_year=27",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "person:cbdb-55324",
+  "name": "濮文綺",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1831年 ± 30",
+    "逝世时间": "约 1874年 ± 30"
+  },
+  "external": {
+    "cbdbId": 55324
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-55325",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55324|55325|75",
+            "locator": {
+              "pages": "MQWW PoetID #208, HuWenKai #765",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0055325, KinCode = 0176",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-55326",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55324|55326|134",
+            "locator": {
+              "pages": "MQWW PoetID #208, HuWenKai #765",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0055326, KinCode = 0135",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/55324",
+      "locator": {},
+      "quote": "c_birthyear=1831 c_by_nh_code=664 c_by_nh_year=11 c_deathyear=1874 c_dy_nh_code=666 c_dy_nh_year=13",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

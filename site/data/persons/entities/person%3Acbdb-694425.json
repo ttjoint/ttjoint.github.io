@@ -1,0 +1,41 @@
+{
+  "id": "person:cbdb-694425",
+  "name": "葉自忠",
+  "type": "person",
+  "props": {
+    "逝世时间": "1918年"
+  },
+  "external": {
+    "cbdbId": 694425
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-694350",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/694425|694350|75",
+            "locator": {
+              "pages": "lgid=1167257",
+              "sourceId": 68286
+            },
+            "quote": "c_kin_code=75（父） c_personid=694425 c_kin_id=694350",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《(民國)黟縣四志: 十六卷卷首一卷卷末一卷》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/694425",
+      "locator": {},
+      "quote": "c_deathyear=1918 c_dy_nh_code=669 c_dy_nh_year=7",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

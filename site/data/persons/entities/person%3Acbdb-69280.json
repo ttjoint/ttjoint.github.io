@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-69280",
+  "name": "文楷",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1897年 ± 30"
+  },
+  "external": {
+    "cbdbId": 69280
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/69280",
+      "locator": {},
+      "quote": "c_deathyear=1897 c_dy_nh_code=667 c_dy_nh_year=23",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-72317",
+  "name": "毛乃庸",
+  "type": "person",
+  "props": {
+    "出生年月": "1875年",
+    "逝世时间": "1931年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒1年~中華民國20年。 【參考《清代人物生卒年表》#2156.】"
+  },
+  "external": {
+    "cbdbId": 72317
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/72317",
+      "locator": {},
+      "quote": "c_birthyear=1875 c_by_nh_code=667 c_by_nh_year=1 c_deathyear=1931 c_dy_nh_code=669 c_dy_nh_year=20 c_notes=《清代人物生卒年表》定其生卒年為光緒1年~中華民國20年。 【參考《清代人物生卒年表》#2156.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

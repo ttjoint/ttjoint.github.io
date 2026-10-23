@@ -1,0 +1,29 @@
+{
+  "id": "person:cbdb-83149",
+  "name": "周達",
+  "type": "person",
+  "props": {
+    "出生年月": "1915年",
+    "逝世时间": "1948年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒41年~中華民國37年。 【參考《清代人物生卒年表》#14881.】"
+  },
+  "external": {
+    "cbdbId": 83149
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-306217"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/83149",
+      "locator": {},
+      "quote": "c_birthyear=1915 c_by_nh_code=667 c_by_nh_year=41 c_deathyear=1948 c_dy_nh_code=669 c_dy_nh_year=37 c_notes=《清代人物生卒年表》定其生卒年為光緒41年~中華民國37年。 【參考《清代人物生卒年表》#14881.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

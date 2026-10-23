@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-691200",
+  "name": "韓茂棠",
+  "type": "person",
+  "props": {
+    "出生年月": "1880年",
+    "逝世时间": "约 1939年 ± 30"
+  },
+  "external": {
+    "cbdbId": 691200
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/691200",
+      "locator": {},
+      "quote": "c_birthyear=1880 c_deathyear=1939",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

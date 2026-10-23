@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-70796",
+  "name": "于銘書",
+  "type": "person",
+  "props": {
+    "出生年月": "1831年",
+    "逝世时间": "1906年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光11年~光緒32年。 【參考《清代人物生卒年表》#284.】"
+  },
+  "external": {
+    "cbdbId": 70796
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/70796",
+      "locator": {},
+      "quote": "c_birthyear=1831 c_by_nh_code=664 c_by_nh_year=11 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32 c_notes=《清代人物生卒年表》定其生卒年為道光11年~光緒32年。 【參考《清代人物生卒年表》#284.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

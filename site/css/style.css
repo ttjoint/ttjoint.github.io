@@ -1,0 +1,21 @@
+/* HumanMap 样式入口。
+   分层：tokens（变量）→ base（reset）→ components → views。
+   约束见 docs/architecture/前端页面架构调整方案.md §P3：
+   - components/ 不得出现视图专属类名
+   - views/ 不得定义颜色字面值，只能引用 tokens 的变量 */
+
+@import url('tokens.css');
+@import url('base.css');
+@import url('base-responsive.css');
+@import url('components/search.css');
+@import url('components/card.css');
+@import url('components/button.css');
+@import url('components/breadcrumb.css');
+@import url('components/relation.css');
+@import url('components/cite.css');
+@import url('components/misc.css');
+@import url('views/app.css');
+@import url('views/graph.css');
+@import url('views/detail.css');
+@import url('views/all-objects.css');
+@import url('views/predicate.css');

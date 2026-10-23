@@ -1,0 +1,14 @@
+{
+  "id": "thing:local-000007",
+  "type": "thing",
+  "name": "中国共产党新闻网",
+  "props": {
+    "类型": "新闻网站",
+    "简介": "中国共产党新闻网由人民日报社主办，是cpc.people.com.cn站点。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000125"
+  ],
+  "external": {}
+}

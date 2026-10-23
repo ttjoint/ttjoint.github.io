@@ -1,0 +1,59 @@
+{
+  "id": "person:cbdb-61175",
+  "name": "蘇完瓜爾佳柏梁",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1847年 ± 30",
+    "逝世时间": "1907年"
+  },
+  "external": {
+    "cbdbId": 61175
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-519871",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61175|519871|75",
+            "locator": {
+              "pages": "4503",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=61175 c_kin_id=519871",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-519868",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61175|519868|183",
+            "locator": {
+              "pages": "4503",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=183（次子） c_personid=61175 c_kin_id=519868",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61175",
+      "locator": {},
+      "quote": "c_birthyear=1847 c_by_nh_code=664 c_by_nh_year=27 c_deathyear=1907 c_dy_nh_code=667 c_dy_nh_year=33",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

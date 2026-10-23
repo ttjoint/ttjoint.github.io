@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-66142",
+  "name": "江紹銓",
+  "type": "person",
+  "props": {
+    "出生年月": "1883年",
+    "逝世时间": "1954年"
+  },
+  "external": {
+    "cbdbId": 66142
+  },
+  "aliases": [],
+  "relations": {
+    "brother": [
+      {
+        "id": "person:cbdb-523126",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/66142|523126|126",
+            "locator": {
+              "pages": "9679",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=66142 c_kin_id=523126",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/66142",
+      "locator": {},
+      "quote": "c_birthyear=1883 c_by_nh_code=667 c_by_nh_year=9 c_deathyear=1954 c_dy_nh_code=669 c_dy_nh_year=43",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

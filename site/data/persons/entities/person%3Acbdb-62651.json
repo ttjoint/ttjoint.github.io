@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-62651",
+  "name": "愛新覺羅毓隆",
+  "type": "person",
+  "props": {
+    "出生年月": "1872年",
+    "逝世时间": "1922年"
+  },
+  "external": {
+    "cbdbId": 62651
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/62651",
+      "locator": {},
+      "quote": "c_birthyear=1872 c_by_nh_code=666 c_by_nh_year=11 c_deathyear=1922 c_dy_nh_code=669 c_dy_nh_year=11",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

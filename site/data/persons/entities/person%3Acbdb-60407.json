@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-60407",
+  "name": "趙時熙",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1840年 ± 30",
+    "逝世时间": "1903年"
+  },
+  "external": {
+    "cbdbId": 60407
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/60407",
+      "locator": {},
+      "quote": "c_birthyear=1840 c_by_nh_code=664 c_by_nh_year=20 c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
  * Responsibilities
  *  - time-window filtering with confidence buckets (exact / fuzzy / vague)
  *  - predicate-centric retrieval, honouring inverse and negate modifiers
- *  - free-text search across names, aliases, tags and summaries
+ *  - free-text search across names, aliases and summaries
  *
  * All time comparisons happen on Julian Day Numbers supplied by the caller, so
  * this module is independent of how the UI converts a slider position to a date.
@@ -62,16 +62,19 @@ class QueryEngine {
    * Search entities.
    * @param {object} q
    * @param {string} q.text      free text (name / alias / summary)
-   * @param {string} q.type      person | organization | event
-   * @param {string[]} q.tags
+   * @param {string} q.type      person | thing | organization | event | evidence
    * @param {string[]} q.predicates  predicates that must be present (any direction)
+   *
+   * Era classification used to be a `tags` filter here, then an `era` predicate.
+   * Both are gone: era is a query-time derivation from birthDate/deathDate, not
+   * stored data (design §2.6). To find people of a period, filter on the date
+   * window (`lo`/`hi`) — the fuzzy ranges on those edges are what make it work.
    * @param {number} q.lo, q.hi  JDN window
    * @param {Set<string>} q.confidence  subset of exact/fuzzy/vague
    * @param {number} q.limit
    */
-  search({ text = '', type = null, tags = [], predicates = [], lo = null, hi = null, confidence = ALL_CONFIDENCE, includeUndated = false, includeNegated = false, limit = 200 } = {}) {
+  search({ text = '', type = null, predicates = [], lo = null, hi = null, confidence = ALL_CONFIDENCE, includeUndated = false, includeNegated = false, limit = 200 } = {}) {
     const needle = String(text || '').trim().toLowerCase();
-    const tagSet = new Set((tags || []).map(t => String(t)));
     const predList = parsePredicateFilter(predicates).map(p => this.store.registry.resolve(p) || p);
 
     // Predicate pre-filter: collect candidate node ids once so the main loop stays cheap.
@@ -92,11 +95,10 @@ class QueryEngine {
       if (node.stub) continue;
       if (type && node.type !== type) continue;
       if (candidateIds && !candidateIds.has(node.id)) continue;
-      if (tagSet.size && !(node.tags || []).some(t => tagSet.has(t))) continue;
       if (!nodeInWindow(node, { lo, hi, confidence, includeUndated })) continue;
 
       if (needle) {
-        const hay = [node.name, ...(node.aliases || []), ...(node.tags || []), node.summary]
+        const hay = [node.name, ...(node.aliases || []), node.summary]
           .join('\u0000').toLowerCase();
         if (!hay.includes(needle)) continue;
       }
@@ -178,7 +180,7 @@ class QueryEngine {
       inverse: p.inverse,
       aliases: p.aliases,
       negatable: p.negatable,
-      subjectGender: p.subjectGender,
+      objectGender: p.objectGender,
       count: counts[p.key] || 0,
     })).sort((a, b) => (b.count - a.count) || a.key.localeCompare(b.key));
   }

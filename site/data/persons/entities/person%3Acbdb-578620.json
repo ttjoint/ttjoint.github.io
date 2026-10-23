@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-578620",
+  "name": "戴德祺",
+  "type": "person",
+  "props": {
+    "出生年月": "1898年",
+    "逝世时间": "1929年"
+  },
+  "external": {
+    "cbdbId": 578620
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/578620",
+      "locator": {},
+      "quote": "c_birthyear=1898 c_deathyear=1929",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-125698",
+  "name": "陳季芳",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1838年 ± 30",
+    "逝世时间": "约 1893年 ± 30",
+    "史料注记": "清人:道光[18]年-光緖[19]年"
+  },
+  "external": {
+    "cbdbId": 125698
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/125698",
+      "locator": {},
+      "quote": "c_birthyear=1838 c_by_nh_code=664 c_by_nh_year=18 c_deathyear=1893 c_dy_nh_code=667 c_dy_nh_year=19 c_notes=清人:道光[18]年-光緖[19]年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

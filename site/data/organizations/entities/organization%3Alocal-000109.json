@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000109",
+  "type": "organization",
+  "name": "九三学社中央委员会",
+  "aliases": [
+    "九三学社中央"
+  ],
+  "props": {
+    "类型": "民主党派中央",
+    "简介": "九三学社中央委员会。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

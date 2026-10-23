@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-57899",
+  "name": "雙印",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1879年 ± 30"
+  },
+  "external": {
+    "cbdbId": 57899
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/57899",
+      "locator": {},
+      "quote": "c_deathyear=1879 c_dy_nh_code=667 c_dy_nh_year=5",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

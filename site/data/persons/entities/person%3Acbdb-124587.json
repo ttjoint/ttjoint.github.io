@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-124587",
+  "name": "傅斯年",
+  "type": "person",
+  "props": {
+    "出生年月": "1896年",
+    "逝世时间": "1950年",
+    "史料注记": "清–民國人:光緖22年-民國39年"
+  },
+  "external": {
+    "cbdbId": 124587
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124587",
+      "locator": {},
+      "quote": "c_birthyear=1896 c_by_nh_code=667 c_by_nh_year=22 c_deathyear=1950 c_dy_nh_code=669 c_dy_nh_year=39 c_notes=清–民國人:光緖22年-民國39年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

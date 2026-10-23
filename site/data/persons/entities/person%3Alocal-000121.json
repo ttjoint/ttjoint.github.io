@@ -1,0 +1,45 @@
+{
+  "id": "person:local-000121",
+  "type": "person",
+  "name": "刘炤",
+  "props": {
+    "性别": "男",
+    "出生年月": "1963年4月",
+    "民族": "汉族",
+    "学历": "大学本科学历，法学学士学位",
+    "简介": "刘炤，男，汉族，1963年4月生，大学本科学历，法学学士学位，中共党员，现任中共二十届中纪委委员，最高人民检察院党组成员、中央纪委国家监委驻最高人民检察院纪检监察组组长、二级副总监察官。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000035"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "",
+        "role": "中共二十届中纪委委员",
+        "evidence": "中共二十届中纪委委员",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "最高人民检察院",
+        "role": "党组成员",
+        "evidence": "最高人民检察院党组成员",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "中央纪委国家监委",
+        "role": "驻最高人民检察院纪检监察组组长",
+        "evidence": "中央纪委国家监委驻最高人民检察院纪检监察组组长",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "",
+        "role": "二级副总监察官",
+        "evidence": "二级副总监察官",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      }
+    ]
+  },
+  "external": {}
+}

@@ -1,0 +1,40 @@
+{
+  "id": "person:cbdb-63546",
+  "name": "袁世凱",
+  "type": "person",
+  "props": {
+    "出生年月": "1859年",
+    "逝世时间": "1916年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐9年~中華民國5年。 【參考《清代人物生卒年表》#17995.】"
+  },
+  "external": {
+    "cbdbId": 63546
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-85845",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/63546|85845|183",
+            "locator": {},
+            "quote": "c_kin_code=183（次子） c_personid=63546 c_kin_id=85845",
+            "reason": "c_kin_code=183 → 次子；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/63546",
+      "locator": {},
+      "quote": "c_birthyear=1859 c_by_nh_code=665 c_by_nh_year=9 c_deathyear=1916 c_dy_nh_code=669 c_dy_nh_year=5 c_notes=《清代人物生卒年表》定其生卒年為咸豐9年~中華民國5年。 【參考《清代人物生卒年表》#17995.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

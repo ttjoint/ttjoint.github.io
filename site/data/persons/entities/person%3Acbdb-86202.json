@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-86202",
+  "name": "顧琅",
+  "type": "person",
+  "props": {
+    "出生年月": "1880年",
+    "逝世时间": "1939年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒6年~中華民國28年。 【參考《清代人物生卒年表》#18420.】"
+  },
+  "external": {
+    "cbdbId": 86202
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/86202",
+      "locator": {},
+      "quote": "c_birthyear=1880 c_by_nh_code=667 c_by_nh_year=6 c_deathyear=1939 c_dy_nh_code=669 c_dy_nh_year=28 c_notes=《清代人物生卒年表》定其生卒年為光緒6年~中華民國28年。 【參考《清代人物生卒年表》#18420.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

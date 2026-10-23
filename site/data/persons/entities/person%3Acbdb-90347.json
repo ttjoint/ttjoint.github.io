@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-90347",
+  "name": "曾廣鑾",
+  "type": "person",
+  "props": {
+    "出生年月": "1873年",
+    "逝世时间": "1920年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治12年~中華民國9年。 【參考《清代人物生卒年表》#23268.】"
+  },
+  "external": {
+    "cbdbId": 90347
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/90347",
+      "locator": {},
+      "quote": "c_birthyear=1873 c_by_nh_code=666 c_by_nh_year=12 c_deathyear=1920 c_dy_nh_code=669 c_dy_nh_year=9 c_notes=《清代人物生卒年表》定其生卒年為同治12年~中華民國9年。 【參考《清代人物生卒年表》#23268.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

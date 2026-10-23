@@ -1,0 +1,18 @@
+{
+  "id": "organization:local-000061",
+  "type": "organization",
+  "name": "中国人民政治协商会议全国委员会",
+  "aliases": [
+    "全国政协",
+    "政协全国委员会"
+  ],
+  "props": {
+    "类型": "统一战线组织",
+    "简介": "中国人民政治协商会议全国委员会，简称全国政协。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000097"
+  ],
+  "external": {}
+}

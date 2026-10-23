@@ -1,0 +1,42 @@
+/* 视图层：关系图谱。 */
+
+/* ---- 图谱容器 ---- */
+.graph-container {
+  width: 100%;
+  height: 500px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  overflow: hidden;
+  position: relative;
+}
+.graph-container svg { width: 100%; height: 100%; }
+.graph-container .graph-tooltip {
+  position: absolute;
+  padding: 6px 12px;
+  background: var(--color-text);
+  color: var(--color-bg);
+  border-radius: var(--radius-sm);
+  font-size: .8rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s;
+  z-index: 10;
+}
+.graph-node-label { font-size: 11px; font-weight: 600; fill: var(--color-text); text-anchor: middle; }
+.graph-link { stroke: var(--color-graph-link); stroke-width: 1.5px; stroke-opacity: .6; }
+
+/* ---- 图谱头部 ---- */
+.graph-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: var(--radius-sm);
+}
+.graph-header:hover {
+  background: var(--color-bg);
+}
+

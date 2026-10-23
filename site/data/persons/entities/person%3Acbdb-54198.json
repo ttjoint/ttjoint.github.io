@@ -1,0 +1,58 @@
+{
+  "id": "person:cbdb-54198",
+  "name": "繆珠蓀",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1851年 ± 30",
+    "逝世时间": "约 1911年 ± 30"
+  },
+  "external": {
+    "cbdbId": 54198
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-54200",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54198|54200|75",
+            "locator": {
+              "pages": "MQWW PoetID #257, HuWenKai #766",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=75（父） c_personid=54198 c_kin_id=54200",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-54207",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54198|54207|134",
+            "locator": {
+              "sourceId": 7596
+            },
+            "quote": "c_kin_code=134（丈夫） c_personid=54198 c_kin_id=54207",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《宋人傳記資料索引(電子版)》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54198",
+      "locator": {},
+      "quote": "c_birthyear=1851 c_by_nh_code=665 c_by_nh_year=1 c_deathyear=1911 c_dy_nh_code=668 c_dy_nh_year=3",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

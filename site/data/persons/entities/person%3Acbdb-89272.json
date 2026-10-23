@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-89272",
+  "name": "彭世襄",
+  "type": "person",
+  "props": {
+    "出生年月": "1868年",
+    "逝世时间": "1903年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治7年~光緒29年。 【參考《清代人物生卒年表》#22020.】"
+  },
+  "external": {
+    "cbdbId": 89272
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/89272",
+      "locator": {},
+      "quote": "c_birthyear=1868 c_by_nh_code=666 c_by_nh_year=7 c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29 c_notes=《清代人物生卒年表》定其生卒年為同治7年~光緒29年。 【參考《清代人物生卒年表》#22020.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

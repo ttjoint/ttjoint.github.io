@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-84513",
+  "name": "胡乃麟",
+  "type": "person",
+  "props": {
+    "出生年月": "1845年",
+    "逝世时间": "1914年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光25年~中華民國3年。 【參考《清代人物生卒年表》#16444.】"
+  },
+  "external": {
+    "cbdbId": 84513
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/84513",
+      "locator": {},
+      "quote": "c_birthyear=1845 c_by_nh_code=664 c_by_nh_year=25 c_deathyear=1914 c_dy_nh_code=669 c_dy_nh_year=3 c_notes=《清代人物生卒年表》定其生卒年為道光25年~中華民國3年。 【參考《清代人物生卒年表》#16444.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

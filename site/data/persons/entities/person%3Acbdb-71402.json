@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-71402",
+  "name": "王仁東",
+  "type": "person",
+  "props": {
+    "出生年月": "1852年",
+    "逝世时间": "1917年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐2年~中華民國6年。 【參考《清代人物生卒年表》#1049.】"
+  },
+  "external": {
+    "cbdbId": 71402
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/71402",
+      "locator": {},
+      "quote": "c_birthyear=1852 c_by_nh_code=665 c_by_nh_year=2 c_deathyear=1917 c_dy_nh_code=669 c_dy_nh_year=6 c_notes=《清代人物生卒年表》定其生卒年為咸豐2年~中華民國6年。 【參考《清代人物生卒年表》#1049.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

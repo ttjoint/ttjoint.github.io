@@ -1,0 +1,120 @@
+{
+  "id": "person:cbdb-57121",
+  "name": "王文韶",
+  "type": "person",
+  "props": {
+    "出生年月": "1830年",
+    "逝世时间": "1908年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光10年~光緒34年。 【參考《清代人物生卒年表》#1087.】"
+  },
+  "external": {
+    "cbdbId": 57121
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-514233",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57121|514233|75",
+            "locator": {
+              "pages": "340",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=57121 c_kin_id=514233",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-514236",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57121|514236|180",
+            "locator": {
+              "pages": "340",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57121 c_kin_id=514236",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-514239",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57121|514239|180",
+            "locator": {
+              "pages": "340",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57121 c_kin_id=514239",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-514240",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57121|514240|180",
+            "locator": {
+              "pages": "340",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57121 c_kin_id=514240",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-514241",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57121|514241|180",
+            "locator": {
+              "pages": "340",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57121 c_kin_id=514241",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-514242",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57121|514242|180",
+            "locator": {
+              "pages": "340",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57121 c_kin_id=514242",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/57121",
+      "locator": {},
+      "quote": "c_birthyear=1830 c_by_nh_code=664 c_by_nh_year=10 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34 c_notes=《清代人物生卒年表》定其生卒年為道光10年~光緒34年。 【參考《清代人物生卒年表》#1087.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

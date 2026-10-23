@@ -1,0 +1,14 @@
+{
+  "id": "evidence:local-000145",
+  "type": "evidence",
+  "name": "全国政协官网 · www.cppcc.gov.cn/zxld/fzx/jzj/202405/t20240530_214946.html",
+  "carrier": "organization:local-000061",
+  "medium": "web",
+  "documentedAt": null,
+  "url": "http://www.cppcc.gov.cn/zxld/fzx/jzj/202405/t20240530_214946.html",
+  "accessedAt": "2026-10-17T02:31:55.737Z",
+  "excerpt": "",
+  "reliability": null,
+  "note": "",
+  "unresolved": false
+}

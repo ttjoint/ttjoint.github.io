@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-73169",
+  "name": "葉保慶",
+  "type": "person",
+  "props": {
+    "出生年月": "1857年",
+    "逝世时间": "1908年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐7年~光緒34年。 【參考《清代人物生卒年表》#3248.】"
+  },
+  "external": {
+    "cbdbId": 73169
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/73169",
+      "locator": {},
+      "quote": "c_birthyear=1857 c_by_nh_code=665 c_by_nh_year=7 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34 c_notes=《清代人物生卒年表》定其生卒年為咸豐7年~光緒34年。 【參考《清代人物生卒年表》#3248.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

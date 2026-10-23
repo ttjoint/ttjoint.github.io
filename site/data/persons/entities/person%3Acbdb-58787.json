@@ -1,0 +1,152 @@
+{
+  "id": "person:cbdb-58787",
+  "name": "江春霖",
+  "type": "person",
+  "props": {
+    "出生年月": "1855年",
+    "逝世时间": "1918年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐5年~中華民國7年。 【參考《清代人物生卒年表》#5956.】"
+  },
+  "external": {
+    "cbdbId": 58787
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-517736",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58787|517736|75",
+            "locator": {
+              "pages": "2061",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=58787 c_kin_id=517736",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-517748",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58787|517748|183",
+            "locator": {
+              "pages": "2061",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=183（次子） c_personid=58787 c_kin_id=517748",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517749",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58787|517749|183",
+            "locator": {
+              "pages": "2061",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=183（次子） c_personid=58787 c_kin_id=517749",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517750",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58787|517750|184",
+            "locator": {
+              "pages": "2061",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=184（三子） c_personid=58787 c_kin_id=517750",
+            "reason": "c_kin_code=184 → 三子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517751",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58787|517751|185",
+            "locator": {
+              "pages": "2061",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=185（四子） c_personid=58787 c_kin_id=517751",
+            "reason": "c_kin_code=185 → 四子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517753",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58787|517753|191",
+            "locator": {
+              "pages": "2061",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=191（五子） c_personid=58787 c_kin_id=517753",
+            "reason": "c_kin_code=191 → 五子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517752",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58787|517752|194",
+            "locator": {
+              "pages": "2061",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=194（六子） c_personid=58787 c_kin_id=517752",
+            "reason": "c_kin_code=194 → 六子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-517754",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58787|517754|126",
+            "locator": {
+              "pages": "2061",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=58787 c_kin_id=517754",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58787",
+      "locator": {},
+      "quote": "c_birthyear=1855 c_by_nh_code=665 c_by_nh_year=5 c_deathyear=1918 c_dy_nh_code=669 c_dy_nh_year=7 c_notes=《清代人物生卒年表》定其生卒年為咸豐5年~中華民國7年。 【參考《清代人物生卒年表》#5956.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

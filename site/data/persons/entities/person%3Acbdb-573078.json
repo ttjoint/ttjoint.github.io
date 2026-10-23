@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-573078",
+  "name": "孟斐理",
+  "type": "person",
+  "props": {
+    "出生年月": "1844年",
+    "逝世时间": "1926年"
+  },
+  "external": {
+    "cbdbId": 573078
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/573078",
+      "locator": {},
+      "quote": "c_birthyear=1844 c_deathyear=1926",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

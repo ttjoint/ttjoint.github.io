@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-572109",
+  "name": "恩理格多明我-若瑟-德-聖多-埃斯特萬",
+  "type": "person",
+  "props": {
+    "出生年月": "1804年",
+    "逝世时间": "1901年"
+  },
+  "external": {
+    "cbdbId": 572109
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/572109",
+      "locator": {},
+      "quote": "c_birthyear=1804 c_deathyear=1901",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

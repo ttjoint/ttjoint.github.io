@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-71124",
+  "name": "王犖",
+  "type": "person",
+  "props": {
+    "逝世时间": "1937年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為？~中華民國26年。 【參考《清代人物生卒年表》#677.】"
+  },
+  "external": {
+    "cbdbId": 71124
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/71124",
+      "locator": {},
+      "quote": "c_deathyear=1937 c_dy_nh_code=669 c_dy_nh_year=26 c_notes=《清代人物生卒年表》定其生卒年為？~中華民國26年。 【參考《清代人物生卒年表》#677.】",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

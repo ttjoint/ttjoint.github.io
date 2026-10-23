@@ -1,0 +1,89 @@
+/* 视图层：谓词页。 */
+
+/* ---- 谓词页 ---- */
+.predicate-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.predicate-header h1 { font-size: 1.3rem; font-weight: 700; }
+.predicate-stats { font-size: .85rem; color: var(--color-text-secondary); }
+.predicate-note { color: var(--color-text-muted); }
+
+.predicate-intro {
+  font-size: .85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 16px;
+  /* 正文行长约束：这里才是该限宽的地方，不是字段卡片。 */
+  max-width: 78ch;
+}
+.predicate-intro code {
+  background: var(--color-bg-tertiary, var(--color-bg));
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: .92em;
+}
+
+.predicate-toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.predicate-search {
+  flex: 1;
+  min-width: 240px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: .9rem;
+}
+.predicate-select {
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: .9rem;
+}
+
+.predicate-group { margin-bottom: 16px; }
+.predicate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .85rem;
+}
+.predicate-table th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  font-size: .78rem;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--color-border);
+}
+.predicate-table td {
+  padding: 7px 8px;
+  border-bottom: 1px solid var(--color-border-light, var(--color-border));
+  vertical-align: middle;
+}
+.predicate-table tr:last-child td { border-bottom: none; }
+.predicate-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.predicate-row { cursor: pointer; }
+.predicate-row:hover { background: var(--color-bg); }
+.predicate-inverse { color: var(--color-text-secondary); font-family: monospace; font-size: .82rem; }
+.predicate-none { color: var(--color-text-muted); font-style: italic; }
+.predicate-arrow { color: var(--color-text-muted); font-size: .85rem; }
+
+/* 关系卡片标题链到谓词页。下划线只在 hover 出现，
+   否则每个关系卡都挂一条下划线，视觉噪音太大。 */
+.predicate-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.predicate-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}

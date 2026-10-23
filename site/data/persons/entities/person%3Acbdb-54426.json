@@ -1,0 +1,123 @@
+{
+  "id": "person:cbdb-54426",
+  "name": "陳壽彭",
+  "type": "person",
+  "props": {
+    "出生年月": "1855年",
+    "逝世时间": "1912年之后"
+  },
+  "external": {
+    "cbdbId": 54426
+  },
+  "aliases": [],
+  "relations": {
+    "femaleChild": [
+      {
+        "id": "person:cbdb-54438",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54426|54438|176",
+            "locator": {
+              "pages": "MQWW PoetID #278, HuWenKai #769",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0054438, KinCode = 0075",
+            "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-54442",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54426|54442|176",
+            "locator": {
+              "pages": "MQWW PoetID #278, HuWenKai #769",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0054442, KinCode = 0075",
+            "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-54437",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54426|54437|180",
+            "locator": {
+              "pages": "MQWW PoetID #278, HuWenKai #769",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0054437, KinCode = 0075",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-54440",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54426|54440|180",
+            "locator": {
+              "pages": "MQWW PoetID #278, HuWenKai #769",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0054440, KinCode = 0075",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-81905",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54426|81905|125",
+            "locator": {
+              "pages": "MQWW PoetID #430",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0081905, KinCode = 0126",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "wife": [
+      {
+        "id": "person:cbdb-54408",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54426|54408|135",
+            "locator": {
+              "pages": "MQWW PoetID #278, HuWenKai #769",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=135（妻子） c_personid=54426 c_kin_id=54408",
+            "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54426",
+      "locator": {},
+      "quote": "c_birthyear=1855 c_by_nh_code=667 c_by_nh_year=11 c_deathyear=1912 c_dy_nh_code=669 c_dy_nh_year=1",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

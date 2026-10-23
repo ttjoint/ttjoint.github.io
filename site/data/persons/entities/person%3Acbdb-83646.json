@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-83646",
+  "name": "龐樹柏",
+  "type": "person",
+  "props": {
+    "出生年月": "1884年",
+    "逝世时间": "1916年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒10年~中華民國5年。 【參考《清代人物生卒年表》#15437.】"
+  },
+  "external": {
+    "cbdbId": 83646
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/83646",
+      "locator": {},
+      "quote": "c_birthyear=1884 c_by_nh_code=667 c_by_nh_year=10 c_deathyear=1916 c_dy_nh_code=669 c_dy_nh_year=5 c_notes=《清代人物生卒年表》定其生卒年為光緒10年~中華民國5年。 【參考《清代人物生卒年表》#15437.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

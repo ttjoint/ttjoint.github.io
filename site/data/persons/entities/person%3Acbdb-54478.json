@@ -1,0 +1,125 @@
+{
+  "id": "person:cbdb-54478",
+  "name": "秋瑾",
+  "type": "person",
+  "props": {
+    "出生年月": "1875年",
+    "逝世时间": "1907年",
+    "史料注记": "【參考資料: MQWW PoetID #151, HuWenKai #437.】 《清代人物生卒年表》定其生卒年為光緒1年~光緒33年。 《清代人物生卒年表》原注：「秋瑾生年，尚有光緒二年（1876）、三年（1877）、四年（1878）、五年（1879）等說。參見郭長海等編著 《秋瑾事跡研究》（1987年東北師範大學出版社）。」 【參考《清代人物生卒年表》#16920.】"
+  },
+  "external": {
+    "cbdbId": 54478
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-519950",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54478|519950|75",
+            "locator": {
+              "pages": "4591",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=54478 c_kin_id=519950",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "femaleChild": [
+      {
+        "id": "person:cbdb-519949",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54478|519949|176",
+            "locator": {
+              "pages": "4591",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=176（女兒） c_personid=54478 c_kin_id=519949",
+            "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-519948",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54478|519948|180",
+            "locator": {
+              "pages": "4591",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=54478 c_kin_id=519948",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-519951",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54478|519951|125",
+            "locator": {
+              "pages": "4591",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=54478 c_kin_id=519951",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-54481",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54478|54481|134",
+            "locator": {
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=134（丈夫） c_personid=54478 c_kin_id=54481",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519947",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54478|519947|134",
+            "locator": {
+              "pages": "4591",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=134（丈夫） c_personid=54478 c_kin_id=519947",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54478",
+      "locator": {},
+      "quote": "c_birthyear=1875 c_by_nh_code=667 c_by_nh_year=1 c_deathyear=1907 c_dy_nh_code=667 c_dy_nh_year=33 c_notes=【參考資料: MQWW PoetID #151, HuWenKai #437.】 《清代人物生卒年表》定其生卒年為光緒1年~光緒33年。 《清代人物生卒年表》原注：「秋瑾生年，尚有光緒二年（1876）、三年（1877）、四年（1878）、五年（1879）等說。參見郭長海等編著 《秋瑾事跡研究》（1987年東北師範大學出版社）。」 【參考《清代人物生卒年表》#16920.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

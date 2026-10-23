@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-62350",
+  "name": "孫家鼐",
+  "type": "person",
+  "props": {
+    "出生年月": "1827年",
+    "逝世时间": "1909年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光7年~宣統1年。 【參考《清代人物生卒年表》#6753.】"
+  },
+  "external": {
+    "cbdbId": 62350
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/62350",
+      "locator": {},
+      "quote": "c_birthyear=1827 c_by_nh_code=664 c_by_nh_year=7 c_deathyear=1909 c_dy_nh_code=668 c_dy_nh_year=1 c_notes=《清代人物生卒年表》定其生卒年為道光7年~宣統1年。 【參考《清代人物生卒年表》#6753.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

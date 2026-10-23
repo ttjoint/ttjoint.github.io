@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-530022",
+  "name": "愛新覺羅溥任",
+  "type": "person",
+  "props": {
+    "生卒": "1913年"
+  },
+  "external": {
+    "cbdbId": 530022
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-85790",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/530022|85790|75",
+            "locator": {
+              "pages": "15478",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=530022 c_kin_id=85790",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/530022",
+      "locator": {
+        "sourceId": 85790
+      },
+      "quote": "c_index_year=1913 c_index_year_type_code=11",
+      "reason": "生卒；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

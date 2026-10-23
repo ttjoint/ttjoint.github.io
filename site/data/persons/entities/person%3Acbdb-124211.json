@@ -1,0 +1,77 @@
+{
+  "id": "person:cbdb-124211",
+  "name": "愛新覺羅多文",
+  "type": "person",
+  "props": {
+    "出生年月": "1852年",
+    "逝世时间": "1910年",
+    "史料注记": "清人:咸豐2年-宣統2年"
+  },
+  "external": {
+    "cbdbId": 124211
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-527765",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124211|527765|75",
+            "locator": {
+              "pages": "13930",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=124211 c_kin_id=527765",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-527760",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124211|527760|180",
+            "locator": {
+              "pages": "13930",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=124211 c_kin_id=527760",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-527749",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124211|527749|126",
+            "locator": {
+              "pages": "13930",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=124211 c_kin_id=527749",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124211",
+      "locator": {},
+      "quote": "c_birthyear=1852 c_by_nh_code=665 c_by_nh_year=2 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2 c_notes=清人:咸豐2年-宣統2年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

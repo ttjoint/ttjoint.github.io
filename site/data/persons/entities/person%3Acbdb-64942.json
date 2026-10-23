@@ -1,0 +1,107 @@
+{
+  "id": "person:cbdb-64942",
+  "name": "沈家本",
+  "type": "person",
+  "props": {
+    "出生年月": "1840年",
+    "逝世时间": "1913年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光20年~中華民國2年。 【參考《清代人物生卒年表》#10917.】"
+  },
+  "external": {
+    "cbdbId": 64942
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-521551",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/64942|521551|75",
+            "locator": {
+              "pages": "8356",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=64942 c_kin_id=521551",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-521549",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/64942|521549|183",
+            "locator": {
+              "pages": "8356",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=183（次子） c_personid=64942 c_kin_id=521549",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-521548",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/64942|521548|185",
+            "locator": {
+              "pages": "8356",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=185（四子） c_personid=64942 c_kin_id=521548",
+            "reason": "c_kin_code=185 → 四子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-521542",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/64942|521542|125",
+            "locator": {
+              "pages": "8356",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=64942 c_kin_id=521542",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-521543",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/64942|521543|126",
+            "locator": {
+              "pages": "8356",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=64942 c_kin_id=521543",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64942",
+      "locator": {},
+      "quote": "c_birthyear=1840 c_by_nh_code=664 c_by_nh_year=20 c_deathyear=1913 c_dy_nh_code=669 c_dy_nh_year=2 c_notes=《清代人物生卒年表》定其生卒年為道光20年~中華民國2年。 【參考《清代人物生卒年表》#10917.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

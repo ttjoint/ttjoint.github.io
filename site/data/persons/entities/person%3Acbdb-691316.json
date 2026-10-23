@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-691316",
+  "name": "吳畹卿",
+  "type": "person",
+  "props": {
+    "出生年月": "1847年",
+    "逝世时间": "1926年"
+  },
+  "external": {
+    "cbdbId": 691316
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/691316",
+      "locator": {},
+      "quote": "c_birthyear=1847 c_deathyear=1926",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

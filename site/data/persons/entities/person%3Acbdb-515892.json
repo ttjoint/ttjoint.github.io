@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-515892",
+  "name": "蔣仁孝",
+  "type": "person",
+  "props": {
+    "生卒": "1900年"
+  },
+  "external": {
+    "cbdbId": 515892
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/515892",
+      "locator": {
+        "sourceId": 57897
+      },
+      "quote": "c_index_year=1900 c_index_year_type_code=2928",
+      "reason": "生卒；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

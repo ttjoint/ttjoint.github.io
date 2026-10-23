@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-83425",
+  "name": "周宏爔",
+  "type": "person",
+  "props": {
+    "出生年月": "1888年",
+    "逝世时间": "1922年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒14年~中華民國11年。 【參考《清代人物生卒年表》#15190.】"
+  },
+  "external": {
+    "cbdbId": 83425
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/83425",
+      "locator": {},
+      "quote": "c_birthyear=1888 c_by_nh_code=667 c_by_nh_year=14 c_deathyear=1922 c_dy_nh_code=669 c_dy_nh_year=11 c_notes=《清代人物生卒年表》定其生卒年為光緒14年~中華民國11年。 【參考《清代人物生卒年表》#15190.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

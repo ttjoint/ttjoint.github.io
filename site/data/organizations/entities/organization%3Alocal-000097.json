@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000097",
+  "type": "organization",
+  "name": "中国文学艺术界联合会",
+  "aliases": [
+    "中国文联"
+  ],
+  "props": {
+    "类型": "人民团体",
+    "简介": "中国共产党领导的全国性文艺界人民团体。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

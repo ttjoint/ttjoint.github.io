@@ -1,0 +1,88 @@
+{
+  "id": "person:cbdb-61426",
+  "name": "蘇完呢瓜爾佳符珍",
+  "type": "person",
+  "props": {
+    "逝世时间": "1909年"
+  },
+  "external": {
+    "cbdbId": 61426
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-520149",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61426|520149|75",
+            "locator": {
+              "pages": "4762",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=61426 c_kin_id=520149",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-520146",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61426|520146|180",
+            "locator": {
+              "pages": "4762",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61426 c_kin_id=520146",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520147",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61426|520147|180",
+            "locator": {
+              "pages": "4762",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61426 c_kin_id=520147",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520148",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61426|520148|180",
+            "locator": {
+              "pages": "4762",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61426 c_kin_id=520148",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61426",
+      "locator": {},
+      "quote": "c_deathyear=1909 c_dy_nh_code=668 c_dy_nh_year=1",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

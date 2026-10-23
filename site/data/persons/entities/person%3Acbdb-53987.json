@@ -1,0 +1,86 @@
+{
+  "id": "person:cbdb-53987",
+  "name": "任治",
+  "type": "person",
+  "props": {
+    "出生年月": "1851年之后",
+    "逝世时间": "1908年之前"
+  },
+  "external": {
+    "cbdbId": 53987
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      {
+        "id": "person:cbdb-53980",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/53987|53980|111",
+            "locator": {},
+            "quote": "c_kin_code=111（母） c_personid=53987 c_kin_id=53980",
+            "reason": "c_kin_code=111 → 母；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-54026",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/53987|54026|125",
+            "locator": {
+              "pages": "MQWW PoetID #359",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=125（兄） c_personid=53987 c_kin_id=54026",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-54028",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/53987|54028|126",
+            "locator": {
+              "pages": "MQWW PoetID #359",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=126（弟） c_personid=53987 c_kin_id=54028",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-54029",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/53987|54029|126",
+            "locator": {
+              "pages": "MQWW PoetID #359",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=126（弟） c_personid=53987 c_kin_id=54029",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/53987",
+      "locator": {},
+      "quote": "c_birthyear=1851 c_by_nh_code=665 c_by_nh_year=1 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

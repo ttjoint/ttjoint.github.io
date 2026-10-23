@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-54738",
+  "name": "傅隱蘭",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1851年 ± 30",
+    "逝世时间": "约 1908年 ± 30"
+  },
+  "external": {
+    "cbdbId": 54738
+  },
+  "aliases": [],
+  "relations": {
+    "husband": [
+      {
+        "id": "person:cbdb-54752",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54738|54752|134",
+            "locator": {
+              "pages": "MQWW PoetID #356, HuWenKai #624",
+              "sourceId": 9601
+            },
+            "quote": "《宜興縣誌》作繼妻。",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54738",
+      "locator": {},
+      "quote": "c_birthyear=1851 c_by_nh_code=665 c_by_nh_year=1 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-438437",
+  "name": "(愛新覺羅)明志",
+  "type": "person",
+  "props": {
+    "出生年月": "1853年",
+    "逝世时间": "1905年"
+  },
+  "external": {
+    "cbdbId": 438437
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/438437",
+      "locator": {},
+      "quote": "c_birthyear=1853 c_by_nh_code=665 c_by_nh_year=3 c_deathyear=1905 c_dy_nh_code=667 c_dy_nh_year=31",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

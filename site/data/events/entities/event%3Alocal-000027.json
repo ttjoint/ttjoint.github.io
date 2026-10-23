@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000027",
+  "name": "夸父逐日",
+  "type": "event",
+  "aliases": [
+    "夸父追日"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

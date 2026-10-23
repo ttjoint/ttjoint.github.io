@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-576683",
+  "name": "徐仁德",
+  "type": "person",
+  "props": {
+    "出生年月": "1871年",
+    "逝世时间": "1935年"
+  },
+  "external": {
+    "cbdbId": 576683
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576683",
+      "locator": {},
+      "quote": "c_birthyear=1871 c_deathyear=1935",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-91062",
+  "name": "臧谷",
+  "type": "person",
+  "props": {
+    "出生年月": "1834年",
+    "逝世时间": "1910年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光14年~宣統2年。 【參考《清代人物生卒年表》#24112.】"
+  },
+  "external": {
+    "cbdbId": 91062
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/91062",
+      "locator": {},
+      "quote": "c_birthyear=1834 c_by_nh_code=664 c_by_nh_year=14 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2 c_notes=《清代人物生卒年表》定其生卒年為道光14年~宣統2年。 【參考《清代人物生卒年表》#24112.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

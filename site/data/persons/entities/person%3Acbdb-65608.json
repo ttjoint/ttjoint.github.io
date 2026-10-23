@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-65608",
+  "name": "薩鎮冰",
+  "type": "person",
+  "props": {
+    "出生年月": "1859年",
+    "逝世时间": "1952年"
+  },
+  "external": {
+    "cbdbId": 65608
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/65608",
+      "locator": {},
+      "quote": "c_birthyear=1859 c_by_nh_code=665 c_by_nh_year=9 c_deathyear=1952 c_dy_nh_code=669 c_dy_nh_year=41",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

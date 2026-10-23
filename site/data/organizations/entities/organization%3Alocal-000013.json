@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000013",
+  "name": "商",
+  "type": "organization",
+  "aliases": [
+    "商朝",
+    "殷商",
+    "殷"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

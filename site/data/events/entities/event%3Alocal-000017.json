@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000017",
+  "name": "嫦娥奔月",
+  "type": "event",
+  "aliases": [
+    "嫦娥飞天"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

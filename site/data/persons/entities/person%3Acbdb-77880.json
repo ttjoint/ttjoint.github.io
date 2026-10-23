@@ -1,0 +1,31 @@
+{
+  "id": "person:cbdb-77880",
+  "name": "李朝陽",
+  "type": "person",
+  "props": {
+    "出生年月": "1889年",
+    "逝世时间": "1920年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒15年~中華民國9年。 【參考《清代人物生卒年表》#8783.】"
+  },
+  "external": {
+    "cbdbId": 77880
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-257709",
+      "person:cbdb-292488",
+      "person:cbdb-557073"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/77880",
+      "locator": {},
+      "quote": "c_birthyear=1889 c_by_nh_code=667 c_by_nh_year=15 c_deathyear=1920 c_dy_nh_code=669 c_dy_nh_year=9 c_notes=《清代人物生卒年表》定其生卒年為光緒15年~中華民國9年。 【參考《清代人物生卒年表》#8783.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

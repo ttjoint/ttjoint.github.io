@@ -1,0 +1,74 @@
+{
+  "id": "person:cbdb-65828",
+  "name": "王韜",
+  "type": "person",
+  "props": {
+    "出生年月": "1828年",
+    "逝世时间": "约 1890年 ± 30"
+  },
+  "external": {
+    "cbdbId": 65828
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-522392",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65828|522392|75",
+            "locator": {
+              "pages": "9296",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=65828 c_kin_id=522392",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "wife": [
+      {
+        "id": "person:cbdb-522393",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65828|522393|135",
+            "locator": {
+              "pages": "9296",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=135（妻子） c_personid=65828 c_kin_id=522393",
+            "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-522394",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65828|522394|135",
+            "locator": {
+              "pages": "9296",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=135（妻子） c_personid=65828 c_kin_id=522394",
+            "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/65828",
+      "locator": {},
+      "quote": "c_birthyear=1828 c_by_nh_code=664 c_by_nh_year=8 c_deathyear=1890 c_dy_nh_code=667 c_dy_nh_year=16",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

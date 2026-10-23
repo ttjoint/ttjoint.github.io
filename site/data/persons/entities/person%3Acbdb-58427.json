@@ -1,0 +1,90 @@
+{
+  "id": "person:cbdb-58427",
+  "name": "惲祖翼",
+  "type": "person",
+  "props": {
+    "出生年月": "1838年",
+    "逝世时间": "1902年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光18年~光緒28年。 《清代人物生卒年表》原注：「惲祖翼生年或作道光十六年（1836）、十七年（1837），卒年或作光緒二十六年（1900）、二十七年（1901），均誤。」 【參考《清代人物生卒年表》#17280.】"
+  },
+  "external": {
+    "cbdbId": 58427
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-517012",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58427|517012|75",
+            "locator": {
+              "pages": "1679",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=58427 c_kin_id=517012",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-517016",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58427|517016|180",
+            "locator": {
+              "pages": "1679",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58427 c_kin_id=517016",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517017",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58427|517017|180",
+            "locator": {
+              "pages": "1679",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58427 c_kin_id=517017",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517019",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58427|517019|180",
+            "locator": {
+              "pages": "1679",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58427 c_kin_id=517019",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58427",
+      "locator": {},
+      "quote": "c_birthyear=1838 c_by_nh_code=664 c_by_nh_year=18 c_deathyear=1902 c_dy_nh_code=667 c_dy_nh_year=28 c_notes=《清代人物生卒年表》定其生卒年為道光18年~光緒28年。 《清代人物生卒年表》原注：「惲祖翼生年或作道光十六年（1836）、十七年（1837），卒年或作光緒二十六年（1900）、二十七年（1901），均誤。」 【參考《清代人物生卒年表》#17280.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

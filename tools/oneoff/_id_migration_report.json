@@ -1,0 +1,17 @@
+{
+  "idChanged": 379,
+  "nameChanged": 0,
+  "seqRemoved": 1099,
+  "annotated": 0,
+  "linksCreated": 0,
+  "aliasOnly": 0,
+  "unresolvedAnchors": 0,
+  "danglingAfter": [],
+  "localSeq": {
+    "person": 345,
+    "thing": 11,
+    "organization": 133,
+    "event": 43,
+    "evidence": 221
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000111",
+  "type": "organization",
+  "name": "中共中央组织部",
+  "aliases": [
+    "中央组织部"
+  ],
+  "props": {
+    "类型": "中央工作部门",
+    "简介": "中共中央主管组织工作和干部工作的职能部门。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

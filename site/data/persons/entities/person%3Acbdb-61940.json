@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-61940",
+  "name": "愛新覺羅會章",
+  "type": "person",
+  "props": {
+    "出生年月": "1849年",
+    "逝世时间": "1902年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光29年~光緒28年。 【參考《清代人物生卒年表》#4952.】"
+  },
+  "external": {
+    "cbdbId": 61940
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-520438",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61940|520438|180",
+            "locator": {
+              "pages": "5286",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61940 c_kin_id=520438",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61940",
+      "locator": {},
+      "quote": "c_birthyear=1849 c_by_nh_code=664 c_by_nh_year=29 c_deathyear=1902 c_dy_nh_code=667 c_dy_nh_year=28 c_notes=《清代人物生卒年表》定其生卒年為道光29年~光緒28年。 【參考《清代人物生卒年表》#4952.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

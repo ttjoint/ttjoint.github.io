@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-91474",
+  "name": "潘民表",
+  "type": "person",
+  "props": {
+    "逝世时间": "1905年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為？~光緒32年。 【參考《清代人物生卒年表》#24613.】亦據明清人名權威資料14656"
+  },
+  "external": {
+    "cbdbId": 91474
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/91474",
+      "locator": {},
+      "quote": "c_deathyear=1905 c_dy_nh_code=667 c_dy_nh_year=31 c_notes=《清代人物生卒年表》定其生卒年為？~光緒32年。 【參考《清代人物生卒年表》#24613.】亦據明清人名權威資料14656",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

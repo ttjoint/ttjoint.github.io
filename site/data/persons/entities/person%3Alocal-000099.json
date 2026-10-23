@@ -1,0 +1,41 @@
+{
+  "id": "person:local-000099",
+  "type": "person",
+  "name": "李强",
+  "props": {
+    "简介": "李强，男，汉族，1959年7月生，浙江瑞安人，1976年7月参加工作，1983年4月加入中国共产党，中央党校研究生学历，高级管理人员工商管理硕士学位。 现任中共二十届中央政治局常委，国务院总理、党组书记。 （来源：新华社，2023年3月更新） 人 民 网 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "男",
+    "出生年月": "1959年7月",
+    "籍贯": "浙江瑞安",
+    "民族": "汉族",
+    "学历": "中央党校研究生学历"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000009",
+    "evidence:local-000083"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "中共二十届中央政治局常委",
+        "evidence": "中共二十届中央政治局常委",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746205.htm"
+      },
+      {
+        "organization": "国务院",
+        "role": "总理",
+        "evidence": "国务院总理",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746205.htm"
+      },
+      {
+        "organization": "",
+        "role": "党组书记",
+        "evidence": "党组书记",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746205.htm"
+      }
+    ]
+  },
+  "external": {}
+}

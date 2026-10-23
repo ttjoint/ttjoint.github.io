@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-90899",
+  "name": "竇士鏞",
+  "type": "person",
+  "props": {
+    "出生年月": "1844年",
+    "逝世时间": "1910年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光24年~宣統2年。 【參考《清代人物生卒年表》#23912.】"
+  },
+  "external": {
+    "cbdbId": 90899
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/90899",
+      "locator": {},
+      "quote": "c_birthyear=1844 c_by_nh_code=664 c_by_nh_year=24 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2 c_notes=《清代人物生卒年表》定其生卒年為道光24年~宣統2年。 【參考《清代人物生卒年表》#23912.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

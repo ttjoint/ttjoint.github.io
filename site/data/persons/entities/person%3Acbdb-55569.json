@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-55569",
+  "name": "張仲炘",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1857年 ± 30",
+    "逝世时间": "1919年",
+    "史料注记": "【參考資料: MQWW PoetID #4672.】 《清代人物生卒年表》定其生卒年為咸豐8年~中華民國8年。 【參考《清代人物生卒年表》#11785.】"
+  },
+  "external": {
+    "cbdbId": 55569
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/55569",
+      "locator": {},
+      "quote": "c_birthyear=1857 c_by_nh_code=665 c_by_nh_year=7 c_deathyear=1919 c_dy_nh_code=669 c_dy_nh_year=8 c_notes=【參考資料: MQWW PoetID #4672.】 《清代人物生卒年表》定其生卒年為咸豐8年~中華民國8年。 【參考《清代人物生卒年表》#11785.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

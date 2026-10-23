@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-62647",
+  "name": "愛新覺羅綿文",
+  "type": "person",
+  "props": {
+    "出生年月": "1847年",
+    "逝世时间": "1906年"
+  },
+  "external": {
+    "cbdbId": 62647
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/62647",
+      "locator": {},
+      "quote": "c_birthyear=1847 c_by_nh_code=664 c_by_nh_year=27 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

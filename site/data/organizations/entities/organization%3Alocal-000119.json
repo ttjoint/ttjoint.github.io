@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000119",
+  "type": "organization",
+  "name": "中国民主促进会中央委员会",
+  "aliases": [
+    "民进中央"
+  ],
+  "props": {
+    "类型": "民主党派中央",
+    "简介": "中国民主促进会中央委员会。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

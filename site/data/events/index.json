@@ -1,0 +1,278 @@
+{
+  "_truncated": false,
+  "_count": 22,
+  "_pageSize": 22,
+  "_manifest": "manifest.json",
+  "_note": "生成文件：仅为兼容保留，只含首页。全部数据见 index/page-*.json 或 entities/。请勿写入。",
+  "rows": [
+    {
+      "id": "event:local-000017",
+      "name": "嫦娥奔月",
+      "type": "event",
+      "aliases": [
+        "嫦娥飞天"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000017.json"
+    },
+    {
+      "id": "event:local-000011",
+      "name": "赤壁之战",
+      "type": "event",
+      "aliases": [
+        "赤壁大战",
+        "赤壁鏖兵"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000011.json"
+    },
+    {
+      "id": "event:local-000039",
+      "name": "楚汉战争",
+      "type": "event",
+      "aliases": [
+        "楚汉相争",
+        "楚汉之争"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000039.json"
+    },
+    {
+      "id": "event:local-000003",
+      "name": "大禹治水",
+      "type": "event",
+      "aliases": [
+        "禹贡"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000003.json"
+    },
+    {
+      "id": "event:local-000015",
+      "name": "樊城之战",
+      "type": "event",
+      "aliases": [
+        "关羽北伐",
+        "水淹七军"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000015.json"
+    },
+    {
+      "id": "event:local-000023",
+      "name": "烽火戏诸侯",
+      "type": "event",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000023.json"
+    },
+    {
+      "id": "event:local-000041",
+      "name": "共工怒触不周山",
+      "type": "event",
+      "aliases": [
+        "共工触山"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000041.json"
+    },
+    {
+      "id": "event:local-000037",
+      "name": "官渡之战",
+      "type": "event",
+      "aliases": [
+        "官渡大战"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000037.json"
+    },
+    {
+      "id": "event:local-000007",
+      "name": "国人暴动",
+      "type": "event",
+      "aliases": [
+        "彘之乱"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000007.json"
+    },
+    {
+      "id": "event:local-000035",
+      "name": "后羿射日",
+      "type": "event",
+      "aliases": [
+        "羿射九日",
+        "大羿射日"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000035.json"
+    },
+    {
+      "id": "event:local-000027",
+      "name": "夸父逐日",
+      "type": "event",
+      "aliases": [
+        "夸父追日"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000027.json"
+    },
+    {
+      "id": "event:local-000031",
+      "name": "鸣条之战",
+      "type": "event",
+      "aliases": [
+        "汤桀之战",
+        "商汤灭夏"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000031.json"
+    },
+    {
+      "id": "event:local-000005",
+      "name": "牧野之战",
+      "type": "event",
+      "aliases": [
+        "武王伐纣"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000005.json"
+    },
+    {
+      "id": "event:local-000043",
+      "name": "女娲补天",
+      "type": "event",
+      "aliases": [
+        "炼石补天"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000043.json"
+    },
+    {
+      "id": "event:local-000001",
+      "name": "女娲造人",
+      "type": "event",
+      "aliases": [
+        "女娲抟土造人"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000001.json"
+    },
+    {
+      "id": "event:local-000013",
+      "name": "盘古开天",
+      "type": "event",
+      "aliases": [
+        "盘古开天辟地"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000013.json"
+    },
+    {
+      "id": "event:local-000009",
+      "name": "平王东迁",
+      "type": "event",
+      "aliases": [
+        "东迁"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000009.json"
+    },
+    {
+      "id": "event:local-000025",
+      "name": "七国之乱",
+      "type": "event",
+      "aliases": [
+        "吴楚七国之乱"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000025.json"
+    },
+    {
+      "id": "event:local-000033",
+      "name": "三监之乱",
+      "type": "event",
+      "aliases": [
+        "周公东征"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000033.json"
+    },
+    {
+      "id": "event:local-000029",
+      "name": "桃园结义",
+      "type": "event",
+      "aliases": [
+        "桃园三结义"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000029.json"
+    },
+    {
+      "id": "event:local-000021",
+      "name": "夷陵之战",
+      "type": "event",
+      "aliases": [
+        "猇亭之战",
+        "火烧连营"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000021.json"
+    },
+    {
+      "id": "event:local-000019",
+      "name": "张骞出使西域",
+      "type": "event",
+      "aliases": [
+        "凿空西域",
+        "丝绸之路开辟"
+      ],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/event%3Alocal-000019.json"
+    }
+  ]
+}

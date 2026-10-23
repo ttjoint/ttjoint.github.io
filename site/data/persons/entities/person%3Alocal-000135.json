@@ -1,0 +1,52 @@
+{
+  "id": "person:local-000135",
+  "type": "person",
+  "name": "沈跃跃",
+  "props": {
+    "简介": "沈跃跃，女，汉族，1957年1月生，浙江宁波人，1977年5月参加工作，1981年9月加入中国共产党，中央党校研究生学历。 现任中共二十届中央委员，十四届全国政协副主席。 （2023年10月更新）",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "女",
+    "出生年月": "1957年1月",
+    "籍贯": "浙江宁波",
+    "民族": "汉族",
+    "学历": "中央党校研究生学历"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000067",
+    "evidence:local-000169"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "中共二十届",
+        "role": "中央委员",
+        "evidence": "现任中共二十届中央委员",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/syy/202405/t20240530_213703.html"
+      },
+      {
+        "organization": "十四届全国政协",
+        "role": "副主席",
+        "evidence": "十四届全国政协副主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/syy/202405/t20240530_213703.html"
+      }
+    ],
+    "career": [
+      {
+        "date": "1977年5月",
+        "organization": "",
+        "role": "参加工作",
+        "evidence": "1977年5月参加工作",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/syy/202405/t20240530_213703.html"
+      },
+      {
+        "date": "1981年9月",
+        "organization": "中国共产党",
+        "role": "",
+        "evidence": "1981年9月加入中国共产党",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/syy/202405/t20240530_213703.html"
+      }
+    ]
+  },
+  "external": {}
+}

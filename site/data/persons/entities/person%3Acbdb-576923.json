@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-576923",
+  "name": "文德來",
+  "type": "person",
+  "props": {
+    "出生年月": "1862年",
+    "逝世时间": "1900年"
+  },
+  "external": {
+    "cbdbId": 576923
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576923",
+      "locator": {},
+      "quote": "c_birthyear=1862 c_deathyear=1900",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

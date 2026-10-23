@@ -1,0 +1,14 @@
+{
+  "id": "evidence:local-000161",
+  "type": "evidence",
+  "name": "中国政府网 · www.gov.cn/guoqing/2023-03/12/content_5746384.htm",
+  "carrier": "thing:local-000001",
+  "medium": "web",
+  "documentedAt": null,
+  "url": "https://www.gov.cn/guoqing/2023-03/12/content_5746384.htm",
+  "accessedAt": "2026-10-17T03:07:15.215Z",
+  "excerpt": "",
+  "reliability": null,
+  "note": "",
+  "unresolved": false
+}

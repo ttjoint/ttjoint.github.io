@@ -1,0 +1,104 @@
+{
+  "id": "person:cbdb-61612",
+  "name": "許珏",
+  "type": "person",
+  "props": {
+    "出生年月": "1843年",
+    "逝世时间": "1916年"
+  },
+  "external": {
+    "cbdbId": 61612
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-520237",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61612|520237|180",
+            "locator": {
+              "pages": "4952",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61612 c_kin_id=520237",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520238",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61612|520238|180",
+            "locator": {
+              "pages": "4952",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61612 c_kin_id=520238",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520239",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61612|520239|180",
+            "locator": {
+              "pages": "4952",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61612 c_kin_id=520239",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-520240",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61612|520240|180",
+            "locator": {
+              "pages": "4952",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61612 c_kin_id=520240",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-576621",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61612|576621|126",
+            "locator": {
+              "pages": "lgid=1163613",
+              "sourceId": 65192
+            },
+            "quote": "c_kin_code=126（弟） c_personid=61612 c_kin_id=576621",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《民國歙縣志: 十六卷》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61612",
+      "locator": {},
+      "quote": "c_birthyear=1843 c_by_nh_code=664 c_by_nh_year=23 c_deathyear=1916 c_dy_nh_code=669 c_dy_nh_year=5",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

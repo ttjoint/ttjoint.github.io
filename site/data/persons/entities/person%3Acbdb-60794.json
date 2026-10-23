@@ -1,0 +1,59 @@
+{
+  "id": "person:cbdb-60794",
+  "name": "馬維騏",
+  "type": "person",
+  "props": {
+    "出生年月": "1845年",
+    "逝世时间": "1910年"
+  },
+  "external": {
+    "cbdbId": 60794
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-519568",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60794|519568|75",
+            "locator": {
+              "pages": "4114",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=60794 c_kin_id=519568",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-519567",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60794|519567|180",
+            "locator": {
+              "pages": "4114",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60794 c_kin_id=519567",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/60794",
+      "locator": {},
+      "quote": "c_birthyear=1845 c_by_nh_code=664 c_by_nh_year=25 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

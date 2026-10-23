@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-66065",
+  "name": "周振邦",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1833年 ± 30",
+    "逝世时间": "约 1895年 ± 30"
+  },
+  "external": {
+    "cbdbId": 66065
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/66065",
+      "locator": {},
+      "quote": "c_birthyear=1833 c_by_nh_code=664 c_by_nh_year=13 c_deathyear=1895 c_dy_nh_code=667 c_dy_nh_year=21",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

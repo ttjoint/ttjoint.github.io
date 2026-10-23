@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-65232",
+  "name": "愛新覺羅溥良",
+  "type": "person",
+  "props": {
+    "出生年月": "1854年",
+    "逝世时间": "1921年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐4年~中華民國10年。 【參考《清代人物生卒年表》#23902.】"
+  },
+  "external": {
+    "cbdbId": 65232
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-521747",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65232|521747|75",
+            "locator": {
+              "pages": "8655",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=65232 c_kin_id=521747",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/65232",
+      "locator": {},
+      "quote": "c_birthyear=1854 c_by_nh_code=665 c_by_nh_year=4 c_deathyear=1921 c_dy_nh_code=669 c_dy_nh_year=10 c_notes=《清代人物生卒年表》定其生卒年為咸豐4年~中華民國10年。 【參考《清代人物生卒年表》#23902.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

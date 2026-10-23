@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000013",
+  "name": "盘古开天",
+  "type": "event",
+  "aliases": [
+    "盘古开天辟地"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

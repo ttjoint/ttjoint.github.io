@@ -1,0 +1,56 @@
+{
+  "id": "person:cbdb-120760",
+  "name": "冒廣生",
+  "type": "person",
+  "props": {
+    "出生年月": "1873年",
+    "逝世时间": "1959年"
+  },
+  "external": {
+    "cbdbId": 120760
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-84858",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/120760|84858|75",
+            "locator": {},
+            "quote": "冒懷蘇《冒鶴亭先生年譜·譜前冒氏世系表略》，學林出版社，1998,32頁。",
+            "reason": "c_kin_code=75 → 父；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "wife": [
+      {
+        "id": "person:cbdb-122159",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/120760|122159|135",
+            "locator": {
+              "pages": "MQWW PoetID #4409",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=135（妻子） c_personid=120760 c_kin_id=122159",
+            "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/120760",
+      "locator": {},
+      "quote": "c_birthyear=1873 c_by_nh_code=666 c_by_nh_year=11 c_deathyear=1959 c_dy_nh_code=0",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

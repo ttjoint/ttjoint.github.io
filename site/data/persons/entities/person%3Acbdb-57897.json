@@ -1,0 +1,41 @@
+{
+  "id": "person:cbdb-57897",
+  "name": "蔣宗漢",
+  "type": "person",
+  "props": {
+    "逝世时间": "1903年"
+  },
+  "external": {
+    "cbdbId": 57897
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-515896",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/57897|515896|180",
+            "locator": {
+              "pages": "1131",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=57897 c_kin_id=515896",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/57897",
+      "locator": {},
+      "quote": "c_deathyear=1903 c_dy_nh_code=667 c_dy_nh_year=29",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

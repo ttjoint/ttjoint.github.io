@@ -1,0 +1,107 @@
+{
+  "id": "person:cbdb-124286",
+  "name": "林之望",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1811年 ± 30",
+    "逝世时间": "约 1884年 ± 30",
+    "史料注记": "清人:嘉慶[16]年-光緖[10]年"
+  },
+  "external": {
+    "cbdbId": 124286
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-527916",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124286|527916|75",
+            "locator": {
+              "pages": "14019",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=124286 c_kin_id=527916",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-527920",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124286|527920|180",
+            "locator": {
+              "pages": "14019",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=124286 c_kin_id=527920",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-527921",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124286|527921|180",
+            "locator": {
+              "pages": "14019",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=124286 c_kin_id=527921",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-527917",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124286|527917|126",
+            "locator": {
+              "pages": "14019",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=124286 c_kin_id=527917",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-527918",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124286|527918|126",
+            "locator": {
+              "pages": "14019",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=124286 c_kin_id=527918",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124286",
+      "locator": {},
+      "quote": "c_birthyear=1811 c_by_nh_code=663 c_by_nh_year=16 c_deathyear=1884 c_dy_nh_code=667 c_dy_nh_year=10 c_notes=清人:嘉慶[16]年-光緖[10]年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+/* 视图层：应用骨架（布局/导航/页脚）。 */
+
+/* ---- 应用布局 ---- */
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---- 顶部导航 ---- */
+.app-header {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+.header-inner {
+  /* 与 .app-main 同宽，否则页头在宽屏下比正文窄，视觉上错位。 */
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.logo-icon { color: var(--color-primary); font-size: 1.3rem; }
+.header-right { display: flex; align-items: center; gap: 12px; min-width: 0; }
+
+/*
+ * 窄屏页头：按钮组会挤到屏幕外。
+ *
+ * 实测 375px 下 `.header-right` 右边界到 411px——整个文档因此出现横向滚动，
+ * 页面左右能拖。这不是 `.app-main` 的问题（它 311px 正常），是页头里
+ * 徽标 + 若干按钮在 375px 里放不下且不换行。
+ *
+ * 处理方式：允许换行，并让徽标在空间不足时先收缩（它信息量最低）。
+ */
+@media (max-width: 640px) {
+  .header-inner { gap: 8px; }
+  .header-right { flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+  .mode-badge { display: none; }
+  .logo { font-size: 1rem; }
+}
+
+.mode-badge {
+  font-size: .75rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  background: var(--color-tag-bg);
+  color: var(--color-text-secondary);
+}
+.mode-badge.local {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.btn-icon {
+  width: 36px; height: 36px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.btn-icon:hover { background: var(--color-bg); }
+
+/* ---- 主内容区 ---- */
+/*
+ * 容器宽度随视口增长，但有上限。
+ *
+ * 原先固定 1200px：2560px 屏幕上只用了 47%，1920px 上 63%——
+ * 一半屏幕是空白，而正文里的关系卡片还在 240px 一列地往下堆。
+ *
+ * 用 `min()` 而不是若干断点：断点只能近似「随窗口变宽而变宽」，
+ * 而 `min()` 是连续的，任何窗口宽度下都恰好占满到上限，没有跳变。
+ * 上限 1800px 是实测定的：再宽时单行文字超过 ~110 字符，
+ * 中文阅读时眼球回扫距离过长。
+ */
+.app-main {
+  flex: 1;
+  max-width: var(--layout-max);
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+/* ---- 页脚 ---- */
+.app-footer {
+  text-align: center;
+  padding: 16px 20px;
+  font-size: .8rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+}
+.footer-sep { margin: 0 8px; }
+.footer-stats { font-weight: 500; }
+

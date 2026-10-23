@@ -1,0 +1,111 @@
+{
+  "id": "person:cbdb-74335",
+  "name": "朱寯瀛",
+  "type": "person",
+  "props": {
+    "出生年月": "1845年",
+    "逝世时间": "1928年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光25年~中華民國17年。 《清代人物生卒年表》原注：「朱寯瀛卒年或作民國二年（1913），誤。」 【參考《清代人物生卒年表》#4616.】"
+  },
+  "external": {
+    "cbdbId": 74335
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-121118",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/74335|121118|75",
+            "locator": {
+              "pages": "MQWW PoetID #4222, HuWenKai #712",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0121118, KinCode = 0180",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "mother": [
+      {
+        "id": "person:cbdb-121106",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/74335|121106|111",
+            "locator": {
+              "pages": "MQWW PoetID #4222, HuWenKai #712",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=111（母） c_personid=74335 c_kin_id=121106",
+            "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-121148",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/74335|121148|180",
+            "locator": {
+              "pages": "MQWW PoetID #4222, HuWenKai #712",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0121148, KinCode = 0075",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-121143",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/74335|121143|118",
+            "locator": {
+              "pages": "MQWW PoetID #4222, HuWenKai #712",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0121143, KinCode = 0118",
+            "reason": "c_kin_code=118 → 兄弟；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "sister": [
+      {
+        "id": "person:cbdb-121132",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/74335|121132|169",
+            "locator": {
+              "pages": "MQWW PoetID #4222, HuWenKai #712",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0121132, KinCode = 0125",
+            "reason": "c_kin_code=169 → 妹；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/74335",
+      "locator": {},
+      "quote": "c_birthyear=1845 c_by_nh_code=664 c_by_nh_year=25 c_deathyear=1928 c_dy_nh_code=669 c_dy_nh_year=17 c_notes=《清代人物生卒年表》定其生卒年為道光25年~中華民國17年。 《清代人物生卒年表》原注：「朱寯瀛卒年或作民國二年（1913），誤。」 【參考《清代人物生卒年表》#4616.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "person:cbdb-572277",
+  "name": "謝司鐸",
+  "type": "person",
+  "props": {
+    "出生年月": "1820年",
+    "逝世时间": "1901年"
+  },
+  "external": {
+    "cbdbId": 572277
+  },
+  "aliases": [
+    "EtiennsBernard Peschaud"
+  ],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/572277",
+      "locator": {},
+      "quote": "c_birthyear=1820 c_deathyear=1901",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

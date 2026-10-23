@@ -1,0 +1,55 @@
+{
+  "id": "person:cbdb-81807",
+  "name": "陳聲被",
+  "type": "person",
+  "props": {
+    "逝世时间": "1905年"
+  },
+  "external": {
+    "cbdbId": 81807
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-81387",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/81807|81387|75",
+            "locator": {},
+            "quote": "Auto-generated from PersonID = 0081387, KinCode = 0184",
+            "reason": "c_kin_code=75 → 父；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-338109",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/81807|338109|165",
+            "locator": {
+              "pages": "4104",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=165（長兄） c_personid=81807 c_kin_id=338109",
+            "reason": "c_kin_code=165 → 長兄；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/81807",
+      "locator": {},
+      "quote": "c_deathyear=1905 c_dy_nh_code=667 c_dy_nh_year=31",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

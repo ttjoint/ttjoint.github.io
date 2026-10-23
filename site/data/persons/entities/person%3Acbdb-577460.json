@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-577460",
+  "name": "方義模",
+  "type": "person",
+  "props": {
+    "出生年月": "1876年",
+    "逝世时间": "1918年"
+  },
+  "external": {
+    "cbdbId": 577460
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/577460",
+      "locator": {},
+      "quote": "c_birthyear=1876 c_deathyear=1918",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

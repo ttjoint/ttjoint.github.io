@@ -1,0 +1,61 @@
+{
+  "id": "person:cbdb-74916",
+  "name": "劉元亮",
+  "type": "person",
+  "props": {
+    "出生年月": "1861年",
+    "逝世时间": "1908年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐11年~光緒34年。 【參考《清代人物生卒年表》#5289.】"
+  },
+  "external": {
+    "cbdbId": 74916
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-530067",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/74916|530067|180",
+            "locator": {
+              "pages": "15522",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=74916 c_kin_id=530067",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-530068",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/74916|530068|180",
+            "locator": {
+              "pages": "15522",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=74916 c_kin_id=530068",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "teacherOf": [
+      "person:cbdb-511033"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/74916",
+      "locator": {},
+      "quote": "c_birthyear=1861 c_by_nh_code=665 c_by_nh_year=11 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34 c_notes=《清代人物生卒年表》定其生卒年為咸豐11年~光緒34年。 【參考《清代人物生卒年表》#5289.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

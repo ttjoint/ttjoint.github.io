@@ -1,0 +1,71 @@
+{
+  "id": "person:cbdb-53995",
+  "name": "許祐身",
+  "type": "person",
+  "props": {
+    "出生年月": "1850年",
+    "逝世时间": "1908年",
+    "史料注记": "【參考資料: MQWW PoetID #374.】 《清代人物生卒年表》定其生卒年為道光30年~？。 【參考《清代人物生卒年表》#6303.】"
+  },
+  "external": {
+    "cbdbId": 53995
+  },
+  "aliases": [],
+  "relations": {
+    "femaleChild": [
+      {
+        "id": "person:cbdb-54034",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/53995|54034|176",
+            "locator": {
+              "pages": "MQWW PoetID #380",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=176（女兒） c_personid=53995 c_kin_id=54034",
+            "reason": "c_kin_code=176 → 女兒；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "wife": [
+      {
+        "id": "person:cbdb-53994",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/53995|53994|135",
+            "locator": {},
+            "quote": "c_kin_code=135（妻子） c_personid=53995 c_kin_id=53994",
+            "reason": "c_kin_code=135 → 妻子；CBDB 未记文献出处",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "sister": [
+      {
+        "id": "person:cbdb-54032",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/53995|54032|169",
+            "locator": {},
+            "quote": "Auto-generated from PersonID = 0054032, KinCode = 0125",
+            "reason": "c_kin_code=169 → 妹；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/53995",
+      "locator": {},
+      "quote": "c_birthyear=1850 c_by_nh_code=664 c_by_nh_year=30 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34 c_notes=【參考資料: MQWW PoetID #374.】 《清代人物生卒年表》定其生卒年為道光30年~？。 【參考《清代人物生卒年表》#6303.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

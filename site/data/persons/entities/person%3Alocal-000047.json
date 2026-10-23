@@ -1,0 +1,41 @@
+{
+  "id": "person:local-000047",
+  "type": "person",
+  "name": "张国清",
+  "props": {
+    "简介": "张国清，男，汉族，1964年8月生，河南罗山人，1985年9月参加工作，1984年7月加入中国共产党，清华大学经济管理学院数量经济学专业毕业，在职研究生学历，经济学博士学位，研究员级高级工程师。 现任中共二十届中央政治局委员，国务院副总理、党组成员。 （来源：新华社，2023年3月更新） 人 民 网 版 权 所 有 ，未 经 书 面 授 权 禁 止 使 用",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "男",
+    "出生年月": "1964年8月",
+    "籍贯": "河南罗山",
+    "民族": "汉族",
+    "学历": "清华大学经济管理学院数量经济学专业毕业，在职研究生学历"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000031",
+    "evidence:local-000203"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "中共二十届中央政治局委员",
+        "evidence": "中共二十届中央政治局委员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746381.htm"
+      },
+      {
+        "organization": "国务院",
+        "role": "副总理",
+        "evidence": "国务院副总理",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746381.htm"
+      },
+      {
+        "organization": "",
+        "role": "党组成员",
+        "evidence": "党组成员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746381.htm"
+      }
+    ]
+  },
+  "external": {}
+}

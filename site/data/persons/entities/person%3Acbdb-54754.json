@@ -1,0 +1,59 @@
+{
+  "id": "person:cbdb-54754",
+  "name": "于懿",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1851年 ± 30",
+    "逝世时间": "约 1908年 ± 30"
+  },
+  "external": {
+    "cbdbId": 54754
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-54755",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54754|54755|75",
+            "locator": {
+              "pages": "MQWW PoetID #357, HuWenKai #217",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0054755, KinCode = 0176",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-54758",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54754|54758|134",
+            "locator": {
+              "pages": "MQWW PoetID #357, HuWenKai #217",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0054758, KinCode = 0163",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54754",
+      "locator": {},
+      "quote": "c_birthyear=1851 c_by_nh_code=665 c_by_nh_year=1 c_deathyear=1908 c_dy_nh_code=667 c_dy_nh_year=34",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

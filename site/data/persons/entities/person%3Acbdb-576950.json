@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-576950",
+  "name": "馬譽馳",
+  "type": "person",
+  "props": {
+    "出生年月": "1882年",
+    "逝世时间": "1905年"
+  },
+  "external": {
+    "cbdbId": 576950
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576950",
+      "locator": {},
+      "quote": "c_birthyear=1882 c_deathyear=1905",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

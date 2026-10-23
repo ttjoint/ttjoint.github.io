@@ -1,0 +1,72 @@
+{
+  "id": "person:cbdb-61249",
+  "name": "伊爾根覺羅春滿",
+  "type": "person",
+  "props": {
+    "出生年月": "1839年",
+    "逝世时间": "1905年"
+  },
+  "external": {
+    "cbdbId": 61249
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-519941",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61249|519941|180",
+            "locator": {
+              "pages": "4580",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61249 c_kin_id=519941",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519942",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61249|519942|180",
+            "locator": {
+              "pages": "4580",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61249 c_kin_id=519942",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519943",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61249|519943|180",
+            "locator": {
+              "pages": "4580",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61249 c_kin_id=519943",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61249",
+      "locator": {},
+      "quote": "c_birthyear=1839 c_by_nh_code=664 c_by_nh_year=19 c_deathyear=1905 c_dy_nh_code=667 c_dy_nh_year=31",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

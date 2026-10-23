@@ -1,0 +1,71 @@
+{
+  "id": "person:cpc-64036-32641924",
+  "legacyId": "主席：高云龙",
+  "name": "高云龙",
+  "type": "person",
+  "props": {
+    "性别": "男",
+    "出生年月": "1958年12月",
+    "籍贯": "山东莱芜",
+    "民族": "汉族",
+    "学历": "清华大学化工系化工专业毕业，研究生学历",
+    "简介": "高云龙，男，汉族，1958年12月生，山东莱芜人，民建成员，1985年5月参加工作，清华大学化工系化工专业毕业，研究生学历，工学博士学位，高级工程师。 现任十四届全国政协副主席，中华全国工商业联合会主席、中国民间商会会长。",
+    "来源栏目": "人民网：中国共产党历届中央领导集体"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000049",
+    "evidence:local-000071"
+  ],
+  "external": {
+    "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641924.html",
+    "title": "高云龙简历--中国共产党新闻网-中国共产党新闻网"
+  },
+  "claims": {
+    "currentPositions": [
+      {
+        "role": "十四届全国政协副主席",
+        "evidence": "十四届全国政协副主席",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641924.html"
+      },
+      {
+        "role": "中华全国工商业联合会主席",
+        "evidence": "中华全国工商业联合会主席",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641924.html"
+      },
+      {
+        "role": "中国民间商会会长",
+        "evidence": "中国民间商会会长",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641924.html"
+      },
+      {
+        "organization": "十四届全国政协",
+        "role": "副主席",
+        "evidence": "现任十四届全国政协副主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/gyl/202405/t20240530_212731.html"
+      },
+      {
+        "organization": "中华全国工商业联合会",
+        "role": "主席",
+        "evidence": "中华全国工商业联合会主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/gyl/202405/t20240530_212731.html"
+      },
+      {
+        "organization": "中国民间商会",
+        "role": "会长",
+        "evidence": "中国民间商会会长",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/gyl/202405/t20240530_212731.html"
+      }
+    ],
+    "career": [
+      {
+        "date": "1985年5月",
+        "organization": "",
+        "role": "参加工作",
+        "evidence": "1985年5月参加工作",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/gyl/202405/t20240530_212731.html"
+      }
+    ]
+  },
+  "summary": "高云龙，男，汉族，1958年12月生，山东莱芜人，民建成员，1985年5月参加工作，清华大学化工系化工专业毕业，研究生学历，工学博士学位，高级工程师。 现任十四届全国政协副主席，中华全国工商业联合会主席、中国民间商会会长。"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-684002",
+  "name": "鮑增祥",
+  "type": "person",
+  "props": {
+    "出生年月": "1860年",
+    "逝世时间": "1929年"
+  },
+  "external": {
+    "cbdbId": 684002
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-684004",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/684002|684004|180",
+            "locator": {
+              "pages": "lgid=1163917",
+              "sourceId": 65192
+            },
+            "quote": "c_kin_code=180（子） c_personid=684002 c_kin_id=684004",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《民國歙縣志: 十六卷》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/684002",
+      "locator": {},
+      "quote": "c_birthyear=1860 c_by_nh_code=665 c_by_nh_year=10 c_deathyear=1929 c_dy_nh_code=669 c_dy_nh_year=18",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

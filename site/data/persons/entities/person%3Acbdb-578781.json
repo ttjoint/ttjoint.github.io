@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-578781",
+  "name": "施學俊",
+  "type": "person",
+  "props": {
+    "出生年月": "1901年"
+  },
+  "external": {
+    "cbdbId": 578781
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/578781",
+      "locator": {},
+      "quote": "c_birthyear=1901",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

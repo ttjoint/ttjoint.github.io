@@ -1,0 +1,14 @@
+{
+  "id": "organization:local-000081",
+  "name": "东汉",
+  "type": "organization",
+  "aliases": [
+    "后汉",
+    "东汉王朝"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

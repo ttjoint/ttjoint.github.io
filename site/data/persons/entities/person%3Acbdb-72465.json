@@ -1,0 +1,29 @@
+{
+  "id": "person:cbdb-72465",
+  "name": "方恆",
+  "type": "person",
+  "props": {
+    "出生年月": "1852年",
+    "逝世时间": "1910年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐2年~宣統2年。 【參考《清代人物生卒年表》#2361.】"
+  },
+  "external": {
+    "cbdbId": 72465
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-697667"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/72465",
+      "locator": {},
+      "quote": "c_birthyear=1852 c_by_nh_code=665 c_by_nh_year=2 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2 c_notes=《清代人物生卒年表》定其生卒年為咸豐2年~宣統2年。 【參考《清代人物生卒年表》#2361.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

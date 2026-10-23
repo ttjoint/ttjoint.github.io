@@ -7,11 +7,82 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
-# Generated entity shards are reproducible from canonical indexes.
-# Keep manifests and indexes in git; regenerate shards with npm run shard:data.
+
+# ---------------------------------------------------------------------------
+# Layer 0 — the immutable source corpus.
+# ---------------------------------------------------------------------------
+#
+# `raw/` holds the original source records: every CBDB row, and later the
+# original bytes of every web page and every book. Everything above it —
+# entities, indexes, SQLite, the site — can be rebuilt from here. Nothing here
+# can be rebuilt from above.
+#
+# That asymmetry makes `raw/` the ONLY layer that must be backed up. Losing it
+# means losing the data; losing `data/` means re-running a transformer.
+#
+# 2,472,329 CBDB rows / 290 MB gzipped (was 1,774 MB as plain JSON, measured
+# 12.4% compression on repeated JSON field names). Not committed: it is large
+# and, unlike the site, cannot be regenerated from anything in the repo.
+/raw/
+
+# ---------------------------------------------------------------------------
+# The authoritative corpus is NOT in version control.
+# ---------------------------------------------------------------------------
+#
+# `data/` holds the full CBDB import — 486,788 persons, ~610 MB, and growing. It is
+# the local working store that the admin UI, the CLI and every importer read and
+# write. It is not a build artefact (it cannot be regenerated from anything in this
+# repo), so losing it means losing the data, not rebuilding it.
+#
+# The published site is a *separate tree* (`site/`), generated from `data/` by
+# `npm run build:site`, filtered to persons from 1900 CE onward. That is what git
+# tracks and what gets deployed.
+#
+# Everything under data/ is therefore ignored. Keep backups outside the repo.
+#
+# NOTE: data/ is no longer the sole authority. The hash-chained corpus in raw/
+# is now the layer that cannot be rebuilt, and data/ is derived from it. The
+# lines below stay because the very large historical data/ tree must not enter
+# git either.
+#
+# The leading slash is load-bearing: an unanchored `data/` also matches
+# `site/data/`, which silently stripped the published tree's actual content from
+# git — leaving a site that deployed with no entities at all. Always anchor.
+/data/
+
+# Built site data is the opposite: it is committed on purpose. Re-assert it so a
+# future broad ignore pattern cannot cannibalise it again.
+!/site/data/
+
+# Entity shards are the AUTHORITATIVE store, not a generated artifact.
+#
+# This block used to say "reproducible from canonical indexes, regenerate with
+# npm run shard:data". That was wrong and it caused real data loss: index.json
+# holds SUMMARY rows (id/name/tags/summary/detail), so any script that
+# "regenerated" shards from it wrote summaries where entities belong, and 5269
+# shards lost their props. shard_data.js was one-way (it overwrote index.json
+# with the summary it had just derived) and so could not be re-run safely.
+#
+# The indexes are now generated FROM the shards by build_index.js. Shards never
+# enter git; treat a missing shard as data loss to be restored from a backup,
+# never as something to rebuild from index.json.
 data/persons/entities/
 data/organizations/entities/
 data/events/entities/
+data/things/entities/
+data/evidence/entities/
+
+# ---------------------------------------------------------------------------
+# The published site IS in version control.
+# ---------------------------------------------------------------------------
+# `site/` is generated, but it is the deployable artefact and it is small
+# (~17 MB / ~7.7k files, of which ~3.8k are static entity pages). Committing it
+# means GitHub Pages can serve it directly with no build step on the server.
+# Rebuild it with `npm run build:site` after any data change.
+#
+# Nothing inside site/ should be edited by hand: fix the source in js/, css/,
+# index.html or data/, then rebuild.
+
 # Scratch output from one-off verification scripts
 _cdp_check.js
 _render_test.js

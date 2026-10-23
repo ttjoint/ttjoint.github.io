@@ -1,0 +1,52 @@
+{
+  "id": "person:local-000323",
+  "type": "person",
+  "name": "胡春华",
+  "props": {
+    "简介": "胡春华，男，汉族，1963年4月生，湖北五峰人，1983年8月参加工作，1983年4月加入中国共产党，北京大学中文系毕业，大学学历。 现任中共二十届中央委员，十四届全国政协副主席。",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "男",
+    "出生年月": "1963年4月",
+    "籍贯": "湖北五峰",
+    "民族": "汉族",
+    "学历": "北京大学中文系毕业，大学学历"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000091",
+    "evidence:local-000065"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "中共二十届中央委员会",
+        "role": "中央委员",
+        "evidence": "现任中共二十届中央委员",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/hch/202405/t20240530_213609.html"
+      },
+      {
+        "organization": "十四届全国政协",
+        "role": "副主席",
+        "evidence": "十四届全国政协副主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/hch/202405/t20240530_213609.html"
+      }
+    ],
+    "career": [
+      {
+        "date": "1983年8月",
+        "organization": "",
+        "role": "",
+        "evidence": "1983年8月参加工作",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/hch/202405/t20240530_213609.html"
+      },
+      {
+        "date": "1983年4月",
+        "organization": "中国共产党",
+        "role": "",
+        "evidence": "1983年4月加入中国共产党",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/hch/202405/t20240530_213609.html"
+      }
+    ]
+  },
+  "external": {}
+}

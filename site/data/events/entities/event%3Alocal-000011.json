@@ -1,0 +1,14 @@
+{
+  "id": "event:local-000011",
+  "name": "赤壁之战",
+  "type": "event",
+  "aliases": [
+    "赤壁大战",
+    "赤壁鏖兵"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

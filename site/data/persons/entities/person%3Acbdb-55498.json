@@ -1,0 +1,75 @@
+{
+  "id": "person:cbdb-55498",
+  "name": "蔣萼",
+  "type": "person",
+  "props": {
+    "出生年月": "1835年",
+    "逝世时间": "1915年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光15年~中華民國4年。 【參考《清代人物生卒年表》#22346.】"
+  },
+  "external": {
+    "cbdbId": 55498
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-55500",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55498|55500|180",
+            "locator": {
+              "pages": "MQWW PoetID #218, HuWenKai #779",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0055500, KinCode = 0075",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-89620",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55498|89620|180",
+            "locator": {
+              "pages": "MQWW PoetID #218, HuWenKai #779",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0089620, KinCode = 0075",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "wife": [
+      {
+        "id": "person:cbdb-55497",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55498|55497|135",
+            "locator": {
+              "pages": "MQWW PoetID #218, HuWenKai #779",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=135（妻子） c_personid=55498 c_kin_id=55497",
+            "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/55498",
+      "locator": {},
+      "quote": "c_birthyear=1835 c_by_nh_code=664 c_by_nh_year=15 c_deathyear=1915 c_dy_nh_code=669 c_dy_nh_year=4 c_notes=《清代人物生卒年表》定其生卒年為道光15年~中華民國4年。 【參考《清代人物生卒年表》#22346.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

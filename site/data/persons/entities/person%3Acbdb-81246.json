@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-81246",
+  "name": "陸洪濤",
+  "type": "person",
+  "props": {
+    "出生年月": "1866年",
+    "逝世时间": "1927年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治5年~中華民國16年。 【參考《清代人物生卒年表》#12671.】"
+  },
+  "external": {
+    "cbdbId": 81246
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/81246",
+      "locator": {},
+      "quote": "c_birthyear=1866 c_by_nh_code=666 c_by_nh_year=5 c_deathyear=1927 c_dy_nh_code=669 c_dy_nh_year=16 c_notes=《清代人物生卒年表》定其生卒年為同治5年~中華民國16年。 【參考《清代人物生卒年表》#12671.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "thing:local-000001",
+  "type": "thing",
+  "name": "中国政府网",
+  "props": {
+    "类型": "政府网站",
+    "简介": "中国政府网由国务院办公厅主办，是国务院和国务院各部门发布政务信息的官方网站。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000151"
+  ],
+  "external": {}
+}

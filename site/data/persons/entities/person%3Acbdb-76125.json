@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-76125",
+  "name": "孫貽澤",
+  "type": "person",
+  "props": {
+    "逝世时间": "1934年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為？~中華民國23年。 【參考《清代人物生卒年表》#6718.】"
+  },
+  "external": {
+    "cbdbId": 76125
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/76125",
+      "locator": {},
+      "quote": "c_deathyear=1934 c_dy_nh_code=669 c_dy_nh_year=23 c_notes=《清代人物生卒年表》定其生卒年為？~中華民國23年。 【參考《清代人物生卒年表》#6718.】",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

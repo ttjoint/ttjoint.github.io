@@ -1,0 +1,88 @@
+{
+  "id": "person:cbdb-70985",
+  "name": "馬其昶",
+  "type": "person",
+  "props": {
+    "出生年月": "1855年",
+    "逝世时间": "1929年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐5年~中華民國18年。 《清代人物生卒年表》原注：「馬其昶卒於民國十八年十二月十四日，公曆為1930年1月13日。」 【參考《清代人物生卒年表》#510.】"
+  },
+  "external": {
+    "cbdbId": 70985
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-528295",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/70985|528295|180",
+            "locator": {
+              "pages": "14333",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=70985 c_kin_id=528295",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-528296",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/70985|528296|180",
+            "locator": {
+              "pages": "14333",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=70985 c_kin_id=528296",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-528297",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/70985|528297|180",
+            "locator": {
+              "pages": "14333",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=70985 c_kin_id=528297",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-528298",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/70985|528298|180",
+            "locator": {
+              "pages": "14333",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=70985 c_kin_id=528298",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/70985",
+      "locator": {},
+      "quote": "c_birthyear=1855 c_by_nh_code=665 c_by_nh_year=5 c_deathyear=1929 c_dy_nh_code=669 c_dy_nh_year=18 c_notes=《清代人物生卒年表》定其生卒年為咸豐5年~中華民國18年。 《清代人物生卒年表》原注：「馬其昶卒於民國十八年十二月十四日，公曆為1930年1月13日。」 【參考《清代人物生卒年表》#510.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

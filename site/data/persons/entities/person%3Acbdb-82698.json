@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-82698",
+  "name": "林端禮",
+  "type": "person",
+  "props": {
+    "出生年月": "1828年",
+    "逝世时间": "1901年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光8年~光緒27年。 【參考《清代人物生卒年表》#14339.】"
+  },
+  "external": {
+    "cbdbId": 82698
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/82698",
+      "locator": {},
+      "quote": "c_birthyear=1828 c_by_nh_code=664 c_by_nh_year=8 c_deathyear=1901 c_dy_nh_code=667 c_dy_nh_year=27 c_notes=《清代人物生卒年表》定其生卒年為道光8年~光緒27年。 【參考《清代人物生卒年表》#14339.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

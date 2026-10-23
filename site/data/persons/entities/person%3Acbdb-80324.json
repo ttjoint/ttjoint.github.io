@@ -1,0 +1,29 @@
+{
+  "id": "person:cbdb-80324",
+  "name": "張文藻",
+  "type": "person",
+  "props": {
+    "出生年月": "1869年",
+    "逝世时间": "1937年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治8年~中華民國26年。 【參考《清代人物生卒年表》#11627.】"
+  },
+  "external": {
+    "cbdbId": 80324
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-287865"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/80324",
+      "locator": {},
+      "quote": "c_birthyear=1869 c_by_nh_code=666 c_by_nh_year=8 c_deathyear=1937 c_dy_nh_code=669 c_dy_nh_year=26 c_notes=《清代人物生卒年表》定其生卒年為同治8年~中華民國26年。 【參考《清代人物生卒年表》#11627.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

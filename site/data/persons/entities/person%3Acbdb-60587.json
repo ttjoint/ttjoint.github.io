@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-60587",
+  "name": "余宏亮",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1835年 ± 30",
+    "逝世时间": "1904年"
+  },
+  "external": {
+    "cbdbId": 60587
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-519300",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/60587|519300|180",
+            "locator": {
+              "pages": "3905",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=60587 c_kin_id=519300",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/60587",
+      "locator": {},
+      "quote": "c_birthyear=1835 c_by_nh_code=664 c_by_nh_year=15 c_deathyear=1904 c_dy_nh_code=667 c_dy_nh_year=30",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

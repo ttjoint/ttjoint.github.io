@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-44379",
+  "name": "胡宗楙",
+  "type": "person",
+  "props": {
+    "出生年月": "1867年",
+    "逝世时间": "1938年之后"
+  },
+  "external": {
+    "cbdbId": 44379
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/44379",
+      "locator": {},
+      "quote": "c_birthyear=1867 c_by_nh_code=0 c_deathyear=1938 c_dy_nh_code=0",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

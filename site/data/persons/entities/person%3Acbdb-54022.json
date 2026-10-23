@@ -1,0 +1,60 @@
+{
+  "id": "person:cbdb-54022",
+  "name": "戴鴻慈",
+  "type": "person",
+  "props": {
+    "出生年月": "1852年",
+    "逝世时间": "1910年",
+    "史料注记": "【參考資料: MQWW PoetID #400.】 《清代人物生卒年表》定其生卒年為咸豐2年~宣統2年。 【參考《清代人物生卒年表》#24936.】"
+  },
+  "external": {
+    "cbdbId": 54022
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-516013",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54022|516013|75",
+            "locator": {
+              "pages": "1178",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=54022 c_kin_id=516013",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-516014",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54022|516014|180",
+            "locator": {
+              "pages": "1178",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=54022 c_kin_id=516014",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54022",
+      "locator": {},
+      "quote": "c_birthyear=1852 c_by_nh_code=665 c_by_nh_year=2 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2 c_notes=【參考資料: MQWW PoetID #400.】 《清代人物生卒年表》定其生卒年為咸豐2年~宣統2年。 【參考《清代人物生卒年表》#24936.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

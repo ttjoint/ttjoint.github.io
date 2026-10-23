@@ -1,0 +1,52 @@
+{
+  "id": "person:local-000281",
+  "type": "person",
+  "name": "姜信治",
+  "props": {
+    "简介": "姜信治，男，汉族，1958年2月生，甘肃敦煌人，1974年2月参加工作，1980年9月加入中国共产党，兰州大学夜大政治经济学专业毕业，在职大学学历。 现任十四届全国政协副主席，中共中央组织部分管日常工作的副部长。",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "男",
+    "出生年月": "1958年2月",
+    "籍贯": "甘肃敦煌",
+    "民族": "汉族",
+    "学历": "兰州大学夜大政治经济学专业毕业，在职大学学历"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000127",
+    "evidence:local-000041"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "十四届全国政协",
+        "role": "副主席",
+        "evidence": "现任十四届全国政协副主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/jxz/202405/t20240530_214839.html"
+      },
+      {
+        "organization": "中共中央组织部",
+        "role": "部分管日常工作的副部长",
+        "evidence": "中共中央组织部分管日常工作的副部长",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/jxz/202405/t20240530_214839.html"
+      }
+    ],
+    "career": [
+      {
+        "date": "1974年2月",
+        "organization": "",
+        "role": "",
+        "evidence": "1974年2月参加工作",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/jxz/202405/t20240530_214839.html"
+      },
+      {
+        "date": "1980年9月",
+        "organization": "中国共产党",
+        "role": "",
+        "evidence": "1980年9月加入中国共产党",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/jxz/202405/t20240530_214839.html"
+      }
+    ]
+  },
+  "external": {}
+}

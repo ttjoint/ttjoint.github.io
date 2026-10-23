@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-576646",
+  "name": "方遂志",
+  "type": "person",
+  "props": {
+    "出生年月": "1867年",
+    "逝世时间": "1925年"
+  },
+  "external": {
+    "cbdbId": 576646
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576646",
+      "locator": {},
+      "quote": "c_birthyear=1867 c_deathyear=1925",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

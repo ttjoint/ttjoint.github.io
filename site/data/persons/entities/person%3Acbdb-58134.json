@@ -1,0 +1,28 @@
+{
+  "id": "person:cbdb-58134",
+  "name": "劉長春",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1843年 ± 30",
+    "逝世时间": "1904年"
+  },
+  "external": {
+    "cbdbId": 58134
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      "person:cbdb-244321"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58134",
+      "locator": {},
+      "quote": "c_birthyear=1843 c_by_nh_code=664 c_by_nh_year=23 c_deathyear=1904 c_dy_nh_code=667 c_dy_nh_year=30",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

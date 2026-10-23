@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-123832",
+  "name": "志彭",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1851年 ± 30",
+    "逝世时间": "1904年",
+    "史料注记": "清人:咸豐[1]年-光緖30年"
+  },
+  "external": {
+    "cbdbId": 123832
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/123832",
+      "locator": {},
+      "quote": "c_birthyear=1851 c_by_nh_code=665 c_by_nh_year=1 c_deathyear=1904 c_dy_nh_code=667 c_dy_nh_year=30 c_notes=清人:咸豐[1]年-光緖30年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

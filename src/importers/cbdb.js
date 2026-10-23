@@ -62,39 +62,18 @@ function rangeFromCbdb({ birthyear, by_month, by_day, deathyear, dy_month, dy_da
  * 111=母 18894, 76=岳父 7955, 181=女婿 7178, 176=女儿 5245 ...).
  * Anything unmapped falls back to `kin`, then to the Chinese label.
  */
-const KIN_MAP = {
-  // parents
-  75: 'father',
-  111: 'mother',
-  76: 'kin',          // 岳父 (father-in-law) — kept as kin until a dedicated predicate lands
-  375: 'kin',         // 纟母
-  // children
-  180: 'childOfFather',   // 子
-  182: 'maleChild',       // 長子
-  183: 'maleChild',       // 次子
-  214: 'maleChild',       // 繼子
-  176: 'femaleChild',     // 女兒
-  177: 'maleChild',       // 從子 / 姪子
-  181: 'kin',             // 女婿
-  243: 'kin',             // 孙
-  255: 'kin',             // 曾孙
-  // siblings
-  125: 'elderBrother',    // 兄
-  126: 'youngerSibling',  // 弟
-  300: 'sibling',
-  // spouse
-  134: 'spouse',          // 丈夫
-  135: 'spouse',          // 妻子
-  // ancestors via kin
-  62: 'kin',              // 祖父
-  48: 'kin',              // 曾祖
-  79: 'kin',              // 從父 / 伯叔父
-  // social encodings sometimes stored in KIN_DATA
-  63: 'teacherOf',
-  64: 'studentOf',
-  165: 'friend',
-  166: 'friend',
-};
+// Kinship codes are NOT hard-coded here any more.
+//
+// The previous table had fabrications: code 63 (妻之祖父) was mapped to
+// teacherOf, code 64 (伯叔祖) to studentOf, codes 165/166 (長兄/季弟) to
+// friend, and code 300 to sibling even though CBDB defines no such code.
+// It also covered only 25 of CBDB's 488 kinship codes.
+//
+// Mappings are now derived from KINSHIP_CODES' own structural notation
+// (c_kinrel: F=父 M=母 S=子 D=女 B=兄弟 Z=姊妹 H=夫 W=妻 C=妾 A=姻親 …)
+// at import time, so every predicate is traceable to CBDB data and the whole
+// table is covered. See src/importers/cbdb_kinship.js.
+const kinship = require('./cbdb_kinship');
 
 /**
  * CBDB ASSOC codes are *paired*: each social act has a forward and reverse code
@@ -129,24 +108,31 @@ function assocPredicate(code, descChn) {
   if (desc) {
     for (const [re, key] of ASSOC_LABEL_MAP) if (re.test(desc)) return key;
   }
-  return ASSOC_MAP[code] || 'kin';
+  // 说不出的关系不建边。`kin` 兜底已删除（与 era/tags 同类的杂物箱）。
+  return ASSOC_MAP[code] || null;
 }
 
-function kinPredicate(code, labelChn) {
-  if (KIN_MAP[code]) return KIN_MAP[code];
-  // Fall back on the Chinese label so nothing is silently dropped.
-  const label = String(labelChn || '').trim().split(';')[0].trim();
-  if (label === '父' || label === '父亲') return 'father';
-  if (label === '母' || label === '母亲') return 'mother';
-  if (label === '子' || label === '長子' || label === '长子' || label === '次子' || label === '子嗣') return 'maleChild';
-  if (label === '女' || label === '女兒' || label === '女儿' || label === '女嗣') return 'femaleChild';
-  if (label === '妻' || label === '妻子' || label === '夫' || label === '丈夫') return 'spouse';
-  if (label === '兄') return 'elderBrother';
-  if (label === '弟' || label === '妹' || label === '姊') return 'youngerSibling';
-  if (label === '兄弟' || label === '姊妹' || label === '姐妹' || label === '手足') return 'sibling';
-  return 'kin';
+/**
+ * Resolve a CBDB kinship code to one of our predicates.
+ *
+ * Delegates to src/importers/cbdb_kinship.js, which derives the mapping from
+ * KINSHIP_CODES.c_kinrel. There is deliberately no Chinese-label fallback any
+ * more: the old one guessed from strings (「弟」→youngerSibling, 「姊」→youngerSibling) and
+ * produced wrong directions for exactly the labels it did not enumerate.
+ *
+ * @param {object} db      sql.js database, used to build the map once
+ * @param {number} code    c_kin_code
+ * @param {string} labelChn unused; kept so call sites keep working
+ * @param {Map}    [cache] optional pre-built map from kinship.buildKinshipMap
+ * @returns {string|null} predicate key, or null when the code is unknown
+ */
+function kinPredicate(db, code, labelChn, cache) {
+  const map = cache || kinship.buildKinshipMap(db, readRows);
+  const hit = map.get(code);
+  if (hit && hit.key) return hit.key;
+  // 未知码不建边。以前返回 `kin`，等于把「不知道」记成一条事实。
+  return null;
 }
-
 /** Deterministic person id, identical to the project-wide scheme. */
 function personId(personid) {
   return `cbdb:${personid}`;
@@ -262,7 +248,6 @@ function extractPersons(db, opts = {}) {
       type: 'person',
       name: String(r.c_name_chn || r.c_name || '').trim() || personId(r.c_personid),
       aliases: [...new Set(altByPerson.get(r.c_personid) || [])].slice(0, 8),
-      tags: buildTags(r),
       props,
       lifespan: life,
       external: { cbdbPersonId: r.c_personid, dynasty: r.c_dy || null },
@@ -276,38 +261,51 @@ function extractPersons(db, opts = {}) {
     edges.push(...extractOfficeEdges(db, ids, stats));
     edges.push(...extractAssocEdges(db, ids, stats));
   }
-
   return { persons, edges, stats };
-}
-
-function buildTags(r) {
-  const tags = ['CBDB'];
-  if (r.c_dy) tags.push(String(r.c_dy));
-  if (r.c_female === 1) tags.push('女性');
-  return tags;
 }
 
 function extractKinEdges(db, ids, stats) {
   if (!hasTable(db, 'KIN_DATA')) return [];
-  const codes = new Map();
-  if (hasTable(db, 'KINSHIP_CODES')) {
-    for (const c of readRows(db, 'KINSHIP_CODES')) {
-      codes.set(c.c_kincode, { chn: c.c_kinrel_chn, en: c.c_kinrel });
+  // Build the code -> predicate map once per extraction, straight from
+  // KINSHIP_CODES, so all 488 codes are covered and every predicate is
+  // traceable to CBDB's own c_kinrel notation.
+  const kinMap = hasTable(db, 'KINSHIP_CODES')
+    ? kinship.buildKinshipMap(db, readRows)
+    : new Map();
+
+  if (!stats.kinshipCoverage) {
+    stats.kinshipCoverage = kinship.kinshipCoverage(kinMap);
+    const problems = kinship.assertNoDirectionInversion(kinMap);
+    if (problems.length) {
+      // A parent mapped to a child predicate is the exact bug the old hand
+      // tables shipped; fail loudly rather than write a reversed tree.
+      throw new Error('CBDB kinship mapping inverts direction: ' + problems.join('; '));
     }
   }
+
   const edges = [];
+  // 边级出处需要书名表。KIN_DATA 的 c_source 指向 TEXT_CODES。
+  const titles = require('./cbdb_provenance').buildTextTitles(readRows, db);
+  const { provenanceFromKinRow } = require('./cbdb_provenance');
   for (const k of readRows(db, 'KIN_DATA')) {
     if (!ids.has(k.c_personid) || !ids.has(k.c_kin_id)) continue;
-    const meta = codes.get(k.c_kin_code) || {};
-    const key = kinPredicate(k.c_kin_code, meta.chn);
+    const meta = kinMap.get(k.c_kin_code) || {};
+    // 说不出具体关系的不建边（`kin` 兜底已删除）。
+    if (!meta.key) continue;
     edges.push(makeEdge({
-      key,
+      key: meta.key,
       subject: personId(k.c_personid),
       object: personId(k.c_kin_id),
-      note: meta.chn || '',
+      // Keep CBDB's own label plus the derived generational path, so an
+      // imported edge can always be explained ("父之父" for code 48).
+      note: [meta.chainLabel, meta.chain && meta.chain.length > 1 ? meta.chain.join('') : '']
+        .filter(Boolean).join(' / '),
       sourceUrl: 'https://cbdb.fas.harvard.edu/',
+      // 这条断言出自 KIN_DATA 的哪一行。
+      provenance: provenanceFromKinRow(k, { titles, kinLabel: meta.chainLabel || '' }),
     }));
     stats.kin++;
+    if (meta.resolved === false) stats.kinUnresolved = (stats.kinUnresolved || 0) + 1;
   }
   return edges;
 }
@@ -383,7 +381,7 @@ module.exports = {
   YEAR_MAX,
   validYear,
   rangeFromCbdb,
-  KIN_MAP,
+  kinship,
   ASSOC_MAP,
   assocPredicate,
   kinPredicate,

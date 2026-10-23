@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-83948",
+  "name": "房毓琛",
+  "type": "person",
+  "props": {
+    "出生年月": "1845年",
+    "逝世时间": "1900年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光25年~光緒26年。 【參考《清代人物生卒年表》#15796.】"
+  },
+  "external": {
+    "cbdbId": 83948
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/83948",
+      "locator": {},
+      "quote": "c_birthyear=1845 c_by_nh_code=664 c_by_nh_year=25 c_deathyear=1900 c_dy_nh_code=667 c_dy_nh_year=26 c_notes=《清代人物生卒年表》定其生卒年為道光25年~光緒26年。 【參考《清代人物生卒年表》#15796.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

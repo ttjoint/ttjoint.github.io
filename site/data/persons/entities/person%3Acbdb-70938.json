@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-70938",
+  "name": "馬文植",
+  "type": "person",
+  "props": {
+    "出生年月": "1820年",
+    "逝世时间": "1907年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為嘉慶25年~光緒33年。 【參考《清代人物生卒年表》#457.】"
+  },
+  "external": {
+    "cbdbId": 70938
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/70938",
+      "locator": {},
+      "quote": "c_birthyear=1820 c_by_nh_code=663 c_by_nh_year=25 c_deathyear=1907 c_dy_nh_code=667 c_dy_nh_year=33 c_notes=《清代人物生卒年表》定其生卒年為嘉慶25年~光緒33年。 【參考《清代人物生卒年表》#457.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

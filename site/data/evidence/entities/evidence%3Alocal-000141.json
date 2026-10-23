@@ -1,0 +1,14 @@
+{
+  "id": "evidence:local-000141",
+  "type": "evidence",
+  "name": "人民网人物资料 · cpc.people.com.cn/n1/2026/0828/c64094-40788262.html",
+  "carrier": "thing:local-000007",
+  "medium": "newspaper",
+  "documentedAt": null,
+  "url": "https://cpc.people.com.cn/n1/2026/0828/c64094-40788262.html",
+  "accessedAt": "2026-10-16T16:08:26.049Z",
+  "excerpt": "",
+  "reliability": null,
+  "note": "",
+  "unresolved": false
+}

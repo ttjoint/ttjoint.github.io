@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000067",
+  "type": "organization",
+  "name": "中央政法委员会",
+  "aliases": [
+    "中央政法委"
+  ],
+  "props": {
+    "类型": "中央工作部门",
+    "简介": "中共中央领导政法工作的职能部门。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

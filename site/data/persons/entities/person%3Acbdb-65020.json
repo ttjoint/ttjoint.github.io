@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-65020",
+  "name": "樸壽",
+  "type": "person",
+  "props": {
+    "出生年月": "1856年",
+    "逝世时间": "1911年"
+  },
+  "external": {
+    "cbdbId": 65020
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/65020",
+      "locator": {},
+      "quote": "c_birthyear=1856 c_by_nh_code=665 c_by_nh_year=6 c_deathyear=1911 c_dy_nh_code=668 c_dy_nh_year=3",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

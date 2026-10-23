@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-123968",
+  "name": "玉潤",
+  "type": "person",
+  "props": {
+    "逝世时间": "1912年",
+    "史料注记": "清–民國人:-民國1年"
+  },
+  "external": {
+    "cbdbId": 123968
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/123968",
+      "locator": {},
+      "quote": "c_deathyear=1912 c_dy_nh_code=669 c_dy_nh_year=1 c_notes=清–民國人:-民國1年",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

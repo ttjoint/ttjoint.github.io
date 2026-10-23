@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-579165",
+  "name": "崔景山",
+  "type": "person",
+  "props": {
+    "出生年月": "1905年",
+    "逝世时间": "1931年"
+  },
+  "external": {
+    "cbdbId": 579165
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/579165",
+      "locator": {},
+      "quote": "c_birthyear=1905 c_deathyear=1931",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

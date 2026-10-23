@@ -1,0 +1,90 @@
+{
+  "id": "person:cbdb-85790",
+  "name": "愛新覺羅載灃",
+  "type": "person",
+  "props": {
+    "出生年月": "1883年",
+    "逝世时间": "1921年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒9年~中華民國10年。 【參考《清代人物生卒年表》#17925.】"
+  },
+  "external": {
+    "cbdbId": 85790
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-530024",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/85790|530024|183",
+            "locator": {
+              "pages": "15478",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=183（次子） c_personid=85790 c_kin_id=530024",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-530023",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/85790|530023|184",
+            "locator": {
+              "pages": "15478",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=184（三子） c_personid=85790 c_kin_id=530023",
+            "reason": "c_kin_code=184 → 三子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-530022",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/85790|530022|185",
+            "locator": {
+              "pages": "15478",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=185（四子） c_personid=85790 c_kin_id=530022",
+            "reason": "c_kin_code=185 → 四子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-530025",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/85790|530025|168",
+            "locator": {
+              "pages": "15478",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=168（妾） c_personid=85790 c_kin_id=530025",
+            "reason": "c_kin_code=168 → 妾；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/85790",
+      "locator": {},
+      "quote": "c_birthyear=1883 c_by_nh_code=667 c_by_nh_year=9 c_deathyear=1921 c_dy_nh_code=669 c_dy_nh_year=10 c_notes=《清代人物生卒年表》定其生卒年為光緒9年~中華民國10年。 【參考《清代人物生卒年表》#17925.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

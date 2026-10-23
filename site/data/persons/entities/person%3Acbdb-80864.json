@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-80864",
+  "name": "張煥綸",
+  "type": "person",
+  "props": {
+    "出生年月": "1843年",
+    "逝世时间": "1902年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光23年~光緒28年。 【參考《清代人物生卒年表》#12241.】"
+  },
+  "external": {
+    "cbdbId": 80864
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/80864",
+      "locator": {},
+      "quote": "c_birthyear=1843 c_by_nh_code=664 c_by_nh_year=23 c_deathyear=1902 c_dy_nh_code=667 c_dy_nh_year=28 c_notes=《清代人物生卒年表》定其生卒年為道光23年~光緒28年。 【參考《清代人物生卒年表》#12241.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

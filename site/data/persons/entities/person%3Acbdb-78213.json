@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-78213",
+  "name": "吳士錡",
+  "type": "person",
+  "props": {
+    "出生年月": "1855年",
+    "逝世时间": "1925年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐5年~中華民國14年。 【參考《清代人物生卒年表》#9182.】"
+  },
+  "external": {
+    "cbdbId": 78213
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/78213",
+      "locator": {},
+      "quote": "c_birthyear=1855 c_by_nh_code=665 c_by_nh_year=5 c_deathyear=1925 c_dy_nh_code=669 c_dy_nh_year=14 c_notes=《清代人物生卒年表》定其生卒年為咸豐5年~中華民國14年。 【參考《清代人物生卒年表》#9182.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

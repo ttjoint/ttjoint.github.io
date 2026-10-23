@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000005",
+  "name": "牧野之战",
+  "type": "event",
+  "aliases": [
+    "武王伐纣"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

@@ -1,0 +1,40 @@
+{
+  "id": "person:cbdb-62393",
+  "name": "孫寶琦",
+  "type": "person",
+  "props": {
+    "出生年月": "1867年",
+    "逝世时间": "1931年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治6年~中華民國19年。 【參考《清代人物生卒年表》#6688.】"
+  },
+  "external": {
+    "cbdbId": 62393
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-62345",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/62393|62345|75",
+            "locator": {},
+            "quote": "據王志民主編《山東重要歷史人物》（第四卷），孫寶琦父為孫詒經。",
+            "reason": "c_kin_code=75 → 父；CBDB 未记文献出处；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/62393",
+      "locator": {},
+      "quote": "c_birthyear=1867 c_by_nh_code=666 c_by_nh_year=6 c_deathyear=1931 c_dy_nh_code=669 c_dy_nh_year=20 c_notes=《清代人物生卒年表》定其生卒年為同治6年~中華民國19年。 【參考《清代人物生卒年表》#6688.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

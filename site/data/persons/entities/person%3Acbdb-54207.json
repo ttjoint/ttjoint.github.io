@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-54207",
+  "name": "鄧乃溥",
+  "type": "person",
+  "props": {
+    "出生年月": "1852年",
+    "逝世时间": "1906年"
+  },
+  "external": {
+    "cbdbId": 54207
+  },
+  "aliases": [],
+  "relations": {
+    "wife": [
+      {
+        "id": "person:cbdb-54198",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/54207|54198|135",
+            "locator": {
+              "pages": "MQWW PoetID #257, HuWenKai #766",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=135（妻子） c_personid=54207 c_kin_id=54198",
+            "reason": "c_kin_code=135 → 妻子；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/54207",
+      "locator": {},
+      "quote": "c_birthyear=1852 c_by_nh_code=665 c_by_nh_year=2 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

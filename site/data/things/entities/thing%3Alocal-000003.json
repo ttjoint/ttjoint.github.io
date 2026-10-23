@@ -1,0 +1,14 @@
+{
+  "id": "thing:local-000003",
+  "type": "thing",
+  "name": "最高人民检察院网站",
+  "props": {
+    "类型": "机构网站",
+    "简介": "最高人民检察院官方网站。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000167"
+  ],
+  "external": {}
+}

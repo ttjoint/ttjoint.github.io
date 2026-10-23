@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-81013",
+  "name": "張嘉謀",
+  "type": "person",
+  "props": {
+    "出生年月": "1874年",
+    "逝世时间": "1941年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治13年~中華民國30年。 【參考《清代人物生卒年表》#12407.】"
+  },
+  "external": {
+    "cbdbId": 81013
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/81013",
+      "locator": {},
+      "quote": "c_birthyear=1874 c_by_nh_code=666 c_by_nh_year=13 c_deathyear=1941 c_dy_nh_code=669 c_dy_nh_year=30 c_notes=《清代人物生卒年表》定其生卒年為同治13年~中華民國30年。 【參考《清代人物生卒年表》#12407.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

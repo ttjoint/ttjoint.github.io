@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-85718",
+  "name": "秦希瑗",
+  "type": "person",
+  "props": {
+    "出生年月": "1870年",
+    "逝世时间": "1928年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治9年~中華民國17年。 【參考《清代人物生卒年表》#17845.】"
+  },
+  "external": {
+    "cbdbId": 85718
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/85718",
+      "locator": {},
+      "quote": "c_birthyear=1870 c_by_nh_code=666 c_by_nh_year=9 c_deathyear=1928 c_dy_nh_code=669 c_dy_nh_year=17 c_notes=《清代人物生卒年表》定其生卒年為同治9年~中華民國17年。 【參考《清代人物生卒年表》#17845.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-579280",
+  "name": "濮懷恩",
+  "type": "person",
+  "props": {
+    "出生年月": "1905年"
+  },
+  "external": {
+    "cbdbId": 579280
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/579280",
+      "locator": {},
+      "quote": "c_birthyear=1905",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

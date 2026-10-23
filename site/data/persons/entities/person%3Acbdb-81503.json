@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-81503",
+  "name": "陳璻",
+  "type": "person",
+  "props": {
+    "出生年月": "1903年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為光緒29年~？。 【參考《清代人物生卒年表》#12983.】"
+  },
+  "external": {
+    "cbdbId": 81503
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/81503",
+      "locator": {},
+      "quote": "c_birthyear=1903 c_by_nh_code=667 c_by_nh_year=29 c_notes=《清代人物生卒年表》定其生卒年為光緒29年~？。 【參考《清代人物生卒年表》#12983.】",
+      "reason": "出生年月,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

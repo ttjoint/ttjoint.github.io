@@ -1,0 +1,51 @@
+{
+  "id": "person:local-000283",
+  "type": "person",
+  "name": "童建明",
+  "props": {
+    "性别": "男",
+    "出生年月": "1963年6月",
+    "民族": "汉族",
+    "学历": "研究生学历，法学硕士学位",
+    "简介": "童建明，男，汉族，1963年6月生，研究生学历，法学硕士学位，中共党员，现任中共二十届中央委员，最高人民检察院党组副书记、分管日常工作的副检察长（正部长级）、检察委员会委员，一级大检察官。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000035"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "中共二十届中央",
+        "role": "委员",
+        "evidence": "中共二十届中央委员",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "最高人民检察院",
+        "role": "党组副书记",
+        "evidence": "最高人民检察院党组副书记",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "",
+        "role": "分管日常工作的副检察长（正部长级）",
+        "evidence": "分管日常工作的副检察长（正部长级）",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "",
+        "role": "检察委员会委员",
+        "evidence": "检察委员会委员",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      },
+      {
+        "organization": "",
+        "role": "一级大检察官",
+        "evidence": "一级大检察官",
+        "sourceUrl": "https://www.spp.gov.cn/spp/jgsz/index.shtml"
+      }
+    ]
+  },
+  "external": {}
+}

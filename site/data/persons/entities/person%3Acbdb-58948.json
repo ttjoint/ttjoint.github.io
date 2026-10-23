@@ -1,0 +1,46 @@
+{
+  "id": "person:cbdb-58948",
+  "name": "李端棻",
+  "type": "person",
+  "props": {
+    "出生年月": "1833年",
+    "逝世时间": "1907年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光13年~光緒33年。 【參考《清代人物生卒年表》#8906.】"
+  },
+  "external": {
+    "cbdbId": 58948
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-518067",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58948|518067|180",
+            "locator": {
+              "pages": "2229",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58948 c_kin_id=518067",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "colleague": [
+      "person:cbdb-61231"
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58948",
+      "locator": {},
+      "quote": "c_birthyear=1833 c_by_nh_code=664 c_by_nh_year=13 c_deathyear=1907 c_dy_nh_code=667 c_dy_nh_year=33 c_notes=《清代人物生卒年表》定其生卒年為道光13年~光緒33年。 【參考《清代人物生卒年表》#8906.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

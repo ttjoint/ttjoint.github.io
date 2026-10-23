@@ -1,0 +1,74 @@
+{
+  "id": "person:cbdb-65363",
+  "name": "佟佳明秀",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1819年 ± 30",
+    "逝世时间": "1900年"
+  },
+  "external": {
+    "cbdbId": 65363
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-521823",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65363|521823|180",
+            "locator": {
+              "pages": "8786",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=65363 c_kin_id=521823",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-521825",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65363|521825|180",
+            "locator": {
+              "pages": "8786",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=65363 c_kin_id=521825",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-521822",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/65363|521822|125",
+            "locator": {
+              "pages": "8786",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=125（兄） c_personid=65363 c_kin_id=521822",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/65363",
+      "locator": {},
+      "quote": "c_birthyear=1819 c_by_nh_code=663 c_by_nh_year=24 c_deathyear=1900 c_dy_nh_code=667 c_dy_nh_year=26",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

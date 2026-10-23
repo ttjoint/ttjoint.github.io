@@ -1,0 +1,43 @@
+{
+  "id": "person:cbdb-124745",
+  "name": "方豪",
+  "type": "person",
+  "props": {
+    "出生年月": "1910年",
+    "逝世时间": "1980年",
+    "史料注记": "清–民國人:宣統2年-民國69年"
+  },
+  "external": {
+    "cbdbId": 124745
+  },
+  "aliases": [],
+  "relations": {
+    "brother": [
+      {
+        "id": "person:cbdb-528787",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/124745|528787|126",
+            "locator": {
+              "pages": "14626",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=124745 c_kin_id=528787",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/124745",
+      "locator": {},
+      "quote": "c_birthyear=1910 c_by_nh_code=668 c_by_nh_year=2 c_deathyear=1980 c_dy_nh_code=669 c_dy_nh_year=69 c_notes=清–民國人:宣統2年-民國69年",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

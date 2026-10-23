@@ -1,0 +1,14 @@
+{
+  "id": "event:local-000021",
+  "name": "夷陵之战",
+  "type": "event",
+  "aliases": [
+    "猇亭之战",
+    "火烧连营"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

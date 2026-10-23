@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-579236",
+  "name": "雷司鐸",
+  "type": "person",
+  "props": {
+    "出生年月": "1910年"
+  },
+  "external": {
+    "cbdbId": 579236
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/579236",
+      "locator": {},
+      "quote": "c_birthyear=1910",
+      "reason": "出生年月；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

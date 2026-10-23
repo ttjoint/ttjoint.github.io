@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-576618",
+  "name": "高若翰",
+  "type": "person",
+  "props": {
+    "出生年月": "1846年",
+    "逝世时间": "1912年"
+  },
+  "external": {
+    "cbdbId": 576618
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/576618",
+      "locator": {},
+      "quote": "c_birthyear=1846 c_deathyear=1912",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

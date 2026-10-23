@@ -1,0 +1,57 @@
+{
+  "id": "person:cbdb-61148",
+  "name": "愛新覺羅崑岡",
+  "type": "person",
+  "props": {
+    "出生年月": "1836年",
+    "逝世时间": "1907年"
+  },
+  "external": {
+    "cbdbId": 61148
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-519827",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61148|519827|180",
+            "locator": {
+              "pages": "4475",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61148 c_kin_id=519827",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-519828",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/61148|519828|180",
+            "locator": {
+              "pages": "4475",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=61148 c_kin_id=519828",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61148",
+      "locator": {},
+      "quote": "c_birthyear=1836 c_by_nh_code=664 c_by_nh_year=16 c_deathyear=1907 c_dy_nh_code=667 c_dy_nh_year=33",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

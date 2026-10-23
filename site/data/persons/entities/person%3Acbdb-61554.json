@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-61554",
+  "name": "王英楷",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1863年 ± 30",
+    "逝世时间": "1910年"
+  },
+  "external": {
+    "cbdbId": 61554
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61554",
+      "locator": {},
+      "quote": "c_birthyear=1863 c_by_nh_code=666 c_by_nh_year=2 c_deathyear=1910 c_dy_nh_code=668 c_dy_nh_year=2",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

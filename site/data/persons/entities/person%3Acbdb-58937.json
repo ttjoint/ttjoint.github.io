@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-58937",
+  "name": "田恩來",
+  "type": "person",
+  "props": {
+    "出生年月": "约 1838年 ± 30",
+    "逝世时间": "1904年"
+  },
+  "external": {
+    "cbdbId": 58937
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58937",
+      "locator": {},
+      "quote": "c_birthyear=1838 c_by_nh_code=664 c_by_nh_year=18 c_deathyear=1904 c_dy_nh_code=667 c_dy_nh_year=30",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

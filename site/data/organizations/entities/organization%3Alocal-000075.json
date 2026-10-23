@@ -1,0 +1,12 @@
+{
+  "id": "organization:local-000075",
+  "type": "organization",
+  "name": "中国佛教协会",
+  "props": {
+    "类型": "宗教团体",
+    "简介": "全国性佛教组织。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

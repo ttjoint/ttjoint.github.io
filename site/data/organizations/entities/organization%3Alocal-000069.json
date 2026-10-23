@@ -1,0 +1,16 @@
+{
+  "id": "organization:local-000069",
+  "type": "organization",
+  "name": "约克大学",
+  "aliases": [
+    "加拿大约克大学",
+    "York University"
+  ],
+  "props": {
+    "类型": "大学",
+    "简介": "位于加拿大安大略省多伦多的公立大学。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

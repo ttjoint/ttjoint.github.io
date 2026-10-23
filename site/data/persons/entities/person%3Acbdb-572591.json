@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-572591",
+  "name": "杜哈邁爾依波利特-德西雷",
+  "type": "person",
+  "props": {
+    "出生年月": "1832年",
+    "逝世时间": "1908年"
+  },
+  "external": {
+    "cbdbId": 572591
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/572591",
+      "locator": {},
+      "quote": "c_birthyear=1832 c_deathyear=1908",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

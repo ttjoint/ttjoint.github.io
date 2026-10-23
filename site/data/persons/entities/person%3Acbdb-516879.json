@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-516879",
+  "name": "葛大鹿",
+  "type": "person",
+  "props": {
+    "生卒": "1904年"
+  },
+  "external": {
+    "cbdbId": 516879
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/516879",
+      "locator": {
+        "sourceId": 58362
+      },
+      "quote": "c_index_year=1904 c_index_year_type_code=27",
+      "reason": "生卒；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

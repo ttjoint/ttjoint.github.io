@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-61844",
+  "name": "車林敦多布",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1877年 ± 30"
+  },
+  "external": {
+    "cbdbId": 61844
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61844",
+      "locator": {},
+      "quote": "c_deathyear=1877 c_dy_nh_code=667 c_dy_nh_year=3",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "person:cbdb-55921",
+  "name": "鄧瑜",
+  "type": "person",
+  "props": {
+    "出生年月": "1843年",
+    "逝世时间": "1901年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光23年~光緒27年。 【參考《清代人物生卒年表》#2637.】"
+  },
+  "external": {
+    "cbdbId": 55921
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-54758",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55921|54758|75",
+            "locator": {
+              "pages": "MQWW PoetID #229, HuWenKai #738",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0054758, KinCode = 0176",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-55928",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55921|55928|126",
+            "locator": {
+              "pages": "MQWW PoetID #229, HuWenKai #738",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0055928, KinCode = 0164",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-55926",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55921|55926|134",
+            "locator": {
+              "pages": "MQWW PoetID #229, HuWenKai #738",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0055926, KinCode = 0163",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/55921",
+      "locator": {},
+      "quote": "c_birthyear=1843 c_by_nh_code=664 c_by_nh_year=23 c_deathyear=1901 c_dy_nh_code=667 c_dy_nh_year=27 c_notes=《清代人物生卒年表》定其生卒年為道光23年~光緒27年。 【參考《清代人物生卒年表》#2637.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

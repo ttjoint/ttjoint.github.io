@@ -1,0 +1,24 @@
+{
+  "id": "person:cbdb-572435",
+  "name": "侯穆遠",
+  "type": "person",
+  "props": {
+    "出生年月": "1840年",
+    "逝世时间": "1900年"
+  },
+  "external": {
+    "cbdbId": 572435
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/572435",
+      "locator": {},
+      "quote": "c_birthyear=1840 c_deathyear=1900",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

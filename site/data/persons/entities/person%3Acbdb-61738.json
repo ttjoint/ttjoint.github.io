@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-61738",
+  "name": "車順軌",
+  "type": "person",
+  "props": {
+    "逝世时间": "约 1874年 ± 30"
+  },
+  "external": {
+    "cbdbId": 61738
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/61738",
+      "locator": {},
+      "quote": "c_deathyear=1874 c_dy_nh_code=666 c_dy_nh_year=13",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

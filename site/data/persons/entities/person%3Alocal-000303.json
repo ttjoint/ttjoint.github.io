@@ -1,0 +1,47 @@
+{
+  "id": "person:local-000303",
+  "type": "person",
+  "name": "何立峰",
+  "props": {
+    "简介": "何立峰，男，汉族，1955年2月生，广东兴宁人，1973年8月参加工作，1981年6月加入中国共产党，厦门大学财政金融系财政学专业毕业，研究生学历，经济学博士学位。 现任中共二十届中央政治局委员，国务院副总理、党组成员，中央财经委员会办公室主任。 （来源：新华社，2023年10月更新）",
+    "来源栏目": "人民网：中国共产党历届中央领导集体",
+    "性别": "男",
+    "出生年月": "1955年2月",
+    "籍贯": "广东兴宁",
+    "民族": "汉族",
+    "学历": "厦门大学财政金融系财政学专业毕业，研究生学历"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000155",
+    "evidence:local-000153"
+  ],
+  "claims": {
+    "currentPositions": [
+      {
+        "organization": "中共二十届中央政治局委员",
+        "evidence": "中共二十届中央政治局委员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746379.htm"
+      },
+      {
+        "organization": "国务院",
+        "role": "副总理",
+        "evidence": "国务院副总理",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746379.htm"
+      },
+      {
+        "organization": "",
+        "role": "党组成员",
+        "evidence": "党组成员",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746379.htm"
+      },
+      {
+        "organization": "中央财经委员会办公室",
+        "role": "主任",
+        "evidence": "中央财经委员会办公室主任",
+        "sourceUrl": "https://www.gov.cn/guoqing/2023-03/12/content_5746379.htm"
+      }
+    ]
+  },
+  "external": {}
+}

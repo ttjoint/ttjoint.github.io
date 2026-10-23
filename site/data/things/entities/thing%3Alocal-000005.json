@@ -1,0 +1,15 @@
+{
+  "id": "thing:local-000005",
+  "type": "thing",
+  "name": "人民日报",
+  "props": {
+    "类型": "报纸",
+    "创刊": "1948年6月15日",
+    "简介": "中国共产党中央委员会机关报，由人民日报社出版。"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000137"
+  ],
+  "external": {}
+}

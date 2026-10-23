@@ -1,0 +1,12 @@
+{
+  "id": "organization:local-000011",
+  "type": "organization",
+  "name": "中央财经委员会办公室",
+  "props": {
+    "类型": "办事机构",
+    "简介": "中央财经委员会的办事机构。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

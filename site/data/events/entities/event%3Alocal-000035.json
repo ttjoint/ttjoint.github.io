@@ -1,0 +1,14 @@
+{
+  "id": "event:local-000035",
+  "name": "后羿射日",
+  "type": "event",
+  "aliases": [
+    "羿射九日",
+    "大羿射日"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {},
+  "relations": {}
+}

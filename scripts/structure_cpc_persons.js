@@ -130,7 +130,9 @@ async function main() {
       payload.summary = payload.props['简介'];
       payload.claims = payload.claims || {};
       payload.claims.currentPositions = [{ role, evidence: appt[0], sourceUrl: e.external.cpcUrl }];
-      payload.tags = Array.from(new Set([...(payload.tags || []), '任职公告']));
+      // '任职公告' used to be appended to `tags`. The appointment already carries
+      // its provenance in `claims.currentPositions[].sourceUrl`, so the tag added
+      // nothing a reader could act on.
     } else {
       if (x.gender) payload.props['性别'] = x.gender;
       if (x.birthDate) payload.props['出生年月'] = x.birthDate;

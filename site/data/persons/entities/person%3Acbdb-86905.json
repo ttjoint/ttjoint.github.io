@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-86905",
+  "name": "徐蘊華",
+  "type": "person",
+  "props": {
+    "出生年月": "1884年",
+    "逝世时间": "1962年"
+  },
+  "external": {
+    "cbdbId": 86905
+  },
+  "aliases": [],
+  "relations": {
+    "sister": [
+      {
+        "id": "person:cbdb-54496",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/86905|54496|164",
+            "locator": {
+              "pages": "MQWW PoetID #4413",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=164（姊） c_personid=86905 c_kin_id=54496",
+            "reason": "c_kin_code=164 → 姊；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/86905",
+      "locator": {},
+      "quote": "c_birthyear=1884 c_by_nh_code=667 c_by_nh_year=10 c_deathyear=1962 c_dy_nh_code=0",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

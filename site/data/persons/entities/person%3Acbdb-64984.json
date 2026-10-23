@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-64984",
+  "name": "福潤",
+  "type": "person",
+  "props": {
+    "逝世时间": "1902年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為？~光緒28年。 【參考《清代人物生卒年表》#23938.】"
+  },
+  "external": {
+    "cbdbId": 64984
+  },
+  "aliases": [],
+  "relations": {
+    "mother": [
+      {
+        "id": "person:cbdb-521577",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/64984|521577|111",
+            "locator": {
+              "pages": "8398",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=111（母） c_personid=64984 c_kin_id=521577",
+            "reason": "c_kin_code=111 → 母；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/64984",
+      "locator": {},
+      "quote": "c_deathyear=1902 c_dy_nh_code=667 c_dy_nh_year=28 c_notes=《清代人物生卒年表》定其生卒年為？~光緒28年。 【參考《清代人物生卒年表》#23938.】",
+      "reason": "逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

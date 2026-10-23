@@ -1,0 +1,60 @@
+{
+  "id": "person:cpc-64036-32641934",
+  "legacyId": "致公党中央 主席蒋作君",
+  "name": "蒋作君",
+  "type": "person",
+  "props": {
+    "性别": "男",
+    "出生年月": "1955年7月",
+    "籍贯": "安徽怀宁",
+    "民族": "汉族",
+    "学历": "南京医学院基础医学部寄生虫学专业毕业，研究生学历",
+    "简介": "蒋作君，男，汉族，1955年7月生，安徽怀宁人，致公党成员，1974年3月参加工作，南京医学院基础医学部寄生虫学专业毕业，研究生学历，医学博士学位，教授。 现任十四届全国政协副主席，致公党中央主席。",
+    "来源栏目": "人民网：中国共产党历届中央领导集体"
+  },
+  "relations": {},
+  "sources": [
+    "evidence:local-000175",
+    "evidence:local-000145"
+  ],
+  "external": {
+    "cpcUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641934.html",
+    "title": "蒋作君简历--中国共产党新闻网-中国共产党新闻网"
+  },
+  "claims": {
+    "currentPositions": [
+      {
+        "role": "十四届全国政协副主席",
+        "evidence": "十四届全国政协副主席",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641934.html"
+      },
+      {
+        "role": "致公党中央主席",
+        "evidence": "致公党中央主席",
+        "sourceUrl": "http://cpc.people.com.cn/n1/2023/0311/c64036-32641934.html"
+      },
+      {
+        "organization": "十四届全国政协",
+        "role": "副主席",
+        "evidence": "现任十四届全国政协副主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/jzj/202405/t20240530_214946.html"
+      },
+      {
+        "organization": "致公党中央",
+        "role": "主席",
+        "evidence": "致公党中央主席",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/jzj/202405/t20240530_214946.html"
+      }
+    ],
+    "career": [
+      {
+        "date": "1974年3月",
+        "organization": "",
+        "role": "参加工作",
+        "evidence": "1974年3月参加工作",
+        "sourceUrl": "http://www.cppcc.gov.cn/zxld/fzx/jzj/202405/t20240530_214946.html"
+      }
+    ]
+  },
+  "summary": "蒋作君，男，汉族，1955年7月生，安徽怀宁人，致公党成员，1974年3月参加工作，南京医学院基础医学部寄生虫学专业毕业，研究生学历，医学博士学位，教授。 现任十四届全国政协副主席，致公党中央主席。"
+}

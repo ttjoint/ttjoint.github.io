@@ -1,0 +1,60 @@
+{
+  "id": "person:cbdb-58959",
+  "name": "李興銳",
+  "type": "person",
+  "props": {
+    "出生年月": "1827年",
+    "逝世时间": "1904年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光7年~光緒30年。 【參考《清代人物生卒年表》#8341.】"
+  },
+  "external": {
+    "cbdbId": 58959
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-518091",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58959|518091|75",
+            "locator": {
+              "pages": "2240",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=75（父） c_personid=58959 c_kin_id=518091",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-518090",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58959|518090|180",
+            "locator": {
+              "pages": "2240",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58959 c_kin_id=518090",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58959",
+      "locator": {},
+      "quote": "c_birthyear=1827 c_by_nh_code=664 c_by_nh_year=7 c_deathyear=1904 c_dy_nh_code=667 c_dy_nh_year=30 c_notes=《清代人物生卒年表》定其生卒年為道光7年~光緒30年。 【參考《清代人物生卒年表》#8341.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

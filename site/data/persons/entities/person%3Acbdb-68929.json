@@ -1,0 +1,60 @@
+{
+  "id": "person:cbdb-68929",
+  "name": "周學熙",
+  "type": "person",
+  "props": {
+    "出生年月": "1865年",
+    "逝世时间": "1947年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為同治4年~中華民國36年。 《清代人物生卒年表》原注：「周學熙生於同治四年十一月二十六日，公曆為1866年1月12日。」 【參考《清代人物生卒年表》#15234.】"
+  },
+  "external": {
+    "cbdbId": 68929
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-526555",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/68929|526555|183",
+            "locator": {
+              "pages": "12619",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=183（次子） c_personid=68929 c_kin_id=526555",
+            "reason": "c_kin_code=183 → 次子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-526556",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/68929|526556|126",
+            "locator": {
+              "pages": "12619",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=126（弟） c_personid=68929 c_kin_id=526556",
+            "reason": "c_kin_code=126 → 弟；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/68929",
+      "locator": {},
+      "quote": "c_birthyear=1865 c_by_nh_code=666 c_by_nh_year=4 c_deathyear=1947 c_dy_nh_code=669 c_dy_nh_year=36 c_notes=《清代人物生卒年表》定其生卒年為同治4年~中華民國36年。 《清代人物生卒年表》原注：「周學熙生於同治四年十一月二十六日，公曆為1866年1月12日。」 【參考《清代人物生卒年表》#15234.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

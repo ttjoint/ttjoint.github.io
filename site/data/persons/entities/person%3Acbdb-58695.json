@@ -1,0 +1,73 @@
+{
+  "id": "person:cbdb-58695",
+  "name": "周馥",
+  "type": "person",
+  "props": {
+    "出生年月": "1837年",
+    "逝世时间": "1921年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為道光17年~中華民國10年。 【參考《清代人物生卒年表》#14987.】"
+  },
+  "external": {
+    "cbdbId": 58695
+  },
+  "aliases": [],
+  "relations": {
+    "maleChild": [
+      {
+        "id": "person:cbdb-517563",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58695|517563|180",
+            "locator": {
+              "pages": "1959",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58695 c_kin_id=517563",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517564",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58695|517564|180",
+            "locator": {
+              "pages": "1959",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58695 c_kin_id=517564",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      },
+      {
+        "id": "person:cbdb-517565",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/58695|517565|180",
+            "locator": {
+              "pages": "1959",
+              "sourceId": 9602
+            },
+            "quote": "c_kin_code=180（子） c_personid=58695 c_kin_id=517565",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《人名權威資料（中央研究院歷史語言研究所）》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/58695",
+      "locator": {},
+      "quote": "c_birthyear=1837 c_by_nh_code=664 c_by_nh_year=17 c_deathyear=1921 c_dy_nh_code=669 c_dy_nh_year=10 c_notes=《清代人物生卒年表》定其生卒年為道光17年~中華民國10年。 【參考《清代人物生卒年表》#14987.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

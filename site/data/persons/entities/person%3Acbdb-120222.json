@@ -1,0 +1,42 @@
+{
+  "id": "person:cbdb-120222",
+  "name": "戴青",
+  "type": "person",
+  "props": {
+    "出生年月": "1822年",
+    "逝世时间": "1906年"
+  },
+  "external": {
+    "cbdbId": 120222
+  },
+  "aliases": [],
+  "relations": {
+    "husband": [
+      {
+        "id": "person:cbdb-56894",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/120222|56894|134",
+            "locator": {
+              "pages": "3739",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0056894, KinCode = 0135",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/120222",
+      "locator": {},
+      "quote": "c_birthyear=1822 c_by_nh_code=664 c_by_nh_year=2 c_deathyear=1906 c_dy_nh_code=667 c_dy_nh_year=32",
+      "reason": "出生年月,逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

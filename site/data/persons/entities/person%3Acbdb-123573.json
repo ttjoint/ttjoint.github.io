@@ -1,0 +1,25 @@
+{
+  "id": "person:cbdb-123573",
+  "name": "唐文治",
+  "type": "person",
+  "props": {
+    "出生年月": "1865年",
+    "逝世时间": "1954年",
+    "史料注记": "Based on preliminary research using web resourceshttp://www.worldcat.org/title/rujing-tang-wen-ji/oclc/23339883&referer=brief_results"
+  },
+  "external": {
+    "cbdbId": 123573
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/123573",
+      "locator": {},
+      "quote": "c_birthyear=1865 c_by_nh_code=0 c_deathyear=1954 c_dy_nh_code=0 c_notes=Based on preliminary research using web resourceshttp://www.worldcat.org/title/rujing-tang-wen-ji/oclc/23339883&referer=brief_results",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

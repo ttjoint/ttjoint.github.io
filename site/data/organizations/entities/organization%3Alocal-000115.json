@@ -1,0 +1,15 @@
+{
+  "id": "organization:local-000115",
+  "type": "organization",
+  "name": "中国人民政治协商会议西藏自治区委员会",
+  "aliases": [
+    "西藏自治区政协"
+  ],
+  "props": {
+    "类型": "地方政协",
+    "简介": "中国人民政治协商会议西藏自治区委员会。"
+  },
+  "relations": {},
+  "sources": [],
+  "external": {}
+}

@@ -1,0 +1,23 @@
+{
+  "id": "person:cbdb-60019",
+  "name": "張春發",
+  "type": "person",
+  "props": {
+    "逝世时间": "1915年"
+  },
+  "external": {
+    "cbdbId": 60019
+  },
+  "aliases": [],
+  "relations": {},
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/60019",
+      "locator": {},
+      "quote": "c_deathyear=1915 c_dy_nh_code=669 c_dy_nh_year=4",
+      "reason": "逝世时间；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}

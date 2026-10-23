@@ -1,0 +1,13 @@
+{
+  "id": "event:local-000039",
+  "name": "楚汉战争",
+  "type": "event",
+  "aliases": [
+    "楚汉相争",
+    "楚汉之争"
+  ],
+  "summary": "",
+  "external": {},
+  "sources": [],
+  "props": {}
+}

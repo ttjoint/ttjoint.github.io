@@ -1,0 +1,111 @@
+{
+  "id": "person:cbdb-55550",
+  "name": "曾懿",
+  "type": "person",
+  "props": {
+    "出生年月": "1853年",
+    "逝世时间": "1927年",
+    "史料注记": "《清代人物生卒年表》定其生卒年為咸豐3年~中華民國16年。 【參考《清代人物生卒年表》#23262.】"
+  },
+  "external": {
+    "cbdbId": 55550
+  },
+  "aliases": [],
+  "relations": {
+    "father": [
+      {
+        "id": "person:cbdb-55542",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55550|55542|75",
+            "locator": {
+              "pages": "MQWW PoetID #4424, HuWenKai #637",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=75（父） c_personid=55550 c_kin_id=55542",
+            "reason": "c_kin_code=75 → 父；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "maleChild": [
+      {
+        "id": "person:cbdb-55553",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55550|55553|180",
+            "locator": {
+              "pages": "MQWW PoetID #4424, HuWenKai #637",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0055553, KinCode = 0111",
+            "reason": "c_kin_code=180 → 子；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "brother": [
+      {
+        "id": "person:cbdb-55562",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55550|55562|125",
+            "locator": {
+              "pages": "MQWW PoetID #4667",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0055562, KinCode = 0169",
+            "reason": "c_kin_code=125 → 兄；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "husband": [
+      {
+        "id": "person:cbdb-55552",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55550|55552|134",
+            "locator": {
+              "pages": "MQWW PoetID #4424, HuWenKai #637",
+              "sourceId": 9601
+            },
+            "quote": "Auto-generated from PersonID = 0055552, KinCode = 0135",
+            "reason": "c_kin_code=134 → 丈夫；经 CBDB 转述，出处《明清婦女著作數據庫》；CBDB 自动生成",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ],
+    "sister": [
+      {
+        "id": "person:cbdb-55547",
+        "provenance": [
+          {
+            "rawRef": "raw:cbdb/KIN_DATA/55550|55547|169",
+            "locator": {
+              "pages": "MQWW PoetID #4424, HuWenKai #637",
+              "sourceId": 9601
+            },
+            "quote": "c_kin_code=169（妹） c_personid=55550 c_kin_id=55547",
+            "reason": "c_kin_code=169 → 妹；经 CBDB 转述，出处《明清婦女著作數據庫》",
+            "commitId": "c-000001"
+          }
+        ]
+      }
+    ]
+  },
+  "wikiUrl": "",
+  "provenance": [
+    {
+      "rawRef": "raw:cbdb/BIOG_MAIN/55550",
+      "locator": {},
+      "quote": "c_birthyear=1853 c_by_nh_code=665 c_by_nh_year=3 c_deathyear=1927 c_dy_nh_code=669 c_dy_nh_year=16 c_notes=《清代人物生卒年表》定其生卒年為咸豐3年~中華民國16年。 【參考《清代人物生卒年表》#23262.】",
+      "reason": "出生年月,逝世时间,史料注记；二手数据库摘录，非文献原文",
+      "commitId": "c-000003"
+    }
+  ]
+}
