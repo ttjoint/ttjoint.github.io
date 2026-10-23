@@ -1,7 +1,7 @@
 {
   "version": 3,
   "type": "evidence",
-  "count": 111,
+  "count": 6,
   "dated": 0,
   "pageSize": 2000,
   "pageCount": 1,
@@ -9,9 +9,9 @@
     {
       "page": 0,
       "file": "index/page-000.json",
-      "count": 111,
-      "first": "全国政协官网 · www.cppcc.gov.cn/zxld/fzx/bte/202405/t20240530_205441.html",
-      "last": "最高人民检察院网站 · www.spp.gov.cn/"
+      "count": 6,
+      "first": "何报翔 · http://cpc.people.com.cn/n1/2023/0311/c64036-32641935.html",
+      "last": "朱永新 · http://cpc.people.com.cn/n1/2023/0311/c64036-32641938.html"
     }
   ],
   "chronology": null,
@@ -19,16 +19,18 @@
     "strategy": "first-char",
     "targetRows": 4000,
     "charToFile": {
-      "人": "search/bucket-000.json",
-      "全": "search/bucket-000.json",
-      "中": "search/bucket-000.json",
-      "最": "search/bucket-000.json"
+      "何": "search/bucket-000.json",
+      "秦": "search/bucket-000.json",
+      "王": "search/bucket-000.json",
+      "杨": "search/bucket-000.json",
+      "致": "search/bucket-000.json",
+      "朱": "search/bucket-000.json"
     },
     "buckets": [
       {
         "file": "search/bucket-000.json",
-        "chars": "人全中最",
-        "count": 111
+        "chars": "何秦王杨致朱",
+        "count": 6
       }
     ]
   },

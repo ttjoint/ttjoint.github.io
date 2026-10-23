@@ -1,7 +1,7 @@
 {
   "_truncated": false,
-  "_count": 67,
-  "_pageSize": 67,
+  "_count": 68,
+  "_pageSize": 68,
   "_manifest": "manifest.json",
   "_note": "生成文件：仅为兼容保留，只含首页。全部数据见 index/page-*.json 或 entities/。请勿写入。",
   "rows": [
@@ -690,6 +690,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000097.json"
+    },
+    {
+      "id": "organization:web-zgzhi",
+      "name": "中国致公党",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-zgzhi.json"
     },
     {
       "id": "organization:local-000017",

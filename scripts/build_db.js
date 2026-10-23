@@ -125,6 +125,19 @@ function main() {
   stats.evidence++;
 
   const evidenceEntities = readEntities(FOLDERS.evidence);
+  // 精确映射：一条网页证据对应一个具体 rawId（不是前缀）。
+  //
+  // 前缀映射适合「同一数据库的百万条记录」，但网页是每篇独立的文档——
+  // 用 `raw:web` 前缀会把所有文章归到同一个证据节点，那就等于说
+  // 「蒋作君的简历出自人民网（整个网站）」，追不到具体文章。
+  //
+  // 映射来源是 evidence 节点的 `note` 字段（格式 `rawRef: <rawId>`），
+  // 由抓取脚本写入。这样证据节点自己就声明了「我对应哪条 raw」。
+  for (const e of evidenceEntities) {
+    const m = String(e.note || '').match(/rawRef:\s*(\S+)/);
+    if (m) evidencePrefixes.set(m[1], e.id);
+  }
+
   for (const e of evidenceEntities) {
     insertEvidence.run(
       e.id,

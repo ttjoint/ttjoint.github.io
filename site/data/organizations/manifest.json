@@ -1,7 +1,7 @@
 {
   "version": 3,
   "type": "organization",
-  "count": 67,
+  "count": 68,
   "dated": 0,
   "pageSize": 2000,
   "pageCount": 1,
@@ -9,7 +9,7 @@
     {
       "page": 0,
       "file": "index/page-000.json",
-      "count": 67,
+      "count": 68,
       "first": "曹魏",
       "last": "最高人民检察院"
     }
@@ -62,7 +62,7 @@
       {
         "file": "search/bucket-000.json",
         "chars": "中西东国九秦最曹楚公韩华黄晋刘鲁齐人商神审蜀宋台涂卫魏吴夏新燕有袁约越赵郑周",
-        "count": 67
+        "count": 68
       }
     ]
   },

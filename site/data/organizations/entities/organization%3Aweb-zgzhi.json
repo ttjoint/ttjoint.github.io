@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-zgzhi",
+  "type": "organization",
+  "name": "中国致公党",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/b3dbd7a5e23a",
+      "span": {
+        "start": 66,
+        "end": 69
+      },
+      "quote": "致公党",
+      "formatVersion": 1,
+      "reason": "原文：致公党成员"
+    }
+  ]
+}

@@ -7,8 +7,8 @@
   },
   "types": {
     "persons": {
-      "count": 3641,
-      "dated": 3641,
+      "count": 3642,
+      "dated": 3642,
       "pages": 2
     },
     "things": {
@@ -17,7 +17,7 @@
       "pages": 1
     },
     "organizations": {
-      "count": 67,
+      "count": 68,
       "dated": 0,
       "pages": 1
     },
@@ -27,10 +27,10 @@
       "pages": 1
     },
     "evidence": {
-      "count": 111,
+      "count": 6,
       "dated": 0,
       "pages": 1
     }
   },
-  "total": 3847
+  "total": 3744
 }

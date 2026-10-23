@@ -1,6 +1,6 @@
 {
   "_truncated": true,
-  "_count": 3641,
+  "_count": 3642,
   "_pageSize": 2000,
   "_manifest": "manifest.json",
   "_note": "生成文件：仅为兼容保留，只含首页。全部数据见 index/page-*.json 或 entities/。请勿写入。",
@@ -19369,6 +19369,22 @@
       "detail": "entities/person%3Acpc-64036-32641934.json"
     },
     {
+      "id": "person:web-jiangzuojun",
+      "name": "蒋作君",
+      "type": "person",
+      "aliases": [],
+      "summary": "",
+      "lifespan": {
+        "start": 2435290,
+        "end": null,
+        "mid": 2435305,
+        "uncertainty": 0,
+        "precision": "month"
+      },
+      "external": {},
+      "detail": "entities/person%3Aweb-jiangzuojun.json"
+    },
+    {
       "id": "person:cbdb-89697",
       "name": "蔣彬若",
       "type": "person",
@@ -35973,24 +35989,6 @@
         "cbdbId": 79543
       },
       "detail": "entities/person%3Acbdb-79543.json"
-    },
-    {
-      "id": "person:cbdb-54203",
-      "name": "沈鵲應",
-      "type": "person",
-      "aliases": [],
-      "summary": "",
-      "lifespan": {
-        "start": 2394749,
-        "end": 2425430,
-        "mid": 2410089,
-        "uncertainty": 30,
-        "precision": "approx"
-      },
-      "external": {
-        "cbdbId": 54203
-      },
-      "detail": "entities/person%3Acbdb-54203.json"
     }
   ]
 }
