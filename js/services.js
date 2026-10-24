@@ -256,8 +256,28 @@ function relationsFromApiDetail(detail) {
   const relations = {};
   const push = (pred, entry) => {
     if (!relations[pred]) relations[pred] = [];
-    // 同一目标可能有多条边（例如既是父亲又是老师），按 id 去重但保留第一条的出处。
-    const dup = relations[pred].some((v) => (typeof v === 'string' ? v : v && v.id) === entry.id);
+    // 去重按「目标 + 时段」，不是只按目标。
+    //
+    // 同一目标的多条边有两种完全不同的含义：
+    //
+    //   同一事实的多条证据  → 已在 build 时按事实签名合并，这里不会遇到
+    //   同一关系的多段时期  → 例如「1998–2003 任某职，2008–2012 又任该职」
+    //
+    // 早先只按 id 去重，第二段任职被静默丢弃——数据在库里，页面只剩
+    // 一条。这不是显示问题，是**把「任过两次」显示成「任过一次」**，
+    // 读者会得到错误的事实。
+    //
+    // 时段相同才去重（那才是重复）；时段不同是两条不同的断言。
+    const dup = relations[pred].some((v) => {
+      if (typeof v === 'string') return v === entry.id;
+      if (!v || v.id !== entry.id) return false;
+      // 两边都没有时间 → 视为同一事实（无法区分）
+      const aFrom = v.validFrom == null ? null : v.validFrom;
+      const bFrom = entry.validFrom == null ? null : entry.validFrom;
+      const aTo = v.validTo == null ? null : v.validTo;
+      const bTo = entry.validTo == null ? null : entry.validTo;
+      return aFrom === bFrom && aTo === bTo;
+    });
     if (!dup) relations[pred].push(entry);
   };
 
@@ -320,6 +340,10 @@ function relationsFromApiDetail(detail) {
       name: e.other_name || null,
       type: e.other_type || null,
       provenance: e.provenance || [],
+      // 时段也要带上：去重按「目标 + 时段」，不带上会被当成同一事实。
+      validFrom: e.validFrom == null ? null : e.validFrom,
+      validTo: e.validTo == null ? null : e.validTo,
+      flags: Array.isArray(e.flags) ? e.flags : [],
       ...(e.qualifiers ? { qualifiers: e.qualifiers } : {}),
     });
   }

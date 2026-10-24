@@ -149,3 +149,42 @@ test('flags: 时间显示为年份而非 JDN', () => {
   assert.ok(detail.includes('fmtYear(r.validFrom)'), 'hasRole 分支用 fmtYear');
   assert.ok(detail.includes('fmtYear(entry && entry.validFrom)'), '普通分支用 fmtYear');
 });
+
+test('多段任职：同目标不同时段是两条断言，不是一条', () => {
+  // 「1998–2003 任某职，2008–2012 又任该职」是两段任职。
+  // 早先只按目标 id 去重，第二段被静默丢弃——把「任过两次」
+  // 显示成「任过一次」，读者会得到错误的事实。
+  const src = fs.readFileSync(path.join(ROOT, 'js', 'services.js'), 'utf8');
+  assert.match(src, /去重按「目标 \+ 时段」/, '去重逻辑要有说明');
+  assert.match(src, /aFrom === bFrom && aTo === bTo/, '时段相同才去重');
+});
+
+test('多段任职：反向边也带时段', () => {
+  const src = fs.readFileSync(path.join(ROOT, 'js', 'services.js'), 'utf8');
+  // 反向分支不带时段，去重会把它当成同一事实
+  const inv = src.slice(src.indexOf("+ '/反'"), src.indexOf("+ '/反'") + 500);
+  assert.match(inv, /validFrom:/, '反向边要带 validFrom');
+  assert.match(inv, /validTo:/, '反向边要带 validTo');
+});
+
+test('边身份：时间不同分边，时间相同合并', () => {
+  const { splitRelationEntry, edgeId } = require('../../src/store/db_build_helpers.js');
+  const entries = [
+    { id: 'organization:A', dates: { from: 1998, to: 2003 } },
+    { id: 'organization:A', dates: { from: 2008, to: 2012 } },
+    { id: 'organization:A', dates: { from: 1998, to: 2003 }, provenance: [{ rawRef: 'x' }] },
+  ];
+  const grouped = new Map();
+  for (const e of entries) {
+    const rel = splitRelationEntry(e);
+    const sig = [rel.validFrom ?? '', rel.validTo ?? '', rel.observedAt ?? '', rel.qualifiers || ''].join('|');
+    if (!grouped.has(sig)) grouped.set(sig, { rel, sig });
+    else {
+      const p = grouped.get(sig);
+      p.rel.provenance = (p.rel.provenance || []).concat(rel.provenance || []);
+    }
+  }
+  assert.equal(grouped.size, 2, '3 条输入 → 2 条边');
+  const ids = [...grouped.values()].map(({ rel, sig }) => edgeId('p:x', 'memberOf', rel.object, sig));
+  assert.equal(new Set(ids).size, 2, '两段任职的 edge id 必须不同');
+});
