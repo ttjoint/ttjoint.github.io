@@ -7,6 +7,18 @@
    由 index.html 在本文件之前加载。
    ============================================ */
 
+/** JDN → 年份字符串。null / undefined 返回 null。 */
+function fmtYear(jdn) {
+  if (jdn == null) return null;
+  // 浏览器里没有 `global`（那是 Node 的）。用 window。
+  const t = (typeof window !== 'undefined' && window.HMTime) || null;
+  if (t && typeof t.jdnToYear === 'function') {
+    const y = t.jdnToYear(jdn);
+    return y < 0 ? `前${Math.abs(y)}` : String(y);
+  }
+  return String(jdn);
+}
+
 function createEntityDetail(entityType) {
   const entitySchema = EntitySchema[entityType];
   const routeName = entitySchema.route;
@@ -165,8 +177,13 @@ function createEntityDetail(entityType) {
                 // 模板用 start/end；数据层叫 validFrom/validTo。
                 // null 表示时间不详——模板显示为空，不显示「不详」，
                 // 因为绝大多数边都没有时间，挂满标签是噪音。
-                start: r.validFrom == null ? null : r.validFrom,
-                end: r.validTo == null ? null : r.validTo,
+                start: fmtYear(r.validFrom),
+                end: fmtYear(r.validTo),
+                // 数据质量标注。与出处分开：出处是「凭什么这么说」，
+                // 标注是「这条记录本身可疑」。一条边可以有多条标注。
+                _flags: Array.isArray(r.flags) ? r.flags : [],
+                _suspect: (Array.isArray(r.flags) ? r.flags : []).some((f) => f.severity === 'suspect'),
+                _conflict: (Array.isArray(r.flags) ? r.flags : []).some((f) => f.severity === 'conflict'),
                 id: tid,
                 // 原始谓词键：`父亲（反）` 的 label 是显示用的，
                 // 要跳谓词页得知道它其实是 `father/反`。
@@ -175,6 +192,11 @@ function createEntityDetail(entityType) {
                 type: r.type || DataStore.getType(tid),
                 _missing: !ownName && !known,
                 icon, _auto: isAuto,
+                // 数据质量标注。hasRole 分支的条目来自 API（键名 r），
+                // 与下面的普通分支（键名 entry）分开处理。
+                _flags: Array.isArray(r.flags) ? r.flags : [],
+                _suspect: (Array.isArray(r.flags) ? r.flags : []).some((f) => f.severity === 'suspect'),
+                _conflict: (Array.isArray(r.flags) ? r.flags : []).some((f) => f.severity === 'conflict'),
                 _prov: Array.isArray(r.provenance) ? r.provenance : null,
               };
             });
@@ -186,6 +208,14 @@ function createEntityDetail(entityType) {
               const tid = typeof entry === 'string' ? entry : (entry && (entry.id || entry.target));
               const prov = (entry && typeof entry === 'object' && Array.isArray(entry.provenance))
                 ? entry.provenance : null;
+              // 数据质量标注（与出处分属两层：出处回答「凭什么这么说」，
+              // 标注回答「这条记录本身可疑」）。
+              //
+              // 这个分支（无 role 的普通关系）占绝大多数，早先只在
+              // `hasRole` 分支加了标注，于是「母亲」这类关系被标了却
+              // 不显示——数据在库里，页面看不见。
+              const flags = (entry && typeof entry === 'object' && Array.isArray(entry.flags))
+                ? entry.flags : [];
               if (isLiteral) {
                 return { target: tid, name: tid, _literal: true, icon, _auto: isAuto, _prov: prov };
               }
@@ -198,6 +228,13 @@ function createEntityDetail(entityType) {
                 type: (entry && entry.type) || DataStore.getType(tid),
                 _missing: !ownName && !known,
                 icon, _auto: isAuto,
+                _flags: flags,
+                _suspect: flags.some((f) => f.severity === 'suspect'),
+                _conflict: flags.some((f) => f.severity === 'conflict'),
+                // 时间：数据层是 Julian day number，显示要转年份。
+                // 直接渲染 JDN 会得到「(2282438 ~ 2272940)」这种没人看得懂的数字。
+                start: fmtYear(entry && entry.validFrom),
+                end: fmtYear(entry && entry.validTo),
                 // 边级出处：这条断言出自哪里。与实体级 provenance 分开，
                 // 因为「这个人生于 1042」和「他的父亲是某某」是两条不同的原始记录。
                 _prov: prov,
@@ -665,6 +702,15 @@ function createEntityDetail(entityType) {
                         </span>
                       </div>
                     </div>
+                    <!-- 数据质量标注：可疑或史料分歧。
+                         不隐藏这条边——被标 suspect 不等于它是错的，
+                         更可能是录入错误或生年本身是推的。只提示。 -->
+                    <span v-if="r._suspect || r._conflict"
+                          class="flag-badge"
+                          :class="r._conflict ? 'flag-badge--conflict' : 'flag-badge--suspect'"
+                          :title="r._flags.map(f => f.reason).join('；')">
+                      {{ r._conflict ? '多说法' : '可疑' }}
+                    </span>
                     <!-- 边级出处：这条关系断言出自哪一行原始记录。
                          与实体级的「引用来源」分开：生年出自 BIOG_MAIN，
                          父子关系出自 KIN_DATA，是两条不同的原始记录。 -->

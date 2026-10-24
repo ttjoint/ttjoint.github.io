@@ -272,6 +272,9 @@ function relationsFromApiDetail(detail) {
       // 关系起止（整数年）。null 表示时间不详。
       validFrom: e.validFrom == null ? null : e.validFrom,
       validTo: e.validTo == null ? null : e.validTo,
+      // 数据质量标注。这是「判断」不是「事实」——与出处（provenance）分属
+      // 两层：出处回答「凭什么这么说」，标注回答「这条记录本身可疑」。
+      flags: Array.isArray(e.flags) ? e.flags : [],
       ...(e.qualifiers ? { qualifiers: e.qualifiers } : {}),
     });
   }

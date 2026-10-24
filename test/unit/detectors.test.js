@@ -112,3 +112,40 @@ test('detectors: 管理页展示规则、命中量、rationale', () => {
   assert.match(page, /run_detectors\.js --off/);
   assert.match(page, /whenReady/, 'probe 竞态教训：必须 whenReady');
 });
+
+test('flags: API 详情页带出标注', () => {
+  const api = fs.readFileSync(path.join(ROOT, 'scripts', 'serve_api.js'), 'utf8');
+  // 批量取出（不是逐边查）——详情页要展示几十条边
+  assert.match(api, /edge_id IN \(SELECT id FROM edges WHERE subject = \? OR object = \?\)/);
+  // 空数组而非 undefined：前端判空统一用 .length
+  assert.match(api, /flags: flagsByEdge\.get\(e\.edge_id\) \|\| \[\]/);
+});
+
+test('flags: 前端透传到两个分支', () => {
+  const services = fs.readFileSync(path.join(ROOT, 'js', 'services.js'), 'utf8');
+  assert.match(services, /flags: Array\.isArray\(e\.flags\) \? e\.flags : \[\]/);
+  const detail = fs.readFileSync(path.join(ROOT, 'js', 'views', 'entity_detail.js'), 'utf8');
+  // hasRole 分支（键名 r）与普通分支（键名 entry）都要有。
+  // 只改一处的话，另一类关系被标了却不显示——数据在库里，页面看不见。
+  const hasRoleBranch = detail.includes('_flags: Array.isArray(r.flags)');
+  const normalBranch = detail.includes('_flags: flags');
+  assert.ok(hasRoleBranch, 'hasRole 分支要有标注');
+  assert.ok(normalBranch, '普通分支要有标注');
+});
+
+test('flags: 警示不夸大严重性', () => {
+  const css = fs.readFileSync(path.join(ROOT, 'css', 'views', 'detail.css'), 'utf8');
+  // 用「提示」的视觉语言，不是「错误」的。夸大严重性会让读者
+  // 直接跳过这些数据，而它们往往正是最需要看的。
+  assert.match(css, /flag-badge--suspect/);
+  assert.match(css, /flag-badge--conflict/);
+  assert.ok(!/red/.test(css), '不用红色——那是「错误」的视觉语言');
+});
+
+test('flags: 时间显示为年份而非 JDN', () => {
+  const detail = fs.readFileSync(path.join(ROOT, 'js', 'views', 'entity_detail.js'), 'utf8');
+  assert.match(detail, /function fmtYear/, '要有 JDN→年份 的转换');
+  // 直接渲染 JDN 会得到 (2282438 ~ 2272940) 这种没人看得懂的数字
+  assert.ok(detail.includes('fmtYear(r.validFrom)'), 'hasRole 分支用 fmtYear');
+  assert.ok(detail.includes('fmtYear(entry && entry.validFrom)'), '普通分支用 fmtYear');
+});

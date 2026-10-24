@@ -228,3 +228,38 @@
 }
 .source-url:hover { text-decoration: underline; }
 
+
+/* ============================================
+   数据质量标注（边级）
+
+   被标 suspect 不等于这条关系是错的——更可能是录入错误，或生年本身
+   是推的。所以用「提示」的视觉语言（淡色、小字），不是「错误」的
+   （红色、加粗）。夸大严重性会让读者直接跳过这些数据，而它们往往
+   正是最需要看的。
+   ============================================ */
+
+.flag-badge {
+  flex: 0 0 auto;
+  font-size: 10px;
+  line-height: 1;
+  padding: 3px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  cursor: help;
+}
+
+.flag-badge--suspect {
+  background: var(--badge-warn-bg, rgba(217, 119, 6, 0.12));
+  color: var(--badge-warn-fg, #b45309);
+}
+
+.flag-badge--conflict {
+  background: var(--badge-info-bg, rgba(37, 99, 235, 0.12));
+  color: var(--badge-info-fg, #1d4ed8);
+}
+
+/* 被标注的关系项左侧加一道细线，扫视时能看出哪些被标过。
+   不用整块变色——那会压过关系本身的内容。 */
+.relation-item:has(.flag-badge) {
+  box-shadow: inset 2px 0 0 var(--badge-warn-bg, rgba(217, 119, 6, 0.5));
+}

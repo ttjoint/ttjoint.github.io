@@ -247,6 +247,25 @@ function entityDetail(id) {
       reason: p.reason,
     });
   }
+  // 数据质量标注。与出处分属两层：出处是「凭什么这么说」，
+  // 标注是「这条记录本身可疑」。
+  //
+  // 一次取出该实体的所有边标注（不是逐边查），因为详情页要展示几十条边，
+  // 逐条请求会把一个页面变成几十个 HTTP 请求。
+  const flagRows = db.prepare(
+    `SELECT edge_id, detector_id, severity, reason FROM edge_flags
+      WHERE edge_id IN (SELECT id FROM edges WHERE subject = ? OR object = ?)`,
+  ).all(id, id);
+  const flagsByEdge = new Map();
+  for (const f of flagRows) {
+    if (!flagsByEdge.has(f.edge_id)) flagsByEdge.set(f.edge_id, []);
+    flagsByEdge.get(f.edge_id).push({
+      detectorId: f.detector_id,
+      severity: f.severity,
+      reason: f.reason,
+    });
+  }
+
   const withProv = (rows) => rows.map((e) => ({
     ...e,
     // qualifiers 在表里存的是 JSON 字符串。不解析的话前端拿到的是
@@ -262,6 +281,8 @@ function entityDetail(id) {
     // 前端应显示为「1050 年（仅记载该年）」而不是「1050–1050」。
     observedAt: e.observed_at == null ? null : e.observed_at,
     provenance: provByEdge.get(e.edge_id) || [],
+    // 空数组而非 undefined：前端判空统一用 .length。
+    flags: flagsByEdge.get(e.edge_id) || [],
   }));
 
   const aliases = db.prepare('SELECT alias FROM aliases WHERE entity_id = ? ORDER BY alias').all(id);
