@@ -94,6 +94,7 @@ test('db: a plain string relation entry has no qualifiers', () => {
     // 裸字符串也没有时间。
     validFrom: null,
     validTo: null,
+    observedAt: null,
   });
 });
 

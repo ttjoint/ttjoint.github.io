@@ -179,7 +179,7 @@ function main() {
       'INSERT INTO search (entity_id, name, name_seg, aliases, aliases_seg, summary_seg) VALUES (?, ?, ?, ?, ?, ?)',
     );
     const insertEdge = db.prepare(
-      'INSERT OR IGNORE INTO edges (id, subject, predicate, object, qualifiers, valid_from, valid_to) VALUES (?, ?, ?, ?, ?, ?, ?)',
+      'INSERT OR IGNORE INTO edges (id, subject, predicate, object, qualifiers, valid_from, valid_to, observed_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
     );
     const insertProv = db.prepare(
       `INSERT INTO provenance (id, scope, target_id, evidence_id, raw_ref, quote, reason, locator, source_title, commit_id)
@@ -245,6 +245,28 @@ function main() {
           // that skips the alias table would insert edges under a key that
           // query_lang's field whitelist does not contain — written, never found.
           const canonical = registry.resolve(predicate) || predicate;
+          // 同一 predicate 下的条目先按「事实签名」分组。
+          //
+          // ## 为什么分组而不是逐条建边
+          //
+          // 边代表**一个事实**，不是一次证据观测。两个信源说同一件事
+          //（同 SPO、同时段、同限定词）时，那是一个事实有两条证据——
+          // 应该是一条边 + 两条 provenance。若按证据建边，同一事实会
+          // 出现 N 条一模一样的边，页面上重复 N 次，查询也要去重。
+          //
+          // ## 什么才算「不同事实」
+          //
+          // 只有事实本身的差异才分边：
+          //   时段不同   同一人两次任同一职（1995–2000 / 2005–2010）
+          //   观测点不同 两次分别被记载在某一年
+          //   限定词不同 一个「嫡长子」一个「庶子」
+          // 证据来源不同**不算**——那是同一条边的多个出处。
+          //
+          // ## 为什么签名里不含证据
+          //
+          // 早先我把 rawRef+span 放进签名，结果是「每条证据一条边」，
+          // 同一事实被两个信源验证就产生两条重复边。这是错的。
+          const grouped = new Map();
           for (const entry of entries || []) {
             const rel = splitRelationEntry(entry);
             if (!rel) {
@@ -252,8 +274,38 @@ function main() {
               console.warn(`  skip unreadable relation ${e.id} ${predicate}: ${JSON.stringify(entry)}`);
               continue;
             }
+            const sig = [
+              rel.validFrom == null ? '' : rel.validFrom,
+              rel.validTo == null ? '' : rel.validTo,
+              rel.observedAt == null ? '' : rel.observedAt,
+              rel.qualifiers || '',
+            ].join('|');
+            const prev = grouped.get(sig);
+            if (prev) {
+              // 同事实：合并出处列表，不新建边。
+              //
+              // 注意 prev 是 { rel, sig } 包装对象，provenance 在 prev.rel 上。
+              // 直接写 prev.provenance 会挂到包装对象上，而 build 读的是
+              // rel.provenance——结果是「边合并了，但第二条证据静默丢失」。
+              if (rel.provenance) {
+                prev.rel.provenance = (prev.rel.provenance || []).concat(rel.provenance);
+              }
+              stats.mergedSameFact = (stats.mergedSameFact || 0) + 1;
+            } else {
+              grouped.set(sig, { rel, sig });
+            }
+          }
+
+          for (const { rel, sig } of grouped.values()) {
+            // 事实签名进 edge id：同时段的两条边 id 相同（合并为一条），
+            // 不同时段的两条边 id 不同（各自成条）。
+            //
+            // 不用证据做签名：同一事实重跑 build 必须得到同一个 id，
+            // 否则每次重建边 id 都会漂移，引用旧 id 的出处行全变孤儿。
+            const thisEdgeId = edgeId(e.id, canonical, rel.object, sig);
+
             insertEdge.run(
-              edgeId(e.id, canonical, rel.object),
+              thisEdgeId,
               e.id,
               canonical,
               rel.object,
@@ -261,6 +313,8 @@ function main() {
               // NULL 表示「时间不详」，不是「没有这条关系」。
               rel.validFrom,
               rel.validTo,
+              // 观测点：证据只证明「此刻成立」，不宣称区间。
+              rel.observedAt,
             );
             stats.edges++;
 
@@ -268,7 +322,7 @@ function main() {
             // scope='edge'、target_id=边的 id——schema 早已预留（见 db_schema.js），
             // 只是从未写入过。
             if (rel.provenance) {
-              const edgeIdValue = edgeId(e.id, canonical, rel.object);
+              const edgeIdValue = thisEdgeId;
               for (const [n, p] of rel.provenance.entries()) {
                 const evId = evidenceForRawRef(p.rawRef, evidencePrefixes);
                 if (!evId) {

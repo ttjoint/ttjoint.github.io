@@ -25,10 +25,25 @@ const crypto = require('crypto');
  * The separator is NUL because no entity id or predicate key can contain it, so
  * ('a|b','c','d') and ('a','b|c','d') cannot hash to the same input.
  */
-function edgeId(subject, predicate, object) {
+function edgeId(subject, predicate, object, discriminator) {
+  // `discriminator` 让「同一 SPO 的多条独立证据」各成一条边。
+  //
+  // 为什么需要它：一条边代表**一次证据观测**，不是一个逻辑关系。
+  // 同一人两次任同一职是两条边——它们由不同史料在不同时间记载，
+  // 合并成一条会丢掉「有两次」这个事实，也会让两条证据抢一个 id。
+  //
+  // 早先的实现只哈希 (subject, predicate, object)，配合 `INSERT OR IGNORE`，
+  // 第二条同 SPO 的边会被**静默丢弃**——数据没了，还没有任何提示。
+  // CBDB 恰好没有同 SPO 重复（实测 0 条），所以这个 bug 一直没暴露。
+  //
+  // discriminator 由调用方给（通常是 rawRef + span，即「哪段原文说了这句」）。
+  // 省略时退化为旧行为，保持向后兼容。
+  const material = discriminator
+    ? `${subject}\0${predicate}\0${object}\0${discriminator}`
+    : `${subject}\0${predicate}\0${object}`;
   const digest = crypto
     .createHash('sha256')
-    .update(`${subject}\0${predicate}\0${object}`)
+    .update(material)
     .digest('hex');
   return `edge:${digest.slice(0, 12)}`;
 }
@@ -118,7 +133,7 @@ function segment(text) {
  */
 function splitRelationEntry(entry) {
   if (typeof entry === 'string') {
-    return { object: entry, qualifiers: null, provenance: null, validFrom: null, validTo: null };
+    return { object: entry, qualifiers: null, provenance: null, validFrom: null, validTo: null, observedAt: null };
   }
   if (entry && typeof entry === 'object' && typeof entry.id === 'string' && entry.id) {
     const { id, provenance, dates, ...rest } = entry;
@@ -135,9 +150,14 @@ function splitRelationEntry(entry) {
     // 「加入致公党时间不详」是一条成立的断言，只是缺时间。
     let validFrom = null;
     let validTo = null;
+    let observedAt = null;
     if (dates && typeof dates === 'object') {
       if (Number.isFinite(dates.from)) validFrom = dates.from;
       if (Number.isFinite(dates.to)) validTo = dates.to;
+      // `observed` 是第三种时间语义：证据只证明「此刻成立」，
+      // 不宣称此前后也成立。与 from/to 互斥——给了区间就说明
+      // 有区间知识，给了 observed 就说明只有点知识。
+      if (Number.isFinite(dates.observed)) observedAt = dates.observed;
     }
 
     return {
@@ -146,6 +166,7 @@ function splitRelationEntry(entry) {
       provenance: Array.isArray(provenance) && provenance.length ? provenance : null,
       validFrom,
       validTo,
+      observedAt,
     };
   }
   return null;

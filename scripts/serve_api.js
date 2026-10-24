@@ -142,6 +142,18 @@ function familyTree(id, dir, depth, predicate) {
  * 解析数据库里存的 JSON 列。解析失败返回 null 而不是抛——
  * 一条坏数据不该让整个请求 500。
  */
+// 永久成立的谓词：一旦成立不随时间失效。
+//
+// 这份清单与 `src/predicates/registry.js` 的 `temporality` 字段对应，
+// 但这里硬编码是有意的——API 是独立进程，不加载整个谓词注册表；
+// 而清单本身很短且极少变动。改谓词时间性时**必须同步这里**，
+// 测试会检查两边一致。
+const PERSISTENT_PREDICATES = [
+  'father', 'mother', 'childOfFather', 'childOfMother',
+  'maleChild', 'femaleChild', 'son', 'daughter',
+  'brother', 'sister', 'sibling',
+];
+
 function safeJson(text) {
   try { return JSON.parse(text); } catch { return null; }
 }
@@ -194,13 +206,13 @@ function entityDetail(id) {
   // had to know which side to look at, and every caller got it wrong for at least
   // one predicate.
   const out = db.prepare(
-    `SELECT e.id AS edge_id, e.predicate, e.object AS other, e.qualifiers, e.valid_from, e.valid_to, en.name AS other_name, en.type AS other_type
+    `SELECT e.id AS edge_id, e.predicate, e.object AS other, e.qualifiers, e.valid_from, e.valid_to, e.observed_at, en.name AS other_name, en.type AS other_type
        FROM edges e INDEXED BY idx_edges_subject
        LEFT JOIN entities en ON en.id = e.object
       WHERE e.subject = ?`,
   ).all(id);
   const inb = db.prepare(
-    `SELECT e.id AS edge_id, e.predicate, e.subject AS other, e.qualifiers, e.valid_from, e.valid_to, en.name AS other_name, en.type AS other_type
+    `SELECT e.id AS edge_id, e.predicate, e.subject AS other, e.qualifiers, e.valid_from, e.valid_to, e.observed_at, en.name AS other_name, en.type AS other_type
        FROM edges e INDEXED BY idx_edges_object
        LEFT JOIN entities en ON en.id = e.subject
       WHERE e.object = ?`,
@@ -238,6 +250,9 @@ function entityDetail(id) {
     // 而不是隐藏这条边。
     validFrom: e.valid_from == null ? null : e.valid_from,
     validTo: e.valid_to == null ? null : e.valid_to,
+    // 观测点：证据只证明「此刻成立」，不宣称区间。
+    // 前端应显示为「1050 年（仅记载该年）」而不是「1050–1050」。
+    observedAt: e.observed_at == null ? null : e.observed_at,
     provenance: provByEdge.get(e.edge_id) || [],
   }));
 
@@ -533,6 +548,84 @@ async function route(req, res) {
         note: result.ok
           ? '校验通过。写入需走 raw/ → transformer → build 链路，本端点不落盘。'
           : '校验未通过，未写入任何内容。',
+      });
+    }
+
+    // ---------------------------------------------------------------- slice
+    //
+    // 时间切片：「某实体在 T 年有哪些关系成立」。
+    //
+    // 三种边都命中，但语义不同（文档 §2.3.1）：
+    //   区间边   valid_from <= T <= valid_to       ← 明确知道区间
+    //   观测边   observed_at = T                    ← 只证明此刻成立
+    //   无时间边 persistent 谓词的边（父母/子女）  ← 永久成立
+    //
+    // 三者都要能查出来，但**不能混为一谈**：响应里用 `basis` 区分，
+    // 让调用方知道「这条是靠区间知识命中的，还是只靠一个观测点」。
+    // 混在一起会让「1050 年他在任」看起来和有明确任期的边一样确定。
+    if (parts[1] === 'slice') {
+      const entity = url.searchParams.get('entity');
+      const atRaw = url.searchParams.get('at');
+      const at = Number(atRaw);
+      if (!entity) return fail(res, 400, 'entity is required');
+      if (!Number.isFinite(at)) return fail(res, 400, 'at must be a year (integer)');
+
+      // 区间边：T 落在 [from, to] 内。from/to 可缺，缺的那端视为无界。
+      const interval = db.prepare(`
+        SELECT e.id AS edge_id, e.subject, e.predicate, e.object, e.qualifiers,
+               e.valid_from, e.valid_to, e.observed_at
+          FROM edges e
+         WHERE e.subject = ?
+           AND e.valid_from IS NOT NULL
+           AND e.valid_from <= ?
+           AND (e.valid_to IS NULL OR e.valid_to >= ?)
+      `).all(entity, at, at);
+
+      // 观测边：只在观测那一年命中。
+      const observed = db.prepare(`
+        SELECT e.id AS edge_id, e.subject, e.predicate, e.object, e.qualifiers,
+               e.valid_from, e.valid_to, e.observed_at
+          FROM edges e
+         WHERE e.subject = ?
+           AND e.observed_at = ?
+      `).all(entity, at);
+
+      // 无时间的 persistent 边：父母/子女这类一旦成立就永久成立，
+      // 没有时间信息也该能被查到——否则「查 1050 年他的父亲是谁」
+      // 会因为 CBDB 不记父子关系的起止而永远返回空。
+      const persistent = db.prepare(`
+        SELECT e.id AS edge_id, e.subject, e.predicate, e.object, e.qualifiers,
+               e.valid_from, e.valid_to, e.observed_at
+          FROM edges e
+         WHERE e.subject = ?
+           AND e.valid_from IS NULL
+           AND e.observed_at IS NULL
+           AND e.predicate IN (${PERSISTENT_PREDICATES.map(() => '?').join(',')})
+      `).all(entity, ...PERSISTENT_PREDICATES);
+
+      const tag = (rows, basis) => rows.map((r) => ({
+        edgeId: r.edge_id,
+        predicate: r.predicate,
+        object: r.object,
+        qualifiers: safeJson(r.qualifiers),
+        validFrom: r.valid_from,
+        validTo: r.valid_to,
+        observedAt: r.observed_at,
+        // basis 说明「凭什么认为这条在 T 年成立」：
+        //   interval   有明确区间，T 落在其中
+        //   observed   有证据记载 T 时刻成立（不宣称此前后）
+        //   persistent 谓词本身永久成立（父子关系不会因时间失效）
+        basis,
+      }));
+
+      return json(res, 200, {
+        entity,
+        at,
+        interval: tag(interval, 'interval'),
+        observed: tag(observed, 'observed'),
+        persistent: tag(persistent, 'persistent'),
+        total: interval.length + observed.length + persistent.length,
+        note: 'basis=observed 的边只证明该时刻成立，不代表此前后持续有效。',
       });
     }
 

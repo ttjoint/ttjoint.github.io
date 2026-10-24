@@ -174,7 +174,20 @@ const DDL = [
      -- 'persistent'（父母/子女）与 'attribute'（性别/民族）填了也没意义，
      -- 查询层不按它们切片。
      valid_from INTEGER,
-     valid_to   INTEGER
+     valid_to   INTEGER,
+     -- 观测点：证据明确记载「此刻成立」的单一时刻（年）。
+     --
+     -- 为什么不能只用 valid_from/valid_to（文档 §2.3.1）：
+     -- 史料常常只说「某年某月，他任此职」，**没说何时开始、何时结束**。
+     -- 把这句话记成 valid_from=1050, valid_to=1050 是伪造精度：它宣称
+     -- 关系只存在这一年，而实际可能持续了十年。记成 valid_from=1050,
+     -- valid_to=null 也不对：它宣称关系从 1050 年起持续到未知的未来，
+     -- 而实际可能在 1051 年就结束。
+     --
+     -- observed_at 表达的是第三种、也是更诚实的语义：
+     -- 「我们有证据证明此关系在该时刻成立，但不宣称它在此之前/之后也存在。」
+     -- 这类边在时间切片时命中该点，但不参与区间覆盖判定。
+     observed_at INTEGER
    )`,
   // Three indexes, three query shapes. All are used in practice:
   //   subject,predicate -> "X's children"        (the family-tree query)
@@ -186,9 +199,12 @@ const DDL = [
   `CREATE INDEX idx_edges_object    ON edges(object, predicate)`,
   `CREATE INDEX idx_edges_predicate ON edges(predicate, subject)`,
   // 「某人在 T 年有哪些关系」——时间切片查询。
-  // 不带 predicate 的 `subject, valid_from` 前缀没用上，因为实际查询
-  // 几乎都限定谓词（「他 1050 年时任什么官」），所以把它放第二列。
+  //
+  // 三个时间列都要能被覆盖：区间查询用 (valid_from, valid_to)，
+  // 观测点查询用 observed_at。分开建索引而不是合成一个，因为
+  // 两类查询的形态不同（区间命中 vs 等值命中）。
   `CREATE INDEX idx_edges_time ON edges(subject, valid_from, valid_to)`,
+  `CREATE INDEX idx_edges_observed ON edges(subject, observed_at) WHERE observed_at IS NOT NULL`,
 
   // ----------------------------------------------------------------- evidence
   // Evidence nodes: where a claim comes from. Two shapes share this table:
