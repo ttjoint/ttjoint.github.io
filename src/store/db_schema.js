@@ -187,7 +187,13 @@ const DDL = [
      -- observed_at 表达的是第三种、也是更诚实的语义：
      -- 「我们有证据证明此关系在该时刻成立，但不宣称它在此之前/之后也存在。」
      -- 这类边在时间切片时命中该点，但不参与区间覆盖判定。
-     observed_at INTEGER
+     observed_at INTEGER,
+     -- 时间来源：'stated'（原文明确）/ 'observed'（观测点）/ 'inferred'（推导）。
+     --
+     -- 为什么必须存：推导出的界可能远宽于真实值。读者有权知道
+     -- 「这个 1045 年是他出生年推的，不是史料说的」。
+     -- 不标注的话，推导值会被当成事实引用——那正是本系统最忌讳的事。
+     bounds_source TEXT
    )`,
   // Three indexes, three query shapes. All are used in practice:
   //   subject,predicate -> "X's children"        (the family-tree query)

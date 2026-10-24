@@ -100,11 +100,13 @@ const BUILTIN = [
   // ---------- kinship: parent/child ----------
   {
     key: 'father', label: '父亲', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'childOfFather', aliases: ['父', '爸爸', '家父', '父上'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'childOfFather', label: '子女', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'father', aliases: ['孩子'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
     // Deliberately does NOT claim 儿子/女儿: those resolve to the gender-specific
@@ -112,6 +114,7 @@ const BUILTIN = [
   },
   {
     key: 'maleChild', label: '儿子', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'father', aliases: ['子', '男儿', '长子', '次子', '幼子'],
     negatable: true, objectGender: 'male',
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
@@ -124,17 +127,20 @@ const BUILTIN = [
   },
   {
     key: 'femaleChild', label: '女儿', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'father', aliases: ['女', '闺女', '长女', '次女', '幼女'],
     negatable: true, objectGender: 'female',
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'mother', label: '母亲', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'childOfMother', aliases: ['母', '妈妈', '家母'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'childOfMother', label: '子女', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'mother', aliases: [],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
@@ -142,6 +148,7 @@ const BUILTIN = [
   // ---------- kinship: spouse and siblings ----------
   {
     key: 'spouse', label: '配偶', domain: 'person', range: 'person',
+    temporality: 'concurrent',
     inverse: 'spouse', symmetric: true, aliases: ['夫妻', '配偶', '伴侣'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
@@ -155,16 +162,19 @@ const BUILTIN = [
   // 留在 spouse 上，它不是臨時狀態，同性配偶本就該用它。
   {
     key: 'wife', label: '妻', domain: 'person', range: 'person',
+    temporality: 'concurrent',
     inverse: 'husband', aliases: ['妻子', '太太', '夫人', '正室'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'husband', label: '夫', domain: 'person', range: 'person',
+    temporality: 'concurrent',
     inverse: 'wife', aliases: ['丈夫', '先生', '夫君'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'sibling', label: '兄弟姐妹', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'sibling', symmetric: true, aliases: ['手足', '同胞'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
@@ -172,11 +182,13 @@ const BUILTIN = [
   // 「A --brother--> B」讀作「A 的兄弟是 B」，B 必须是男。
   {
     key: 'brother', label: '兄弟', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'brother', symmetric: true, aliases: ['兄弟', '哥', '弟'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'sister', label: '姊妹', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'sister', symmetric: true, aliases: ['姊妹', '姐妹', '姐', '妹'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
@@ -200,22 +212,26 @@ const BUILTIN = [
   // ---------- person -> organization ----------
   {
     key: 'memberOf', label: '所属组织', domain: 'person', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'hasMember', aliases: ['任职', '供职', '供职于', '所属', '加入'],
     negatable: true, aliasesNote: '任职 uses dates qualifier',
     qualifiers: [QUAL.ROLE, QUAL.DATES, QUAL.PLACE, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'hasMember', label: '成员', domain: 'organization', range: 'person',
+    temporality: 'concurrent',
     inverse: 'memberOf', aliases: ['成员', '人员'],
     negatable: true, qualifiers: [QUAL.ROLE, QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'employer', label: '任职于', domain: 'person', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'employee', aliases: ['就职于', '工作于', '隶属于'],
     negatable: true, qualifiers: [QUAL.ROLE, QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'employee', label: '员工', domain: 'organization', range: 'person',
+    temporality: 'concurrent',
     inverse: 'employer', aliases: [], negatable: true,
     qualifiers: [QUAL.ROLE, QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
@@ -223,31 +239,37 @@ const BUILTIN = [
   // ---------- organization hierarchy ----------
   {
     key: 'parentOrg', label: '上级组织', domain: 'organization', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'childOrg', aliases: ['上级', '主管部门', '隶属', '所属上级'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'childOrg', label: '下级组织', domain: 'organization', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'parentOrg', aliases: ['下级', '子部门', '下属机构', '下属企业', '子公司'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'owns', label: '控股', domain: 'organization', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'ownedBy', aliases: ['持股', '全资', '控股'],
     negatable: true, qualifiers: [QUAL.DATES, QUAL.ROLE, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'ownedBy', label: '被控股', domain: 'organization', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'owns', aliases: [], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.ROLE, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'successorOf', label: '前身', domain: 'organization', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'predecessorOf', aliases: ['前身', '承继'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'predecessorOf', label: '后继', domain: 'organization', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'successorOf', aliases: ['后继', '沿革'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
@@ -255,31 +277,37 @@ const BUILTIN = [
   // ---------- events ----------
   {
     key: 'participantIn', label: '参与事件', domain: 'person', range: 'event',
+    temporality: 'concurrent',
     inverse: 'hasParticipant', aliases: ['参与', '参加', '参战'],
     negatable: true, qualifiers: [QUAL.ROLE, QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'hasParticipant', label: '参与人物', domain: 'event', range: 'person',
+    temporality: 'concurrent',
     inverse: 'participantIn', aliases: [], negatable: true,
     qualifiers: [QUAL.ROLE, QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'eventAt', label: '发生地', domain: 'event', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'hostsEvent', aliases: ['地点', '发生地'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'hostsEvent', label: '相关事件', domain: 'organization', range: 'event',
+    temporality: 'concurrent',
     inverse: 'eventAt', aliases: [], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'precededBy', label: '前置事件', domain: 'event', range: 'event',
+    temporality: 'concurrent',
     inverse: 'followedBy', aliases: ['前因'], negatable: false,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'followedBy', label: '后续事件', domain: 'event', range: 'event',
+    temporality: 'concurrent',
     inverse: 'precededBy', aliases: ['后果'], negatable: false,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
@@ -287,31 +315,37 @@ const BUILTIN = [
   // ---------- social ----------
   {
     key: 'teacherOf', label: '老师', domain: 'person', range: 'person',
+    temporality: 'concurrent',
     inverse: 'studentOf', aliases: ['师', '老师', '业师', '座师'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'studentOf', label: '学生', domain: 'person', range: 'person',
+    temporality: 'concurrent',
     inverse: 'teacherOf', aliases: ['学生', '门生', '弟子'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'colleague', label: '同僚', domain: 'person', range: 'person',
+    temporality: 'concurrent',
     inverse: 'colleague', symmetric: true, aliases: ['同事', '同僚', '同官'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'friend', label: '朋友', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'friend', symmetric: true, aliases: ['友', '朋友', '好友', '友人'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'recommendedBy', label: '荐举人', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'recommended', aliases: ['举荐', '推荐', '保举'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'recommended', label: '被荐举人', domain: 'person', range: 'person',
+    temporality: 'persistent',
     inverse: 'recommendedBy', aliases: [], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
@@ -319,18 +353,22 @@ const BUILTIN = [
   // ---------- attributes expressed as predicates ----------
   {
     key: 'gender', label: '性别', domain: 'person', range: 'literal',
+    temporality: 'attribute',
     aliases: ['性别'], negatable: true, qualifiers: [QUAL.SOURCE],
   },
   {
     key: 'ethnicity', label: '民族', domain: 'person', range: 'literal',
+    temporality: 'attribute',
     aliases: ['民族'], negatable: true, qualifiers: [QUAL.SOURCE],
   },
   {
     key: 'education', label: '学历', domain: 'person', range: 'literal',
+    temporality: 'attribute',
     aliases: ['学历', '学位', '教育'], negatable: true, qualifiers: [QUAL.SOURCE],
   },
   {
     key: 'birthDate', label: '出生时间', domain: 'person', range: 'literal',
+    temporality: 'attribute',
     aliases: ['出生年月', '出生日期', '生辰'], negatable: true, qualifiers: [QUAL.SOURCE],
   },
   {
@@ -345,39 +383,47 @@ const BUILTIN = [
     // not an invented abstract node. Era classification is a query-time derivation
     // from those dates, never stored data.
     key: 'deathDate', label: '逝世时间', domain: 'person', range: 'literal',
+    temporality: 'attribute',
     aliases: ['逝世时间', '卒年', '去世'], negatable: true, qualifiers: [QUAL.SOURCE],
   },
   {
     key: 'existedDuring', label: '存在时间', domain: 'organization', range: 'literal',
+    temporality: 'attribute',
     aliases: ['存在时间', '存续期间'], negatable: false, qualifiers: [QUAL.SOURCE],
   },
   {
     key: 'bornAt', label: '出生地', domain: 'person', range: 'organization',
+    temporality: 'persistent',
     inverse: 'birthplaceOf', aliases: ['出生地', '生于', '出生於'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'birthplaceOf', label: '出生名人', domain: 'organization', range: 'person',
+    temporality: 'persistent',
     inverse: 'bornAt', aliases: [], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'residedAt', label: '户籍', domain: 'person', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'residentHere', aliases: ['户籍', '籍贯', '居住地', '居於'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'residentHere', label: '居民', domain: 'organization', range: 'person',
+    temporality: 'concurrent',
     inverse: 'residedAt', aliases: [], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'foundedOn', label: '开业日期', domain: 'organization', range: 'literal',
+    temporality: 'attribute',
     aliases: ['成立', '开业', '创办', '始建于'], negatable: false,
     qualifiers: [QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'dissolvedOn', label: '解散日期', domain: 'organization', range: 'literal',
+    temporality: 'attribute',
     aliases: ['解散', '撤销', '停业'], negatable: false,
     qualifiers: [QUAL.NOTE, QUAL.SOURCE],
   },
@@ -390,31 +436,37 @@ const BUILTIN = [
   // being flattened into a free-text prop.
   {
     key: 'publisher', label: '出版方', domain: 'thing', range: 'organization',
+    temporality: 'concurrent',
     inverse: 'publishedBy', aliases: ['出版方', '出版者', '出版单位'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'publishedBy', label: '出版', domain: 'organization', range: 'thing',
+    temporality: 'concurrent',
     inverse: 'publisher', aliases: ['出版', '刊行', '发行'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'author', label: '作者', domain: 'thing', range: 'person|organization',
+    temporality: 'persistent',
     inverse: 'authored', aliases: ['作者', '撰写者', '著者', '编者'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.ROLE, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'authored', label: '著作', domain: 'person|organization', range: 'thing',
+    temporality: 'persistent',
     inverse: 'author', aliases: ['著作', '撰写', '编著', '编写'], negatable: true,
     qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'about', label: '主题', domain: 'thing', range: 'person|organization|event|thing',
+    temporality: 'persistent',
     inverse: 'topicOf', aliases: ['主题', '关于', '记述'], negatable: true,
     qualifiers: [QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'topicOf', label: '相关文献', domain: 'person|organization|event|thing', range: 'thing',
+    temporality: 'persistent',
     inverse: 'about', aliases: [], negatable: true,
     qualifiers: [QUAL.NOTE, QUAL.SOURCE],
   },
@@ -428,21 +480,25 @@ const BUILTIN = [
   // statement about interpretation, not a boolean fact about the record.
   {
     key: 'documentedBy', label: '见于', domain: 'person|thing|organization|event',
+    temporality: 'persistent',
     range: 'evidence', inverse: 'documents', aliases: ['见于', '记载于', '出处', '据'],
     negatable: false, qualifiers: [QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'documents', label: '记载', domain: 'evidence',
+    temporality: 'persistent',
     range: 'person|thing|organization|event', inverse: 'documentedBy', aliases: ['记载', '记录'],
     negatable: false, qualifiers: [QUAL.ROLE, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'carriedBy', label: '载于', domain: 'evidence', range: 'thing|organization',
+    temporality: 'persistent',
     inverse: 'carries', aliases: ['载于', '刊于', '收录于', '发表于'],
     negatable: false, qualifiers: [QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'carries', label: '载有', domain: 'thing|organization', range: 'evidence',
+    temporality: 'persistent',
     inverse: 'carriedBy', aliases: ['载有', '刊载', '收录'],
     negatable: false, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
@@ -486,6 +542,15 @@ class PredicateRegistry {
       // 性别约束的是**客体**（「A 的儿子是 B」中的 B），不是主体。
       objectGender: def.objectGender || null,
       qualifiers: def.qualifiers || [],
+      // 时间性（文档 §2.2）。三档之一，必填。
+      //
+      // 为什么必填：未声明就会落进「不知道怎么切片」的灰区——查询时
+      // 要么被静默掠过，要么被当成永久成立。两者都是错的，而且不报错。
+      //
+      // 未声明时**不兜底**成 'persistent'：兜底会让新谓词悄悄变成
+      // 「永久成立」，这正是「时间必须是必备度量」要避免的。
+      // 缺省为 null，由测试强制要求显式声明。
+      temporality: def.temporality || null,
       source: def.source || (BUILTIN.some(b => b.key === def.key) ? 'builtin' : 'extension'),
     };
     this.byKey.set(entry.key, entry);

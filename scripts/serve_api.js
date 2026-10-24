@@ -149,9 +149,17 @@ function familyTree(id, dir, depth, predicate) {
 // 而清单本身很短且极少变动。改谓词时间性时**必须同步这里**，
 // 测试会检查两边一致。
 const PERSISTENT_PREDICATES = [
+  // 血缘与婚姻外的一切「一旦成立永久成立」的关系。
+  // 这份清单由 test/unit/predicate_temporality_sync.test.js 与
+  // registry.js 的 temporality 字段强制对齐——两边不一致时，
+  // 切片查询会静默漏掉或错判某类关系。
   'father', 'mother', 'childOfFather', 'childOfMother',
-  'maleChild', 'femaleChild', 'son', 'daughter',
+  'maleChild', 'femaleChild',
   'brother', 'sister', 'sibling',
+  'friend', 'recommendedBy', 'recommended',
+  'bornAt', 'birthplaceOf',
+  'author', 'authored', 'about', 'topicOf',
+  'documentedBy', 'documents', 'carriedBy', 'carries',
 ];
 
 function safeJson(text) {
@@ -566,9 +574,17 @@ async function route(req, res) {
     if (parts[1] === 'slice') {
       const entity = url.searchParams.get('entity');
       const atRaw = url.searchParams.get('at');
-      const at = Number(atRaw);
+      const atYear = Number(atRaw);
       if (!entity) return fail(res, 400, 'entity is required');
-      if (!Number.isFinite(at)) return fail(res, 400, 'at must be a year (integer)');
+      if (!Number.isFinite(atYear)) return fail(res, 400, 'at must be a year (integer)');
+
+      // 时间列存的是 Julian day number，不是年份。切片参数是年份
+      //（人读得懂），这里换算成 JDN 再查。
+      //
+      // 早期版本直接把年份拿去比较，结果永远查不到——实体 1042 年
+      // 存成 2101643，和 1042 比当然不等。这种错误不报错，只是静默返回空。
+      const { yearToJdn } = require('../src/time/julian.js');
+      const at = yearToJdn(atYear);
 
       // 区间边：T 落在 [from, to] 内。from/to 可缺，缺的那端视为无界。
       const interval = db.prepare(`
@@ -620,7 +636,7 @@ async function route(req, res) {
 
       return json(res, 200, {
         entity,
-        at,
+        at: atYear,
         interval: tag(interval, 'interval'),
         observed: tag(observed, 'observed'),
         persistent: tag(persistent, 'persistent'),

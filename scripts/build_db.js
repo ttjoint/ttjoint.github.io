@@ -396,6 +396,19 @@ function main() {
   );
   db.exec('COMMIT');
 
+  // ---------------------------------------------------------------- 时间下界
+  //
+  // 必须在实体全部入库后跑：推导要用参与者的生卒/存续期，
+  // 而建边时那些数据可能还没写完（人物在 persons 分片，边也在）。
+  //
+  // 文档 §2.2.1：任何成立的断言，其成立时刻必然落在可推导区间内。
+  // 全空等于宣称「任意时刻都可能成立」——那是放弃时间分析。
+  const boundsStats = applyTemporalBounds(db, registry);
+  stats.boundsInferred = boundsStats.inferred;
+  stats.boundsStated = boundsStats.stated;
+  stats.boundsObserved = boundsStats.observed;
+  stats.boundsUnresolved = boundsStats.unresolved;
+
   verify(db, stats);
 
   const bytes = fs.statSync(OUT).size;
@@ -404,6 +417,10 @@ function main() {
   console.log(
     `  entities ${stats.entities}  edges ${stats.edges}  aliases ${stats.aliases}  ` +
       `evidence ${stats.evidence}  provenance ${stats.provenance}  commits ${stats.commits}`,
+  );
+  console.log(
+    `  时间: 原文 ${stats.boundsStated}  观测 ${stats.boundsObserved}  ` +
+      `推导 ${stats.boundsInferred}  推不出 ${stats.boundsUnresolved}`,
   );
   console.log(`  ${(bytes / 1024 / 1024).toFixed(1)} MB`);
   db.close();
@@ -444,6 +461,74 @@ function loadCommits(db) {
 }
 
 /** Post-load invariants. A build that "succeeds" with a broken graph is worse than one that fails. */
+/**
+ * 为没有显式时间的边推导时间下界。
+ *
+ * 三档处理：
+ *   attribute   不动（不参与时间切片）
+ *   有显式时间  不动（原文优先）
+ *   其余        按参与者生卒 + 谓词应然约束推导，标 bounds_source='inferred'
+ *
+ * 推导不出来的（参与者也无生卒）保持 NULL——诚实地说「推不出来」，
+ * 而不是编一个看起来合理的区间。
+ */
+function applyTemporalBounds(db, registry) {
+  const { inferBounds } = require(path.join(ROOT, 'src', 'store', 'temporal_bounds.js'));
+
+  // 一次取出所有需要的实体存续期，避免逐边查询（28 万次查询会很慢）。
+  const lifespan = new Map();
+  for (const r of db.prepare('SELECT id, valid_from, valid_to FROM entities').all()) {
+    lifespan.set(r.id, r);
+  }
+
+  const rows = db.prepare(`
+    SELECT id, subject, predicate, object, valid_from, valid_to, observed_at
+      FROM edges
+     WHERE valid_from IS NULL AND valid_to IS NULL AND observed_at IS NULL
+  `).all();
+
+  const update = db.prepare(
+    'UPDATE edges SET valid_from = ?, valid_to = ?, bounds_source = ? WHERE id = ?',
+  );
+  // 已有显式时间的边也要标 source，否则「哪些是原文说的」查不出来。
+  const markStated = db.prepare(
+    "UPDATE edges SET bounds_source = 'stated' WHERE valid_from IS NOT NULL AND bounds_source IS NULL",
+  );
+  const markObserved = db.prepare(
+    "UPDATE edges SET bounds_source = 'observed' WHERE observed_at IS NOT NULL AND bounds_source IS NULL",
+  );
+
+  let inferred = 0;
+  let unresolved = 0;
+  db.exec('BEGIN');
+  for (const e of rows) {
+    const def = registry.get(e.predicate);
+    const temporality = def ? def.temporality : 'concurrent';
+    const subj = lifespan.get(e.subject) || null;
+    // literal 谓词的 object 不是实体 id，查不到就传 null
+    const obj = lifespan.get(e.object) || null;
+
+    const b = inferBounds(e, subj, obj, temporality);
+    if (b.boundsSource === 'inferred') {
+      update.run(b.validFrom, b.validTo, 'inferred', e.id);
+      inferred++;
+    } else {
+      // 推不出来：保持 NULL。这是真正的缺损，要能被统计到。
+      unresolved++;
+    }
+  }
+  markStated.run();
+  markObserved.run();
+  db.exec('COMMIT');
+
+  return {
+    inferred,
+    unresolved,
+    stated: db.prepare("SELECT COUNT(*) c FROM edges WHERE bounds_source='stated'").get().c,
+    observed: db.prepare("SELECT COUNT(*) c FROM edges WHERE bounds_source='observed'").get().c,
+  };
+}
+
 function verify(db, stats) {
   const one = (sql) => db.prepare(sql).get();
   const ent = one('SELECT COUNT(*) AS c FROM entities').c;
