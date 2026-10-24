@@ -41,7 +41,7 @@ const { fetchText } = require(path.join(ROOT, 'src', 'net', 'http.js'));
 const rawStore = require(path.join(ROOT, 'src', 'store', 'raw_store.js'));
 
 /** 抓取间隔。维基对匿名请求不友好，宁可慢。 */
-const DELAY_MS = 6000;
+const DELAY_MS = 4000;
 
 // 用 MediaWiki action=query 而不是 REST /page/summary。
 //
@@ -212,18 +212,38 @@ async function main() {
   console.log(`准备抓取 ${targets.length} 个维基条目（间隔 ${DELAY_MS}ms）`);
   const records = [];
   let fail = 0;
+  let consecutive429 = 0;
   for (const t of targets) {
+    // 幂等：已抓过的跳过（rawId 由名字决定）。断点续跑靠这个——
+    // 中断后重跑同一批，已成功的不再请求，只补失败的。
+    if (rawStore.exists(makeRawId(t.name))) {
+      continue;
+    }
     try {
       const rec = await fetchOne(t.name);
-      // 把库里的生卒年记在 raw 里，便于之后对照——
-      // 但**不**写进 payload.text，那是原文，不能掺入我们的数据。
       rec.payload.cbdbHint = t.cbdbFrom != null ? { from: t.cbdbFrom, to: t.cbdbTo, entityId: t.entityId } : null;
       records.push(rec);
       console.log(`  OK  ${rec.rawId}  ${rec.payload.text.length} 字  ${t.name} → ${rec.payload.title}`);
+      consecutive429 = 0;
       await sleep(DELAY_MS);
     } catch (e) {
       fail++;
-      console.log(`  跳过 ${t.name}: ${e.message}`);
+      const is429 = /429/.test(e.message);
+      if (is429) {
+        consecutive429++;
+        // 连续被限流说明 IP 已进冷却期，继续打只会更糟。
+        // 退避 60s × 连续次数，最多等 5 分钟；超过 5 次连续 429 就放弃本批。
+        if (consecutive429 >= 5) {
+          console.log(`  连续 ${consecutive429} 次 429，放弃本批（IP 疑似被限流，稍后再跑）`);
+          break;
+        }
+        const wait = Math.min(60000 * consecutive429, 300000);
+        console.log(`  ${t.name}: 429 限流，退避 ${Math.round(wait / 1000)}s`);
+        await sleep(wait);
+      } else {
+        console.log(`  跳过 ${t.name}: ${e.message}`);
+        await sleep(DELAY_MS);
+      }
     }
   }
 

@@ -1,0 +1,23 @@
+{
+  "id": "thing:8a3ed3f8d813",
+  "type": "thing",
+  "name": "廣川",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/42fadca367f8",
+      "span": {
+        "start": 12,
+        "end": 14
+      },
+      "quote": "廣川",
+      "formatVersion": 1,
+      "reason": "维基百科：董仲舒"
+    }
+  ]
+}

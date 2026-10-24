@@ -1,0 +1,23 @@
+{
+  "id": "thing:9372bfe3a4e0",
+  "type": "thing",
+  "name": "浙江天台",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/7a1de4a0e3aa",
+      "span": {
+        "start": 17,
+        "end": 21
+      },
+      "quote": "浙江天台",
+      "formatVersion": 1,
+      "reason": "维基百科：謝道清"
+    }
+  ]
+}

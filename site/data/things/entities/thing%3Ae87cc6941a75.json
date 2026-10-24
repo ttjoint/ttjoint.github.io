@@ -1,0 +1,23 @@
+{
+  "id": "thing:e87cc6941a75",
+  "type": "thing",
+  "name": "雲南大理府太和縣",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/a85d47bdda5f",
+      "span": {
+        "start": 16,
+        "end": 24
+      },
+      "quote": "雲南大理府太和縣",
+      "formatVersion": 1,
+      "reason": "维基百科：趙弼"
+    }
+  ]
+}
