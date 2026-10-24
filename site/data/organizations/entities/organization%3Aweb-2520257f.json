@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2520257f",
+  "type": "organization",
+  "name": "上海市委",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/20de37537bb4",
+      "span": {
+        "start": 130,
+        "end": 136
+      },
+      "quote": "上海市委书记",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

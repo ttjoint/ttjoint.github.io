@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-42ba4f03",
+  "type": "organization",
+  "name": "辽宁开原",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/d02e99e7e66d",
+      "span": {
+        "start": 58,
+        "end": 62
+      },
+      "quote": "辽宁开原",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

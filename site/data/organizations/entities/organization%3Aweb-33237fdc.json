@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-33237fdc",
+  "type": "organization",
+  "name": "中华人民共和国主席",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/9e933a9b0fa8",
+      "span": {
+        "start": 154,
+        "end": 163
+      },
+      "quote": "中华人民共和国主席",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

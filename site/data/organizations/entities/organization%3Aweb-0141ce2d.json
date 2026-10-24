@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-0141ce2d",
+  "type": "organization",
+  "name": "北京市",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/213e48b64f65",
+      "span": {
+        "start": 45,
+        "end": 48
+      },
+      "quote": "北京市",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

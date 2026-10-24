@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-351eb366",
+  "type": "organization",
+  "name": "中央全面深化改革委员会",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/f863788ad111",
+      "span": {
+        "start": 142,
+        "end": 158
+      },
+      "quote": "中央全面深化改革委员会办公室主任",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

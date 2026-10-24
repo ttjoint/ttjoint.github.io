@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-3357627a",
+  "type": "organization",
+  "name": "浙江嵊州",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/441fa673f531",
+      "span": {
+        "start": 60,
+        "end": 64
+      },
+      "quote": "浙江嵊州",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

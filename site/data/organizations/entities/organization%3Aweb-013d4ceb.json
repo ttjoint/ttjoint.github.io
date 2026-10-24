@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-013d4ceb",
+  "type": "organization",
+  "name": "公安部",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/a9301eeec8c4",
+      "span": {
+        "start": 120,
+        "end": 130
+      },
+      "quote": "公安部部长、党委书记",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

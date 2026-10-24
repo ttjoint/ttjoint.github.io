@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-33737582",
+  "type": "organization",
+  "name": "湖北黄梅",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/efb447467345",
+      "span": {
+        "start": 58,
+        "end": 62
+      },
+      "quote": "湖北黄梅",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

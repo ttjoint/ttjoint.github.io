@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2b352265",
+  "type": "organization",
+  "name": "山东博兴",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/4be96c53c632",
+      "span": {
+        "start": 59,
+        "end": 63
+      },
+      "quote": "山东博兴",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "_truncated": false,
-  "_count": 82,
-  "_pageSize": 82,
+  "_count": 168,
+  "_pageSize": 168,
   "_manifest": "manifest.json",
   "_note": "生成文件：仅为兼容保留，只含首页。全部数据见 index/page-*.json 或 entities/。请勿写入。",
   "rows": [
@@ -14,6 +14,26 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Aweb-2b0f6bd5.json"
+    },
+    {
+      "id": "organization:web-0141ce2d",
+      "name": "北京市",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-0141ce2d.json"
+    },
+    {
+      "id": "organization:web-26f85147",
+      "name": "北京市委",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-26f85147.json"
     },
     {
       "id": "organization:local-000003",
@@ -29,6 +49,16 @@
       "detail": "entities/organization%3Alocal-000003.json"
     },
     {
+      "id": "organization:web-43b5902b",
+      "name": "重庆市委",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-43b5902b.json"
+    },
+    {
       "id": "organization:local-000015",
       "name": "楚",
       "type": "organization",
@@ -39,6 +69,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000015.json"
+    },
+    {
+      "id": "organization:web-000a58aa",
+      "name": "党组",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-000a58aa.json"
     },
     {
       "id": "organization:local-000081",
@@ -67,6 +107,66 @@
       "detail": "entities/organization%3Alocal-000029.json"
     },
     {
+      "id": "organization:web-38b586ba",
+      "name": "福建福州",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-38b586ba.json"
+    },
+    {
+      "id": "organization:web-38b04b2e",
+      "name": "福建上杭",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-38b04b2e.json"
+    },
+    {
+      "id": "organization:web-38b20791",
+      "name": "福建尤溪",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-38b20791.json"
+    },
+    {
+      "id": "organization:web-372860d0",
+      "name": "甘肃定西",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-372860d0.json"
+    },
+    {
+      "id": "organization:web-37297851",
+      "name": "甘肃敦煌",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-37297851.json"
+    },
+    {
+      "id": "organization:web-3726955a",
+      "name": "甘肃两当",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-3726955a.json"
+    },
+    {
       "id": "organization:local-000079",
       "name": "公安部",
       "type": "organization",
@@ -75,6 +175,76 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000079.json"
+    },
+    {
+      "id": "organization:web-013d4ceb",
+      "name": "公安部",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-013d4ceb.json"
+    },
+    {
+      "id": "organization:web-2c2885cd",
+      "name": "广东番禺",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2c2885cd.json"
+    },
+    {
+      "id": "organization:web-2c289730",
+      "name": "广东省委",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2c289730.json"
+    },
+    {
+      "id": "organization:web-2c240cca",
+      "name": "广东兴宁",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2c240cca.json"
+    },
+    {
+      "id": "organization:web-2d04649f",
+      "name": "广西崇左",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2d04649f.json"
+    },
+    {
+      "id": "organization:web-41a0b4f3",
+      "name": "贵州织金",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-41a0b4f3.json"
+    },
+    {
+      "id": "organization:web-d4786fef",
+      "name": "国家监察委员会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-d4786fef.json"
     },
     {
       "id": "organization:local-000107",
@@ -90,6 +260,16 @@
       "detail": "entities/organization%3Alocal-000107.json"
     },
     {
+      "id": "organization:web-0151239e",
+      "name": "国务院",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-0151239e.json"
+    },
+    {
       "id": "organization:local-000019",
       "name": "国务院办公厅",
       "type": "organization",
@@ -98,6 +278,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000019.json"
+    },
+    {
+      "id": "organization:web-f1a10cc8",
+      "name": "国务院党组",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-f1a10cc8.json"
     },
     {
       "id": "organization:local-000037",
@@ -112,6 +302,26 @@
       "detail": "entities/organization%3Alocal-000037.json"
     },
     {
+      "id": "organization:web-32ae5606",
+      "name": "河北昌黎",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-32ae5606.json"
+    },
+    {
+      "id": "organization:web-32ab2621",
+      "name": "河北乐亭",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-32ab2621.json"
+    },
+    {
       "id": "organization:web-32aee491",
       "name": "河北永清",
       "type": "organization",
@@ -120,6 +330,36 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Aweb-32aee491.json"
+    },
+    {
+      "id": "organization:web-32b2d0ae",
+      "name": "河北赵县",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-32b2d0ae.json"
+    },
+    {
+      "id": "organization:web-32b213fe",
+      "name": "河南罗山",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-32b213fe.json"
+    },
+    {
+      "id": "organization:web-32ad0278",
+      "name": "河南原阳",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-32ad0278.json"
     },
     {
       "id": "organization:web-32b4be10",
@@ -132,6 +372,66 @@
       "detail": "entities/organization%3Aweb-32b4be10.json"
     },
     {
+      "id": "organization:web-fde94245",
+      "name": "黑龙江哈尔滨",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-fde94245.json"
+    },
+    {
+      "id": "organization:web-0833024a",
+      "name": "黑龙江望奎",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-0833024a.json"
+    },
+    {
+      "id": "organization:web-336af0b0",
+      "name": "湖北大冶",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-336af0b0.json"
+    },
+    {
+      "id": "organization:web-33737582",
+      "name": "湖北黄梅",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-33737582.json"
+    },
+    {
+      "id": "organization:web-3369b41d",
+      "name": "湖北五峰",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-3369b41d.json"
+    },
+    {
+      "id": "organization:web-336fdfd6",
+      "name": "湖南石门",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-336fdfd6.json"
+    },
+    {
       "id": "organization:web-336c9361",
       "name": "湖南岳阳",
       "type": "organization",
@@ -140,6 +440,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Aweb-336c9361.json"
+    },
+    {
+      "id": "organization:web-33734a7b",
+      "name": "湖南长沙",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-33734a7b.json"
     },
     {
       "id": "organization:local-000071",
@@ -165,6 +475,26 @@
       "detail": "entities/organization%3Alocal-000091.json"
     },
     {
+      "id": "organization:web-27c53597",
+      "name": "吉林梨树",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-27c53597.json"
+    },
+    {
+      "id": "organization:web-27c9e76a",
+      "name": "吉林通化",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-27c9e76a.json"
+    },
+    {
       "id": "organization:web-333a14f6",
       "name": "江苏常州",
       "type": "organization",
@@ -173,6 +503,26 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Aweb-333a14f6.json"
+    },
+    {
+      "id": "organization:web-3338b485",
+      "name": "江苏南京",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-3338b485.json"
+    },
+    {
+      "id": "organization:web-3338f5f3",
+      "name": "江苏南通",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-3338f5f3.json"
     },
     {
       "id": "organization:web-333d094e",
@@ -210,6 +560,16 @@
       "detail": "entities/organization%3Alocal-000105.json"
     },
     {
+      "id": "organization:web-24cfb2e4",
+      "name": "九三学社",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-24cfb2e4.json"
+    },
+    {
       "id": "organization:local-000109",
       "name": "九三学社中央委员会",
       "type": "organization",
@@ -220,6 +580,56 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000109.json"
+    },
+    {
+      "id": "organization:web-42b9d5fb",
+      "name": "辽宁大连",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-42b9d5fb.json"
+    },
+    {
+      "id": "organization:web-42bd3c2c",
+      "name": "辽宁盖州",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-42bd3c2c.json"
+    },
+    {
+      "id": "organization:web-42ba4f03",
+      "name": "辽宁开原",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-42ba4f03.json"
+    },
+    {
+      "id": "organization:web-42ba5100",
+      "name": "辽宁康平",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-42ba5100.json"
+    },
+    {
+      "id": "organization:web-42ba0b7f",
+      "name": "辽宁宽甸",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-42ba0b7f.json"
     },
     {
       "id": "organization:local-000027",
@@ -293,6 +703,16 @@
       "detail": "entities/organization%3Aweb-3346f6c8.json"
     },
     {
+      "id": "organization:web-462125bc",
+      "name": "全国人大常委会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-462125bc.json"
+    },
+    {
       "id": "organization:web-26547745",
       "name": "全国政协",
       "type": "organization",
@@ -313,6 +733,136 @@
       "detail": "entities/organization%3Alocal-000035.json"
     },
     {
+      "id": "organization:web-2b352265",
+      "name": "山东博兴",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2b352265.json"
+    },
+    {
+      "id": "organization:web-2b3762cf",
+      "name": "山东昌乐",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2b3762cf.json"
+    },
+    {
+      "id": "organization:web-2b359d87",
+      "name": "山东嘉祥",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2b359d87.json"
+    },
+    {
+      "id": "organization:web-2b3b2e16",
+      "name": "山东莱芜",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2b3b2e16.json"
+    },
+    {
+      "id": "organization:web-2b3b0958",
+      "name": "山东莱州",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2b3b0958.json"
+    },
+    {
+      "id": "organization:web-2b34c1e8",
+      "name": "山东临邑",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2b34c1e8.json"
+    },
+    {
+      "id": "organization:web-2b360ca1",
+      "name": "山东威海",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2b360ca1.json"
+    },
+    {
+      "id": "organization:web-2b3848fd",
+      "name": "山东沂水",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2b3848fd.json"
+    },
+    {
+      "id": "organization:web-2c15063a",
+      "name": "山西孝义",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2c15063a.json"
+    },
+    {
+      "id": "organization:web-2c16e826",
+      "name": "山西榆社",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2c16e826.json"
+    },
+    {
+      "id": "organization:web-4665ef71",
+      "name": "陕西富平",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-4665ef71.json"
+    },
+    {
+      "id": "organization:web-4667c743",
+      "name": "陕西武功",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-4667c743.json"
+    },
+    {
+      "id": "organization:web-466b7534",
+      "name": "陕西西安",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-466b7534.json"
+    },
+    {
       "id": "organization:local-000013",
       "name": "商",
       "type": "organization",
@@ -325,6 +875,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000013.json"
+    },
+    {
+      "id": "organization:web-2520257f",
+      "name": "上海市委",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2520257f.json"
     },
     {
       "id": "organization:local-000077",
@@ -362,6 +922,26 @@
       "detail": "entities/organization%3Alocal-000073.json"
     },
     {
+      "id": "organization:web-28ea36f4",
+      "name": "四川理塘",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-28ea36f4.json"
+    },
+    {
+      "id": "organization:web-28e5b740",
+      "name": "四川仁寿",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-28e5b740.json"
+    },
+    {
       "id": "organization:local-000045",
       "name": "宋",
       "type": "organization",
@@ -372,6 +952,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000045.json"
+    },
+    {
+      "id": "organization:web-4eecb17c",
+      "name": "台湾民主自治同盟",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-4eecb17c.json"
     },
     {
       "id": "organization:local-000059",
@@ -386,6 +976,26 @@
       "detail": "entities/organization%3Alocal-000059.json"
     },
     {
+      "id": "organization:web-27d12a75",
+      "name": "台湾台南",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-27d12a75.json"
+    },
+    {
+      "id": "organization:web-2a2d1e2e",
+      "name": "天津市委",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2a2d1e2e.json"
+    },
+    {
       "id": "organization:local-000113",
       "name": "涂山氏",
       "type": "organization",
@@ -396,6 +1006,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000113.json"
+    },
+    {
+      "id": "organization:web-0158825a",
+      "name": "外交部",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-0158825a.json"
     },
     {
       "id": "organization:local-000021",
@@ -432,6 +1052,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000125.json"
+    },
+    {
+      "id": "organization:web-408296f6",
+      "name": "西藏察雅",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-408296f6.json"
     },
     {
       "id": "organization:local-000099",
@@ -498,6 +1128,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000039.json"
+    },
+    {
+      "id": "organization:web-2ffc960d",
+      "name": "新疆伊宁",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-2ffc960d.json"
     },
     {
       "id": "organization:local-000087",
@@ -571,6 +1211,66 @@
       "detail": "entities/organization%3Alocal-000089.json"
     },
     {
+      "id": "organization:web-3357ef08",
+      "name": "浙江慈溪",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-3357ef08.json"
+    },
+    {
+      "id": "organization:web-33573a27",
+      "name": "浙江宁波",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-33573a27.json"
+    },
+    {
+      "id": "organization:web-335a2b91",
+      "name": "浙江瑞安",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-335a2b91.json"
+    },
+    {
+      "id": "organization:web-3357627a",
+      "name": "浙江嵊州",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-3357627a.json"
+    },
+    {
+      "id": "organization:web-3355a132",
+      "name": "浙江仙居",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-3355a132.json"
+    },
+    {
+      "id": "organization:web-335d1256",
+      "name": "浙江诸暨",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-335d1256.json"
+    },
+    {
       "id": "organization:local-000101",
       "name": "郑",
       "type": "organization",
@@ -618,6 +1318,16 @@
       "detail": "entities/organization%3Alocal-000025.json"
     },
     {
+      "id": "organization:web-24c4f085",
+      "name": "中共中央",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-24c4f085.json"
+    },
+    {
       "id": "organization:local-000111",
       "name": "中共中央组织部",
       "type": "organization",
@@ -650,6 +1360,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000129.json"
+    },
+    {
+      "id": "organization:web-e1c9c281",
+      "name": "中国共产党中央委员会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-e1c9c281.json"
     },
     {
       "id": "organization:web-18b8e6ec",
@@ -878,6 +1598,46 @@
       "detail": "entities/organization%3Alocal-000009.json"
     },
     {
+      "id": "organization:web-b18871fb",
+      "name": "中华人民共和国中央军事委员会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-b18871fb.json"
+    },
+    {
+      "id": "organization:web-33237fdc",
+      "name": "中华人民共和国主席",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-33237fdc.json"
+    },
+    {
+      "id": "organization:web-776db276",
+      "name": "中央办公厅",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-776db276.json"
+    },
+    {
+      "id": "organization:web-a0262d88",
+      "name": "中央财经委员会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-a0262d88.json"
+    },
+    {
       "id": "organization:local-000011",
       "name": "中央财经委员会办公室",
       "type": "organization",
@@ -886,6 +1646,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000011.json"
+    },
+    {
+      "id": "organization:web-4d3f740f",
+      "name": "中央纪律检查委员会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-4d3f740f.json"
     },
     {
       "id": "organization:local-000053",
@@ -902,6 +1672,16 @@
       "detail": "entities/organization%3Alocal-000053.json"
     },
     {
+      "id": "organization:web-351eb366",
+      "name": "中央全面深化改革委员会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-351eb366.json"
+    },
+    {
       "id": "organization:local-000049",
       "name": "中央全面深化改革委员会办公室",
       "type": "organization",
@@ -910,6 +1690,36 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000049.json"
+    },
+    {
+      "id": "organization:web-781614ae",
+      "name": "中央统战部",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-781614ae.json"
+    },
+    {
+      "id": "organization:web-cb11ea49",
+      "name": "中央外事工作委员会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-cb11ea49.json"
+    },
+    {
+      "id": "organization:web-778f846a",
+      "name": "中央宣传部",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-778f846a.json"
     },
     {
       "id": "organization:local-000067",
@@ -922,6 +1732,36 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000067.json"
+    },
+    {
+      "id": "organization:web-65e6bb5f",
+      "name": "中央政法委员会",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-65e6bb5f.json"
+    },
+    {
+      "id": "organization:web-77b6f823",
+      "name": "中央政治局",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-77b6f823.json"
+    },
+    {
+      "id": "organization:web-78192884",
+      "name": "中央组织部",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-78192884.json"
     },
     {
       "id": "organization:local-000131",
@@ -948,6 +1788,16 @@
       "detail": "entities/organization%3Alocal-000063.json"
     },
     {
+      "id": "organization:web-6e9c56dc",
+      "name": "最高人民法院",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-6e9c56dc.json"
+    },
+    {
       "id": "organization:local-000057",
       "name": "最高人民检察院",
       "type": "organization",
@@ -956,6 +1806,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/organization%3Alocal-000057.json"
+    },
+    {
+      "id": "organization:web-64d8b254",
+      "name": "最高人民检察院",
+      "type": "organization",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/organization%3Aweb-64d8b254.json"
     }
   ]
 }

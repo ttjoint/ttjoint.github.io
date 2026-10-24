@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-0158825a",
+  "type": "organization",
+  "name": "外交部",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/213e48b64f65",
+      "span": {
+        "start": 133,
+        "end": 138
+      },
+      "quote": "外交部部长",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

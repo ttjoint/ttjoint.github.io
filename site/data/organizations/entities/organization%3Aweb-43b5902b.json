@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-43b5902b",
+  "type": "organization",
+  "name": "重庆市委",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/34836b6a749e",
+      "span": {
+        "start": 136,
+        "end": 142
+      },
+      "quote": "重庆市委书记",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

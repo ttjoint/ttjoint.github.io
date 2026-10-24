@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2b3762cf",
+  "type": "organization",
+  "name": "山东昌乐",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/0c5457774fb1",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "山东昌乐",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

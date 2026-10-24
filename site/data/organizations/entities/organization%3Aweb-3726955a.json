@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-3726955a",
+  "type": "organization",
+  "name": "甘肃两当",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/7677ad28f363",
+      "span": {
+        "start": 45,
+        "end": 49
+      },
+      "quote": "甘肃两当",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

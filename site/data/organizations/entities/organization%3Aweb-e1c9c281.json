@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-e1c9c281",
+  "type": "organization",
+  "name": "中国共产党中央委员会",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/9e933a9b0fa8",
+      "span": {
+        "start": 128,
+        "end": 141
+      },
+      "quote": "中国共产党中央委员会总书记",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

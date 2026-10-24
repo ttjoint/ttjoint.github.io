@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-466b7534",
+  "type": "organization",
+  "name": "陕西西安",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/eb7a03f341ba",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "陕西西安",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

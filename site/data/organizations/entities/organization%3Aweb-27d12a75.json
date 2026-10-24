@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-27d12a75",
+  "type": "organization",
+  "name": "台湾台南",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/a4de32863426",
+      "span": {
+        "start": 58,
+        "end": 62
+      },
+      "quote": "台湾台南",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

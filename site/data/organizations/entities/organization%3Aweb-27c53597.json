@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-27c53597",
+  "type": "organization",
+  "name": "吉林梨树",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/20de37537bb4",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "吉林梨树",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

@@ -16,6 +16,16 @@
       "quote": "河北永清",
       "formatVersion": 1,
       "reason": "原文籍贯"
+    },
+    {
+      "rawRef": "raw:web/people/57fafabc1aa7",
+      "span": {
+        "start": 61,
+        "end": 65
+      },
+      "quote": "河北永清",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
     }
   ]
 }

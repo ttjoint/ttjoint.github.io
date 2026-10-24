@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-335a2b91",
+  "type": "organization",
+  "name": "浙江瑞安",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/76b7e9443b2b",
+      "span": {
+        "start": 44,
+        "end": 48
+      },
+      "quote": "浙江瑞安",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

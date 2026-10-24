@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2b359d87",
+  "type": "organization",
+  "name": "山东嘉祥",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/c7f310132e4d",
+      "span": {
+        "start": 61,
+        "end": 65
+      },
+      "quote": "山东嘉祥",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

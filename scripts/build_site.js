@@ -54,7 +54,10 @@ const ROOT = path.join(__dirname, '..');
 const SITE = path.join(ROOT, 'site');
 
 /** Files and directories that make up the browser shell. */
-const SHELL = ['index.html', 'js', 'css'];
+// `vendor` 必须在列表里：Vue 从 CDN 改成本地后，漏了 vendor 会让
+// 静态站白屏（`Vue is not defined`），而本地开发看 index.html 是好的——
+// 问题只在发布产物里出现，最难查的一类。
+const SHELL = ['index.html', 'js', 'css', 'vendor'];
 
 /** Copy a file or directory tree. Returns the number of files written. */
 function copyRecursive(src, dest) {

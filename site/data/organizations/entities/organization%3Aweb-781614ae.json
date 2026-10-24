@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-781614ae",
+  "type": "organization",
+  "name": "中央统战部",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/5582f60d6ed0",
+      "span": {
+        "start": 146,
+        "end": 153
+      },
+      "quote": "中央统战部部长",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

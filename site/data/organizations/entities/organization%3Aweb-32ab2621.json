@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-32ab2621",
+  "type": "organization",
+  "name": "河北乐亭",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/4a620c5c2a83",
+      "span": {
+        "start": 56,
+        "end": 60
+      },
+      "quote": "河北乐亭",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

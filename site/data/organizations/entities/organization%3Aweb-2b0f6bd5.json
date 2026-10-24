@@ -16,6 +16,16 @@
       "quote": "安徽怀宁",
       "formatVersion": 1,
       "reason": "原文籍贯"
+    },
+    {
+      "rawRef": "raw:web/people/b3dbd7a5e23a",
+      "span": {
+        "start": 60,
+        "end": 64
+      },
+      "quote": "安徽怀宁",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2a2d1e2e",
+  "type": "organization",
+  "name": "天津市委",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/eb4af3a3ea10",
+      "span": {
+        "start": 102,
+        "end": 108
+      },
+      "quote": "天津市委书记",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

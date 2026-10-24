@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-4667c743",
+  "type": "organization",
+  "name": "陕西武功",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/0645d003c8b2",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "陕西武功",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

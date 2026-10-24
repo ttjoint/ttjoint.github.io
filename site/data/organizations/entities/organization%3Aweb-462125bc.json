@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-462125bc",
+  "type": "organization",
+  "name": "全国人大常委会",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/eb7a03f341ba",
+      "span": {
+        "start": 121,
+        "end": 134
+      },
+      "quote": "十四届全国人大常委会委员长",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-32b2d0ae",
+  "type": "organization",
+  "name": "河北赵县",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/c746a66a947c",
+      "span": {
+        "start": 58,
+        "end": 62
+      },
+      "quote": "河北赵县",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

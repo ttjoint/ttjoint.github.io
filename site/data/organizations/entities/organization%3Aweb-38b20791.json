@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-38b20791",
+  "type": "organization",
+  "name": "福建尤溪",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/b75640154313",
+      "span": {
+        "start": 45,
+        "end": 49
+      },
+      "quote": "福建尤溪",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

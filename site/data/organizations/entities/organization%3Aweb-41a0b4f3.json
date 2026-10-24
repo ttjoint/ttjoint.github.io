@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-41a0b4f3",
+  "type": "organization",
+  "name": "贵州织金",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/5fe4de014446",
+      "span": {
+        "start": 61,
+        "end": 65
+      },
+      "quote": "贵州织金",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

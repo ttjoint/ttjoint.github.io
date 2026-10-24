@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-28e5b740",
+  "type": "organization",
+  "name": "四川仁寿",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/1744be0128d2",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "四川仁寿",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

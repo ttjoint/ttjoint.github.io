@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2d04649f",
+  "type": "organization",
+  "name": "广西崇左",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/426d8adf26a5",
+      "span": {
+        "start": 59,
+        "end": 63
+      },
+      "quote": "广西崇左",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

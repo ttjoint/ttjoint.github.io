@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2c2885cd",
+  "type": "organization",
+  "name": "广东番禺",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/7fbacbd84053",
+      "span": {
+        "start": 64,
+        "end": 68
+      },
+      "quote": "广东番禺",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

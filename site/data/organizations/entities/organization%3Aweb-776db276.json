@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-776db276",
+  "type": "organization",
+  "name": "中央办公厅",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/b75640154313",
+      "span": {
+        "start": 136,
+        "end": 177
+      },
+      "quote": "中央办公厅主任、中央和国家机关工作委员会书记、中央党校（国家行政学院）校长（院长）",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

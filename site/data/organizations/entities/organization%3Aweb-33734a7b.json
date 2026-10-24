@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-33734a7b",
+  "type": "organization",
+  "name": "湖南长沙",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/5582f60d6ed0",
+      "span": {
+        "start": 48,
+        "end": 52
+      },
+      "quote": "湖南长沙",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-38b04b2e",
+  "type": "organization",
+  "name": "福建上杭",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/3610fbaac447",
+      "span": {
+        "start": 48,
+        "end": 52
+      },
+      "quote": "福建上杭",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

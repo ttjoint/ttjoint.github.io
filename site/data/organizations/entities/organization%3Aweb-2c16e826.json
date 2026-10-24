@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2c16e826",
+  "type": "organization",
+  "name": "山西榆社",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/8c2ff075408a",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "山西榆社",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

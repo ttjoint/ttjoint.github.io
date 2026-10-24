@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-24c4f085",
+  "type": "organization",
+  "name": "中共中央",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/9e933a9b0fa8",
+      "span": {
+        "start": 142,
+        "end": 153
+      },
+      "quote": "中共中央军事委员会主席",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

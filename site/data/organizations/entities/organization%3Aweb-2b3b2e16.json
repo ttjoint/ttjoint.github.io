@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2b3b2e16",
+  "type": "organization",
+  "name": "山东莱芜",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/be92c6730d51",
+      "span": {
+        "start": 61,
+        "end": 65
+      },
+      "quote": "山东莱芜",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

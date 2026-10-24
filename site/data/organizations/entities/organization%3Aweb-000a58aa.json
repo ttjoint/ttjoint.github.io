@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-000a58aa",
+  "type": "organization",
+  "name": "党组",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/8014d6c7d703",
+      "span": {
+        "start": 149,
+        "end": 153
+      },
+      "quote": "党组成员",
+      "formatVersion": 1,
+      "reason": "原文：党组成员"
+    }
+  ]
+}

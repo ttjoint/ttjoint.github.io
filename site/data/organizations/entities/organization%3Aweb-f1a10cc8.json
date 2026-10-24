@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-f1a10cc8",
+  "type": "organization",
+  "name": "国务院党组",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/a9301eeec8c4",
+      "span": {
+        "start": 112,
+        "end": 119
+      },
+      "quote": "国务院党组成员",
+      "formatVersion": 1,
+      "reason": "原文：国务院党组成员"
+    }
+  ]
+}

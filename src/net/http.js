@@ -101,6 +101,62 @@ function fetchText(url, opts = {}) {
     followRedirects = 5,
   } = opts;
 
+/**
+ * 按正确的字符集解码响应体。
+ *
+ * 顺序：HTTP 头里的 charset → HTML meta 声明 → UTF-8 试解 → GBK 兜底。
+ *
+ * 为什么最后用「试解 + 判断」而不是直接 GBK：GBK 也能「成功」解出
+ * UTF-8 字节（得到乱码但不抛错），所以不能只看有没有报错。
+ * 判据用替换字符（U+FFFD）的数量——UTF-8 硬解 GBK 文本会产生大量
+ * U+FFFD，反之 GBK 解 UTF-8 文本也会。
+ */
+function decodeBody(buf, contentType) {
+  const fromHeader = /charset=([\w-]+)/i.exec(contentType || '');
+  if (fromHeader) {
+    const enc = normalizeEncoding(fromHeader[1]);
+    try {
+      return new TextDecoder(enc).decode(buf);
+    } catch {
+      /* 未知编码，继续尝试 */
+    }
+  }
+
+  // HTML 里的 meta charset（只扫前 2KB，声明总在头部）
+  const head = buf.subarray(0, 2048).toString('latin1');
+  const fromMeta = /<meta[^>]+charset=["']?([\w-]+)/i.exec(head);
+  if (fromMeta) {
+    const enc = normalizeEncoding(fromMeta[1]);
+    try {
+      return new TextDecoder(enc).decode(buf);
+    } catch {
+      /* 继续 */
+    }
+  }
+
+  // 无声明：比较两种解码的乱码比例，取干净的那个。
+  const asUtf8 = new TextDecoder('utf-8').decode(buf);
+  const badUtf8 = (asUtf8.match(/�/g) || []).length;
+  if (badUtf8 === 0) return asUtf8;
+
+  try {
+    const asGbk = new TextDecoder('gbk').decode(buf);
+    const badGbk = (asGbk.match(/�/g) || []).length;
+    if (badGbk < badUtf8) return asGbk;
+  } catch {
+    /* 环境不支持 GBK，返回 UTF-8 结果 */
+  }
+  return asUtf8;
+}
+
+/** 常见别名归一。 */
+function normalizeEncoding(enc) {
+  const e = String(enc).toLowerCase().replace(/[^a-z0-9]/g, '');
+  if (e === 'gb2312' || e === 'gbk' || e === 'gb18030' || e === 'cp936') return 'gbk';
+  if (e === 'utf8') return 'utf-8';
+  return e;
+}
+
   return new Promise((resolve, reject) => {
     let parsed;
     try {
@@ -140,9 +196,16 @@ function fetchText(url, opts = {}) {
         chunks.push(chunk);
       });
       res.on('end', () => {
+        const buf = Buffer.concat(chunks);
         resolve({
           status,
-          body: Buffer.concat(chunks).toString('utf8'),
+          // 不能一律按 UTF-8 解。
+          //
+          // 中文站点大量仍用 GBK（人民网、很多政府网站）。按 UTF-8 硬解
+          // 得到的是「ϰ��ƽͬ־����」这种乱码——不报错，但内容不可用，
+          // 而且会静默流进 raw 层，之后所有抽取都基于乱码。
+          // 实测：73 个人民网页面全部踩中。
+          body: decodeBody(buf, res.headers['content-type']),
           finalUrl: parsed.href,
           headers: res.headers,
         });

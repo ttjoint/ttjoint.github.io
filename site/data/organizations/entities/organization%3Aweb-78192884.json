@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-78192884",
+  "type": "organization",
+  "name": "中央组织部",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/8c2ff075408a",
+      "span": {
+        "start": 150,
+        "end": 157
+      },
+      "quote": "中央组织部部长",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

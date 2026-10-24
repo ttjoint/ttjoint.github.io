@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-24cfb2e4",
+  "type": "organization",
+  "name": "九三学社",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/769fe5775ff6",
+      "span": {
+        "start": 66,
+        "end": 72
+      },
+      "quote": "九三学社成员",
+      "formatVersion": 1,
+      "reason": "原文：九三学社成员"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-42b9d5fb",
+  "type": "organization",
+  "name": "辽宁大连",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/057689ba4db8",
+      "span": {
+        "start": 59,
+        "end": 63
+      },
+      "quote": "辽宁大连",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

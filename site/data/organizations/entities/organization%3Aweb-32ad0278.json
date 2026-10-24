@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-32ad0278",
+  "type": "organization",
+  "name": "河南原阳",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/15ef79d4cbba",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "河南原阳",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

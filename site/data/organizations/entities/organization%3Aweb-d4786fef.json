@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-d4786fef",
+  "type": "organization",
+  "name": "国家监察委员会",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/9a9a53a5673f",
+      "span": {
+        "start": 120,
+        "end": 129
+      },
+      "quote": "国家监察委员会主任",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

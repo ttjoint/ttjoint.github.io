@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-778f846a",
+  "type": "organization",
+  "name": "中央宣传部",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/15ef79d4cbba",
+      "span": {
+        "start": 135,
+        "end": 142
+      },
+      "quote": "中央宣传部部长",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

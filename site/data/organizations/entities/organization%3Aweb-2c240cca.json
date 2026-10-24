@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2c240cca",
+  "type": "organization",
+  "name": "广东兴宁",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/3645efa23edf",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "广东兴宁",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

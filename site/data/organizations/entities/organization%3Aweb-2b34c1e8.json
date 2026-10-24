@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2b34c1e8",
+  "type": "organization",
+  "name": "山东临邑",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/10ff50266400",
+      "span": {
+        "start": 44,
+        "end": 48
+      },
+      "quote": "山东临邑",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

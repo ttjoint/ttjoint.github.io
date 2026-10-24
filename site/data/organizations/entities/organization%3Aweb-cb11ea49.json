@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-cb11ea49",
+  "type": "organization",
+  "name": "中央外事工作委员会",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/213e48b64f65",
+      "span": {
+        "start": 118,
+        "end": 132
+      },
+      "quote": "中央外事工作委员会办公室主任",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

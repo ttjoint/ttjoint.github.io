@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2ffc960d",
+  "type": "organization",
+  "name": "新疆伊宁",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/c966cf141aad",
+      "span": {
+        "start": 72,
+        "end": 76
+      },
+      "quote": "新疆伊宁",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

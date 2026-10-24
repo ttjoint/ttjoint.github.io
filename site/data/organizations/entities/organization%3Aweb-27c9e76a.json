@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-27c9e76a",
+  "type": "organization",
+  "name": "吉林通化",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/34836b6a749e",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "吉林通化",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

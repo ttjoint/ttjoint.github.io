@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-b18871fb",
+  "type": "organization",
+  "name": "中华人民共和国中央军事委员会",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/9e933a9b0fa8",
+      "span": {
+        "start": 164,
+        "end": 180
+      },
+      "quote": "中华人民共和国中央军事委员会主席",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

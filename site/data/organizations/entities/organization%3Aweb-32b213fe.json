@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-32b213fe",
+  "type": "organization",
+  "name": "河南罗山",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/e7dc25a894a5",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "河南罗山",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

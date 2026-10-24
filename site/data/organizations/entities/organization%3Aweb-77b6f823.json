@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-77b6f823",
+  "type": "organization",
+  "name": "中央政治局",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/b75640154313",
+      "span": {
+        "start": 120,
+        "end": 135
+      },
+      "quote": "中央政治局常委、中央书记处书记",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

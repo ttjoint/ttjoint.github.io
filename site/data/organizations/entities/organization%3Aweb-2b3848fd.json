@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2b3848fd",
+  "type": "organization",
+  "name": "山东沂水",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/4a85214f0099",
+      "span": {
+        "start": 58,
+        "end": 62
+      },
+      "quote": "山东沂水",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

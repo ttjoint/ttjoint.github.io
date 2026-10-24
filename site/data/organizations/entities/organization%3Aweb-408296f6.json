@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-408296f6",
+  "type": "organization",
+  "name": "西藏察雅",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/2cc67b6f5471",
+      "span": {
+        "start": 62,
+        "end": 66
+      },
+      "quote": "西藏察雅",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

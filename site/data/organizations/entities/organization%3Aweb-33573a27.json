@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-33573a27",
+  "type": "organization",
+  "name": "浙江宁波",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/8f1c4c000bbb",
+      "span": {
+        "start": 60,
+        "end": 64
+      },
+      "quote": "浙江宁波",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

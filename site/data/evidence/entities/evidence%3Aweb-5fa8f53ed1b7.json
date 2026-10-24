@@ -1,0 +1,13 @@
+{
+  "id": "evidence:web-5fa8f53ed1b7",
+  "type": "evidence",
+  "name": "韩正 · http://cpc.people.com.cn/n1/2023/0311/c64036-32642046.html",
+  "medium": "web",
+  "carrier": null,
+  "url": "http://cpc.people.com.cn/n1/2023/0311/c64036-32642046.html",
+  "accessedAt": "2026-10-24T16:30:03.442Z",
+  "excerpt": "韩正简历\n\n2023年03月11日13:45 来源： 人民网-人民日报 222\n\n韩正，男，汉族，1954年4月生，浙江慈溪人，1975年12月参加工作，1979年5月加入中国共产党，华东师范大学国际问题研究所国际关系与世界经济专业毕业，在职研究生学历，经济学硕士学位，高级经济师。\n\n现任中华人民共和国副主席。",
+  "reliability": null,
+  "note": "rawRef: raw:web/people/5fa8f53ed1b7",
+  "unresolved": false
+}

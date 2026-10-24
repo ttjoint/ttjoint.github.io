@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-0833024a",
+  "type": "organization",
+  "name": "黑龙江望奎",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/8014d6c7d703",
+      "span": {
+        "start": 47,
+        "end": 52
+      },
+      "quote": "黑龙江望奎",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

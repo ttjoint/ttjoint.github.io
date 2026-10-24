@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-0151239e",
+  "type": "organization",
+  "name": "国务院",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/76b7e9443b2b",
+      "span": {
+        "start": 119,
+        "end": 129
+      },
+      "quote": "国务院总理、党组书记",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

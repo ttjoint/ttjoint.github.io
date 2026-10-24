@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-42ba5100",
+  "type": "organization",
+  "name": "辽宁康平",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/535f6a2cec55",
+      "span": {
+        "start": 61,
+        "end": 65
+      },
+      "quote": "辽宁康平",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

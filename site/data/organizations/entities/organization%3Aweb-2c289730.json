@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-2c289730",
+  "type": "organization",
+  "name": "广东省委",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/3610fbaac447",
+      "span": {
+        "start": 130,
+        "end": 136
+      },
+      "quote": "广东省委书记",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

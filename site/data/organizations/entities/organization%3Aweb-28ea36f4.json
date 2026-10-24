@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-28ea36f4",
+  "type": "organization",
+  "name": "四川理塘",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/73646829e1b7",
+      "span": {
+        "start": 70,
+        "end": 74
+      },
+      "quote": "四川理塘",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

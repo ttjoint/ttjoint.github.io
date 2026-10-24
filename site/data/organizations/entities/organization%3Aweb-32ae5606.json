@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-32ae5606",
+  "type": "organization",
+  "name": "河北昌黎",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/9a9a53a5673f",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "河北昌黎",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

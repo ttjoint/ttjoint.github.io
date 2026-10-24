@@ -16,6 +16,16 @@
       "quote": "清华大学副校长",
       "formatVersion": 1,
       "reason": "原文职务所属组织"
+    },
+    {
+      "rawRef": "raw:web/people/f370ad6ed29c",
+      "span": {
+        "start": 158,
+        "end": 165
+      },
+      "quote": "清华大学副校长",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-64d8b254",
+  "type": "organization",
+  "name": "最高人民检察院",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/51de3f04a39f",
+      "span": {
+        "start": 135,
+        "end": 158
+      },
+      "quote": "最高人民检察院检察长、党组书记、检察委员会委员",
+      "formatVersion": 1,
+      "reason": "原文职务所属组织"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-4eecb17c",
+  "type": "organization",
+  "name": "台湾民主自治同盟",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/a4de32863426",
+      "span": {
+        "start": 64,
+        "end": 68
+      },
+      "quote": "台盟成员",
+      "formatVersion": 1,
+      "reason": "原文：台盟成员"
+    }
+  ]
+}

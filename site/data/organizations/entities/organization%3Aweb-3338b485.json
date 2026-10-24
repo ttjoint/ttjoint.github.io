@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-3338b485",
+  "type": "organization",
+  "name": "江苏南京",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/47c3fde04b1c",
+      "span": {
+        "start": 61,
+        "end": 65
+      },
+      "quote": "江苏南京",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}

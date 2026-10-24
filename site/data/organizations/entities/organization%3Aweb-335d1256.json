@@ -1,0 +1,21 @@
+{
+  "id": "organization:web-335d1256",
+  "type": "organization",
+  "name": "浙江诸暨",
+  "props": {},
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:web/people/eb4af3a3ea10",
+      "span": {
+        "start": 47,
+        "end": 51
+      },
+      "quote": "浙江诸暨",
+      "formatVersion": 1,
+      "reason": "原文籍贯"
+    }
+  ]
+}
