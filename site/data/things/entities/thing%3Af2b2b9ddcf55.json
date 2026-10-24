@@ -28,6 +28,16 @@
       "quote": "廬州合肥",
       "formatVersion": 1,
       "reason": "维基百科：包拯"
+    },
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/3d728bc605e2",
+      "span": {
+        "start": 27,
+        "end": 31
+      },
+      "quote": "廬州合肥",
+      "formatVersion": 1,
+      "reason": "维基百科：包拯"
     }
   ]
 }

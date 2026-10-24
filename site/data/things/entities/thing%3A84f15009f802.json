@@ -1,0 +1,23 @@
+{
+  "id": "thing:84f15009f802",
+  "type": "thing",
+  "name": "浙江永康五崗塘村",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/797edf7403fa",
+      "span": {
+        "start": 21,
+        "end": 29
+      },
+      "quote": "浙江永康五崗塘村",
+      "formatVersion": 1,
+      "reason": "维基百科：徐無黨"
+    }
+  ]
+}

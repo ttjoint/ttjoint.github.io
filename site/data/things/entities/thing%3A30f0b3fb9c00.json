@@ -1,0 +1,23 @@
+{
+  "id": "thing:30f0b3fb9c00",
+  "type": "thing",
+  "name": "浙江餘姚",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/c60e7c3595ba",
+      "span": {
+        "start": 20,
+        "end": 24
+      },
+      "quote": "浙江餘姚",
+      "formatVersion": 1,
+      "reason": "维基百科：胡沂"
+    }
+  ]
+}

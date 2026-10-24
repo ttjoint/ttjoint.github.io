@@ -1,0 +1,23 @@
+{
+  "id": "thing:5a5bff43bbad",
+  "type": "thing",
+  "name": "南宋南康軍建昌",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/608ebea9f43e",
+      "span": {
+        "start": 12,
+        "end": 19
+      },
+      "quote": "南宋南康軍建昌",
+      "formatVersion": 1,
+      "reason": "维基百科：胡泳"
+    }
+  ]
+}

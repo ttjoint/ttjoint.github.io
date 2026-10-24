@@ -1,0 +1,23 @@
+{
+  "id": "thing:1390b5ba3c32",
+  "type": "thing",
+  "name": "潁州焦陂",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/5612a2d7984b",
+      "span": {
+        "start": 13,
+        "end": 17
+      },
+      "quote": "潁州焦陂",
+      "formatVersion": 1,
+      "reason": "维基百科：焦千之"
+    }
+  ]
+}

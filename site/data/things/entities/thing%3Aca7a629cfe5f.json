@@ -1,0 +1,23 @@
+{
+  "id": "thing:ca7a629cfe5f",
+  "type": "thing",
+  "name": "婺源大畈",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/6fa00eead4d7",
+      "span": {
+        "start": 26,
+        "end": 30
+      },
+      "quote": "婺源大畈",
+      "formatVersion": 1,
+      "reason": "维基百科：汪炎昶"
+    }
+  ]
+}

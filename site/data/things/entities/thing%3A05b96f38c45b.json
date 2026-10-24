@@ -1,0 +1,23 @@
+{
+  "id": "thing:05b96f38c45b",
+  "type": "thing",
+  "name": "明朝南直隸桐城",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/e22656d0bd6a",
+      "span": {
+        "start": 8,
+        "end": 15
+      },
+      "quote": "明朝南直隸桐城",
+      "formatVersion": 1,
+      "reason": "维基百科：夏子孝，字以忠，明朝南直隸桐城"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "thing:8c73409d8187",
+  "type": "thing",
+  "name": "明朝浙江山陰",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/5a31bc23b9ea",
+      "span": {
+        "start": 7,
+        "end": 13
+      },
+      "quote": "明朝浙江山陰",
+      "formatVersion": 1,
+      "reason": "维基百科：俞孜，字景修，明朝浙江山陰"
+    }
+  ]
+}

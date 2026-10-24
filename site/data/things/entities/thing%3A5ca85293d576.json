@@ -1,0 +1,23 @@
+{
+  "id": "thing:5ca85293d576",
+  "type": "thing",
+  "name": "明朝番禺",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/9ac1eb803f8d",
+      "span": {
+        "start": 16,
+        "end": 20
+      },
+      "quote": "明朝番禺",
+      "formatVersion": 1,
+      "reason": "维基百科：趙介"
+    }
+  ]
+}

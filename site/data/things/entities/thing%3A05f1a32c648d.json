@@ -1,0 +1,23 @@
+{
+  "id": "thing:05f1a32c648d",
+  "type": "thing",
+  "name": "明朝開封府祥符縣",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/630c86558a81",
+      "span": {
+        "start": 7,
+        "end": 15
+      },
+      "quote": "明朝開封府祥符縣",
+      "formatVersion": 1,
+      "reason": "维基百科：丘鐸，字文振，明朝開封府祥符縣"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "thing:4d2cb80d25dc",
+  "type": "thing",
+  "name": "唐朝",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/744db6cb7a17",
+      "span": {
+        "start": 8,
+        "end": 10
+      },
+      "quote": "唐朝",
+      "formatVersion": 1,
+      "reason": "维基百科：馮贄"
+    },
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/4f5ff9275e64",
+      "span": {
+        "start": 13,
+        "end": 15
+      },
+      "quote": "唐朝",
+      "formatVersion": 1,
+      "reason": "维基百科：宋威"
+    }
+  ]
+}

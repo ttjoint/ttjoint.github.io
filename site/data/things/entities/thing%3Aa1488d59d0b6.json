@@ -38,6 +38,36 @@
       "quote": "沛國譙縣",
       "formatVersion": 1,
       "reason": "维基百科：曹植"
+    },
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/921623b7e1b9",
+      "span": {
+        "start": 28,
+        "end": 32
+      },
+      "quote": "沛國譙縣",
+      "formatVersion": 1,
+      "reason": "维基百科：曹操"
+    },
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/0cfb0e8e4685",
+      "span": {
+        "start": 26,
+        "end": 30
+      },
+      "quote": "沛國譙縣",
+      "formatVersion": 1,
+      "reason": "维基百科：魏文帝曹丕"
+    },
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/cbbe1a17a718",
+      "span": {
+        "start": 24,
+        "end": 28
+      },
+      "quote": "沛國譙縣",
+      "formatVersion": 1,
+      "reason": "维基百科：曹植"
     }
   ]
 }

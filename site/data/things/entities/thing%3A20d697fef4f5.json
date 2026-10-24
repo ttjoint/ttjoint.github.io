@@ -1,0 +1,23 @@
+{
+  "id": "thing:20d697fef4f5",
+  "type": "thing",
+  "name": "婺源梅田",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/d0b2a1aa34cb",
+      "span": {
+        "start": 21,
+        "end": 25
+      },
+      "quote": "婺源梅田",
+      "formatVersion": 1,
+      "reason": "维基百科：胡一桂"
+    }
+  ]
+}

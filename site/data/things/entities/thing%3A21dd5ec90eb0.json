@@ -1,0 +1,23 @@
+{
+  "id": "thing:21dd5ec90eb0",
+  "type": "thing",
+  "name": "南宋興化軍莆田",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/077719c05cf7",
+      "span": {
+        "start": 35,
+        "end": 42
+      },
+      "quote": "南宋興化軍莆田",
+      "formatVersion": 1,
+      "reason": "维基百科：鄭樵"
+    }
+  ]
+}

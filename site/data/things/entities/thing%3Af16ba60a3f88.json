@@ -1,0 +1,23 @@
+{
+  "id": "thing:f16ba60a3f88",
+  "type": "thing",
+  "name": "唐朝和州",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/18d6bf6b7ff9",
+      "span": {
+        "start": 8,
+        "end": 12
+      },
+      "quote": "唐朝和州",
+      "formatVersion": 1,
+      "reason": "维基百科：何蕃"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "thing:731d28203ee1",
+  "type": "thing",
+  "name": "廣陵",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/19cb83056d56",
+      "span": {
+        "start": 9,
+        "end": 11
+      },
+      "quote": "廣陵",
+      "formatVersion": 1,
+      "reason": "维基百科：歐陽忞"
+    }
+  ]
+}

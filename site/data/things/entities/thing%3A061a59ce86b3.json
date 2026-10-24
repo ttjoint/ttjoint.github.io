@@ -1,0 +1,23 @@
+{
+  "id": "thing:061a59ce86b3",
+  "type": "thing",
+  "name": "祖先是濟南",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/eeec55a831c5",
+      "span": {
+        "start": 16,
+        "end": 21
+      },
+      "quote": "祖先是濟南",
+      "formatVersion": 1,
+      "reason": "维基百科：周晉"
+    }
+  ]
+}

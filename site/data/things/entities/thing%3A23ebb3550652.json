@@ -18,6 +18,16 @@
       "quote": "婺州金華",
       "formatVersion": 1,
       "reason": "维基百科：唐仲友"
+    },
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/51d64985751d",
+      "span": {
+        "start": 21,
+        "end": 25
+      },
+      "quote": "婺州金華",
+      "formatVersion": 1,
+      "reason": "维基百科：唐仲友"
     }
   ]
 }

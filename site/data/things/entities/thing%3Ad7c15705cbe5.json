@@ -1,0 +1,23 @@
+{
+  "id": "thing:d7c15705cbe5",
+  "type": "thing",
+  "name": "筠川",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/ba1d0396e6b6",
+      "span": {
+        "start": 8,
+        "end": 10
+      },
+      "quote": "筠川",
+      "formatVersion": 1,
+      "reason": "维基百科：任濤"
+    }
+  ]
+}

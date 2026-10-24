@@ -1,0 +1,23 @@
+{
+  "id": "thing:64ddd7de32ef",
+  "type": "thing",
+  "name": "明朝東莞虎門北柵村",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/3b3a1475291d",
+      "span": {
+        "start": 11,
+        "end": 20
+      },
+      "quote": "明朝東莞虎門北柵村",
+      "formatVersion": 1,
+      "reason": "维基百科：陳益，字德裕，號素訥，明朝東莞虎門北柵村人。將番薯種苗從南洋引入中國的第一人。\n在大航海時代哥倫布發現新大陸後，美洲新物種被傳播到了歐洲及歐洲殖民地。在西班牙水手將甘薯帶到菲律賓，後拓展到東南亞等地。萬曆八年，陳益到達安南"
+    }
+  ]
+}

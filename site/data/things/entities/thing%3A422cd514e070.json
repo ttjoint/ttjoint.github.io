@@ -1,0 +1,23 @@
+{
+  "id": "thing:422cd514e070",
+  "type": "thing",
+  "name": "北宋蜀",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/ce0654d8bf0a",
+      "span": {
+        "start": 19,
+        "end": 22
+      },
+      "quote": "北宋蜀",
+      "formatVersion": 1,
+      "reason": "维基百科：黃休復"
+    }
+  ]
+}

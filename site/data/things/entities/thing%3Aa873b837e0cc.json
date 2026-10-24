@@ -1,0 +1,23 @@
+{
+  "id": "thing:a873b837e0cc",
+  "type": "thing",
+  "name": "碭山",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/a4430b5c087c",
+      "span": {
+        "start": 12,
+        "end": 14
+      },
+      "quote": "碭山",
+      "formatVersion": 1,
+      "reason": "维基百科：朱全昱"
+    }
+  ]
+}

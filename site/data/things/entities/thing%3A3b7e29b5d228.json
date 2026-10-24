@@ -1,0 +1,23 @@
+{
+  "id": "thing:3b7e29b5d228",
+  "type": "thing",
+  "name": "江西崇仁",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/aa17d93d2a0d",
+      "span": {
+        "start": 17,
+        "end": 21
+      },
+      "quote": "江西崇仁",
+      "formatVersion": 1,
+      "reason": "维基百科：饒延年"
+    }
+  ]
+}

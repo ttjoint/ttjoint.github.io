@@ -1,7 +1,7 @@
 {
   "_truncated": false,
-  "_count": 56,
-  "_pageSize": 56,
+  "_count": 122,
+  "_pageSize": 122,
   "_manifest": "manifest.json",
   "_note": "生成文件：仅为兼容保留，只含首页。全部数据见 index/page-*.json 或 entities/。请勿写入。",
   "rows": [
@@ -26,6 +26,26 @@
       "detail": "entities/thing%3A58e6254a8b9b.json"
     },
     {
+      "id": "thing:415aa6145ef5",
+      "name": "722年—798年）瀛州樂壽",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A415aa6145ef5.json"
+    },
+    {
+      "id": "thing:407633b55c97",
+      "name": "北宋河南府洛陽",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A407633b55c97.json"
+    },
+    {
       "id": "thing:5a13616a4133",
       "name": "北宋河南伊川",
       "type": "thing",
@@ -34,6 +54,26 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3A5a13616a4133.json"
+    },
+    {
+      "id": "thing:7ab828834cf3",
+      "name": "北宋齊安",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A7ab828834cf3.json"
+    },
+    {
+      "id": "thing:422cd514e070",
+      "name": "北宋蜀",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A422cd514e070.json"
     },
     {
       "id": "thing:6f6d821c4bd7",
@@ -56,6 +96,16 @@
       "detail": "entities/thing%3Aa0dd95586110.json"
     },
     {
+      "id": "thing:a873b837e0cc",
+      "name": "碭山",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Aa873b837e0cc.json"
+    },
+    {
       "id": "thing:dba44d86032a",
       "name": "道州營道縣",
       "type": "thing",
@@ -74,6 +124,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3A07dd1cf462c7.json"
+    },
+    {
+      "id": "thing:69a7634a4bd5",
+      "name": "東光",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A69a7634a4bd5.json"
     },
     {
       "id": "thing:39370821c876",
@@ -96,6 +156,16 @@
       "detail": "entities/thing%3A324bce1530a6.json"
     },
     {
+      "id": "thing:ad5467f3c6f5",
+      "name": "鳳翔",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Aad5467f3c6f5.json"
+    },
+    {
       "id": "thing:45bb55c04e88",
       "name": "福建路興化軍仙遊縣",
       "type": "thing",
@@ -106,6 +176,16 @@
       "detail": "entities/thing%3A45bb55c04e88.json"
     },
     {
+      "id": "thing:8d91fb5db02c",
+      "name": "撫養兒子周堂長大成",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A8d91fb5db02c.json"
+    },
+    {
       "id": "thing:a0f9e99246a8",
       "name": "撫州臨川縣鹽阜嶺",
       "type": "thing",
@@ -114,6 +194,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3Aa0f9e99246a8.json"
+    },
+    {
+      "id": "thing:fe32bbe163cd",
+      "name": "復州竟陵縣西湖",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Afe32bbe163cd.json"
     },
     {
       "id": "thing:e52267da7dae",
@@ -136,6 +226,16 @@
       "detail": "entities/thing%3A8a3ed3f8d813.json"
     },
     {
+      "id": "thing:731d28203ee1",
+      "name": "廣陵",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A731d28203ee1.json"
+    },
+    {
       "id": "thing:90727fe3db93",
       "name": "河東路介休城關文家莊",
       "type": "thing",
@@ -154,6 +254,26 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3Ad5b2b2a29850.json"
+    },
+    {
+      "id": "thing:da651f512fdb",
+      "name": "河南府洛陽縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ada651f512fdb.json"
+    },
+    {
+      "id": "thing:9161521b65cc",
+      "name": "河南衛輝府汲縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A9161521b65cc.json"
     },
     {
       "id": "thing:ca3ba8bac2fb",
@@ -186,6 +306,16 @@
       "detail": "entities/thing%3A12fe65b2360e.json"
     },
     {
+      "id": "thing:9392f9fbc696",
+      "name": "建安",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A9392f9fbc696.json"
+    },
+    {
       "id": "thing:ef7139cb7516",
       "name": "建昌軍南城",
       "type": "thing",
@@ -206,6 +336,16 @@
       "detail": "entities/thing%3A748ecaa17f27.json"
     },
     {
+      "id": "thing:85a8c53170a4",
+      "name": "建寧崇安",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A85a8c53170a4.json"
+    },
+    {
       "id": "thing:cfe6279c3953",
       "name": "江蘇省江寧府上元縣",
       "type": "thing",
@@ -214,6 +354,86 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3Acfe6279c3953.json"
+    },
+    {
+      "id": "thing:64b9a10400a0",
+      "name": "江蘇無錫",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A64b9a10400a0.json"
+    },
+    {
+      "id": "thing:3b7e29b5d228",
+      "name": "江西崇仁",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A3b7e29b5d228.json"
+    },
+    {
+      "id": "thing:53fd942d039b",
+      "name": "今泉上鎮泉上村）客家",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A53fd942d039b.json"
+    },
+    {
+      "id": "thing:495da53e38dc",
+      "name": "今重慶南川、綦江一帶）僚",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A495da53e38dc.json"
+    },
+    {
+      "id": "thing:a72a48ffb0f9",
+      "name": "晉州平陽",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Aa72a48ffb0f9.json"
+    },
+    {
+      "id": "thing:f1a373cdea3b",
+      "name": "京兆",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Af1a373cdea3b.json"
+    },
+    {
+      "id": "thing:7b8685f0c406",
+      "name": "蘭溪",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A7b8685f0c406.json"
+    },
+    {
+      "id": "thing:453b043af063",
+      "name": "盧龍軍",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A453b043af063.json"
     },
     {
       "id": "thing:f2b2b9ddcf55",
@@ -254,6 +474,216 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3A9da44c4dce2a.json"
+    },
+    {
+      "id": "thing:ecfa63f53b1a",
+      "name": "明朝安邑",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Aecfa63f53b1a.json"
+    },
+    {
+      "id": "thing:e9646589b870",
+      "name": "明朝淳安徐氏的僕",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ae9646589b870.json"
+    },
+    {
+      "id": "thing:4717e316d459",
+      "name": "明朝大同府廣昌縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A4717e316d459.json"
+    },
+    {
+      "id": "thing:64ddd7de32ef",
+      "name": "明朝東莞虎門北柵村",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A64ddd7de32ef.json"
+    },
+    {
+      "id": "thing:5ca85293d576",
+      "name": "明朝番禺",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A5ca85293d576.json"
+    },
+    {
+      "id": "thing:aa6977806758",
+      "name": "明朝淮安府山陽縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Aaa6977806758.json"
+    },
+    {
+      "id": "thing:05f1a32c648d",
+      "name": "明朝開封府祥符縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A05f1a32c648d.json"
+    },
+    {
+      "id": "thing:5a387f0ec208",
+      "name": "明朝末年南直隸潛山縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A5a387f0ec208.json"
+    },
+    {
+      "id": "thing:b96fb598e401",
+      "name": "明朝南直隸蘇州府嘉定縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ab96fb598e401.json"
+    },
+    {
+      "id": "thing:05b96f38c45b",
+      "name": "明朝南直隸桐城",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A05b96f38c45b.json"
+    },
+    {
+      "id": "thing:4c13cf37dd15",
+      "name": "明朝內黃",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A4c13cf37dd15.json"
+    },
+    {
+      "id": "thing:d05d0f7d7002",
+      "name": "明朝紹興府山陰縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ad05d0f7d7002.json"
+    },
+    {
+      "id": "thing:fae3dc4e47e4",
+      "name": "明朝松江府",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Afae3dc4e47e4.json"
+    },
+    {
+      "id": "thing:d6e80a8969a4",
+      "name": "明朝仙居縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ad6e80a8969a4.json"
+    },
+    {
+      "id": "thing:4f433268a7cc",
+      "name": "明朝襄陵縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A4f433268a7cc.json"
+    },
+    {
+      "id": "thing:8c73409d8187",
+      "name": "明朝浙江山陰",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A8c73409d8187.json"
+    },
+    {
+      "id": "thing:ea9dabb760b4",
+      "name": "南劍州劍浦縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Aea9dabb760b4.json"
+    },
+    {
+      "id": "thing:d004c0df59b7",
+      "name": "南京",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ad004c0df59b7.json"
+    },
+    {
+      "id": "thing:b7431b9c8697",
+      "name": "南宋建州",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ab7431b9c8697.json"
+    },
+    {
+      "id": "thing:5a5bff43bbad",
+      "name": "南宋南康軍建昌",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A5a5bff43bbad.json"
+    },
+    {
+      "id": "thing:21dd5ec90eb0",
+      "name": "南宋興化軍莆田",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A21dd5ec90eb0.json"
     },
     {
       "id": "thing:a1488d59d0b6",
@@ -316,6 +746,16 @@
       "detail": "entities/thing%3Af81ed1cc2638.json"
     },
     {
+      "id": "thing:f06e0c45dd9a",
+      "name": "沙陀",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Af06e0c45dd9a.json"
+    },
+    {
       "id": "thing:81997b6a306d",
       "name": "山東東路濟南府歷城縣",
       "type": "thing",
@@ -324,6 +764,16 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3A81997b6a306d.json"
+    },
+    {
+      "id": "thing:316ff7a8397f",
+      "name": "陝西華州潼關",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A316ff7a8397f.json"
     },
     {
       "id": "thing:ad168852668d",
@@ -386,6 +836,16 @@
       "detail": "entities/thing%3A3d615c64fb85.json"
     },
     {
+      "id": "thing:791c359b69ba",
+      "name": "宋州碭山",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A791c359b69ba.json"
+    },
+    {
       "id": "thing:4e6693ee3ff4",
       "name": "蘇州吳縣",
       "type": "thing",
@@ -406,6 +866,76 @@
       "detail": "entities/thing%3A52da04fe0f39.json"
     },
     {
+      "id": "thing:7ca695d0c5fc",
+      "name": "泰州海陵",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A7ca695d0c5fc.json"
+    },
+    {
+      "id": "thing:4d2cb80d25dc",
+      "name": "唐朝",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A4d2cb80d25dc.json"
+    },
+    {
+      "id": "thing:f16ba60a3f88",
+      "name": "唐朝和州",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Af16ba60a3f88.json"
+    },
+    {
+      "id": "thing:560ee871e803",
+      "name": "唐朝末年許州鄢陵",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A560ee871e803.json"
+    },
+    {
+      "id": "thing:ad9325c46e97",
+      "name": "唐朝蘇州吳縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Aad9325c46e97.json"
+    },
+    {
+      "id": "thing:dd5ace7eac24",
+      "name": "唐代",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Add5ace7eac24.json"
+    },
+    {
+      "id": "thing:8e16653aaaf2",
+      "name": "唐代莆田",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A8e16653aaaf2.json"
+    },
+    {
       "id": "thing:26ed17201077",
       "name": "魏郡元城貴鄉",
       "type": "thing",
@@ -424,6 +954,36 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3A42f4636508e1.json"
+    },
+    {
+      "id": "thing:ca7a629cfe5f",
+      "name": "婺源大畈",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Aca7a629cfe5f.json"
+    },
+    {
+      "id": "thing:20d697fef4f5",
+      "name": "婺源梅田",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A20d697fef4f5.json"
+    },
+    {
+      "id": "thing:44659d9c6d4d",
+      "name": "婺州東陽郭宅",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A44659d9c6d4d.json"
     },
     {
       "id": "thing:23ebb3550652",
@@ -456,6 +1016,36 @@
       "detail": "entities/thing%3A6d9ed42eb1ae.json"
     },
     {
+      "id": "thing:e08ddbdd1030",
+      "name": "瀛州景城",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ae08ddbdd1030.json"
+    },
+    {
+      "id": "thing:1390b5ba3c32",
+      "name": "潁州焦陂",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A1390b5ba3c32.json"
+    },
+    {
+      "id": "thing:c893d0773b46",
+      "name": "原為魏州元城",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ac893d0773b46.json"
+    },
+    {
       "id": "thing:37344c178259",
       "name": "越州山陰",
       "type": "thing",
@@ -474,6 +1064,36 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3Ae87cc6941a75.json"
+    },
+    {
+      "id": "thing:d7c15705cbe5",
+      "name": "筠川",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ad7c15705cbe5.json"
+    },
+    {
+      "id": "thing:246a7bc82c07",
+      "name": "浙東慈谿",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A246a7bc82c07.json"
+    },
+    {
+      "id": "thing:e18d4b3ac5cb",
+      "name": "浙江承宣布政使司紹興府蕭山縣",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3Ae18d4b3ac5cb.json"
     },
     {
       "id": "thing:a0b3548a5cc8",
@@ -504,6 +1124,26 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3A9372bfe3a4e0.json"
+    },
+    {
+      "id": "thing:84f15009f802",
+      "name": "浙江永康五崗塘村",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A84f15009f802.json"
+    },
+    {
+      "id": "thing:30f0b3fb9c00",
+      "name": "浙江餘姚",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A30f0b3fb9c00.json"
     },
     {
       "id": "thing:efaa0de77748",
@@ -554,6 +1194,26 @@
       "lifespan": null,
       "external": {},
       "detail": "entities/thing%3Alocal-000001.json"
+    },
+    {
+      "id": "thing:8d4f8eeef15f",
+      "name": "自署稱晉陽",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A8d4f8eeef15f.json"
+    },
+    {
+      "id": "thing:061a59ce86b3",
+      "name": "祖先是濟南",
+      "type": "thing",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": {},
+      "detail": "entities/thing%3A061a59ce86b3.json"
     },
     {
       "id": "thing:local-000003",
