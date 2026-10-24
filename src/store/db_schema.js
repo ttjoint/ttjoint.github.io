@@ -263,6 +263,29 @@ const DDL = [
   //
   // severity: 'conflict'（同一事实多说法，史料分歧，不是错误）
   //           'suspect' （逻辑可疑，可能是录入错，也可能是生年本身是推的）
+  // 跨来源实体归并：**链接，不是物理合并**。
+  //
+  // 没有这张表时，苏轼是两个实体（cbdb-3767 与 wikipedia-xxx），
+  // 多说法检测器看不到冲突（它们不在同一 subject 下），页面显示两个
+  // 「苏轼」，关系图谱被割裂。
+  //
+  // 为什么不做物理合并（删一个、搬边到另一个）：
+  //
+  //   - 两个来源生年不同，合并后只能留一个，另一个说法就丢了
+  //   - 归并错了（同名不同人）时，已经搬走的边很难还原
+  //   - 无法追溯「这条断言原本属于哪个来源的实体」
+  //
+  // 建链接则：原始实体和它的边一条不动，查询时把同组视为一个。
+  // 归并错了删一行就恢复原状。
+  `CREATE TABLE entity_merges (
+     canonical_id TEXT NOT NULL,
+     merged_id    TEXT NOT NULL,
+     reason       TEXT,
+     merged_at    TEXT,
+     PRIMARY KEY (merged_id)
+   )`,
+  `CREATE INDEX idx_entity_merges_canonical ON entity_merges(canonical_id)`,
+
   `CREATE TABLE edge_flags (
      edge_id     TEXT NOT NULL,
      detector_id TEXT NOT NULL,

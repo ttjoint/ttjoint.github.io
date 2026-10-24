@@ -1,0 +1,23 @@
+{
+  "id": "thing:a0f9e99246a8",
+  "type": "thing",
+  "name": "撫州臨川縣鹽阜嶺",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/06f775eb1f57",
+      "span": {
+        "start": 36,
+        "end": 44
+      },
+      "quote": "撫州臨川縣鹽阜嶺",
+      "formatVersion": 1,
+      "reason": "维基百科：王安石"
+    }
+  ]
+}

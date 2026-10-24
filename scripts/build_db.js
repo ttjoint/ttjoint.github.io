@@ -409,6 +409,24 @@ function main() {
   stats.boundsObserved = boundsStats.observed;
   stats.boundsUnresolved = boundsStats.unresolved;
 
+  // ---------------------------------------------------------------- 生卒年边
+  //
+  // 让所有来源的生卒年都变成**边**，统一比较口径。
+  //
+  // 问题：CBDB 的生卒年只存在 entities.valid_from/valid_to 列里，
+  // 网页和维基则产出 birthDate/deathDate 边。于是同一人的两个来源
+  // 一个在列上、一个在边上，检测器比不到——实测 multiple-values 恒为 0，
+  // 而实际上苏轼的 CBDB 1036 与维基 1037年1月8日 是真实的说法分歧。
+  //
+  // 列和边不是重复：列是「实体的存续期」（时间切片、时间界推导要用），
+  // 边是「某个来源的断言」（多说法比较要用）。同一个人可以有多个来源
+  // 的生年断言，但只能有一个存续期——后者由前者推导。
+  stats.birthEdges = materializeLifespanEdges(db);
+
+  // 读入跨来源归并。数据库每次重建，归并表会清空，而归并是人工判断的
+  // 结果，不该随重建丢失——权威来源是 data/merges.json。
+  stats.merges = loadEntityMerges(db);
+
   // 冲突标注**不在这里做**。
   //
   // 检测是「判断」，edges 是「事实」。把判断写进事实表有三个问题：
@@ -436,6 +454,8 @@ function main() {
     `  时间: 原文 ${stats.boundsStated}  观测 ${stats.boundsObserved}  ` +
       `推导 ${stats.boundsInferred}  推不出 ${stats.boundsUnresolved}`,
   );
+  console.log(`  生卒年边: ${stats.birthEdges} 条（从实体存续期派生，供多来源比较）`);
+  console.log(`  跨来源归并: ${stats.merges} 条（data/merges.json）`);
   console.log('  冲突标注：用 node scripts/run_detectors.js 独立重算（不写 edges）');
   console.log(`  ${(bytes / 1024 / 1024).toFixed(1)} MB`);
   db.close();
@@ -542,6 +562,89 @@ function applyTemporalBounds(db, registry) {
     stated: db.prepare("SELECT COUNT(*) c FROM edges WHERE bounds_source='stated'").get().c,
     observed: db.prepare("SELECT COUNT(*) c FROM edges WHERE bounds_source='observed'").get().c,
   };
+}
+
+/**
+ * 从实体存续期列生成 birthDate / deathDate 边。
+ *
+ * 只为「还没有这两个谓词的边」的实体生成——已有边的（网页、维基）
+ * 保留它们自己的说法，不能被列值覆盖。否则苏轼的维基说法 1037
+ * 会被 CBDB 的 1036 冲掉，冲突就消失了。
+ *
+ * 客体存年份文本（如「1036年」），与网页/维基的写法同构，
+ * 读者在页面上看到的是年份而不是 JDN。
+ */
+function materializeLifespanEdges(db) {
+  const { jdnToYear } = require(path.join(ROOT, 'src', 'time', 'julian.js'));
+  const rows = db.prepare(`
+    SELECT e.id, e.valid_from, e.valid_to
+      FROM entities e
+     WHERE e.type = 'person'
+       AND (e.valid_from IS NOT NULL OR e.valid_to IS NOT NULL)
+       AND NOT EXISTS (SELECT 1 FROM edges x WHERE x.subject = e.id AND x.predicate = 'birthDate')
+       AND NOT EXISTS (SELECT 1 FROM edges x WHERE x.subject = e.id AND x.predicate = 'deathDate')
+  `).all();
+
+  const insert = db.prepare(
+    'INSERT OR IGNORE INTO edges (id, subject, predicate, object, qualifiers, bounds_source) VALUES (?, ?, ?, ?, NULL, ?)',
+  );
+  const { edgeId } = require(path.join(ROOT, 'src', 'store', 'db_build_helpers.js'));
+
+  let n = 0;
+  db.exec('BEGIN');
+  for (const r of rows) {
+    if (r.valid_from != null) {
+      const y = jdnToYear(r.valid_from);
+      const obj = y < 0 ? `前${Math.abs(y)}年` : `${y}年`;
+      // bounds_source 标 'entity'：这条边是从实体的存续期列派生的，
+      // 不是某个原始文献的直接断言。审计时要能区分。
+      insert.run(edgeId(r.id, 'birthDate', obj, 'entity'), r.id, 'birthDate', obj, 'entity');
+      n++;
+    }
+    if (r.valid_to != null) {
+      const y = jdnToYear(r.valid_to);
+      const obj = y < 0 ? `前${Math.abs(y)}年` : `${y}年`;
+      insert.run(edgeId(r.id, 'deathDate', obj, 'entity'), r.id, 'deathDate', obj, 'entity');
+      n++;
+    }
+  }
+  db.exec('COMMIT');
+  return n;
+}
+
+/**
+ * 把 data/merges.json 读进 entity_merges 表。
+ *
+ * 归并是「判断」，不是「事实」，所以它不进 edges/entities，而是一张
+ * 可撤销的链接表。撤销只需删 JSON 里那条再重建。
+ */
+function loadEntityMerges(db) {
+  const file = path.join(ROOT, 'data', 'merges.json');
+  if (!fs.existsSync(file)) return 0;
+  let doc;
+  try {
+    doc = JSON.parse(fs.readFileSync(file, 'utf8'));
+  } catch (e) {
+    console.warn(`  merges.json 解析失败，跳过归并：${e.message}`);
+    return 0;
+  }
+  const rows = Array.isArray(doc.merges) ? doc.merges : [];
+  const insert = db.prepare(
+    'INSERT OR REPLACE INTO entity_merges (canonical_id, merged_id, reason, merged_at) VALUES (?, ?, ?, ?)',
+  );
+  let n = 0;
+  db.exec('BEGIN');
+  for (const r of rows) {
+    if (!r.canonical_id || !r.merged_id) continue;
+    // 只接受库里真实存在的实体，防止 JSON 里的陈旧条目引用已删实体。
+    const ok = db.prepare('SELECT 1 FROM entities WHERE id = ?').get(r.canonical_id)
+      && db.prepare('SELECT 1 FROM entities WHERE id = ?').get(r.merged_id);
+    if (!ok) continue;
+    insert.run(r.canonical_id, r.merged_id, r.reason || null, r.merged_at || null);
+    n++;
+  }
+  db.exec('COMMIT');
+  return n;
 }
 
 function verify(db, stats) {

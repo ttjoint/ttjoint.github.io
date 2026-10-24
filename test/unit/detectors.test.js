@@ -115,8 +115,10 @@ test('detectors: 管理页展示规则、命中量、rationale', () => {
 
 test('flags: API 详情页带出标注', () => {
   const api = fs.readFileSync(path.join(ROOT, 'scripts', 'serve_api.js'), 'utf8');
-  // 批量取出（不是逐边查）——详情页要展示几十条边
-  assert.match(api, /edge_id IN \(SELECT id FROM edges WHERE subject = \? OR object = \?\)/);
+  // 批量取出（不是逐边查）——详情页要展示几十条边。
+  // 现在按归并组取（subject IN (...))：同一个人可能有多个来源实体。
+  assert.match(api, /edge_id IN \(SELECT id FROM edges WHERE subject IN/);
+  assert.match(api, /groupIds/, '要按归并组取边');
   // 空数组而非 undefined：前端判空统一用 .length
   assert.match(api, /flags: flagsByEdge\.get\(e\.edge_id\) \|\| \[\]/);
 });
@@ -204,4 +206,59 @@ test('多说法视图：同一 literal 属性的多个值并列显示，不丢�
   const card = fs.readFileSync(path.join(ROOT, 'js', 'views', 'entity', 'info_card.js'), 'utf8');
   assert.match(card, /value\._variants/, '信息卡要渲染 _variants');
   assert.match(card, /无出处/, '没有出处的说法要标明——孤证和有据可查不一样');
+});
+
+// ---------------------------------------------------------------- 多来源冲突
+//
+// 这是本项目第一份**真实的**多说法数据：维基百科（社区编纂）与
+// CBDB（哈佛编纂）独立给出同一人的生卒年，部分数值不同。
+
+test('多说法：精度不同不算冲突', () => {
+  const { runDetectors } = require('../../src/store/detectors/registry.js');
+  // 「1037年1月8日」与「1037年」是同一年，只是精度不同。
+  // 标成冲突会让读者以为史料有分歧，而实际只是一方记得更细。
+  const edges = [
+    { id: 'e1', subject: 'p:a', predicate: 'birthDate', object: '1037年1月8日' },
+    { id: 'e2', subject: 'p:a', predicate: 'birthDate', object: '1037年' },
+  ];
+  const { flags } = runDetectors({ edges, lifespan: new Map(), literalPredicates: new Set(['birthDate']) });
+  const hits = flags.filter((f) => f.detectorId === 'multiple-values');
+  assert.equal(hits.length, 0, '同一年不同精度不该标冲突');
+});
+
+test('多说法：数值不同才是冲突', () => {
+  const { runDetectors } = require('../../src/store/detectors/registry.js');
+  const edges = [
+    { id: 'e1', subject: 'p:a', predicate: 'birthDate', object: '1029年' },
+    { id: 'e2', subject: 'p:a', predicate: 'birthDate', object: '1032年' },
+  ];
+  const { flags } = runDetectors({ edges, lifespan: new Map(), literalPredicates: new Set(['birthDate']) });
+  const hits = flags.filter((f) => f.detectorId === 'multiple-values');
+  assert.equal(hits.length, 2, '两个说法都该标');
+});
+
+test('多说法：跨归并组比较（同一人的两个来源实体）', () => {
+  const { runDetectors } = require('../../src/store/detectors/registry.js');
+  // 苏轼：CBDB 1036 / 维基 1037-01-08，是两个不同实体。
+  // 不按归并组分组的话，检测器永远看不到这个冲突。
+  const edges = [
+    { id: 'e1', subject: 'person:cbdb-3767', predicate: 'birthDate', object: '1036年' },
+    { id: 'e2', subject: 'person:wikipedia-abc', predicate: 'birthDate', object: '1037年1月8日' },
+  ];
+  const mergeMap = new Map([['person:wikipedia-abc', 'person:cbdb-3767']]);
+  const { flags } = runDetectors({
+    edges, lifespan: new Map(), literalPredicates: new Set(['birthDate']), mergeMap,
+  });
+  const hits = flags.filter((f) => f.detectorId === 'multiple-values');
+  assert.equal(hits.length, 2, '归并后应看到两种说法');
+});
+
+test('归并：链接不删数据，可撤销', () => {
+  const script = fs.readFileSync(path.join(ROOT, 'scripts', 'merge_entities.js'), 'utf8');
+  // 物理合并（删实体、搬边）不可逆，且会丢「这条断言属于哪个来源」。
+  assert.match(script, /entity_merges/);
+  assert.match(script, /--unmerge/, '要能撤销');
+  assert.match(script, /lifespanCompatible/, '要有生卒年兼容判断');
+  // 归并结果要持久化到 JSON——数据库每次重建，表会清空
+  assert.match(script, /merges\.json/);
 });

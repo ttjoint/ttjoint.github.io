@@ -1,0 +1,23 @@
+{
+  "id": "thing:dc811c1df0a9",
+  "type": "thing",
+  "name": "眉州眉山",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/a890159d2a30",
+      "span": {
+        "start": 50,
+        "end": 54
+      },
+      "quote": "眉州眉山",
+      "formatVersion": 1,
+      "reason": "维基百科：蘇轍"
+    }
+  ]
+}

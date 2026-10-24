@@ -213,18 +213,46 @@ function entityDetail(id) {
   // Both directions in one pass. Doing them as separate queries meant the caller
   // had to know which side to look at, and every caller got it wrong for at least
   // one predicate.
+  // ---------------------------------------------------------------- 归并组
+  //
+  // 同一个人可能有多个来源实体（苏轼 = cbdb-3767 + wikipedia-xxx）。
+  // 详情页必须把整个归并组的边都取出来，否则：
+  //
+  //   - 只看到 CBDB 的生年 1036，看不到维基的 1037年1月8日
+  //   - 多说法视图没有第二种说法可显示——数据在库里，页面看不到
+  //
+  // 实测：归并前苏轼页面只有一条 birthDate，归并后才有两条并列。
+  const groupIds = [id];
+  {
+    const canon = db.prepare('SELECT canonical_id FROM entity_merges WHERE merged_id = ?').get(id);
+    if (canon) {
+      groupIds.length = 0;
+      groupIds.push(canon.canonical_id);
+      for (const r of db.prepare('SELECT merged_id FROM entity_merges WHERE canonical_id = ?').all(canon.canonical_id)) {
+        groupIds.push(r.merged_id);
+      }
+    } else {
+      for (const r of db.prepare('SELECT merged_id FROM entity_merges WHERE canonical_id = ?').all(id)) {
+        groupIds.push(r.merged_id);
+      }
+    }
+  }
+  const idList = groupIds.map(() => '?').join(',');
+
   const out = db.prepare(
-    `SELECT e.id AS edge_id, e.predicate, e.object AS other, e.qualifiers, e.valid_from, e.valid_to, e.observed_at, en.name AS other_name, en.type AS other_type
-       FROM edges e INDEXED BY idx_edges_subject
+    `SELECT e.id AS edge_id, e.predicate, e.object AS other, e.qualifiers, e.valid_from, e.valid_to, e.observed_at, e.bounds_source, en.name AS other_name, en.type AS other_type
+       FROM edges e
        LEFT JOIN entities en ON en.id = e.object
-      WHERE e.subject = ?`,
-  ).all(id);
+      WHERE e.subject IN (${idList})
+      ORDER BY e.predicate, e.id`,
+  ).all(...groupIds);
   const inb = db.prepare(
-    `SELECT e.id AS edge_id, e.predicate, e.subject AS other, e.qualifiers, e.valid_from, e.valid_to, e.observed_at, en.name AS other_name, en.type AS other_type
-       FROM edges e INDEXED BY idx_edges_object
+    `SELECT e.id AS edge_id, e.predicate, e.subject AS other, e.qualifiers, e.valid_from, e.valid_to, e.observed_at, e.bounds_source, en.name AS other_name, en.type AS other_type
+       FROM edges e
        LEFT JOIN entities en ON en.id = e.subject
-      WHERE e.object = ?`,
-  ).all(id);
+      WHERE e.object IN (${idList})
+      ORDER BY e.predicate, e.id`,
+  ).all(...groupIds);
 
   // 边的出处。与实体级 provenance 是两回事：
   //   scope='entity'  这个人本身被记载于哪里
@@ -234,9 +262,9 @@ function entityDetail(id) {
     `SELECT target_id, raw_ref, quote, reason
        FROM provenance
       WHERE scope = 'edge' AND target_id IN (
-        SELECT id FROM edges WHERE subject = ? OR object = ?
+        SELECT id FROM edges WHERE subject IN (${idList}) OR object IN (${idList})
       )`,
-  ).all(id, id);
+  ).all(...groupIds, ...groupIds);
   const provByEdge = new Map();
   for (const p of edgeProv) {
     if (!provByEdge.has(p.target_id)) provByEdge.set(p.target_id, []);
@@ -254,8 +282,8 @@ function entityDetail(id) {
   // 逐条请求会把一个页面变成几十个 HTTP 请求。
   const flagRows = db.prepare(
     `SELECT edge_id, detector_id, severity, reason FROM edge_flags
-      WHERE edge_id IN (SELECT id FROM edges WHERE subject = ? OR object = ?)`,
-  ).all(id, id);
+      WHERE edge_id IN (SELECT id FROM edges WHERE subject IN (${idList}) OR object IN (${idList}))`,
+  ).all(...groupIds, ...groupIds);
   const flagsByEdge = new Map();
   for (const f of flagRows) {
     if (!flagsByEdge.has(f.edge_id)) flagsByEdge.set(f.edge_id, []);

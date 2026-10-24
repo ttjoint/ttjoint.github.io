@@ -1,0 +1,23 @@
+{
+  "id": "thing:f81ed1cc2638",
+  "type": "thing",
+  "name": "儒學家、易學家、思想家、詩",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/a8b0340dceb2",
+      "span": {
+        "start": 88,
+        "end": 101
+      },
+      "quote": "儒學家、易學家、思想家、詩",
+      "formatVersion": 1,
+      "reason": "维基百科：邵雍"
+    }
+  ]
+}

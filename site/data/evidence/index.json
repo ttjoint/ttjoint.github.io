@@ -1,7 +1,7 @@
 {
   "_truncated": false,
-  "_count": 73,
-  "_pageSize": 73,
+  "_count": 104,
+  "_pageSize": 104,
   "_manifest": "manifest.json",
   "_note": "生成文件：仅为兼容保留，只含首页。全部数据见 index/page-*.json 或 entities/。请勿写入。",
   "rows": [
@@ -14,6 +14,16 @@
       "lifespan": null,
       "external": null,
       "detail": "entities/evidence%3Aweb-535f6a2cec55.json"
+    },
+    {
+      "id": "evidence:wikipedia-3d728bc605e2",
+      "name": "包拯 · https://zh.wikipedia.org/wiki/%E5%8C%85%E6%8B%AF",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-3d728bc605e2.json"
     },
     {
       "id": "evidence:web-510bcca41632",
@@ -34,6 +44,26 @@
       "lifespan": null,
       "external": null,
       "detail": "entities/evidence%3Aweb-b75640154313.json"
+    },
+    {
+      "id": "evidence:wikipedia-c4a7d99c9389",
+      "name": "蔡襄 · https://zh.wikipedia.org/wiki/%E8%94%A1%E8%A5%84",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-c4a7d99c9389.json"
+    },
+    {
+      "id": "evidence:wikipedia-199471dae190",
+      "name": "曾鞏 · https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%B7%A9",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-199471dae190.json"
     },
     {
       "id": "evidence:web-20de37537bb4",
@@ -76,6 +106,26 @@
       "detail": "entities/evidence%3Aweb-426d8adf26a5.json"
     },
     {
+      "id": "evidence:wikipedia-91bea02cf43b",
+      "name": "程顥hào · https://zh.wikipedia.org/wiki/%E7%A8%8B%E9%A1%A5",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-91bea02cf43b.json"
+    },
+    {
+      "id": "evidence:wikipedia-92569313e400",
+      "name": "程頤 · https://zh.wikipedia.org/wiki/%E7%A8%8B%E9%A2%90",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-92569313e400.json"
+    },
+    {
       "id": "evidence:web-5f6b1b019841",
       "name": "丁薛祥 · http://cpc.people.com.cn/n1/2022/1023/c448511-32550079.html",
       "type": "evidence",
@@ -84,6 +134,26 @@
       "lifespan": null,
       "external": null,
       "detail": "entities/evidence%3Aweb-5f6b1b019841.json"
+    },
+    {
+      "id": "evidence:wikipedia-df5b72f9fbc0",
+      "name": "范仲淹 · https://zh.wikipedia.org/wiki/%E8%8C%83%E4%BB%B2%E6%B7%B9",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-df5b72f9fbc0.json"
+    },
+    {
+      "id": "evidence:wikipedia-810dfbc4c47f",
+      "name": "富弼 · https://zh.wikipedia.org/wiki/%E5%AF%8C%E5%BC%BC",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-810dfbc4c47f.json"
     },
     {
       "id": "evidence:web-a70b0869a9c1",
@@ -124,6 +194,16 @@
       "lifespan": null,
       "external": null,
       "detail": "entities/evidence%3Aweb-5fa8f53ed1b7.json"
+    },
+    {
+      "id": "evidence:wikipedia-bce4b9806131",
+      "name": "韓琦 · https://zh.wikipedia.org/wiki/%E9%9F%A9%E7%90%A6",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-bce4b9806131.json"
     },
     {
       "id": "evidence:web-f2354582820a",
@@ -216,6 +296,16 @@
       "detail": "entities/evidence%3Aweb-5582f60d6ed0.json"
     },
     {
+      "id": "evidence:wikipedia-85f79762d08c",
+      "name": "李覯 · https://zh.wikipedia.org/wiki/%E6%9D%8E%E8%A6%AF",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-85f79762d08c.json"
+    },
+    {
       "id": "evidence:web-0c5457774fb1",
       "name": "李鸿忠 · http://cpc.people.com.cn/n1/2022/1023/c448511-32550089.html",
       "type": "evidence",
@@ -296,6 +386,26 @@
       "detail": "entities/evidence%3Aweb-4a85214f0099.json"
     },
     {
+      "id": "evidence:wikipedia-32a90276e6f4",
+      "name": "陸游 · https://zh.wikipedia.org/wiki/%E9%99%B8%E6%B8%B8",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-32a90276e6f4.json"
+    },
+    {
+      "id": "evidence:wikipedia-8ae0026692e2",
+      "name": "呂公著 · https://zh.wikipedia.org/wiki/%E5%91%82%E5%85%AC%E8%91%97",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-8ae0026692e2.json"
+    },
+    {
       "id": "evidence:web-2cc67b6f5471",
       "name": "洛桑江村 · http://cpc.people.com.cn/n1/2023/0311/c64036-32641904.html",
       "type": "evidence",
@@ -304,6 +414,16 @@
       "lifespan": null,
       "external": null,
       "detail": "entities/evidence%3Aweb-2cc67b6f5471.json"
+    },
+    {
+      "id": "evidence:wikipedia-d7248a113b0d",
+      "name": "米芾 · https://zh.wikipedia.org/wiki/%E7%B1%B3%E8%8A%BE",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-d7248a113b0d.json"
     },
     {
       "id": "evidence:web-5a23555dc8e8",
@@ -366,6 +486,16 @@
       "detail": "entities/evidence%3Aweb-9144a5810698.json"
     },
     {
+      "id": "evidence:wikipedia-9f3c7e058c41",
+      "name": "歐陽脩 · https://zh.wikipedia.org/wiki/%E6%AC%A7%E9%98%B3%E4%BF%AE",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-9f3c7e058c41.json"
+    },
+    {
       "id": "evidence:web-73646829e1b7",
       "name": "帕巴拉·格 列朗杰 · http://cpc.people.com.cn/n1/2023/0311/c64036-32641917.html",
       "type": "evidence",
@@ -396,6 +526,16 @@
       "detail": "entities/evidence%3Aweb-57fafabc1aa7.json"
     },
     {
+      "id": "evidence:wikipedia-c24fa308e78f",
+      "name": "秦觀 · https://zh.wikipedia.org/wiki/%E7%A7%A6%E8%A7%82",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-c24fa308e78f.json"
+    },
+    {
       "id": "evidence:web-1b5d581a14ec",
       "name": "邵鸿 · http://cpc.people.com.cn/n1/2023/0311/c64036-32641923.html",
       "type": "evidence",
@@ -404,6 +544,26 @@
       "lifespan": null,
       "external": null,
       "detail": "entities/evidence%3Aweb-1b5d581a14ec.json"
+    },
+    {
+      "id": "evidence:wikipedia-a8b0340dceb2",
+      "name": "邵雍 · https://zh.wikipedia.org/wiki/%E9%82%B5%E9%9B%8D",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-a8b0340dceb2.json"
+    },
+    {
+      "id": "evidence:wikipedia-c78c136fad35",
+      "name": "沈括 · https://zh.wikipedia.org/wiki/%E6%B2%88%E6%8B%AC",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-c78c136fad35.json"
     },
     {
       "id": "evidence:web-95cf3f952eeb",
@@ -446,6 +606,56 @@
       "detail": "entities/evidence%3Aweb-7677ad28f363.json"
     },
     {
+      "id": "evidence:wikipedia-bac02b70c8ca",
+      "name": "司馬光 · https://zh.wikipedia.org/wiki/%E5%8F%B8%E9%A9%AC%E5%85%89",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-bac02b70c8ca.json"
+    },
+    {
+      "id": "evidence:wikipedia-d2acf6bbd3ab",
+      "name": "蘇過 · https://zh.wikipedia.org/wiki/%E8%98%87%E9%81%8E",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-d2acf6bbd3ab.json"
+    },
+    {
+      "id": "evidence:wikipedia-9cc282a057ac",
+      "name": "蘇軾 · https://zh.wikipedia.org/wiki/%E8%8B%8F%E8%BD%BC",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-9cc282a057ac.json"
+    },
+    {
+      "id": "evidence:wikipedia-99b709471d54",
+      "name": "蘇洵 · https://zh.wikipedia.org/wiki/%E8%8B%8F%E6%B4%B5",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-99b709471d54.json"
+    },
+    {
+      "id": "evidence:wikipedia-a890159d2a30",
+      "name": "蘇轍 · https://zh.wikipedia.org/wiki/%E8%8B%8F%E8%BE%99",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-a890159d2a30.json"
+    },
+    {
       "id": "evidence:web-a4de32863426",
       "name": "台盟中央 主席苏辉 · http://cpc.people.com.cn/n1/2023/0311/c64036-32641922.html",
       "type": "evidence",
@@ -464,6 +674,16 @@
       "lifespan": null,
       "external": null,
       "detail": "entities/evidence%3Aweb-213e48b64f65.json"
+    },
+    {
+      "id": "evidence:wikipedia-06f775eb1f57",
+      "name": "王安石 · https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%AE%89%E7%9F%B3",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-06f775eb1f57.json"
     },
     {
       "id": "evidence:web-14a15e60b6f2",
@@ -506,6 +726,26 @@
       "detail": "entities/evidence%3Aweb-799e05ad5359.json"
     },
     {
+      "id": "evidence:wikipedia-8ff5ca418326",
+      "name": "文天祥 · https://zh.wikipedia.org/wiki/%E6%96%87%E5%A4%A9%E7%A5%A5",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-8ff5ca418326.json"
+    },
+    {
+      "id": "evidence:wikipedia-81115ce84f8d",
+      "name": "文彥博 · https://zh.wikipedia.org/wiki/%E6%96%87%E5%BD%A5%E5%8D%9A",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-81115ce84f8d.json"
+    },
+    {
       "id": "evidence:web-47c3fde04b1c",
       "name": "吴政隆 · http://cpc.people.com.cn/n1/2023/0313/c64036-32643142.html",
       "type": "evidence",
@@ -546,6 +786,16 @@
       "detail": "entities/evidence%3Aweb-d02e99e7e66d.json"
     },
     {
+      "id": "evidence:wikipedia-0038dfa34854",
+      "name": "辛棄疾 · https://zh.wikipedia.org/wiki/%E8%BE%9B%E6%A3%84%E7%96%BE",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-0038dfa34854.json"
+    },
+    {
       "id": "evidence:web-c966cf141aad",
       "name": "雪克来提·扎 克尔 · http://cpc.people.com.cn/n1/2023/0311/c64036-32641905.html",
       "type": "evidence",
@@ -574,6 +824,16 @@
       "lifespan": null,
       "external": null,
       "detail": "entities/evidence%3Aweb-5bdc94f55e90.json"
+    },
+    {
+      "id": "evidence:wikipedia-74e9f5c331e4",
+      "name": "楊萬里 · https://zh.wikipedia.org/wiki/%E6%9D%A8%E4%B8%87%E9%87%8C",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-74e9f5c331e4.json"
     },
     {
       "id": "evidence:web-10ff50266400",
@@ -616,6 +876,16 @@
       "detail": "entities/evidence%3Aweb-34836b6a749e.json"
     },
     {
+      "id": "evidence:wikipedia-219619d3e796",
+      "name": "岳飛 · https://zh.wikipedia.org/wiki/%E5%B2%B3%E9%A3%9E",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-219619d3e796.json"
+    },
+    {
       "id": "evidence:web-e7dc25a894a5",
       "name": "张国清 · http://cpc.people.com.cn/n1/2022/1023/c448511-32550093.html",
       "type": "evidence",
@@ -656,6 +926,26 @@
       "detail": "entities/evidence%3Aweb-0645d003c8b2.json"
     },
     {
+      "id": "evidence:wikipedia-1699f1630b13",
+      "name": "張居正 · https://zh.wikipedia.org/wiki/%E5%BC%B5%E5%B1%85%E6%AD%A3",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-1699f1630b13.json"
+    },
+    {
+      "id": "evidence:wikipedia-abb17164b79a",
+      "name": "張載可以指：\n\n張載 · https://zh.wikipedia.org/wiki/%E5%BC%B5%E8%BC%89",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-abb17164b79a.json"
+    },
+    {
       "id": "evidence:web-eb7a03f341ba",
       "name": "赵乐际 · http://cpc.people.com.cn/n1/2022/1023/c448511-32550076.html",
       "type": "evidence",
@@ -676,6 +966,16 @@
       "detail": "entities/evidence%3Aweb-b3dbd7a5e23a.json"
     },
     {
+      "id": "evidence:wikipedia-cba88953884d",
+      "name": "周敦頤 · https://zh.wikipedia.org/wiki/%E5%91%A8%E6%95%A6%E9%A2%90",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-cba88953884d.json"
+    },
+    {
       "id": "evidence:web-efb447467345",
       "name": "周强 · http://cpc.people.com.cn/n1/2023/0311/c64036-32641916.html",
       "type": "evidence",
@@ -684,6 +984,16 @@
       "lifespan": null,
       "external": null,
       "detail": "entities/evidence%3Aweb-efb447467345.json"
+    },
+    {
+      "id": "evidence:wikipedia-ec119aa09371",
+      "name": "朱熹 · https://zh.wikipedia.org/wiki/%E6%9C%B1%E7%86%B9",
+      "type": "evidence",
+      "aliases": [],
+      "summary": "",
+      "lifespan": null,
+      "external": null,
+      "detail": "entities/evidence%3Awikipedia-ec119aa09371.json"
     },
     {
       "id": "evidence:web-8d92cfa4074c",

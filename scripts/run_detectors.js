@@ -65,7 +65,14 @@ function loadContext(db) {
     qualifiers: r.qualifiers,
   }));
 
-  return { edges, lifespan, literalPredicates };
+  // 归并映射：merged_id → canonical_id。
+  // 检测器要在「同一人」的层面比较，而不是「同一实体 id」的层面。
+  const mergeMap = new Map();
+  for (const r of db.prepare('SELECT canonical_id, merged_id FROM entity_merges').all()) {
+    mergeMap.set(r.merged_id, r.canonical_id);
+  }
+
+  return { edges, lifespan, literalPredicates, mergeMap };
 }
 
 function main() {

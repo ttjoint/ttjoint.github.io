@@ -39,22 +39,23 @@ const rawStore = require(path.join(ROOT, 'src', 'store', 'raw_store.js'));
 const OUT_DIR = path.join(ROOT, 'data', 'evidence', 'entities');
 
 function parseArgs(argv) {
-  const out = { group: 'PEOPLE', dryRun: false };
+  const out = { source: 'web', group: 'PEOPLE', dryRun: false };
   for (let i = 2; i < argv.length; i++) {
     const a = argv[i];
-    if (a === '--group') out.group = argv[++i];
+    if (a === '--source') out.source = argv[++i];
+    else if (a === '--group') out.group = argv[++i];
     else if (a === '--dry-run') out.dryRun = true;
   }
   return out;
 }
 
 /** 从 raw 记录生成 evidence 节点。 */
-function makeEvidence(rec, group) {
+function makeEvidence(rec, source) {
   const rawId = rec.rawId;
   // evidence id 用 rawId 的后缀：两者一一对应，一眼能看出关系。
   // `raw:web/people/b3dbd7a5e23a` → `evidence:web-b3dbd7a5e23a`
   const hash = String(rawId).split('/').pop();
-  const id = `evidence:web-${hash}`;
+  const id = `evidence:${source}-${hash}`;
   const payload = rec.payload || {};
   const url = payload.url || rec.url || null;
   const title = payload.title || (payload.text || '').split('\n')[0] || '';
@@ -64,7 +65,7 @@ function makeEvidence(rec, group) {
     type: 'evidence',
     // 名字带标题和 URL：证据列表页上一眼能看出这是哪篇文章。
     name: title ? `${title} · ${url || ''}`.replace(/ · $/, '') : (url || rawId),
-    medium: 'web',
+    medium: source === 'wikipedia' ? 'encyclopedia' : 'web',
     carrier: null,
     url,
     accessedAt: payload.fetchedAt || rec.fetchedAt || null,
@@ -81,9 +82,9 @@ function makeEvidence(rec, group) {
 
 function main() {
   const args = parseArgs(process.argv);
-  const records = Array.from(rawStore.readGroup('web', args.group));
+  const records = Array.from(rawStore.readGroup(args.source, args.group));
   if (!records.length) {
-    console.error(`没有 raw 记录（web/${args.group}）`);
+    console.error(`没有 raw 记录（${args.source}/${args.group}）`);
     process.exitCode = 1;
     return;
   }
@@ -93,7 +94,7 @@ function main() {
   let created = 0;
   let skipped = 0;
   for (const rec of records) {
-    const ev = makeEvidence(rec, args.group);
+    const ev = makeEvidence(rec, args.source);
     const file = path.join(OUT_DIR, encodeURIComponent(ev.id) + '.json');
     if (fs.existsSync(file)) {
       skipped++;
@@ -105,7 +106,7 @@ function main() {
     created++;
   }
 
-  console.log(`raw 记录 ${records.length} 条`);
+  console.log(`${args.source}/${args.group}: raw 记录 ${records.length} 条`);
   console.log(`新建 evidence ${created} 条，跳过已存在 ${skipped} 条`);
   if (args.dryRun) console.log('[dry-run] 未写盘');
   else console.log(`→ ${path.relative(ROOT, OUT_DIR)}`);

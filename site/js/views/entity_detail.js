@@ -55,8 +55,32 @@ function createEntityDetail(entityType) {
       resolvedProps() {
         if (!this.entity?.props) return {};
         const resolved = {};
+        // 与边语义相同的 props 键跳过（去重，见 PROP_EQUIV 注释）。
+        // 归并组里有 literal 边的，其对应 props 键不再显示。
+        const edgeLabels = new Set();
+        // 与 resolvedRelations 里的 LITERAL_LABELS 同表，但那是在另一个
+        // computed 里——这里重复声明会撞名（同函数作用域），改名后使用。
+        const LIT_LABELS = {
+          gender: '性别', ethnicity: '民族', birthDate: '出生时间',
+          deathDate: '逝世时间', education: '学历',
+        };
+        const PROP_EQUIV = {
+          '出生年月': '出生时间', '出生日期': '出生时间',
+          '逝世年月': '逝世时间', '逝世日期': '逝世时间', '卒于': '逝世时间',
+          '民族': '民族', '性别': '性别', '学历': '学历',
+        };
+        for (const e of (this.apiDetail && this.apiDetail.outgoing) || []) {
+          const lbl = LIT_LABELS[e.predicate];
+          if (lbl) edgeLabels.add(lbl);
+        }
+        // 同语义被边覆盖的 props 键
+        const skipKeys = new Set();
+        for (const [pk, lbl] of Object.entries(PROP_EQUIV)) {
+          if (this.entity.props[pk] && edgeLabels.has(lbl)) skipKeys.add(pk);
+        }
         for (const [key, value] of Object.entries(this.entity.props)) {
           if (!value) continue;
+          if (skipKeys.has(key)) continue;
           // 提取所有【】引用（支持单个和多个引用混排）
           const refs = [];
           const parts = [];
@@ -120,6 +144,7 @@ function createEntityDetail(entityType) {
           gender: '性别', ethnicity: '民族', birthDate: '出生时间',
           deathDate: '逝世时间', education: '学历',
         };
+        // 与 props 中文键语义相同的映射已移到 resolvedProps（去重在那边做）。
         // 同一 literal 谓词可能有多个值——那不是重复，是**多说法**。
         //
         // 早先写 `if (resolved[label]) continue`，第二条说法被直接丢弃：

@@ -39,6 +39,20 @@ const { AGE_BOUNDS } = require('../temporal_bounds.js');
 const DAYS_PER_YEAR = 365.25;
 
 /**
+ * 从「1037年1月8日」「1037年」「前14年」这类文本里取年份。
+ *
+ * 用于区分「精度不同」和「说法不同」：同一年内的不同精度不是冲突。
+ * 取不出年份返回 null（调用方会把 null 当作「无法判断」，倾向于标注）。
+ */
+function extractYear(text) {
+  const s = String(text || '');
+  const m = s.match(/(前)?\s*(\d{1,5})\s*年?/);
+  if (!m) return null;
+  const y = parseInt(m[2], 10);
+  return m[1] ? -y : y;
+}
+
+/**
  * 亲子年龄倒挂：父母出生不早于子女。
  *
  * 方向约定：
@@ -150,11 +164,18 @@ const multipleValues = {
     '标明每种的出处。标出来的价值是提醒读者「这里不只有一种说法」。',
   severity: 'conflict',
   defaultOn: true,
-  run({ edges, literalPredicates }) {
+  run({ edges, literalPredicates, mergeMap }) {
+    // 按「归并后的规范实体」分组，不是按原始 subject。
+    //
+    // 这是关键：苏轼的两个来源是两个实体（person:cbdb-3767 与
+    // person:wikipedia-xxx），各自一条 birthDate 边。不归并的话
+    // 它们落在不同分组里，永远看不出「同一人有两种生年说法」——
+    // 检测器形同虚设。实测归并前 multiple-values 恒为 0。
+    const canon = (id) => (mergeMap && mergeMap.get(id)) || id;
     const bySubjectPred = new Map();
     for (const e of edges) {
       if (!literalPredicates.has(e.predicate)) continue;
-      const k = e.subject + '\u0000' + e.predicate;
+      const k = canon(e.subject) + '\u0000' + e.predicate;
       if (!bySubjectPred.has(k)) bySubjectPred.set(k, []);
       bySubjectPred.get(k).push(e);
     }
@@ -163,6 +184,17 @@ const multipleValues = {
     for (const [, list] of bySubjectPred) {
       const values = new Set(list.map((e) => e.object));
       if (values.size <= 1) continue;
+
+      // 「1037年1月8日」与「1037年」不是冲突，是**精度不同**。
+      //
+      // 实测 82 条里绝大多数是这一类（维基到日、CBDB 到年）。
+      // 把它们标成「多说法」会让读者以为史料有分歧，而实际只是
+      // 一方记得更细——这是制造假冲突，比漏标更糟。
+      //
+      // 判据：把每个值归一到「年」，若年份全相同 → 精度差异，不标。
+      const years = new Set(list.map((e) => extractYear(e.object)));
+      if (years.size <= 1 && !years.has(null)) continue;
+
       for (const e of list) {
         out.push({
           edgeId: e.id,

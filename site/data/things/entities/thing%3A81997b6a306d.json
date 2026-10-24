@@ -1,0 +1,23 @@
+{
+  "id": "thing:81997b6a306d",
+  "type": "thing",
+  "name": "山東東路濟南府歷城縣",
+  "props": {
+    "kind": "place"
+  },
+  "aliases": [],
+  "relations": {},
+  "external": {},
+  "provenance": [
+    {
+      "rawRef": "raw:wikipedia/SUMMARY/0038dfa34854",
+      "span": {
+        "start": 44,
+        "end": 54
+      },
+      "quote": "山東東路濟南府歷城縣",
+      "formatVersion": 1,
+      "reason": "维基百科：辛棄疾"
+    }
+  ]
+}

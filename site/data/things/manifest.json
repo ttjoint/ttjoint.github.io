@@ -1,7 +1,7 @@
 {
   "version": 3,
   "type": "thing",
-  "count": 6,
+  "count": 32,
   "dated": 0,
   "pageSize": 2000,
   "pageCount": 1,
@@ -9,8 +9,8 @@
     {
       "page": 0,
       "file": "index/page-000.json",
-      "count": 6,
-      "first": "人民日报",
+      "count": 32,
+      "first": "、紫陽夫子、滄州病叟、雲谷老",
       "last": "最高人民检察院网站"
     }
   ],
@@ -20,14 +20,37 @@
     "targetRows": 4000,
     "charToFile": {
       "中": "search/bucket-000.json",
+      "河": "search/bucket-000.json",
+      "建": "search/bucket-000.json",
+      "眉": "search/bucket-000.json",
       "人": "search/bucket-000.json",
+      "、": "search/bucket-000.json",
+      "北": "search/bucket-000.json",
+      "大": "search/bucket-000.json",
+      "道": "search/bucket-000.json",
+      "二": "search/bucket-000.json",
+      "福": "search/bucket-000.json",
+      "撫": "search/bucket-000.json",
+      "湖": "search/bucket-000.json",
+      "吉": "search/bucket-000.json",
+      "廬": "search/bucket-000.json",
+      "儒": "search/bucket-000.json",
+      "山": "search/bucket-000.json",
+      "陝": "search/bucket-000.json",
+      "壽": "search/bucket-000.json",
+      "四": "search/bucket-000.json",
+      "宋": "search/bucket-000.json",
+      "蘇": "search/bucket-000.json",
+      "太": "search/bucket-000.json",
+      "揚": "search/bucket-000.json",
+      "越": "search/bucket-000.json",
       "最": "search/bucket-000.json"
     },
     "buckets": [
       {
         "file": "search/bucket-000.json",
-        "chars": "中人最",
-        "count": 6
+        "chars": "中河建眉人、北大道二福撫湖吉廬儒山陝壽四宋蘇太揚越最",
+        "count": 32
       }
     ]
   },
