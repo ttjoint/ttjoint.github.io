@@ -423,6 +423,18 @@ function main() {
   // 的生年断言，但只能有一个存续期——后者由前者推导。
   stats.birthEdges = materializeLifespanEdges(db);
 
+  // 从生卒年边回填实体的存续期。
+  //
+  // 必须双向打通：
+  //   实体列 → 边（materializeLifespanEdges，给 CBDB 这种只有列的）
+  //   边 → 实体列（backfillLifespanFromEdges，给维基这种只有边的）
+  //
+  // 只做单向的话，维基实体的 valid_from/valid_to 全是 null，
+  // 于是归并校验里「生卒年不矛盾」条件**永远自动通过**——29 条归并
+  // 实际上只是「同名即合并」，没有任何校验。这是实测发现的：
+  // 归并置信度分桶时 exact 29 条、near/far 各 0，全部 null 才会这样。
+  stats.backfilled = backfillLifespanFromEdges(db);
+
   // 读入跨来源归并。数据库每次重建，归并表会清空，而归并是人工判断的
   // 结果，不该随重建丢失——权威来源是 data/merges.json。
   stats.merges = loadEntityMerges(db);
@@ -455,6 +467,7 @@ function main() {
       `推导 ${stats.boundsInferred}  推不出 ${stats.boundsUnresolved}`,
   );
   console.log(`  生卒年边: ${stats.birthEdges} 条（从实体存续期派生，供多来源比较）`);
+  console.log(`  存续期回填: ${stats.backfilled} 个实体（从生卒年边）`);
   console.log(`  跨来源归并: ${stats.merges} 条（data/merges.json）`);
   console.log('  冲突标注：用 node scripts/run_detectors.js 独立重算（不写 edges）');
   console.log(`  ${(bytes / 1024 / 1024).toFixed(1)} MB`);
@@ -642,6 +655,60 @@ function loadEntityMerges(db) {
     if (!ok) continue;
     insert.run(r.canonical_id, r.merged_id, r.reason || null, r.merged_at || null);
     n++;
+  }
+  db.exec('COMMIT');
+  return n;
+}
+
+/**
+ * 用 birthDate / deathDate 边回填 entities.valid_from / valid_to。
+ *
+ * 只填**空的**列——已有的值（CBDB 的原始数据）不能被边覆盖。
+ * 一条边取最早/最晚：同一个人可能有多个来源的生年说法，
+ * 存续期应该覆盖全部说法，而不是随便挑一个。
+ *
+ * 用「最早的生年 + 最晚的卒年」会让存续期偏宽。这是**有意**的：
+ * 存续期用于时间切片和界推导，偏宽只可能导致「关系在某个时刻
+ * 可能成立」被多判为成立，不会漏判。宁可宽，不可错杀。
+ */
+function backfillLifespanFromEdges(db) {
+  const { parseYearMonth, pointRange } = require(path.join(ROOT, 'src', 'time', 'julian.js'));
+  const rows = db.prepare(`
+    SELECT subject, predicate, object FROM edges
+     WHERE predicate IN ('birthDate', 'deathDate')
+  `).all();
+
+  const birth = new Map();
+  const death = new Map();
+  for (const r of rows) {
+    const p = parseYearMonth(r.object);
+    if (!p) continue;
+    const range = pointRange(p);
+    if (!range) continue;
+    const target = r.predicate === 'birthDate' ? birth : death;
+    const cur = target.get(r.subject);
+    if (r.predicate === 'birthDate') {
+      if (cur == null || range.start < cur) target.set(r.subject, range.start);
+    } else if (cur == null || range.end > cur) target.set(r.subject, range.end);
+  }
+
+  const upd = db.prepare(`
+    UPDATE entities
+       SET valid_from = COALESCE(valid_from, ?),
+           valid_to   = COALESCE(valid_to, ?)
+     WHERE id = ? AND type = 'person'
+  `);
+  let n = 0;
+  db.exec('BEGIN');
+  const ids = new Set([...birth.keys(), ...death.keys()]);
+  for (const id of ids) {
+    const b = birth.get(id) || null;
+    const d = death.get(id) || null;
+    if (b == null && d == null) continue;
+    const before = db.prepare('SELECT valid_from, valid_to FROM entities WHERE id = ?').get(id);
+    if (!before) continue;
+    if (before.valid_from == null && b != null) n++;
+    upd.run(b, d, id);
   }
   db.exec('COMMIT');
   return n;

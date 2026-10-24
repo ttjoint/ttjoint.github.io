@@ -30,6 +30,7 @@
           <router-link to="/all" class="btn btn-sm" style="margin-right:4px">全部对象</router-link>
           <a class="btn btn-sm" href="#/predicate" style="margin-right:8px">谓词表</a>
           <a class="btn btn-sm" href="#/detector" style="margin-right:8px">检测器</a>
+          <a class="btn btn-sm" href="#/merge" style="margin-right:8px">归并审查</a>
           <a class="btn btn-sm" href="#/sources" style="margin-right:8px">文献</a>
           <div class="mode-badge" :class="{ local: isLocalMode }">
             {{ isLocalMode ? '本地模式' : '只读模式' }}
@@ -89,6 +90,7 @@
   <script src="js/views/predicate_page.js"></script>
   <script src="js/views/source_page.js"></script>
   <script src="js/views/detector_page.js"></script>
+  <script src="js/views/merge_review_page.js"></script>
   <!-- 装配入口：路由 + 根实例 + 挂载 -->
   <script src="js/app.js"></script>
 </body>

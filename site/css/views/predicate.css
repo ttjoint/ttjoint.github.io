@@ -307,3 +307,152 @@
   .detector-page { padding: 16px 12px 48px; }
   .detector-page .stat-row { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ============================================
+   归并审查页
+
+   核心是「按置信度分档」：29 条归并里 23 条完全一致、2 条差 3 年以上。
+   用户不该逐条看，而应该先看最可疑的那 2 条。所以分档卡片是可点的
+   过滤器，默认停在 far。
+   ============================================ */
+
+.merge-page {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+
+.merge-page .page-header h1 { font-size: 26px; margin: 0 0 8px; }
+.merge-page .page-sub {
+  color: var(--text-2); font-size: 14px; line-height: 1.75;
+  max-width: 780px; margin: 0 0 24px;
+}
+
+.tier-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.tier-card {
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition: border-color 0.12s, background 0.12s;
+}
+
+.tier-card:hover { border-color: var(--text-3); }
+
+.tier-card--active {
+  border-color: var(--text-2);
+  background: var(--surface-2, rgba(0, 0, 0, 0.04));
+}
+
+.tier-num {
+  font-size: 22px; font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.tier-label { font-size: 13px; color: var(--text-2); margin-top: 2px; }
+.tier-hint { font-size: 11px; color: var(--text-3); margin-top: 4px; line-height: 1.5; }
+
+.merge-list { display: grid; gap: 14px; }
+
+.merge-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+
+.merge-head {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.merge-name { font-size: 17px; font-weight: 600; margin: 0; color: var(--text); }
+
+.tier {
+  font-size: 11px; padding: 3px 7px; border-radius: 4px; white-space: nowrap;
+}
+.tier--ok { background: rgba(22, 163, 74, 0.12); color: #15803d; }
+.tier--warn { background: rgba(217, 119, 6, 0.12); color: #b45309; }
+.tier--bad { background: rgba(220, 38, 38, 0.12); color: #b91c1c; }
+.tier--muted { background: rgba(0, 0, 0, 0.06); color: var(--text-3); }
+
+.merge-diff { font-size: 12px; color: var(--text-3); }
+
+.merge-compare {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  background: var(--surface-2, rgba(0, 0, 0, 0.03));
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+}
+
+.merge-side-label { font-size: 11px; color: var(--text-3); margin-bottom: 4px; }
+.merge-id {
+  font-size: 12px;
+  font-family: var(--font-mono, ui-monospace, monospace);
+  color: var(--text-2);
+  text-decoration: none;
+  word-break: break-all;
+}
+.merge-id:hover { text-decoration: underline; }
+
+.merge-lifespan {
+  font-size: 15px; font-weight: 600; color: var(--text);
+  margin-top: 6px; font-variant-numeric: tabular-nums;
+}
+
+.merge-arrow { font-size: 18px; color: var(--text-3); }
+
+.merge-near-hint {
+  font-size: 12px; line-height: 1.7; color: var(--text-2);
+  margin: 0 0 10px; padding: 8px 12px;
+  background: rgba(217, 119, 6, 0.07);
+  border-radius: 6px;
+}
+
+.merge-reason { font-size: 12px; color: var(--text-2); margin-bottom: 10px; }
+.merge-reason-label { color: var(--text-3); }
+
+.merge-actions {
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+
+.merge-cmd { font-size: 11px; color: var(--text-3); }
+.merge-cmd code {
+  font-size: 11px;
+  background: var(--surface-2, rgba(0, 0, 0, 0.04));
+  padding: 2px 6px; border-radius: 4px;
+}
+
+.merge-note {
+  margin-top: 32px; padding: 18px 20px;
+  background: var(--surface-2, rgba(0, 0, 0, 0.03));
+  border-radius: var(--radius);
+}
+.merge-note h3 { font-size: 14px; margin: 0 0 10px; color: var(--text); }
+.merge-note p { font-size: 13px; line-height: 1.75; color: var(--text-2); margin: 0 0 10px; }
+.merge-note-sub { font-size: 12px !important; color: var(--text-3) !important; }
+.merge-note-sub code {
+  font-size: 11px; background: var(--surface); padding: 2px 6px; border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  .merge-page { padding: 16px 12px 48px; }
+  .merge-compare { grid-template-columns: 1fr; }
+  .merge-arrow { display: none; }
+}

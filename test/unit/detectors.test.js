@@ -262,3 +262,24 @@ test('归并：链接不删数据，可撤销', () => {
   // 归并结果要持久化到 JSON——数据库每次重建，表会清空
   assert.match(script, /merges\.json/);
 });
+
+test('归并审查：API 分档 + 页面默认看最可疑的', () => {
+  const api = fs.readFileSync(path.join(ROOT, 'scripts', 'serve_api.js'), 'utf8');
+  // 置信度分档：差 3 年以上最可疑（可能是同名不同人，也可能是真争议）
+  assert.match(api, /'merges'/);
+  assert.match(api, /tier/, '要有置信度分档');
+  assert.match(api, /worst <= 2/, '1-2 年是跨年，3+ 要人看');
+
+  const page = fs.readFileSync(path.join(ROOT, 'js', 'views', 'merge_review_page.js'), 'utf8');
+  assert.match(page, /tierFilter: 'far'/, '默认停在差异大——用户不该逐条看 23 条一致的');
+  assert.match(page, /nearHint/, '跨年的解释必须写在页面上，否则用户以为差 1 年也要处理');
+  assert.match(page, /--unmerge/, '撤销命令要可见');
+});
+
+test('存续期回填：边 → 实体列，否则归并校验形同虚设', () => {
+  const build = fs.readFileSync(path.join(ROOT, 'scripts', 'build_db.js'), 'utf8');
+  // 维基实体只有生卒年边没有存续期列，归并时「生卒年不矛盾」
+  // 永远自动通过——29 条实际是「同名即合并」。实测发现的。
+  assert.match(build, /backfillLifespanFromEdges/);
+  assert.match(build, /COALESCE\(valid_from/, '只填空的列，不覆盖已有值');
+});

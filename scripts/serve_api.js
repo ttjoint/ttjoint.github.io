@@ -40,6 +40,7 @@ const fs = require('fs');
 const { DatabaseSync } = require('node:sqlite');
 
 const q = require('../src/store/query_lang');
+const { jdnToYear, yearToJdn } = require('../src/time/julian.js');
 const { SCHEMA_VERSION } = require('../src/store/db_schema');
 
 const PORT = Number(process.env.HM_API_PORT || 8787);
@@ -738,6 +739,62 @@ async function route(req, res) {
         'SELECT detector_id, severity, reason, detected_at FROM edge_flags WHERE edge_id = ?',
       ).all(decodeURIComponent(parts[2]));
       return json(res, 200, { edgeId: decodeURIComponent(parts[2]), flags: rows });
+    }
+
+    // ---------------------------------------------------------------- merges
+    //
+    // 归并审查数据。归并是**判断**，需要人确认——尤其是生卒年差异大的
+    // 那几条（秦观差 45 年，可能是同名不同人，也可能是 CBDB 数据错）。
+    //
+    // 置信度分档依据「两个来源生卒年的最大差距」：
+    //   exact  0 年   —— 完全一致，基本可以确信
+    //   near  1-2 年  —— 通常是农历/公历跨年（「绍兴十一年十二月廿九」
+    //                    按公历已是次年），不是真分歧
+    //   far   3+ 年   —— 需要人看：可能是真争议，也可能归并错了
+    if (parts[1] === 'merges') {
+      const rows = db.prepare(`
+        SELECT m.canonical_id, m.merged_id, m.reason, m.merged_at,
+               c.name AS canonical_name, c.valid_from AS cf, c.valid_to AS ct,
+               w.name AS merged_name, w.valid_from AS wf, w.valid_to AS wt
+          FROM entity_merges m
+          JOIN entities c ON c.id = m.canonical_id
+          JOIN entities w ON w.id = m.merged_id
+         ORDER BY m.canonical_id
+      `).all();
+
+      const y = (jdn) => (jdn == null ? null : jdnToYear(jdn));
+      const out = [];
+      const counts = { exact: 0, near: 0, far: 0, unknown: 0 };
+
+      for (const r of rows) {
+        const cf = y(r.cf), ct = y(r.ct), wf = y(r.wf), wt = y(r.wt);
+        const bd = cf != null && wf != null ? Math.abs(cf - wf) : null;
+        const dd = ct != null && wt != null ? Math.abs(ct - wt) : null;
+        const worst = Math.max(bd ?? 0, dd ?? 0);
+        let tier;
+        if (bd == null && dd == null) tier = 'unknown';
+        else if (worst === 0) tier = 'exact';
+        else if (worst <= 2) tier = 'near';
+        else tier = 'far';
+        counts[tier]++;
+
+        // 两个来源各自的生卒年说法。页面上要并排看，才知道差在哪。
+        out.push({
+          canonicalId: r.canonical_id,
+          mergedId: r.merged_id,
+          name: r.canonical_name,
+          mergedName: r.merged_name,
+          reason: r.reason,
+          mergedAt: r.merged_at,
+          canonical: { from: cf, to: ct },
+          merged: { from: wf, to: wt },
+          birthDiff: bd,
+          deathDiff: dd,
+          tier,
+        });
+      }
+
+      return json(res, 200, { merges: out, counts, total: out.length });
     }
 
     if (parts[1] === 'sources') {

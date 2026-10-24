@@ -29,6 +29,7 @@ const routes = [
   // 而谓词是代码资产，不该由界面改。
   { path: '/predicate', name: 'predicate', component: PredicateIndexPage },
   { path: '/detector', name: 'detector', component: DetectorPage },
+  { path: '/merge', name: 'merge', component: MergeReviewPage },
   { path: '/predicate/:key', name: 'predicate-detail', component: PredicateDetailPage },
   // 反向视图：从证据文件看它支撑了哪些断言。
   // 管理界面（后续 S3）要用这个方向核对 bot 抽取质量。
