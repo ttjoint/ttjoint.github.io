@@ -188,3 +188,20 @@ test('边身份：时间不同分边，时间相同合并', () => {
   const ids = [...grouped.values()].map(({ rel, sig }) => edgeId('p:x', 'memberOf', rel.object, sig));
   assert.equal(new Set(ids).size, 2, '两段任职的 edge id 必须不同');
 });
+
+test('多说法视图：同一 literal 属性的多个值并列显示，不丢弃', () => {
+  const detail = fs.readFileSync(path.join(ROOT, 'js', 'views', 'entity_detail.js'), 'utf8');
+  // 旧 bug 的形状是「读到第一条就直接赋值返回」：
+  //   resolved[label] = e.other_name || e.other;
+  // 新代码要么赋单一值（values[0].value），要么赋 _variants 结构。
+  // 出现旧模式说明有人把旧逻辑改了回来。
+  assert.ok(!detail.includes('resolved[label] = e.other_name'), '不能再从边直接赋值（旧 bug 的形状）');
+  // `if (resolved[label]) continue` 保留是正确的——那是「props 优先」：
+  // props 是手写原文，优先级高于从边推导的值。
+  assert.match(detail, /literalGroups/, '要按谓词分组收集');
+  assert.match(detail, /_variants/, '多个值标 _variants');
+
+  const card = fs.readFileSync(path.join(ROOT, 'js', 'views', 'entity', 'info_card.js'), 'utf8');
+  assert.match(card, /value\._variants/, '信息卡要渲染 _variants');
+  assert.match(card, /无出处/, '没有出处的说法要标明——孤证和有据可查不一样');
+});

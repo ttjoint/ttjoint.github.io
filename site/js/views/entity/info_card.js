@@ -59,6 +59,26 @@ const EntityInfoCard = {
                   <span v-else>{{ part.text }}</span>
                 </template>
               </template>
+              <!-- 多说法：同一属性有多个不同值。
+                   不是错误，是史料分歧（老子生年有多说）。系统不替
+                   史学界选一个，并列显示并标明每种的出处。
+
+                   顺序按「有出处的在前」——有据可查的说法比孤证更值得
+                   先看到，但全部保留。 -->
+              <template v-else-if="value._variants">
+                <div class="variant-list">
+                  <div v-for="(v, vi) in value._variants" :key="vi" class="variant-row">
+                    <span class="variant-value">{{ v.value }}</span>
+                    <span v-if="v.provenance && v.provenance.length"
+                          class="variant-cite"
+                          :title="v.provenance.map(p => p.rawRef || p.reason || '').filter(Boolean).join('；')">
+                      {{ v.provenance.length }} 处出处
+                    </span>
+                    <span v-else class="variant-nocite" title="这个说法没有记录出处">无出处</span>
+                  </div>
+                </div>
+                <span class="variant-note">同一属性有 {{ value._variants.length }} 种说法</span>
+              </template>
               <template v-else-if="value._ref">
                 <span v-if="value.missing" class="static-unpublished"
                       :title="value.id + ' 不在已发布范围内'">（未收录）</span>

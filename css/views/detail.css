@@ -263,3 +263,49 @@
 .relation-item:has(.flag-badge) {
   box-shadow: inset 2px 0 0 var(--badge-warn-bg, rgba(217, 119, 6, 0.5));
 }
+
+/* ============================================
+   多说法并列显示
+
+   同一属性有多个不同值——不是错误，是史料分歧。
+
+   视觉上要让人一眼看出「这里有分歧，且没有哪个是官方答案」：
+   所以各说法等权重排（不用第一项高亮、不用加粗），只在末尾说明
+   「有 N 种说法」。任何暗示「第一个是对的」的样式都是错的。
+   ============================================ */
+
+.variant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.variant-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.variant-value {
+  color: var(--text);
+}
+
+.variant-cite {
+  font-size: 11px;
+  color: var(--text-3);
+  cursor: help;
+}
+
+.variant-nocite {
+  font-size: 11px;
+  color: var(--warn, #b45309);
+  cursor: help;
+}
+
+.variant-note {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--text-3);
+}

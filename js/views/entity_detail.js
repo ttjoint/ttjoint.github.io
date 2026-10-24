@@ -120,13 +120,40 @@ function createEntityDetail(entityType) {
           gender: '性别', ethnicity: '民族', birthDate: '出生时间',
           deathDate: '逝世时间', education: '学历',
         };
+        // 同一 literal 谓词可能有多个值——那不是重复，是**多说法**。
+        //
+        // 早先写 `if (resolved[label]) continue`，第二条说法被直接丢弃：
+        // 「老子生年有多说」在页面上只剩一个，读者以为那是唯一答案。
+        // 这是最危险的一类 bug——不是显示不全，是**把有争议的事实
+        // 显示成确定的**。
+        //
+        // 现在：全部收集，多个值时标 _variants 并各自带出处，
+        // 界面并列显示。
+        const literalGroups = new Map();
         for (const e of (this.apiDetail && this.apiDetail.outgoing) || []) {
           if (!LITERAL_LABELS[e.predicate]) continue;
           const label = LITERAL_LABELS[e.predicate];
+          if (!literalGroups.has(label)) literalGroups.set(label, []);
+          literalGroups.get(label).push(e);
+        }
+        for (const [label, list] of literalGroups) {
           // props 里已有同名键时不覆盖——props 是手写/导入的原文，
           // 优先级高于从边推导的值。
           if (resolved[label]) continue;
-          resolved[label] = e.other_name || e.other;
+          const values = list.map((e) => ({
+            value: e.other_name || e.other,
+            provenance: Array.isArray(e.provenance) ? e.provenance : [],
+            flags: Array.isArray(e.flags) ? e.flags : [],
+            predicate: e.predicate,
+          }));
+          const distinct = new Set(values.map((v) => v.value));
+          if (distinct.size <= 1) {
+            // 单一说法：保持原有形状（纯文本），不引入无谓的结构。
+            resolved[label] = values[0].value;
+          } else {
+            // 多说法：并列显示，每种带自己的出处。
+            resolved[label] = { _variants: values };
+          }
         }
 
         return resolved;
