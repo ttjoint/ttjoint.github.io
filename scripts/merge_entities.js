@@ -53,13 +53,16 @@ const { DatabaseSync } = require('node:sqlite');
 const DB = path.join(ROOT, 'local_data', 'humanmap.sqlite3');
 
 function parseArgs(argv) {
-  const out = { dryRun: false, source: 'wikipedia', list: false, unmerge: null };
+  const out = { dryRun: false, source: 'wikipedia', list: false, unmerge: null, confirm: [], reject: [] };
   for (let i = 2; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--dry-run') out.dryRun = true;
     else if (a === '--source') out.source = argv[++i];
     else if (a === '--list') out.list = true;
     else if (a === '--unmerge') out.unmerge = argv[++i];
+    // 人工确认/拒绝：把判断记下来，下次自动归并不会覆盖人的决定。
+    else if (a === '--confirm') out.confirm.push(argv[++i]);
+    else if (a === '--reject') out.reject.push(argv[++i]);
   }
   return out;
 }
@@ -113,9 +116,39 @@ function main() {
       const m = db.prepare('SELECT name FROM entities WHERE id = ?').get(r.merged_id);
       console.log(`  ${r.canonical_id} (${c ? c.name : '?'})`);
       console.log(`    ← ${r.merged_id} (${m ? m.name : '?'})`);
-      console.log(`    依据：${r.reason}`);
+      console.log(`    依据：${r.reason}${r.status ? '  [' + r.status + ']' : ''}`);
       console.log();
     }
+    return;
+  }
+
+  // ---------------------------------------------------------------- 人工判断
+  //
+  // 自动归并只凭「同名 + 生卒年不矛盾」，这对 unknown 档（一方无时间）
+  // 等于没有校验——纯同名就归并了。所以必须能人工确认或拒绝，
+  // 且人的决定要持久化，不能被下次自动归并覆盖。
+  if (args.confirm.length || args.reject.length) {
+    const file = path.join(ROOT, 'data', 'merges.json');
+    const doc = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : { merges: [] };
+    const byId = new Map((doc.merges || []).map((m) => [m.merged_id, m]));
+    const now = new Date().toISOString();
+
+    for (const id of args.confirm) {
+      const m = byId.get(id);
+      if (!m) { console.log(`  确认失败：找不到 ${id}`); continue; }
+      m.status = 'confirmed';
+      m.reviewed_at = now;
+      console.log(`  已确认 ${id}`);
+    }
+    for (const id of args.reject) {
+      const m = byId.get(id);
+      if (!m) { console.log(`  拒绝失败：找不到 ${id}`); continue; }
+      // 拒绝 = 撤销归并。删掉条目，两个实体恢复独立。
+      doc.merges = doc.merges.filter((x) => x.merged_id !== id);
+      console.log(`  已拒绝并撤销 ${id}`);
+    }
+    fs.writeFileSync(file, JSON.stringify(doc, null, 1) + '\n', 'utf8');
+    console.log(`\n已更新 ${path.relative(ROOT, file)}（${doc.merges.length} 条归并）`);
     return;
   }
 

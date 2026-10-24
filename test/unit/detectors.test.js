@@ -273,7 +273,9 @@ test('归并审查：API 分档 + 页面默认看最可疑的', () => {
   const page = fs.readFileSync(path.join(ROOT, 'js', 'views', 'merge_review_page.js'), 'utf8');
   assert.match(page, /tierFilter: 'far'/, '默认停在差异大——用户不该逐条看 23 条一致的');
   assert.match(page, /nearHint/, '跨年的解释必须写在页面上，否则用户以为差 1 年也要处理');
-  assert.match(page, /--unmerge/, '撤销命令要可见');
+  // 撤销入口现在是 --reject（人工拒绝 = 撤销归并，人的决定持久化）
+  assert.match(page, /--reject/, '拒绝/撤销命令要可见');
+  assert.match(page, /--confirm/, '确认命令要可见');
 });
 
 test('存续期回填：边 → 实体列，否则归并校验形同虚设', () => {
@@ -282,4 +284,18 @@ test('存续期回填：边 → 实体列，否则归并校验形同虚设', () 
   // 永远自动通过——29 条实际是「同名即合并」。实测发现的。
   assert.match(build, /backfillLifespanFromEdges/);
   assert.match(build, /COALESCE\(valid_from/, '只填空的列，不覆盖已有值');
+});
+
+test('分歧总览：分类启发式 + 保守原则', () => {
+  const api = fs.readFileSync(path.join(ROOT, 'scripts', 'serve_api.js'), 'utf8');
+  assert.match(api, /'conflicts'/);
+  // 传字符串数组——传对象数组 YEAR_ONLY 恒 false，全落 dispute，分类形同虚设
+  assert.match(api, /g\.values\.map\(\(v\) => v\.value\)/);
+  // 整年对整年差 1 无法区分跨年和争议，统一归 dispute 让人看
+  assert.match(api, /宁可让人看|统一归入|保守/);
+
+  const page = fs.readFileSync(path.join(ROOT, 'js', 'views', 'conflicts_page.js'), 'utf8');
+  assert.match(page, /scholarly-dispute/, '默认先看争议——跨年读一遍就懂');
+  assert.match(page, /并列保留全部说法/, '核心原则要写在页面上');
+  assert.match(page, /分类只是/, '启发式可能错分，必须声明');
 });

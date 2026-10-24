@@ -282,6 +282,13 @@ const DDL = [
      merged_id    TEXT NOT NULL,
      reason       TEXT,
      merged_at    TEXT,
+     -- 人工判断。自动归并只凭「同名 + 生卒年不矛盾」，对「一方无时间」
+     -- 的等于没有校验（纯同名就归并了）。所以人的决定要能记下来：
+     --   confirmed  人看过并认可
+     --   rejected   人看过并否定（已撤销归并，条目已删）
+     --   NULL       自动归并，尚未审查
+     status       TEXT,
+     reviewed_at  TEXT,
      PRIMARY KEY (merged_id)
    )`,
   `CREATE INDEX idx_entity_merges_canonical ON entity_merges(canonical_id)`,

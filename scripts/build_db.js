@@ -643,7 +643,7 @@ function loadEntityMerges(db) {
   }
   const rows = Array.isArray(doc.merges) ? doc.merges : [];
   const insert = db.prepare(
-    'INSERT OR REPLACE INTO entity_merges (canonical_id, merged_id, reason, merged_at) VALUES (?, ?, ?, ?)',
+    'INSERT OR REPLACE INTO entity_merges (canonical_id, merged_id, reason, merged_at, status, reviewed_at) VALUES (?, ?, ?, ?, ?, ?)',
   );
   let n = 0;
   db.exec('BEGIN');
@@ -653,7 +653,8 @@ function loadEntityMerges(db) {
     const ok = db.prepare('SELECT 1 FROM entities WHERE id = ?').get(r.canonical_id)
       && db.prepare('SELECT 1 FROM entities WHERE id = ?').get(r.merged_id);
     if (!ok) continue;
-    insert.run(r.canonical_id, r.merged_id, r.reason || null, r.merged_at || null);
+    insert.run(r.canonical_id, r.merged_id, r.reason || null, r.merged_at || null,
+      r.status || null, r.reviewed_at || null);
     n++;
   }
   db.exec('COMMIT');

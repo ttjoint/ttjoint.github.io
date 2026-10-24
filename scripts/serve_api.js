@@ -741,6 +741,79 @@ async function route(req, res) {
       return json(res, 200, { edgeId: decodeURIComponent(parts[2]), flags: rows });
     }
 
+    // ---------------------------------------------------------------- conflicts
+    //
+    // 数据分歧总览：把 multiple-values 冲突按「性质」归类。
+    //
+    // 9 组真实冲突实测分三类，性质完全不同，混在一起会误导：
+    //
+    //   calendar-crossing  农历/公历跨年（苏轼 1036/1037-01-08）
+    //                      ——两个都对，纪年方式不同
+    //   scholarly-dispute  学界真争议（沈括 1029/1032）
+    //                      ——不同考证各有所本，系统并列，不选边
+    //
+    // 分类是启发式：跨年 = 年份差 1 且一方带月日。分类错了不致命——
+    // 所有说法都并列保留。
+    if (parts[1] === 'conflicts') {
+      const rows = db.prepare(`
+        SELECT f.edge_id, f.reason, e.subject, e.predicate, e.object,
+               (SELECT name FROM entities WHERE id = e.subject) AS sname
+          FROM edge_flags f
+          JOIN edges e ON e.id = f.edge_id
+         WHERE f.detector_id = 'multiple-values'
+         ORDER BY sname, e.predicate
+      `).all();
+
+      const mergeMap = new Map();
+      for (const r of db.prepare('SELECT canonical_id, merged_id FROM entity_merges').all()) {
+        mergeMap.set(r.merged_id, r.canonical_id);
+      }
+      const groups = new Map();
+      for (const r of rows) {
+        const canon = (mergeMap.get(r.subject) || r.subject) + '\u0000' + r.predicate;
+        if (!groups.has(canon)) {
+          groups.set(canon, { subject: r.subject, name: r.sname, predicate: r.predicate, values: [] });
+        }
+        groups.get(canon).values.push({ edgeId: r.edge_id, value: r.object });
+      }
+
+      const YEAR_ONLY = /^\s*(?:前)?\s*\d{1,4}\s*年?\s*$/;
+      const classify = (texts) => {
+        const ys = texts.map((t) => {
+          const m = String(t).match(/(前)?\s*(\d{1,4})\s*年?/);
+          return m ? parseInt(m[2], 10) * (m[1] ? -1 : 1) : null;
+        });
+        if (ys.some((y) => y == null)) return 'scholarly-dispute';
+        const gap = Math.abs(Math.max(...ys) - Math.min(...ys));
+        // 年份差 1 且一方带月日 → 农历/公历跨年（两个都对）。
+        // 双方都是整年还差 1 → 看纪年方式：西汉用岁首在冬季（如秦历以
+        // 十月为岁首），农历年末生日换算公历已入次年，双方都对——
+        // 王莽 前45/前44 就是这种。整年对整年差 1 无法确定是跨年还是
+        // 争议，标 dispute（保守：宁可让人看，不可暗示「都对」）。
+        if (gap === 1 && texts.some((t) => !YEAR_ONLY.test(t))) return 'calendar-crossing';
+        return 'scholarly-dispute';
+      };
+
+      const out = [];
+      const counts = { 'calendar-crossing': 0, 'scholarly-dispute': 0 };
+      for (const [, g] of groups) {
+        // 传字符串数组：g.values 是 {edgeId, value} 对象数组，直接传
+        // YEAR_ONLY.test(对象) 恒 false，全落到 dispute——分类形同虚设。
+        const category = classify(g.values.map((v) => v.value));
+        counts[category] = (counts[category] || 0) + 1;
+        out.push({
+          subjectId: g.subject,
+          name: g.name,
+          predicate: g.predicate,
+          category,
+          values: g.values,
+        });
+      }
+      out.sort((a, b) => a.name.localeCompare(b.name, 'zh'));
+
+      return json(res, 200, { conflicts: out, counts, total: out.length });
+    }
+
     // ---------------------------------------------------------------- merges
     //
     // 归并审查数据。归并是**判断**，需要人确认——尤其是生卒年差异大的
@@ -753,7 +826,7 @@ async function route(req, res) {
     //   far   3+ 年   —— 需要人看：可能是真争议，也可能归并错了
     if (parts[1] === 'merges') {
       const rows = db.prepare(`
-        SELECT m.canonical_id, m.merged_id, m.reason, m.merged_at,
+        SELECT m.canonical_id, m.merged_id, m.reason, m.merged_at, m.status,
                c.name AS canonical_name, c.valid_from AS cf, c.valid_to AS ct,
                w.name AS merged_name, w.valid_from AS wf, w.valid_to AS wt
           FROM entity_merges m
@@ -786,6 +859,7 @@ async function route(req, res) {
           mergedName: r.merged_name,
           reason: r.reason,
           mergedAt: r.merged_at,
+          status: r.status || null,
           canonical: { from: cf, to: ct },
           merged: { from: wf, to: wt },
           birthDiff: bd,

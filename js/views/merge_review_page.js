@@ -35,7 +35,10 @@ const MergeReviewPage = {
     },
     tiers() {
       return [
+        // unknown 排在 far 之后：一方无时间 = 没有校验依据，
+        // 纯同名就归并了，和「差 3 年」一样需要人看。
         { key: 'far', label: '差异大', count: this.counts.far, hint: '需要人工确认' },
+        { key: 'unknown', label: '无从校验', count: this.counts.unknown, hint: '一方无时间，纯同名' },
         { key: 'near', label: '差 1–2 年', count: this.counts.near, hint: '通常是农历跨年' },
         { key: 'exact', label: '完全一致', count: this.counts.exact, hint: '基本可确信' },
         { key: 'all', label: '全部', count: this.total, hint: '' },
@@ -87,8 +90,10 @@ const MergeReviewPage = {
       this.merges = data.merges || [];
       this.counts = data.counts || this.counts;
       this.total = data.total || 0;
-      // 没有 far 时自动切到 near，避免打开就是空页
-      if (this.counts.far === 0) this.tierFilter = this.counts.near ? 'near' : 'all';
+      // 没有 far 时自动切到 unknown（同样需要人看），再退到 near
+      if (this.counts.far === 0) {
+        this.tierFilter = this.counts.unknown ? 'unknown' : this.counts.near ? 'near' : 'all';
+      }
     } catch (e) {
       this.error = e.message;
     } finally {
@@ -168,7 +173,14 @@ const MergeReviewPage = {
             </div>
 
             <div class="merge-actions">
-              <span class="merge-cmd">撤销：<code>node scripts/merge_entities.js --unmerge {{ m.mergedId }}</code></span>
+              <span v-if="m.status === 'confirmed'" class="merge-status merge-status--ok">已人工确认</span>
+              <span v-else class="merge-status merge-status--pending">未审查</span>
+              <span class="merge-cmd">
+                确认：<code>node scripts/merge_entities.js --confirm {{ m.mergedId }}</code>
+              </span>
+              <span class="merge-cmd">
+                拒绝（撤销归并）：<code>node scripts/merge_entities.js --reject {{ m.mergedId }}</code>
+              </span>
             </div>
           </article>
         </section>
@@ -183,6 +195,11 @@ const MergeReviewPage = {
             归并是<b>建链接</b>不是物理合并：原始实体和它的边一条不动，查询时
             视为同一人。所以撤销只需删一条记录，所有数据自动恢复原状，
             两个来源的不同说法也不会丢。
+          </p>
+          <p>
+            <b>确认 / 拒绝都是写操作</b>，所以不在页面上做——与检测器开关同一原则：
+            写操作走有审计、可回滚的 CLI 路径。确认后该条记 <code>status: confirmed</code>，
+            下次自动归并不会覆盖人的决定；拒绝会直接撤销归并，两个实体恢复独立。
           </p>
           <p class="merge-note-sub">
             重跑：<code>node scripts/merge_entities.js</code>　
