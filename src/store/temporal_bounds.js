@@ -95,7 +95,15 @@ function inferBounds(edge, subject, object, temporality) {
     return { validFrom: edge.observedAt, validTo: edge.observedAt, boundsSource: 'observed' };
   }
 
-  // attribute 档不参与时间切片，不推导。
+  // attribute 档不推导。这一档有两类：
+  //
+  //   1. 客体**就是时间值**（出生时间、成立日期）——给它推区间是范畴错误，
+  //      问「出生时间在 1050 年成立吗」讲不通。
+  //   2. 血缘判定所需的固定事实（族谱性别）——它不是「会变的状态」，
+  //      而是 `father`/`maleChild` 等谓词的判定依据。给它推时间界没有意义。
+  //
+  // 注意 ethnicity/education **不在这档**——它们是状态值，会变更，
+  // 归 concurrent，该有界。
   if (temporality === 'attribute') {
     return { validFrom: null, validTo: null, boundsSource: null };
   }

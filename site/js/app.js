@@ -28,6 +28,7 @@ const routes = [
   // 原先在 relation_panel 抽屉里，既不能分享链接，又带增删改——
   // 而谓词是代码资产，不该由界面改。
   { path: '/predicate', name: 'predicate', component: PredicateIndexPage },
+  { path: '/detector', name: 'detector', component: DetectorPage },
   { path: '/predicate/:key', name: 'predicate-detail', component: PredicateDetailPage },
   // 反向视图：从证据文件看它支撑了哪些断言。
   // 管理界面（后续 S3）要用这个方向核对 bot 抽取质量。

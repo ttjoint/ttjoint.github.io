@@ -125,3 +125,185 @@
 .tag.good { background: var(--badge-person-bg); color: var(--badge-person-fg); }
 .tag.ok   { background: var(--badge-event-bg); color: var(--badge-event-fg); }
 .tag.warn { background: var(--badge-event-bg); color: var(--badge-event-fg); }
+
+/* ============================================
+   检测器管理页
+
+   与谓词页共用一些视觉语言（卡片、badge），但检测器是「判断」
+   而非「事实」，所以用左侧色条区分严重性，让读者一眼看出
+   这不是数据本身，而是对数据的评注。
+   ============================================ */
+
+.detector-page {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+
+.detector-page .page-header h1 {
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.detector-page .page-sub {
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 760px;
+  margin: 0 0 24px;
+}
+
+.detector-page .stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.detector-page .stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.detector-page .stat-num {
+  font-size: 22px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.detector-page .stat-label {
+  font-size: 12px;
+  color: var(--text-3);
+  margin-top: 2px;
+}
+
+.detector-list {
+  display: grid;
+  gap: 14px;
+}
+
+.detector-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--warn, #d97706);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+
+.detector-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.detector-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.detector-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text);
+}
+
+.detector-id code {
+  font-size: 11px;
+  color: var(--text-3);
+  background: var(--surface-2, rgba(0, 0, 0, 0.04));
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.detector-count {
+  margin: 10px 0 8px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.detector-num {
+  font-size: 20px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.detector-unit {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.detector-rationale {
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text-2);
+  margin: 0 0 12px;
+}
+
+.detector-off {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+
+.detector-off-label {
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.detector-cmd {
+  font-size: 12px;
+  background: var(--surface-2, rgba(0, 0, 0, 0.04));
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: var(--text-2);
+}
+
+.detector-note {
+  margin-top: 32px;
+  padding: 18px 20px;
+  background: var(--surface-2, rgba(0, 0, 0, 0.03));
+  border-radius: var(--radius);
+}
+
+.detector-note h3 {
+  font-size: 14px;
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+.detector-note p {
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--text-2);
+  margin: 0 0 10px;
+}
+
+.detector-note-sub {
+  font-size: 12px !important;
+  color: var(--text-3) !important;
+}
+
+.detector-note-sub code {
+  font-size: 11px;
+  background: var(--surface);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  .detector-page { padding: 16px 12px 48px; }
+  .detector-page .stat-row { grid-template-columns: repeat(2, 1fr); }
+}

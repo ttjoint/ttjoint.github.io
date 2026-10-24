@@ -251,6 +251,29 @@ const DDL = [
   // raw_ref is NULL for evidence that never entered the raw layer (a web page
   // captured directly as an evidence node). `quote` is NOT NULL in both cases —
   // a claim with no quotable support is not evidence, it is an assertion.
+  // 数据质量标注：**判断，不是事实**。
+  //
+  // 为什么单独一张表而不是 edges 的列：
+  //
+  //   1. edges 只存事实。判断会随规则变化，写进事实表就把两层混了。
+  //   2. 多条检测器可能命中同一条边（「父母出生晚于子女」往往同时
+  //      「年龄差越界」）。单列只能存一个，信息会丢；这里一条边多行。
+  //   3. 开关检测器不该需要重建整个库。这张表由 scripts/run_detectors.js
+  //      独立重算，几秒完成；edges 一条不动。
+  //
+  // severity: 'conflict'（同一事实多说法，史料分歧，不是错误）
+  //           'suspect' （逻辑可疑，可能是录入错，也可能是生年本身是推的）
+  `CREATE TABLE edge_flags (
+     edge_id     TEXT NOT NULL,
+     detector_id TEXT NOT NULL,
+     severity    TEXT NOT NULL,
+     reason      TEXT,
+     detected_at TEXT,
+     PRIMARY KEY (edge_id, detector_id)
+   )`,
+  `CREATE INDEX idx_edge_flags_detector ON edge_flags(detector_id, edge_id)`,
+  `CREATE INDEX idx_edge_flags_severity ON edge_flags(severity, detector_id)`,
+
   `CREATE TABLE provenance (
      id          TEXT PRIMARY KEY,
      scope       TEXT NOT NULL,

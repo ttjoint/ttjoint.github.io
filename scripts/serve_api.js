@@ -645,6 +645,52 @@ async function route(req, res) {
       });
     }
 
+    // ---------------------------------------------------------------- detectors
+    //
+    // 检测器清单与效果。**只读**——开关通过 CLI（`run_detectors.js --off`），
+    // 不走 HTTP。
+    //
+    // 为什么不做 HTTP 开关：开关检测器会重算全表标注，是写操作，
+    // 而写操作在这个系统里一律走「有审计、可回滚」的路径（commit 链路），
+    // 不是一个 GET/POST 随手改的配置项。管理页只负责让人看清
+    // 「现在有哪些规则在跑、各判了多少条」，改由人来决定、CLI 执行。
+    if (parts[1] === 'detectors') {
+      const { ALL } = require('../src/store/detectors/registry.js');
+      const rows = db.prepare(
+        `SELECT detector_id, severity, COUNT(*) c FROM edge_flags GROUP BY detector_id, severity`,
+      ).all();
+      const active = new Map(rows.map((r) => [r.detector_id, r.c]));
+
+      const totalFlagged = db.prepare('SELECT COUNT(DISTINCT edge_id) c FROM edge_flags').get().c;
+      const multiFlagged = db.prepare(
+        'SELECT COUNT(*) c FROM (SELECT edge_id FROM edge_flags GROUP BY edge_id HAVING COUNT(*) > 1)',
+      ).get().c;
+
+      return json(res, 200, {
+        detectors: ALL.map((d) => ({
+          id: d.id,
+          title: d.title,
+          severity: d.severity,
+          defaultOn: d.defaultOn,
+          // 有标注 = 当前在跑且命中过；没标注可能是没跑，也可能是跑了没命中。
+          // 两者无法从表里区分，所以不谎称「active」。
+          flagged: active.get(d.id) || 0,
+          rationale: d.rationale,
+        })),
+        totalFlagged,
+        multiFlagged,
+        note: '只读。开关请用 node scripts/run_detectors.js --off <id>',
+      });
+    }
+
+    // 某条边的全部标注（可能多条检测器同时命中）
+    if (parts[1] === 'flags' && parts[2]) {
+      const rows = db.prepare(
+        'SELECT detector_id, severity, reason, detected_at FROM edge_flags WHERE edge_id = ?',
+      ).all(decodeURIComponent(parts[2]));
+      return json(res, 200, { edgeId: decodeURIComponent(parts[2]), flags: rows });
+    }
+
     if (parts[1] === 'sources') {
       const want = parts[2];
 

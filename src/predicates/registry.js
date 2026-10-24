@@ -353,18 +353,36 @@ const BUILTIN = [
   // ---------- attributes expressed as predicates ----------
   {
     key: 'gender', label: '性别', domain: 'person', range: 'literal',
+    // 族谱性别：本系统记录的 gender 是**血缘推理用的生物学性别**，
+    // 不是性别认同。
+    //
+    // 为什么归 attribute 而不归 concurrent：
+    //   `father`/`mother`/`maleChild`/`femaleChild` 的成立依赖性别判定
+    //   （见 objectGender 约束）。若把 gender 做成有起止的状态，
+    //   那么「某人在 T 年是不是某人的父亲」就会随性别状态变化，
+    //   整条血缘链的推理都要引入时间维度——而族谱的生物学性别
+    //   恰恰是不随时间变的。
+    //
+    // 性别认同问题（跨性别、性别变更）是**另一个概念**，不应塞进
+    // 这个字段。真出现时需要单独谓词（如 `genderIdentity`）并带
+    // 自己的时间语义，而不是让族谱性别变成时变值。
+    //
+    // 当前数据集此类记录近乎为零（实测 gender 边共 6 条，全部来自
+    // 网页简历的「男/女」）。
     temporality: 'attribute',
     aliases: ['性别'], negatable: true, qualifiers: [QUAL.SOURCE],
   },
   {
     key: 'ethnicity', label: '民族', domain: 'person', range: 'literal',
-    temporality: 'attribute',
-    aliases: ['民族'], negatable: true, qualifiers: [QUAL.SOURCE],
+    // 民族成分可以依法变更（有行政程序），不是终身快照。
+    temporality: 'concurrent',
+    aliases: ['民族'], negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'education', label: '学历', domain: 'person', range: 'literal',
-    temporality: 'attribute',
-    aliases: ['学历', '学位', '教育'], negatable: true, qualifiers: [QUAL.SOURCE],
+    // 学历当然会变（本科→硕士→博士），是状态而非快照。
+    temporality: 'concurrent',
+    aliases: ['学历', '学位', '教育'], negatable: true, qualifiers: [QUAL.DATES, QUAL.NOTE, QUAL.SOURCE],
   },
   {
     key: 'birthDate', label: '出生时间', domain: 'person', range: 'literal',

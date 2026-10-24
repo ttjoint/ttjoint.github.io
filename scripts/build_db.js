@@ -409,6 +409,20 @@ function main() {
   stats.boundsObserved = boundsStats.observed;
   stats.boundsUnresolved = boundsStats.unresolved;
 
+  // 冲突标注**不在这里做**。
+  //
+  // 检测是「判断」，edges 是「事实」。把判断写进事实表有三个问题：
+  //   1. 开关检测器要重建整个库（200 秒），实际等于没法开关
+  //   2. 单列只能存一个标记，多条检测器命中时会互相覆盖
+  //   3. 聚合统计要解析中文 reason（试过，输出 26KB）
+  //
+  // 改用 sidecar 表 edge_flags，由 scripts/run_detectors.js 独立重算：
+  //   node scripts/run_detectors.js            # 全部默认开启的
+  //   node scripts/run_detectors.js --off multiple-values
+  //   node scripts/run_detectors.js --report   # 看当前统计
+  //
+  // 建库后如需标注，跑一次上面的命令。
+
   verify(db, stats);
 
   const bytes = fs.statSync(OUT).size;
@@ -422,6 +436,7 @@ function main() {
     `  时间: 原文 ${stats.boundsStated}  观测 ${stats.boundsObserved}  ` +
       `推导 ${stats.boundsInferred}  推不出 ${stats.boundsUnresolved}`,
   );
+  console.log('  冲突标注：用 node scripts/run_detectors.js 独立重算（不写 edges）');
   console.log(`  ${(bytes / 1024 / 1024).toFixed(1)} MB`);
   db.close();
 }
