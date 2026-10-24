@@ -194,13 +194,13 @@ function entityDetail(id) {
   // had to know which side to look at, and every caller got it wrong for at least
   // one predicate.
   const out = db.prepare(
-    `SELECT e.id AS edge_id, e.predicate, e.object AS other, e.qualifiers, en.name AS other_name, en.type AS other_type
+    `SELECT e.id AS edge_id, e.predicate, e.object AS other, e.qualifiers, e.valid_from, e.valid_to, en.name AS other_name, en.type AS other_type
        FROM edges e INDEXED BY idx_edges_subject
        LEFT JOIN entities en ON en.id = e.object
       WHERE e.subject = ?`,
   ).all(id);
   const inb = db.prepare(
-    `SELECT e.id AS edge_id, e.predicate, e.subject AS other, e.qualifiers, en.name AS other_name, en.type AS other_type
+    `SELECT e.id AS edge_id, e.predicate, e.subject AS other, e.qualifiers, e.valid_from, e.valid_to, en.name AS other_name, en.type AS other_type
        FROM edges e INDEXED BY idx_edges_object
        LEFT JOIN entities en ON en.id = e.subject
       WHERE e.object = ?`,
@@ -233,6 +233,11 @@ function entityDetail(id) {
     // 文本 `"{\"role\":\"中央主席\"}"`，读 `.role` 得 undefined，
     // 职务信息在页面上静默消失——数据在库里，读者看不见。
     qualifiers: safeJson(e.qualifiers),
+    // 关系起止（年为单位的整数）。NULL 表示时间不详——不是「关系不存在」。
+    // 「加入某组织时间不详」是一条成立的断言，前端应显示「时间不详」
+    // 而不是隐藏这条边。
+    validFrom: e.valid_from == null ? null : e.valid_from,
+    validTo: e.valid_to == null ? null : e.valid_to,
     provenance: provByEdge.get(e.edge_id) || [],
   }));
 

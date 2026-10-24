@@ -117,14 +117,35 @@ function segment(text) {
  * 混在一起会让「这条边有没有出处」变成要先解 JSON 才能回答的问题。
  */
 function splitRelationEntry(entry) {
-  if (typeof entry === 'string') return { object: entry, qualifiers: null, provenance: null };
+  if (typeof entry === 'string') {
+    return { object: entry, qualifiers: null, provenance: null, validFrom: null, validTo: null };
+  }
   if (entry && typeof entry === 'object' && typeof entry.id === 'string' && entry.id) {
-    const { id, provenance, ...rest } = entry;
+    const { id, provenance, dates, ...rest } = entry;
     const keys = Object.keys(rest).filter((k) => rest[k] != null);
+
+    // `dates` 单独成列，不留在 qualifiers 里。
+    //
+    // 语义不同：`role`/`kind`/`order` 回答「哪一个」（他的哪个妻子、哪一任），
+    // `dates` 回答「什么时候成立」。后者要参与时间切片查询，需要索引；
+    // 埋在 JSON 里就只能全表扫。
+    //
+    // `dates` 形状：`{from?: number, to?: number}`，年为单位（负数为公元前）。
+    // 缺 `from` 表示「不知何时开始」——这是合法状态，不是缺失值：
+    // 「加入致公党时间不详」是一条成立的断言，只是缺时间。
+    let validFrom = null;
+    let validTo = null;
+    if (dates && typeof dates === 'object') {
+      if (Number.isFinite(dates.from)) validFrom = dates.from;
+      if (Number.isFinite(dates.to)) validTo = dates.to;
+    }
+
     return {
       object: id,
       qualifiers: keys.length ? JSON.stringify(rest, keys.sort()) : null,
       provenance: Array.isArray(provenance) && provenance.length ? provenance : null,
+      validFrom,
+      validTo,
     };
   }
   return null;

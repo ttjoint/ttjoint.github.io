@@ -162,6 +162,11 @@ function createEntityDetail(entityType) {
               return {
                 ...r,
                 ...q,
+                // 模板用 start/end；数据层叫 validFrom/validTo。
+                // null 表示时间不详——模板显示为空，不显示「不详」，
+                // 因为绝大多数边都没有时间，挂满标签是噪音。
+                start: r.validFrom == null ? null : r.validFrom,
+                end: r.validTo == null ? null : r.validTo,
                 id: tid,
                 // 原始谓词键：`父亲（反）` 的 label 是显示用的，
                 // 要跳谓词页得知道它其实是 `father/反`。
@@ -653,7 +658,7 @@ function createEntityDetail(entityType) {
                       <div class="rel-name">
                         {{ r._missing ? '（未收录）' : (r.name || r.target) }}
                       </div>
-                      <div class="rel-desc" v-if="r.role">
+                      <div class="rel-desc" v-if="r.role || r.start">
                         {{ r.role }}
                         <span v-if="r.start || r.end">
                           ({{ r.start || '?' }}{{ r.end ? ' ~ ' + r.end : '' }})

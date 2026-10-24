@@ -91,6 +91,9 @@ test('db: a plain string relation entry has no qualifiers', () => {
     // 边级出处与 qualifiers 分开：前者是「这条断言出自哪里」，
     // 后者是「这条断言怎么成立」。裸字符串没有任何一种。
     provenance: null,
+    // 裸字符串也没有时间。
+    validFrom: null,
+    validTo: null,
   });
 });
 

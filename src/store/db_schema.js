@@ -159,7 +159,22 @@ const DDL = [
      -- narrows it. Keeping them as a column rather than folding into the
      -- predicate is what lets the predicate stay the queryable key while the
      -- qualifier answers "which one".
-     qualifiers TEXT
+     qualifiers TEXT,
+     -- 关系本身的起止时间（年份，可负表公元前）。
+     --
+     -- 为什么边要带时间（文档 §2.1）：同一对实体的关系可以**分阶段存在**。
+     -- 「某人 1995–2000 任某职」与「2005–2010 再任同一职」是两个时段，
+     -- 塞进节点等于宣称「一辈子只有一个任职时段」——这是假的。
+     --
+     -- 为什么允许 NULL：**未知不等于不存在**。「加入致公党时间不详」
+     -- 是一条成立的断言，只是缺时间。强制非空会逼人编造日期，
+     -- 或者干脆不录入——两者都比留空更糟。
+     --
+     -- 只有 temporality='concurrent' 的谓词（夫妻/任职/成员）才该填这两个值；
+     -- 'persistent'（父母/子女）与 'attribute'（性别/民族）填了也没意义，
+     -- 查询层不按它们切片。
+     valid_from INTEGER,
+     valid_to   INTEGER
    )`,
   // Three indexes, three query shapes. All are used in practice:
   //   subject,predicate -> "X's children"        (the family-tree query)
@@ -170,6 +185,10 @@ const DDL = [
   `CREATE INDEX idx_edges_subject   ON edges(subject, predicate)`,
   `CREATE INDEX idx_edges_object    ON edges(object, predicate)`,
   `CREATE INDEX idx_edges_predicate ON edges(predicate, subject)`,
+  // 「某人在 T 年有哪些关系」——时间切片查询。
+  // 不带 predicate 的 `subject, valid_from` 前缀没用上，因为实际查询
+  // 几乎都限定谓词（「他 1050 年时任什么官」），所以把它放第二列。
+  `CREATE INDEX idx_edges_time ON edges(subject, valid_from, valid_to)`,
 
   // ----------------------------------------------------------------- evidence
   // Evidence nodes: where a claim comes from. Two shapes share this table:

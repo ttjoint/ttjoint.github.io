@@ -188,6 +188,14 @@ function writeClaimShard(c) {
   const entry = {
     id: c.object,
     ...quals,
+    // dates 单独一个字段（不混进 qualifiers）：它回答「什么时候成立」，
+    // 要参与时间切片查询，需要索引；role/kind 回答「哪一个」。
+    //
+    // 只在确实有值时才写。缺 from/to 表示「时间不详」——这是合法状态，
+    // 不是缺失：强制填会逼人编造日期，或者干脆不录入。
+    ...(c.dates && (Number.isFinite(c.dates.from) || Number.isFinite(c.dates.to))
+      ? { dates: c.dates }
+      : {}),
     provenance: [{
       rawRef: c.provenance.rawRef,
       span: c.provenance.span,

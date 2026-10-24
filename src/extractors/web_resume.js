@@ -245,6 +245,12 @@ function extractResume(text, meta) {
   // ---------------------------------------------------------------- 职务
   //
   // 「现任十四届全国政协副主席，致公党中央主席。」
+  //
+  // 注意：这些是**现任**职务，原文没说何时就任。所以 memberOf 的 dates
+  // 留空——「现任」是状态描述，不是起点。
+  //
+  // 不把「1974年3月参加工作」当作任何 memberOf 的起始时间：那是参加工作
+  // 的日期，不是加入党派或就任该职的日期。用它填 dates 就是编造。
   const postMatch = text.match(/现任([^。\n]+)[。]/);
   if (postMatch) {
     const posts = parsePosts(postMatch[1]);

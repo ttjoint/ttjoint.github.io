@@ -179,7 +179,7 @@ function main() {
       'INSERT INTO search (entity_id, name, name_seg, aliases, aliases_seg, summary_seg) VALUES (?, ?, ?, ?, ?, ?)',
     );
     const insertEdge = db.prepare(
-      'INSERT OR IGNORE INTO edges (id, subject, predicate, object, qualifiers) VALUES (?, ?, ?, ?, ?)',
+      'INSERT OR IGNORE INTO edges (id, subject, predicate, object, qualifiers, valid_from, valid_to) VALUES (?, ?, ?, ?, ?, ?, ?)',
     );
     const insertProv = db.prepare(
       `INSERT INTO provenance (id, scope, target_id, evidence_id, raw_ref, quote, reason, locator, source_title, commit_id)
@@ -258,6 +258,9 @@ function main() {
               canonical,
               rel.object,
               rel.qualifiers,
+              // NULL 表示「时间不详」，不是「没有这条关系」。
+              rel.validFrom,
+              rel.validTo,
             );
             stats.edges++;
 

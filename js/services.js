@@ -269,6 +269,9 @@ function relationsFromApiDetail(detail) {
       name: e.other_name || null,
       type: e.other_type || null,
       provenance: e.provenance || [],
+      // 关系起止（整数年）。null 表示时间不详。
+      validFrom: e.validFrom == null ? null : e.validFrom,
+      validTo: e.validTo == null ? null : e.validTo,
       ...(e.qualifiers ? { qualifiers: e.qualifiers } : {}),
     });
   }

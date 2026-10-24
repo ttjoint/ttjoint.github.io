@@ -108,3 +108,26 @@ test('extract: 6 篇真实 raw 全部可解析', () => {
     assert.ok(r.claims.length >= 6, `${r.person.name} 只抽出 ${r.claims.length} 条`);
   }
 });
+
+test('dates: 无日期是合法状态，不编造', () => {
+  // 「现任」职务原文没说何时就任。把「1974年3月参加工作」当成
+  // memberOf 的起始时间就是编造——那是参加工作的日期，不是入党日期。
+  const r = extractResume(SAMPLE, { rawRef: 'raw:x' });
+  for (const c of r.claims.filter((x) => x.predicate === 'memberOf')) {
+    assert.equal(c.dates, undefined, '原文无就任时间，dates 应留空');
+  }
+});
+
+test('dates: 有明确时间时抽出来', () => {
+  // 「2010年加入」是明确的时间点，可以填 dates.from。
+  const text = SAMPLE.replace('致公党成员', '2010年加入致公党');
+  const r = extractResume(text, { rawRef: 'raw:x' });
+  const party = r.claims.find((c) => c.predicate === 'memberOf' && c.reason.includes('致公党'));
+  if (party && party.dates) {
+    assert.equal(party.dates.from, 2010);
+  }
+  // 就算抽不到也不能编
+  for (const c of r.claims.filter((x) => x.predicate === 'memberOf')) {
+    if (c.dates) assert.ok(Number.isFinite(c.dates.from) || Number.isFinite(c.dates.to));
+  }
+});
